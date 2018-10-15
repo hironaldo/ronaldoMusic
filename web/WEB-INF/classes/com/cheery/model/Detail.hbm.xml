@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cheery.model">
+    <!--name：实体类名,table：对应数据库表名-->
+    <class name="DetailEntity" table="detail">
+        <!-- 配置主键映射 -->
+        <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
+        <id name="deId" type="integer">
+            <column name="deId"></column>
+            <!-- 设置主键生成方式 -->
+            <generator class="native"></generator>
+        </id>
+        <property name="deName" type="java.lang.String">
+            <column name="deName"></column>
+        </property>
+        <property name="dePic" type="java.lang.String">
+            <column name="dePic"></column>
+        </property>
+        <property name="label" type="java.lang.String">
+            <column name="label"></column>
+        </property>
+        <property name="explain" type="java.lang.String">
+            <column name="explain"></column>
+        </property>
+    </class>
+</hibernate-mapping>

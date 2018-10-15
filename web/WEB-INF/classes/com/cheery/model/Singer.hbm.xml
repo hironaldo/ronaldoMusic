@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cheery.model">
+    <!--name：实体类名,table：对应数据库表名-->
+    <class name="SingerEntity" table="singer">
+        <!-- 配置主键映射 -->
+        <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
+        <id name="siId" type="integer">
+            <column name="siId"></column>
+            <!-- 设置主键生成方式 -->
+            <generator class="native"></generator>
+        </id>
+        <!-- 配置其他属性 -->
+        <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
+        <property name="siName" type="java.lang.String">
+            <column name="siName"></column>
+        </property>
+        <property name="otName" type="java.lang.String">
+            <column name="otName"></column>
+        </property>
+        <property name="siPic" type="java.lang.String">
+            <column name="siPic"></column>
+        </property>
+        <property name="siType" type="java.lang.String">
+            <column name="siType"></column>
+        </property>
+        <property name="nationality" type="java.lang.String">
+            <column name="nationality"></column>
+        </property>
+        <property name="area" type="java.lang.String">
+            <column name="area"></column>
+        </property>
+        <property name="region" type="java.lang.String">
+            <column name="region"></column>
+        </property>
+        <property name="vocation" type="integer">
+            <column name="vocation"></column>
+        </property>
+        <property name="style" type="integer">
+            <column name="style"></column>
+        </property>
+        <property name="explain" type="integer">
+            <column name="explain"></column>
+        </property>
+        <!-- 一对多 name表示对应的实体类集合,column外键字段， -->
+        <bag name="songList" inverse="true" cascade="all">
+            <key column="soId"></key>
+            <one-to-many class="SongEntity"></one-to-many>
+        </bag>
+    </class>
+</hibernate-mapping>

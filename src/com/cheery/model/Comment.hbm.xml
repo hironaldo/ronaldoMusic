@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cheery.model">
+    <!--name：实体类名,table：对应数据库表名-->
+    <class name="CommentEntity" table="comment">
+        <!-- 配置主键映射 -->
+        <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
+        <id name="coId" type="integer">
+            <column name="coId"></column>
+            <!-- 设置主键生成方式 -->
+            <generator class="native"></generator>
+        </id>
+        <property name="content" type="java.lang.String">
+            <column name="content"></column>
+        </property>
+        <property name="time" type="java.lang.String">
+            <column name="time"></column>
+        </property>
+        <property name="give" type="integer">
+            <column name="give"></column>
+        </property>
+        <property name="ungive" type="integer">
+            <column name="ungive"></column>
+        </property>
+        <!-- 多对一 -->
+        <many-to-one name="user" column="userId" class="UserEntity" unique="true"></many-to-one>
+        <many-to-one name="playlist" column="beId" class="PlaylistEntity" unique="true" insert="false" update="false"></many-to-one>
+    </class>
+</hibernate-mapping>

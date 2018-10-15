@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #F1F1F1;
+}
+
+body::-webkit-scrollbar {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    background-color: #f5f5f7;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    background-color: #D8D8D8;
+}
+
+h1, h2, h3, h4, h5, h6, ol, li, ul, p, dl, dt, dd {
+    padding: 0;
+    margin: 0
+}
+
+ul, ol, li, dl, dt, dd {
+    text-decoration: none;
+    list-style: none
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.song_sheet {
+    padding-top: 10px;
+    padding-left: 25px
+}
+
+.song_sheet ul {
+    padding-top: 5px;
+}
+
+.song_sheet ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #ffffff;
+    font-size: 12px;
+}
+
+.song_sheet ul li:hover {
+    cursor: pointer;
+}
+
+
+.song_sheet table tr td {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+
+.song_sheet table tr td > div img {
+    width: 170px;
+}
+
+.box_img{
+    padding-bottom: 10px;
+}
+
+.box_img img{
+    transition: all 0.6s;
+}
+
+.box_img img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.mv{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.mv table tr td > div img {
+    width: 284px;
+}
+
+.mv table tr {
+    padding-left: 12px;
+}
+
+.mv table tr td {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+.special {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.special table tr td > div img {
+    width: 440px;
+}
+
+.special table tr {
+    padding-left: 12px;
+}
+
+.special table tr td {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+.lf {
+    float: left
+}
+
+.rt {
+    float: right
+}
+
+.clear {
+    clear: both
+}
+
+.ovh {
+    overflow: hidden
+}
+
+a {
+    color: #303030;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none
+}
+
+/*轮播*/
+.container {
+    /*width: 1024px;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+}
+
+.pictureSlider {
+    height: 180px;
+}
+
+.poster-item {
+    width: 400px;
+    transition: all 0.5s;
+    cursor: default;
+    -moz-transition: all 0.5s;
+    cursor: default;
+    -webkit-transition: all 0.5s;
+    cursor: default;
+    -o-transition: all 0.5s;
+    cursor: default;
+}
+
+.turn_3d {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 28px 0;
+}
+
+.xxgy {
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.poster-item .say {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.students_star {
+    padding: 10px 10px 0 10px;
+}
+
+.cell_list {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.darks {
+    color: #000;
+    padding-left: 10px;
+}
+
+.zwjs {
+    border-top: 1px solid #d0cddb;
+    line-height: 26px;
+    padding-top: 5px;
+    color: #999;
+    font-size: 12px;
+    max-height: 84px;
+    overflow: hidden;
+}
+
+.for_btn {
+    position: relative;
+    height: 214px;
+    overflow: hidden
+}
+
+.in_page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.in_page > img {
+    width: 40px;
+    height: 40px;
+}
+
+.check_more {
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #bc241d;
+    margin: 0 auto;
+    display: block;
+}
+
