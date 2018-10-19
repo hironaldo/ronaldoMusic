@@ -2651,22 +2651,19 @@ button {
     transition: all .3s ease-out;
 }
 
-#getcode{
+#getcode {
     border: none;
     border-radius: 2px;
     background: #fcd133;
-    font-size: 14px;
+    font-size: 12px;
     color: #3d3d3d;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .3s ease-out;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
     position: absolute;
     bottom: 146px;
     left: 260px;
+    padding: 2px 4px;
 }
 
 button:hover {
@@ -2975,23 +2972,22 @@ button.btn-secondary {
 }
 
 .form-error-tip {
-    padding: 5px 0;
-    height: 22px;
+    padding: 3px 0;
     border-radius: 2px;
     background: #ffd7d7;
     color: #eb5356;
     text-align: center;
     font-size: 12px;
-    line-height: 12px
+    display: none;
 }
 
-@media (max-width: 631px) {
-    .form-error-tip {
-        margin-top: 10px;
-        padding: 9px 0;
-        height: 30px
-    }
-}
+/*@media (max-width: 631px) {*/
+/*.form-error-tip {*/
+/*margin-top: 10px;*/
+/*padding: 9px 0;*/
+/*height: 30px*/
+/*}*/
+/*}*/
 
 /*! Hint.css - v2.4.1 - 2016-11-08
 * http://kushagragour.in/lab/hint/

@@ -45,8 +45,8 @@
             <one-to-many class="FollowEntity"></one-to-many>
         </bag>
         <bag name="playList" inverse="true" cascade="all">
-            <key column="plId"></key>
-            <one-to-many class="PlaylistEntity"></one-to-many>
+            <key column="userId"></key>
+            <one-to-many class="DetailEntity"></one-to-many>
         </bag>
     </class>
 </hibernate-mapping>

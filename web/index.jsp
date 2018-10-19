@@ -16,7 +16,6 @@
 </head>
 <body>
 
-
 <!-- app -->
 <div style="padding-left: 20px">
     <ul style="display: inline-block">
@@ -105,7 +104,7 @@
 
         <!-- 主体内容 -->
         <div class="riht_body">
-            <iframe src="Effect/choice.jsp" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
+            <iframe src="init.php" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
         </div>
         <!-- 主体内容 -->
 

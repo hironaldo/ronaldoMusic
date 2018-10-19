@@ -41,10 +41,6 @@
             background-color: #f5f5f7;
         }
 
-        tr {
-
-        }
-
     </style>
 </head>
 <body>

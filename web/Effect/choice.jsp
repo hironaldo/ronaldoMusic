@@ -1,4 +1,6 @@
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,15 +8,16 @@
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/public.css"/>
     <link rel="stylesheet" href="../staticFile/css/choice/style.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/yqq.css"/>
 </head>
 <body>
+
 
 <div>
 
     <!-- 轮播 -->
-    <div class="lb_gl" style="padding-top: 20px">
+    <div class="lb_gl" style="padding-top: 10px">
         <div class="container">
             <div class="pictureSlider poster-main">
                 <div class="poster-btn poster-prev-btn"></div>
@@ -58,153 +61,140 @@
 
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
-        <div>
-            <h5>推 荐 歌 单</h5>
+        <div style="padding-left: 20px;">
+            <span style="font-size: 18px;">歌 单 推 荐</span>
+            <span style="padding-left: 780px">随机推荐</span>
         </div>
-        <%--<ul>--%>
-            <%--<li>官方歌单</li>--%>
-            <%--<li>华语金曲</li>--%>
-            <%--<li>经典粤语</li>--%>
-            <%--<li>背景音乐</li>--%>
-            <%--<li>学习工作</li>--%>
-            <%--<li>轻音乐</li>--%>
-            <%--<li>城市</li>--%>
-            <%--<li>治愈</li>--%>
-            <%--<li>校园</li>--%>
-        <%--</ul>--%>
+        <table>
+            <tr>
+                <c:forEach var="songsheet" items="${playlist}" begin="0" end="4">
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+            <tr>
+                <c:forEach var="songsheet" items="${playlist}" begin="5" end="9">
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
+                            </div>
+                        </div>
+                    </td>
+                </c:forEach>
+            </tr>
+        </table>
+    </div>
+    <!-- 推荐的歌单 -->
+
+    <!-- 歌手 -->
+    <div class="singer">
+        <div style="padding-left: 20px;">
+            <span style="font-size: 18px;">乐 人</span>
+            <span style="padding-left: 826px">随机推荐</span>
+        </div>
+
         <table>
             <tr>
                 <td>
                     <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/uXtIBAxaiaVfmdYhOibK1Dgwu7M5QSR4ibExsibVmzEc1MSm4bjszNsZzg/300?n=1">
-                        </div>
-                        <div >
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/bB1WCibcebibxBWQnYJHfnqmkkwaCNZtgPSkuDF9cjZ1s0JicGic0OzRyA/300?n=1">
-                        </div>
-                        <div >
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/0D5Unc6BuPDfbMLbKgQeQMSAibkLK38yrOtkJasXh6BNfGkVLQ7nticQ/300?n=1">
+                        <div class="box_img">
+                            <img class="songlist__pic"
+                                 src="../staticFile/imgDT/singer/m1.jpg" style="width: 170px">
                         </div>
                         <div>
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
+                            <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                         </div>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/tHzMbKzYyUqgJIqHZCoy9fstSMPjRlLWBWhlGeqa91uhxwKLURuYVQ/300?n=1">
+                        <div class="box_img">
+                            <img class="songlist__pic"
+                                 src="../staticFile/imgDT/singer/m5.jpg" style="width: 170px">
                         </div>
                         <div>
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
+                            <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                         </div>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/xKbkocaBytGNfiaxCrPF7a7RQ9xu4Icrorn0vVYRLPXJv4U2ZAP1Aaw/300?n=1">
+                        <div class="box_img">
+                            <img class="songlist__pic"
+                                 src="../staticFile/imgDT/singer/m2.jpg" style="width: 170px">
                         </div>
                         <div>
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
+                            <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                         </div>
                     </div>
                 </td>
-            </tr>
-            <tr>
                 <td>
                     <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/ESFfjp2AE8bXYY3wsrTxw9icuyxGics1qicMmlmwZjISUrhGxa4veIXxA/300?n=1">
+                        <div class="box_img">
+                            <img class="songlist__pic"
+                                 src="../staticFile/imgDT/singer/m3.jpg" style="width: 170px">
                         </div>
                         <div>
-                            <div><span style="font-size: 14px">当这些经典歌被翻唱</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jammy_J</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
+                            <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                         </div>
                     </div>
                 </td>
                 <td>
                     <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/icLTHicH8iakBFAJbiazGT3Dn22uh3ToupNY84O7fAauicbwWWMS3Oju4bQ/300?n=1">
-                        </div>
-                        <div >
-                            <div><span style="font-size: 14px">小憩时光 · 柔如丝绒的爵士</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jane&Danny</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/gu6Yf5YflwkKK1xnz7gjxczL4DYOnJccDibbou3nd5N8ll77dbRianNg/300?n=1">
+                        <div class="box_img">
+                            <img class="songlist__pic"
+                                 src="../staticFile/imgDT/singer/m4.jpg" style="width: 170px">
                         </div>
                         <div>
-                            <div><span style="font-size: 14px">当这些经典歌被翻唱</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jammy_J</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/X9lmt3gQ1KkaezXF13jX3ysm9A8CqbXAzC2uDy1glbMo2SaJY9wJ4w/300?n=1">
-                        </div>
-                        <div>
-                            <div><span style="font-size: 14px">当这些经典歌被翻唱</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jammy_J</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <div style="overflow: hidden;" class="box_img">
-                            <img src="http://p.qpic.cn/music_cover/hnETBDZGVakiapcylpyxhC3Up39fjJT0CvL1ibW06ibIcYlJMpmonzcZg/300?n=1">
-                        </div>
-                        <div>
-                            <div><span style="font-size: 14px">当这些经典歌被翻唱</span></div>
-                            <div><span style="font-size: 10px;color: #666">Jammy_J</span></div>
-                            <div><span style="font-size: 10px;color: #666">共12首</span></div>
+                            <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
+                            <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                         </div>
                     </div>
                 </td>
             </tr>
         </table>
     </div>
-    <!-- 推荐的歌单 -->
+    <!-- 歌手 -->
 
     <!-- 排行榜 -->
     <div class="ranking" style="padding-left: 25px;padding-top:20px">
-        <div>
-            <h5>排 行 榜</h5>
+        <div style="padding-left: 20px;">
+            <h3>巅 峰 榜</h3>
         </div>
         <ul style="padding-left: 25px;padding-top:20px">
             <li class="toplist__item mod_cover">
@@ -212,7 +202,7 @@
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
-                    <h3 class="toplist__hd"><a class="toplist__tit">流行指数</a></h3>
+                    <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">流行指数</a></h3>
                     <ul class="toplist__songlist">
                         <li class="toplist__song">
                             <div class="toplist__number">1</div>
@@ -262,50 +252,19 @@
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
-                    <h3 class="toplist__hd"><a class="toplist__tit">热歌</a></h3>
+                    <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">热歌</a></h3>
                     <ul class="toplist__songlist">
-
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">1</div>
-                            <div class="toplist__songname">
-                                <a>无药可救</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>张杰</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">2</div>
-                            <div class="toplist__songname">
-                                <a>年少有为</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>李荣浩</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">3</div>
-                            <div class="toplist__songname">
-                                <a>光年之外</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>G&#46;E&#46;M&#46;&#32;邓紫棋</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">4</div>
-                            <div class="toplist__songname">
-                                <a>侧脸</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>于果</a>
-                            </div>
-                        </li>
-
+                        <c:forEach var="song_tw" items="${songlist}" begin="20" end="25" varStatus="sta">
+                            <li class="toplist__song">
+                                <div class="toplist__number">${sta.index-19}</div>
+                                <div class="toplist__songname">
+                                    <a>${song_tw.soName}</a>
+                                </div>
+                                <div class="toplist__artist">
+                                    <a>${song_tw.singer.siName}</a>
+                                </div>
+                            </li>
+                        </c:forEach>
                     </ul>
                 </div>
             </li>
@@ -315,48 +274,19 @@
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
-                    <h3 class="toplist__hd"><a class="toplist__tit">新歌</a></h3>
+                    <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">新歌</a></h3>
                     <ul class="toplist__songlist">
-                        <li class="toplist__song">
-                            <div class="toplist__number">1</div>
-                            <div class="toplist__songname">
-                                <a>没说什么</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>张杰</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">2</div>
-                            <div class="toplist__songname">
-                                <a>无药可救</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>张杰</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">3</div>
-                            <div class="toplist__songname">
-                                <a>悟</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>吴亦凡</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">4</div>
-                            <div class="toplist__songname">
-                                <a>Give&#32;Me&#32;A&#32;Chance</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>张艺兴</a>
-                            </div>
-                        </li>
-
+                        <c:forEach var="song_t" items="${songlist}" begin="7" end="10" varStatus="sta">
+                            <li class="toplist__song">
+                                <div class="toplist__number">${sta.index-6}</div>
+                                <div class="toplist__songname">
+                                    <a>${song_t.soName}</a>
+                                </div>
+                                <div class="toplist__artist">
+                                    <a>${song_t.singer.siName}</a>
+                                </div>
+                            </li>
+                        </c:forEach>
                     </ul>
                 </div>
             </li>
@@ -366,47 +296,19 @@
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
-                    <h3 class="toplist__hd"><a class="toplist__tit">欧美</a></h3>
+                    <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">欧美</a></h3>
                     <ul class="toplist__songlist">
-
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">1</div>
-                            <div class="toplist__songname">
-                                <a>1999</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>Charli&#32;XCX</a>
-                            </div>
-                        </li>
-
-                        <li class="toplist__song">
-                            <div class="toplist__number">2</div>
-                            <div class="toplist__songname">
-                                <a>Diamond&#32;Heart</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>Alan&#32;Walker</a>
-                            </div>
-                        </li>
-                        <li class="toplist__song">
-                            <div class="toplist__number">3</div>
-                            <div class="toplist__songname">
-                                <a>RISE&#32;登峰造极境</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>The&#32;Glitch&#32;Mob</a>
-                            </div>
-                        </li>
-                        <li class="toplist__song">
-                            <div class="toplist__number">4</div>
-                            <div class="toplist__songname">
-                                <a>Shallow</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>Lady&#32;Gaga</a>
-                            </div>
-                        </li>
+                        <c:forEach var="song" items="${songlist}" begin="0" end="3" varStatus="sta">
+                            <li class="toplist__song">
+                                <div class="toplist__number">${sta.index+1}</div>
+                                <div class="toplist__songname">
+                                    <a>${song.soName}</a>
+                                </div>
+                                <div class="toplist__artist">
+                                    <a>${song.singer.siName}</a>
+                                </div>
+                            </li>
+                        </c:forEach>
                     </ul>
                 </div>
             </li>
@@ -417,144 +319,57 @@
 
     <!-- Mv -->
     <div class="mv">
-        <div>
+        <div style="padding-left: 20px;">
             <h5>M V</h5>
         </div>
         <div>
             <table>
                 <tr>
-                    <td>
-                        <div>
+                    <c:forEach var="mv" items="${mvlist}" begin="0" end="3">
+                        <td>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/mv/${mv.mvPic}.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
                             <div>
-                                <img src="http://y.gtimg.cn/music/photo_new/T015R640x360M101002ndYNp3XAcsm.jpg?max_age=2592000">
+                                <div><span style="font-size: 14px">${mv.mvName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${mv.mvAuthor}</span></div>
                             </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <div>
-                                <img src="http://y.gtimg.cn/music/photo_new/T015R640x360M101001Bryw828mfwB.jpg?max_age=2592000">
-                            </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <div>
-                                <img src="http://y.gtimg.cn/music/common/upload/t_mv_latest_rec/366176.jpg?max_age=2592000">
-                            </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
+                        </td>
+                    </c:forEach>
                 </tr>
                 <tr>
-                    <td>
-                        <div>
+                    <c:forEach var="mv_t" items="${mvlist}" begin="4" end="8">
+                        <td>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/mv/${mv_t.mvPic}.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
                             <div>
-                                <img src="http://y.gtimg.cn/music/photo_new/T015R640x360M101001judQp4LLTYb.jpg?max_age=2592000">
+                                <div><span style="font-size: 14px">${mv_t.mvName}</span></div>
+                                <div><span style="font-size: 10px;color: #666">${mv_t.mvAuthor}</span></div>
                             </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <div>
-                                <img src="http://y.gtimg.cn/music/common/upload/t_mv_latest_rec/367402.jpg?max_age=2592000">
-                            </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <div>
-                                <img src="http://y.gtimg.cn/music/photo_new/T015R640x360M1010048cnzg3bwr34.jpg?max_age=2592000">
-                            </div>
-                            <div style="padding-top: 10px">
-                                <div><span style="font-size: 14px">亚亚亚</span></div>
-                                <div><span style="font-size: 10px;color: #666">容祖儿</span></div>
-                            </div>
-                        </div>
-                    </td>
+                        </td>
+                    </c:forEach>
                 </tr>
             </table>
         </div>
     </div>
     <!-- Mv -->
 
-    <%--<!-- 专栏 -->--%>
-    <%--<div class="special">--%>
-        <%--<div>--%>
-            <%--&lt;%&ndash;<span><img src="../staticFile/img/groom.svg" style="width: 20px;"></span>&ndash;%&gt;--%>
-            <%--<h5>专 栏</h5>--%>
-        <%--</div>--%>
-        <%--<div>--%>
-            <%--<table>--%>
-                <%--<tr>--%>
-                    <%--<td>--%>
-                        <%--<div>--%>
-                            <%--<div>--%>
-                                <%--<img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/368256.jpg?max_age=2592000">--%>
-                            <%--</div>--%>
-                            <%--<div style="padding-top: 10px">--%>
-                                <%--<div><span style="font-size: 14px">Bad Bunny/Drake (德雷克)</span></div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                    <%--</td>--%>
-                    <%--<td>--%>
-                        <%--<div>--%>
-                            <%--<div>--%>
-                                <%--<img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/368257.jpg?max_age=2592000">--%>
-                            <%--</div>--%>
-                            <%--<div style="padding-top: 10px">--%>
-                                <%--<div><span style="font-size: 14px">Woman Like Me (Explicit)</span></div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                    <%--</td>--%>
-                <%--</tr>--%>
-            <%--</table>--%>
-            <%--<table>--%>
-                <%--<tr>--%>
-                    <%--<td>--%>
-                        <%--<div>--%>
-                            <%--<div>--%>
-                                <%--<img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/368061.jpg?max_age=2592000">--%>
-                            <%--</div>--%>
-                            <%--<div style="padding-top: 10px">--%>
-                                <%--<div><span style="font-size: 14px">Bad Bunny/Drake (德雷克)</span></div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                    <%--</td>--%>
-                    <%--<td>--%>
-                        <%--<div>--%>
-                            <%--<div>--%>
-                                <%--<img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/367247.jpg?max_age=2592000">--%>
-                            <%--</div>--%>
-                            <%--<div style="padding-top: 10px">--%>
-                                <%--<div><span style="font-size: 14px">Woman Like Me (Explicit)</span></div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                    <%--</td>--%>
-                <%--</tr>--%>
-            <%--</table>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<!-- 专栏 -->--%>
+
+    <!-- 音乐 -->
+
+    <!-- 音乐 -->
+
 
 </div>
 

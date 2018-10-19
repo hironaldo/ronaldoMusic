@@ -35,13 +35,13 @@
         <property name="region" type="java.lang.String">
             <column name="region"></column>
         </property>
-        <property name="vocation" type="integer">
+        <property name="vocation" type="java.lang.String">
             <column name="vocation"></column>
         </property>
-        <property name="style" type="integer">
+        <property name="style" type="java.lang.String">
             <column name="style"></column>
         </property>
-        <property name="explain" type="integer">
+        <property name="explain" type="java.lang.String">
             <column name="explain"></column>
         </property>
         <!-- 一对多 name表示对应的实体类集合,column外键字段， -->

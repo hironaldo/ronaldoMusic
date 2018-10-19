@@ -1,6 +1,7 @@
 package com.cheery.dao.comment;
 
 import com.cheery.model.CommentEntity;
+
 import java.util.List;
 
 public interface ICommentDao {

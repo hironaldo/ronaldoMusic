@@ -10,6 +10,5 @@ public interface IUserDao {
      * @author CR7
      * @date 2018/10/13
      */
-    List<UserEntity> userLogin(UserEntity user) throws Exception;   //登陆
 
 }

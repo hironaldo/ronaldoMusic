@@ -10,6 +10,4 @@ public interface ISongDao {
      * @date 2018/10/15
      */
 
-
-
 }

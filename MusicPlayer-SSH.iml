@@ -84,6 +84,8 @@
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/plexus/src/main/resources/struts-plugin.xml</file>
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-filedownload.xml</file>
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-tiles.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/struts-playlist.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/struts-Init.xml</file>
           </fileset>
           <fileset id="s2fileset2" name="My Fileset " removed="false">
             <file>file://$MODULE_DIR$/src/configs/struts-core.xml</file>

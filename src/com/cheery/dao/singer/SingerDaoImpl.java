@@ -1,7 +1,6 @@
 package com.cheery.dao.singer;
 
 import com.cheery.model.SingerEntity;
-import com.cheery.model.SongEntity;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import java.util.List;
 

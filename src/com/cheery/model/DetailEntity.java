@@ -3,8 +3,12 @@ package com.cheery.model;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.Date;
 
-@Data
+@Getter
+@Setter
+
+
 @NoArgsConstructor
 @AllArgsConstructor
 /**
@@ -15,7 +19,12 @@ import java.io.Serializable;
 public class DetailEntity implements Serializable {
     private Integer deId;
     private String deName;
+    private String time;
     private String dePic;
     private String label;
     private String explain;
+    /**
+     * 与用户表构成多对一的关系
+     */
+    private UserEntity user;
 }

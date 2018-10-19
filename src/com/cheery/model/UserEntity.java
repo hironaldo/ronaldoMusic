@@ -3,6 +3,7 @@ package com.cheery.model;
 import lombok.*;
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -24,8 +25,9 @@ public class UserEntity implements Serializable {
     /**
      * 与评论表 关注表 歌单表构建成一对多的关系
      * */
+
     private List<CommentEntity> commentList;
     private List<FollowEntity> followList;
-    private List<PlaylistEntity> playList;
+    private List<DetailEntity> playList;
 }
 

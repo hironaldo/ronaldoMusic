@@ -33,13 +33,23 @@
     </listener>
     <!-- spring config end -->
 
+    <!--设置编码格式-->
+    <filter>
+        <filter-name>enconding</filter-name>
+        <filter-class>com.cheery.tools.EncodeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>enconding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <!-- druid连接池 start-->
     <filter>
         <filter-name>DruidWebStatFilter</filter-name>
         <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
         <init-param>
             <param-name>exclusions</param-name>
-            <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
+            <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,*.svg,/druid/*</param-value>
         </init-param>
     </filter>
     <filter-mapping>
@@ -71,6 +81,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
     <!-- struts2 config end -->
+
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

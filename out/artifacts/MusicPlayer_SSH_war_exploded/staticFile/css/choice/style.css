@@ -51,28 +51,9 @@ img:hover {
     padding-left: 25px
 }
 
-.song_sheet ul {
-    padding-top: 5px;
-}
-
-.song_sheet ul li {
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background: #ffffff;
-    font-size: 12px;
-}
-
-.song_sheet ul li:hover {
-    cursor: pointer;
-}
-
-
 .song_sheet table tr td {
     padding-left: 20px;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 
@@ -81,6 +62,7 @@ img:hover {
 }
 
 .box_img{
+    overflow: hidden;
     padding-bottom: 10px;
 }
 
@@ -90,7 +72,7 @@ img:hover {
 
 .box_img img:hover{
     transform: scale(1.1);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .mv{
@@ -99,7 +81,7 @@ img:hover {
 }
 
 .mv table tr td > div img {
-    width: 284px;
+    width: 215px;
 }
 
 .mv table tr {
@@ -107,7 +89,7 @@ img:hover {
 }
 
 .mv table tr td {
-    padding-left: 30px;
+    padding-left: 23px;
     padding-top: 20px;
 }
 
@@ -130,6 +112,16 @@ img:hover {
     padding-top: 20px;
 }
 
+
+.singer {
+    padding-top: 20px;
+    padding-left: 25px
+}
+
+.singer table tr td {
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
 .lf {
     float: left
@@ -236,7 +228,7 @@ img {
 
 .for_btn {
     position: relative;
-    height: 214px;
+    /*height: 214px;*/
     overflow: hidden
 }
 
@@ -265,4 +257,3 @@ img {
     margin: 0 auto;
     display: block;
 }
-

@@ -3,7 +3,6 @@ package com.cheery.model;
 import lombok.*;
 
 import java.io.Serializable;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

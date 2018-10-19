@@ -24,5 +24,5 @@ public class SongEntity implements Serializable {
     /**
      * 与歌手表构建成多对一的关系
      * */
-    private SongEntity song;
+    private SingerEntity singer;
 }

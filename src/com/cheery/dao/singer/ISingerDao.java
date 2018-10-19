@@ -1,6 +1,7 @@
 package com.cheery.dao.singer;
 
 import com.cheery.model.SingerEntity;
+
 import java.util.List;
 
 public interface ISingerDao {

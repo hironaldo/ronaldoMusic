@@ -76,11 +76,8 @@
     <!-- 事务配置 end -->
 
     <!-- action配置 -->
-    <bean id="UserAction" class="com.cheery.actions.UserAction" scope="prototype">
-        <property name="userSer" ref="userServ"></property>
+    <bean id="InitAction" class="com.cheery.actions.InitAction" scope="prototype">
+        <property name="initSer" ref="initSer"></property>
     </bean>
 
-    <!--<bean id="mobileAction" class="com.cheery.actions.MobileAction" scope="prototype">-->
-    <!--<property name="mobileServ" ref="mobileServ"></property>-->
-    <!--</bean>-->
 </beans>

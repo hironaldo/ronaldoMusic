@@ -15,6 +15,9 @@
         <property name="deName" type="java.lang.String">
             <column name="deName"></column>
         </property>
+        <property name="time" type="java.lang.String">
+            <column name="time"></column>
+        </property>
         <property name="dePic" type="java.lang.String">
             <column name="dePic"></column>
         </property>
@@ -24,5 +27,7 @@
         <property name="explain" type="java.lang.String">
             <column name="explain"></column>
         </property>
+        <!-- 多对一 -->
+        <many-to-one name="user" column="userId" class="UserEntity" unique="true"></many-to-one>
     </class>
 </hibernate-mapping>

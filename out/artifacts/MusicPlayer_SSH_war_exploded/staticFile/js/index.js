@@ -6,8 +6,8 @@ $(function () {
             title: '',
             shadeClose: false,
             shade: 0.8,
-            area: ['350px', '410px'],
-            content: 'Effect/login.jsp'
+            area: ['350px', '400px'],
+            content: 'login.jsp'
         });
     });
 
