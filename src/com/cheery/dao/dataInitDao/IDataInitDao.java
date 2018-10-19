@@ -18,6 +18,9 @@ public interface IDataInitDao {
     //查询所有歌曲
     List<SongEntity> queryAllSong() throws Exception;
 
+    //查询所有歌手
+    List<SingerEntity> queryAllSinger() throws Exception;
+
     //查询所有mv
     List<MvEntity> queryAllMv() throws Exception;
 

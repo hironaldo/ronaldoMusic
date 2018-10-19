@@ -1,7 +1,5 @@
 package com.cheery.dao.song;
 
-import com.cheery.model.SongEntity;
-import java.util.List;
 
 public interface ISongDao {
     /**

@@ -680,8 +680,8 @@
 }
 
 .slide__list {
-    position: relative;
-    font-size: 0;
+    /*position: relative;*/
+    /*font-size: 0;*/
     width: 1250%
 }
 
@@ -934,7 +934,7 @@
 
 .songlist__item {
     display: inline-block;
-    width: 33.333%
+    width: 32%;
 }
 
 .songlist__item_box {

@@ -21,6 +21,12 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
     }
 
     @Override
+    public List<SingerEntity> queryAllSinger() throws Exception {
+        String hql = "from SingerEntity as s order by s.siId";
+        return this.getHibernateTemplate().find(hql);
+    }
+
+    @Override
     public List<MvEntity> queryAllMv() throws Exception {
         String hql = "from MvEntity as m ORDER BY m.mvId";
         return this.getHibernateTemplate().find(hql);

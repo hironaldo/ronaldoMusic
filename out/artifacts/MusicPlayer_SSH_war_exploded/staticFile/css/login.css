@@ -2643,36 +2643,36 @@ input[type=checkbox] {
 button {
     border: none;
     border-radius: 2px;
-    background: #fcd133;
+    background: #31C27C;
     font-size: 14px;
-    color: #3d3d3d;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .3s ease-out;
+    color: white;
 }
 
 #getcode {
     border: none;
     border-radius: 2px;
-    background: #fcd133;
+    background: #31C27C;
     font-size: 12px;
-    color: #3d3d3d;
+    color: #fff;
     letter-spacing: 1px;
     cursor: pointer;
     transition: all .3s ease-out;
     position: absolute;
-    bottom: 146px;
-    left: 260px;
+    bottom: 89px;
+    left: 265px;
     padding: 2px 4px;
 }
 
 button:hover {
-    background: #ffe06c
+    background: #2FB876
 }
 
-button:active {
-    background: #f2c212
-}
+/*button:active {*/
+    /*background: #f2c212*/
+/*}*/
 
 button:disabled {
     background: #fff0b9;

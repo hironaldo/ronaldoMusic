@@ -11,7 +11,7 @@
         * {
             margin: 0px;
             padding: 0px;
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+            /*font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;*/
         }
 
         body {
@@ -40,171 +40,104 @@
             border-radius: 2em;
             background-color: #D8D8D8;
         }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table tr td {
+            padding: 30px;
+        }
+
+        table tr td > div img {
+            width: 140px;
+            border-radius: 50%
+        }
     </style>
 </head>
 <body>
 
-<%--<div class="layui-tab-content" style="height: 100%;">--%>
-<%--<blockquote class="layui-elem-quote">--%>
-<%--<button class="layui-btn layui-btn-xs layui-btn-primary">--%>
-<%--<i class="layui-icon">&#xe702;</i>共88首--%>
-<%--</button>--%>
-<%--<button class="layui-btn layui-btn-xs layui-btn-primary">--%>
-<%--<i class="layui-icon">&#xe652;</i>播放全部--%>
-<%--</button>--%>
-<%--<button class="layui-btn layui-btn-xs layui-btn-primary">--%>
-<%--<i class="layui-icon">&#xe601;</i>下载--%>
-<%--</button>--%>
-<%--<button class="layui-btn layui-btn-xs layui-btn-primary">--%>
-<%--<i class="layui-icon">&#x1006;</i>移除喜欢--%>
-<%--</button>--%>
-<%--<span style="float: right;padding-right: 10px">--%>
-<%--<input type="text" autocomplete="off" placeholder="搜索"--%>
-<%--maxlength="10"--%>
-<%--onkeyup="this.value=this.value.replace(/\s/g,'');"--%>
-<%--style="border: 0px;height: 23px;text-align:center">--%>
-<%--</span>--%>
-<%--</blockquote>--%>
-<%--</div>--%>
-
-<div style="overflow: auto;width: 1017px">
-    <div style="display: none;height: 500px;border-right : 1px solid #ddd">
-        <table>
-            <tr style="background: #F2F2F2;">
-                <td style="padding-right: 5px;padding-top: 3px;padding-bottom: 3px;padding-left:21px">
-                    <img src="http://p.qpic.cn/music_cover/az4TLJ60PVdO54ZsMQeKYqlvibHsP1VyZhg3bbWEpSLl87F8E8lz3kw/300?n=1"
-                         width="55">
-                </td>
-                <td style="padding-left: 10px;padding-right: 40px">
-                    <ul>
-                        <li>
-                            <span style="color: #666;font-size: 12px;">Adele</span>
-                        </li>
-                        <li style="padding-top: 5px">
-                            <button class="layui-btn layui-btn-primary layui-btn-xs"><i class="layui-icon">&#x1006;</i>取关
-                            </button>
-                        </li>
-                    </ul>
-                </td>
-            <tr>
-            <tr>
-                <td style="padding-right: 5px;padding-top: 3px;padding-bottom: 3px;padding-left: 21px">
-                    <img src="http://y.gtimg.cn/music/photo_new/T001R150x150M000000qrPik2w6lDr.jpg?max_age=2592000"
-                         width="55">
-                </td>
-                <td style="padding-left: 10px;padding-right: 80px">
-                    <ul>
-                        <li>
-                            <span style="color: #666;font-size: 12px;">Taylor Swift</span>
-                        </li>
-                        <li style="padding-top: 5px">
-                            <button class="layui-btn layui-btn-primary layui-btn-xs"><i class="layui-icon">&#x1006;</i>取关
-                            </button>
-                        </li>
-                    </ul>
-                </td>
-            <tr>
-        </table>
-    </div>
-
-</div>
-
-
-<div style="display: inline-block;float: right">
-    <table style="margin: 15px 0 0 30px ">
-        <tr>
-            <td>
-                <img src="http://p.qpic.cn/music_cover/az4TLJ60PVdO54ZsMQeKYqlvibHsP1VyZhg3bbWEpSLl87F8E8lz3kw/300?n=1" style="width: 160px;border-radius: 50%"/>
-            </td>
-            <td style="padding-left: 20px">
-                <ul>
-                    <li>
-                        <span style="font-size: 22px;">陈奕迅</span>
-                    </li>
-                    <li style="padding-top: 10px">
-                            <span style="font-size: 10px;color: #666">
-                                泰勒•斯威夫特（Taylor Swift），美国乡村音乐著名创作女歌手。1989年出生于美国宾州。2006年与独立唱片公司Big Machine签约并发行首张个人专辑《Taylor Swift》。
-                            </span>
-                    </li>
-                    <li style="padding-top: 20px">
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe652;</i>播放全部
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe601;</i>下载
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#x1006;</i>删除
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe67b;</i>喜欢
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe642;</i>编辑
-                        </button>
-                    </li>
-                </ul>
-            </td>
-        <tr>
-    </table>
-    <table class="layui-table" lay-skin="nob" style="margin: 15px 0 0 30px;width: 740px;">
-        <thead>
-        <tr>
-            <th>歌曲
-            </th>
-            <th>专辑</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-                <img src="../staticFile/images/love.svg" width="16px">
-                Hello
-            </td>
-            <th>Roanldo</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="../staticFile/images/love.svg" width="16px">
-                Hello
-            </td>
-            <th>Roanldo</th>
-        </tr>
-        </tbody>
-    </table>
-</div>
-
-
-<div>
+<div class="layui-tab layui-tab-brief">
+    <ul class="layui-tab-title">
+        <li class="layui-this">歌手9</li>
+        <li>歌曲8</li>
+        <li>歌单7</li>
+    </ul>
     <div class="layui-tab-content" style="height: 100%;">
-        <!-- 关注的歌手 -->
+
+        <!-- 关注的歌曲 -->
         <div class="layui-tab-item layui-show">
+            <blockquote class="layui-elem-quote">
+                <button class="layui-btn layui-btn-xs layui-btn-primary">
+                    <i class="layui-icon">&#xe652;</i>播放全部
+                </button>
+                <button class="layui-btn layui-btn-xs layui-btn-primary">
+                    <i class="layui-icon">&#xe601;</i>下载
+                </button>
+
+                <button id="test" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
+
+                <span style="float: right;padding-right: 10px">
+                    <input type="text" autocomplete="off" placeholder="搜索"
+                           maxlength="10"
+                           onkeyup="this.value=this.value.replace(/\s/g,'');"
+                           style="border: 0px;height: 23px;text-align:center">
+                </span>
+            </blockquote>
+            <table class="layui-table" lay-skin="nob">
+                <thead>
+                <tr>
+                    <th>
+                        <div class="layui-unselect header layui-form-checkbox" style="display: none;"
+                             lay-skin="primary">
+                            <i class="layui-icon">&#xe605;</i>
+                        </div>&nbsp;歌曲
+                    </th>
+                    <th>歌手</th>
+                    <th>时长</th>
+                    <th>语种</th>
+                    <th>发行公司</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="layui-unselect header layui-form-checkbox" style="display: none;"
+                             lay-skin="primary">
+                            <i class="layui-icon">&#xe605;</i>
+                        </div>
+                        <span>
+                            <img src="../staticFile/images/fulllove.svg" width="18px" style="padding-bottom: 5px">
+                        </span>
+                        Hello
+                    </td>
+                    <th>Roanldo</th>
+                    <td>04:33</td>
+                    <td>英语</td>
+                    <td>环球唱片</td>
+                    <td>
+                        <img src="../staticFile/img/delete.svg" width="16px">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 关注的歌曲 -->
+
+        <!-- 关注的歌手 -->
+        <div class="layui-tab-item ">
             <div>
                 <table>
                     <tr>
                         <td>
                             <div>
-                                <div>
+                                <div id="img">
                                     <img src="http://y.gtimg.cn/music/photo_new/T001R150x150M000000qrPik2w6lDr.jpg?max_age=2592000">
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
-                                    <div style="padding-top: 5px">
-                                        <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="http://p.qpic.cn/music_cover/az4TLJ60PVdO54ZsMQeKYqlvibHsP1VyZhg3bbWEpSLl87F8E8lz3kw/300?n=1">
-                                </div>
-                                <div style="text-align: center"><br>
-                                    <div style="padding-top: 5px">Adele</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -219,7 +152,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -234,7 +167,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -249,7 +182,22 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
+                                    <div style="padding-top: 5px">
+                                        <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div>
+                                    <img src="http://y.gtimg.cn/music/photo_new/T001R150x150M000000qrPik2w6lDr.jpg?max_age=2592000">
+                                </div>
+                                <div style="text-align: center"><br>
+                                    <div style="padding-top: 5px">Taylor Swift</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -266,7 +214,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -281,7 +229,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -296,7 +244,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -311,7 +259,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -326,7 +274,7 @@
                                 </div>
                                 <div style="text-align: center"><br>
                                     <div style="padding-top: 5px">Taylor Swift</div>
-                                    <div style="padding-top: 5px;color: #666;font-size: 12px;">627.7万人关注</div>
+                                    <div style="padding-top: 5px">627.7万人关注</div>
                                     <div style="padding-top: 5px">
                                         <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#x1006;</i>取消关注
                                         </button>
@@ -338,27 +286,121 @@
                 </table>
             </div>
         </div>
+        <!-- 关注的歌手 -->
+
+
+        <!-- 关注的歌单 -->
+        <div class="layui-tab-item">
+
+        </div>
+        <!-- 关注的歌单 -->
     </div>
 
 </div>
-
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script>
+    $(document).ready(function () {
+        $("#test").click(function () {
+            if ($(this).text() == "批量操作") {
+                $('.layui-form-checkbox').show();
+                $(this).text('退出批量操作');
+            } else {
+                $('.layui-form-checkbox').hide();
+                $(this).text('批量操作');
+            }
+        });
 
-    $(function () {
-        $("#bt").click(function () {
-            layer.tips('泰勒•斯威夫特（Taylor Swift），美国乡村音乐著名创作女歌手。1989年出生于美国宾州。2006年与独立唱片公司Big Machine签约并发行首张个人专辑《Taylor Swift》。', '#bt', {
-                tips: [1, '#3595CC'],
-                time: 4000
+        $("#img").click(function () {
+            layer.open({
+                type: 2,
+                title: '',
+                shadeClose: true,
+                scrollbar: false,
+                shade: 0.000001,
+                closeBtn: 0,
+                moveOut: false,
+                area: ['700px', '240px'],
+                content: 'singer_info.jsp'
+            });
+        });
+
+
+        //加载弹出层
+        $(function () {
+            layui.use(['form', 'element'],
+                function () {
+                    layer = layui.layer;
+                    element = layui.element;
+                });
+            tableCheck = {
+                init: function () {
+                    $(".layui-form-checkbox").click(function (event) {
+                        if ($(this).hasClass('layui-form-checked')) {
+                            $(this).removeClass('layui-form-checked');
+                            if ($(this).hasClass('header')) {
+                                $(".layui-form-checkbox").removeClass('layui-form-checked');
+                            }
+                        } else {
+                            $(this).addClass('layui-form-checked');
+                            if ($(this).hasClass('header')) {
+                                $(".layui-form-checkbox").addClass('layui-form-checked');
+                            }
+                        }
+
+                    });
+                },
+                getData: function () {
+                    var obj = $(".layui-form-checked").not('.header');
+                    var arr = [];
+                    obj.each(function (index, el) {
+                        arr.push(obj.eq(index).attr('data-id'));
+                    });
+                    return arr;
+                }
+            }
+            //开启表格多选
+            tableCheck.init();
+            $('.container .left_open i').click(function (event) {
+                if ($('.left-nav').css('left') == '0px') {
+                    $('.left-nav').animate({left: '-221px'}, 100);
+                    $('.page-content').animate({left: '0px'}, 100);
+                    $('.page-content-bg').hide();
+                } else {
+                    $('.left-nav').animate({left: '0px'}, 100);
+                    $('.page-content').animate({left: '221px'}, 100);
+                    if ($(window).width() < 768) {
+                        $('.page-content-bg').show();
+                    }
+                }
+
+            });
+            $('.page-content-bg').click(function (event) {
+                $('.left-nav').animate({left: '-215px'}, 100);
+                $('.page-content').animate({left: '0px'}, 100);
+                $(this).hide();
             });
 
+            $('.layui-tab-close').click(function (event) {
+                $('.layui-tab-title li').eq(0).find('i').remove();
+            });
         });
     });
-
-
 </script>
-
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,6 +20,10 @@ public class DataInitService {
         return initDao.queryAllSong();
     }
 
+    public List<SingerEntity> queryAllSinger() throws Exception {
+        return initDao.queryAllSinger();
+    }
+
     public List<MvEntity> queryAllMv() throws Exception {
         return initDao.queryAllMv();
     }

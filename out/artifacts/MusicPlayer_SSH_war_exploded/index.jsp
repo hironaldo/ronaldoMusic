@@ -178,7 +178,8 @@
                             <ul id="ul1">
                                 <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>热门歌手</li>
+                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
+                                <li url="Effect/collect-songlist.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>
                     </div>
@@ -188,9 +189,7 @@
                         </div>
                         <div class="list">
                             <ul id="ul2">
-                                <li url="Effect/follow-singer.jsp"><i class="layui-icon layui-icon-username"></i>关注的歌手</li>
-                                <li url="Effect/love-music.jsp"><img src="staticFile/img/music1.svg" width="17">&nbsp;喜欢的音乐</li>
-                                <li url="Effect/collect-songlist.jsp"><i class="layui-icon layui-icon-template"></i>收藏的歌单</li>
+                                <li url="Effect/follow.jsp"><i class="layui-icon layui-icon-rate"></i>我喜欢</li>
                                 <li url="Effect/download.jsp"><i class="layui-icon layui-icon-download-circle"></i>下载管理
                                 </li>
                             </ul>
@@ -208,7 +207,24 @@
                         <div class="list">
                             <ul id="ul3">
                                 <li url="Effect/songlist.jsp">
-                                    <i class="layui-icon layui-icon-water"></i>经典粤语大全
+                                    <i class="layui-icon layui-icon-water"></i>荒原里的迷幻吟唱
+                                    <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
+                                </li>
+                                <li url="Effect/songlist.jsp">
+                                    <i class="layui-icon layui-icon-water"></i>经典配乐大全
+                                    <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tj">
+                        <div class="head">
+                            <h4>收藏的歌单</h4>
+                        </div>
+                        <div class="list">
+                            <ul id="ul4">
+                                <li url="Effect/songlist.jsp">
+                                    <i class="layui-icon layui-icon-water"></i>独立音乐人的理想之声
                                     <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
                                 </li>
                             </ul>
