@@ -1,6 +1,6 @@
 package com.cheery.service;
 
-import com.cheery.dao.dataInitDao.IDataInitDao;
+import com.cheery.dao.dataInit.IDataInitDao;
 import com.cheery.model.*;
 
 import java.util.List;
@@ -22,6 +22,14 @@ public class DataInitService {
 
     public List<SingerEntity> queryAllSinger() throws Exception {
         return initDao.queryAllSinger();
+    }
+
+    public List<SingerEntity> queryAllSinger(String siType, String region, String style, Integer pageNo, Integer pageSize) throws Exception {
+        return initDao.queryAllSinger(siType, region, style, pageNo, pageSize);
+    }
+
+    public int queryRows() {
+        return initDao.queryRows();
     }
 
     public List<MvEntity> queryAllMv() throws Exception {

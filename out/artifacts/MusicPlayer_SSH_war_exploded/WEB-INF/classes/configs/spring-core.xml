@@ -14,7 +14,7 @@
 	 http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <!-- 导入spring dao/service配置文件 -->
-    <import resource="classpath:configs/config-spring/spring-*.xml"></import>
+    <import resource="classpath:configs/config-spring/*/*.xml"/>
 
     <!-- 连接池配置 -->
     <context:property-placeholder location="classpath:configs/druid.properties"/>
@@ -41,9 +41,9 @@
     </bean>
     <!--  Hibernate config start -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-        <property name="dataSource" ref="druidDataSource"></property>
+        <property name="dataSource" ref="druidDataSource"/>
         <property name="configLocation">
-            <value>classpath:configs/hibernate.cfg.xml</value>
+            <value>classpath:/configs/hibernate.cfg.xml</value>
         </property>
         <property name="mappingLocations">
             <list>
@@ -77,7 +77,7 @@
 
     <!-- action配置 -->
     <bean id="InitAction" class="com.cheery.actions.InitAction" scope="prototype">
-        <property name="initSer" ref="initSer"></property>
+        <property name="initSer" ref="initSer"/>
     </bean>
 
 </beans>

@@ -1794,7 +1794,8 @@ a cite {
     height: 38px;
     line-height: 38px;
     padding: 0 18px;
-    background-color: #009688;
+    /*background-color: #009688;*/
+    background-color: #2FB876;
     color: #fff;
     white-space: nowrap;
     text-align: center;
@@ -2541,7 +2542,7 @@ a cite {
 }
 
 .layui-layedit-tool {
-    padding: 3px 5px;
+    /*padding: 3px 5px;*/
     border-bottom-width: 1px;
     border-bottom-style: solid;
     font-size: 0
@@ -2563,8 +2564,8 @@ a cite {
 .layui-layedit-tool .layui-icon {
     position: relative;
     width: 32px;
-    height: 30px;
-    line-height: 30px;
+    /*height: 30px;*/
+    /*line-height: 30px;*/
     margin: 3px 5px;
     color: #777;
     cursor: pointer;

@@ -5,13 +5,18 @@
 
 <struts>
     <package name="master" extends="struts-default">
-        <action name="init" class="InitAction" method="Init">
+        <!-- 初始化 ‘官方精选’ 栏数据 -->
+        <action name="init" class="InitAction" method="initData">
             <result name="success" type="redirect">Effect/choice.jsp</result>
-            <result name="input" type="redirect">505.html</result>
+            <result name="input" type="redirect">500.html</result>
+        </action>
+
+        <action name="getSinger" class="InitAction" method="querySinger">
+            <result name="success" type="redirect">Effect/singer.jsp</result>
+            <result name="input" type="redirect">500.html</result>
         </action>
 
         <action name="login" class="InitAction" method="userLogin">
-            <!--<result name="success" type="redirect">/index.jsp</result>-->
             <result name="input" type="redirect">/login.jsp</result>
         </action>
     </package>

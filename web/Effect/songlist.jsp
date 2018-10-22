@@ -69,18 +69,19 @@
                     <button class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe652;</i>播放全部
                     </button>
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
+                    <button id="download" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe601;</i>下载
                     </button>
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#x1006;</i>删除
-                    </button>
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
+                    <button id="like" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe67b;</i>喜欢
+                    </button>
+                    <button id="delete" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
+                        <i class="layui-icon">&#x1006;</i>删除
                     </button>
                     <button class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe642;</i>编辑
                     </button>
+                    <button id="action" class="layui-btn layui-btn-sm layui-btn-primary">批量操作</button>
                 </li>
             </ul>
         </td>
@@ -98,7 +99,8 @@
                 <thead>
                 <tr>
                     <th>
-                        <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i
+                        <div style="display: none;" class="layui-unselect header layui-form-checkbox"
+                             lay-skin="primary"><i
                                 class="layui-icon">&#xe605;</i>
                         </div>&nbsp;歌曲
                     </th>
@@ -112,144 +114,8 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
+                        <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary"
                              data-id="">
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id=${stu.aid}>
                             <i class="layui-icon">&#xe605;</i>
                         </div>
                         Hello
@@ -266,15 +132,43 @@
                 </tbody>
             </table>
         </div>
-        <div class="layui-tab-item">内容2</div>
+        <div class="layui-tab-item">
+            <textarea id="comment" maxlength="5"></textarea>
+            <button class="layui-btn layui-btn-xs" style="float: right">发表评论</button>
+        </div>
     </div>
 </div>
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script>
-    //加载弹出层
     $(function () {
+        $("#action").click(function () {
+            if ($(this).text() == "批量操作") {
+                $('.layui-form-checkbox').show();
+                $('#delete').show();
+                $('#download').show();
+                $('#like').show();
+                $(this).text('退出批量操作');
+            } else {
+                $('.layui-form-checkbox').hide();
+                $('#delete').hide();
+                $('#download').hide();
+                $('#like').hide();
+                $(this).text('批量操作');
+            }
+        });
+
+        layui.use('layedit', function () {
+            var layedit = layui.layedit;
+            layedit.build('comment', {
+                height: 100,
+                tool: [
+                    'face'
+                ]
+            });
+        });
+
         layui.use(['form', 'element'],
             function () {
                 layer = layui.layer;

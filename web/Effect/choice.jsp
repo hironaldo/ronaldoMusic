@@ -37,7 +37,7 @@
 
                     <li class="poster-item  zturn-item">
                         <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common//upload/t_musicmall_focus/334055.jpg?max_age=2592000"
+                            <img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/414424.jpg?max_age=2592000"
                                  width="100%">
                         </div>
                     </li>

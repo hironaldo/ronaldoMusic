@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -109,6 +110,19 @@
     </style>
 </head>
 <body>
+
+<c:forEach var="singer" items="${singerList}">
+    ${singer.siName}
+</c:forEach>
+
+${pageCount}
+
+${pageNo}
+
+${dataCount}
+
+${pageData}
+
 <div class="layui-tab layui-tab-brief">
     <div class="layui-tab-content" style="height: 100%;">
         <!-- 歌手 -->
@@ -174,130 +188,40 @@
             <div>
                 <table>
                     <tr>
-                        <td>
-                            <div>
+                        <c:forEach var="singer" items="${singerList}" begin="0" end="4">
+                            <td>
                                 <div>
-                                    <img src="../staticFile/img/m1.jpg">
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
                                 </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m2.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m4.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
+                            </td>
+                        </c:forEach>
                     </tr>
                     <tr>
-                        <td>
-                            <div>
+                        <c:forEach var="singer" items="${singerList}" begin="5" end="9">
+                            <td>
                                 <div>
-                                    <img src="../staticFile/img/m1.jpg">
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
                                 </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m2.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m4.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
+                            </td>
+                        </c:forEach>
                     </tr>
                     <tr>
-                        <td>
-                            <div>
+                        <c:forEach var="singer" items="${singerList}" begin="10" end="14">
+                            <td>
                                 <div>
-                                    <img src="../staticFile/img/m1.jpg">
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
                                 </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m2.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m3.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <div>
-                                    <img src="../staticFile/img/m4.jpg">
-                                </div>
-                                <div style="text-align: center">邓紫棋</div>
-                            </div>
-                        </td>
+                            </td>
+                        </c:forEach>
                     </tr>
                 </table>
             </div>

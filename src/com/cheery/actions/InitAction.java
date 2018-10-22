@@ -18,8 +18,30 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
     public InitAction() throws IOException {
     }
 
-    @Getter@Setter
-    private String checkcode;
+    @Getter
+    @Setter
+    private int pageNo = 2; //当前页
+    @Getter
+    @Setter
+    private int pageSize = 15;  //页面数据条数
+    @Getter
+    @Setter
+    private int dataCount;  //数据总和
+    @Getter
+    @Setter
+    private int pageCount;  //总页数
+    @Getter
+    @Setter
+    private int listSize; //数组长度
+    @Getter
+    @Setter
+    private String siType;
+    @Getter
+    @Setter
+    private String region;
+    @Getter
+    @Setter
+    private String style;
 
     private DataInitService initSer;
 
@@ -35,20 +57,19 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
         return user;
     }
 
-
     ActionContext ac = ActionContext.getContext();
     Map session = ac.getSession();
-    Map request = (Map)ac.get("request");
+    Map request = (Map) ac.get("request");
     HttpServletResponse response = ServletActionContext.getResponse();
     PrintWriter out = response.getWriter();
 
     /*初始化首页数据*/
-    public String Init() throws Exception {
+    public String initData() throws Exception {
         List<PlaylistEntity> playlist = initSer.queryTopPlaylist(); //歌单
         List<SongEntity> songlist = initSer.queryAllSong(); //歌曲
         List<SingerEntity> singerlist = initSer.queryAllSinger(); //歌手
         List<MvEntity> mvlist = initSer.queryAllMv(); //mv
-        if (0 < playlist.size() && 0 < songlist.size()) {
+        if (0 < playlist.size() && 0 < songlist.size() && 0 < singerlist.size() && 0 < mvlist.size()) {
             session.put("playlist", playlist);
             session.put("songlist", songlist);
             session.put("singerlist", singerlist);
@@ -57,6 +78,29 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
         } else {
             return Action.INPUT;
         }
+    }
+
+    /*初始化首页数据*/
+    public String querySinger() throws Exception {
+        dataCount = initSer.queryRows();
+        pageCount = dataCount % pageSize == 0 ? dataCount / pageSize : dataCount / pageSize + 1;
+        if (pageNo <= 0) {
+            pageNo = 1;
+        } else if (pageNo >= pageCount) {
+            pageNo = pageCount;
+        }
+        List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
+        if (0 < list.size() && null != list) {
+            session.put("singerList", list);
+            session.put("pageCount", pageCount);
+            session.put("pageNo", pageNo);
+            session.put("dataCount", dataCount);
+            session.put("pageData", list.size());
+            return Action.SUCCESS;
+        } else {
+            return Action.ERROR;
+        }
+
     }
 
     /*登陆*/

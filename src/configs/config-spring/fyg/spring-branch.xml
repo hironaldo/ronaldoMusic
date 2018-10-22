@@ -4,8 +4,14 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans
 	 http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
 
-	<bean id="initDao" class="com.cheery.dao.dataInitDao.DataInitImpl">
+	<!-- this spring-branch is managed by fyg -->
+
+	<bean id="initDao" class="com.cheery.dao.dataInit.DataInitImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="initSer" class="com.cheery.service.DataInitService">
+		<property name="initDao" ref="initDao"></property>
 	</bean>
 
 </beans>

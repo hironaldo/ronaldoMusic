@@ -12,84 +12,10 @@
       </configuration>
       <facet type="Struts2" name="Struts 2">
         <configuration>
-          <fileset id="s2fileset" name="Default File Set " removed="false">
+          <fileset id="s2fileset" name="My Fileset " removed="false">
             <file>file://$MODULE_DIR$/src/configs/struts-core.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/tiles/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/portlet-tiles/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/gxp/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-freemarker.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-fileupload.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/tiles3/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts-view.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-tags.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/main/resources/struts-default.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/oval/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-chat.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/mailreader/src/main/java/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/portlet/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/sitemesh/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/dojo/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts-help.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/mailreader/src/main/java/mailreader-support.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/json/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/struts1/src/test/resources/org/apache/struts2/s1/test-struts-factory.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/convention/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/jsf/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts-edit.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/sitegraph/src/test/resources/org/apache/struts2/sitegraph/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-integration.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/junit/src/test/resources/struts-test.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/cdi/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-interactive.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/struts1/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-jsf.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/spring/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-tags-ui.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/embeddedjsp/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/javatemplates/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/config-browser/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/jasperreports/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-token.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/blank/src/main/resources/example.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-tags-non-ui.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/codebehind/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-actionchaining.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-conversion.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/rest/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-model-driven.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/junit/src/test/resources/struts-session-values-test.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/test/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/rest-showcase/src/main/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-ajax.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-hangman.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-person.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-xslt.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/pell-multipart/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/osgi/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/mailreader/src/main/java/mailreader-default.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/test/resources/org/apache/struts2/views/jsp/WW3090-struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/test/resources/struts-object-factory-result-builder.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-wait.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/junit/src/test/resources/struts-convention-configuration.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/portlet/src/test/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/blank/src/main/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/jfreechart/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts-eventing.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts-tiles.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-validation.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/portlet/src/main/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/test/resources/org/apache/struts2/dispatcher/ng/struts-no-op.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/junit/src/test/resources/struts.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/plugins/plexus/src/main/resources/struts-plugin.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-filedownload.xml</file>
-            <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/showcase/src/main/resources/struts-tiles.xml</file>
-            <file>file://$MODULE_DIR$/src/configs/config-struts/struts-playlist.xml</file>
-            <file>file://$MODULE_DIR$/src/configs/config-struts/struts-Init.xml</file>
-          </fileset>
-          <fileset id="s2fileset2" name="My Fileset " removed="false">
-            <file>file://$MODULE_DIR$/src/configs/struts-core.xml</file>
-            <file>file://$MODULE_DIR$/src/configs/config-struts/struts-user.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-Init.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-singer.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -130,11 +56,13 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration>
+      <configuration process_explicitly_annotated="false">
         <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/configs/config-spring/xxy/spring-branch.xml</file>
+          <file>file://$MODULE_DIR$/src/configs/config-spring/lx/spring-branch.xml</file>
+          <file>file://$MODULE_DIR$/src/configs/config-spring/ljw/spring-branch.xml</file>
+          <file>file://$MODULE_DIR$/src/configs/config-spring/fyg/spring-branch.xml</file>
           <file>file://$MODULE_DIR$/src/configs/spring-core.xml</file>
-          <file>file://$MODULE_DIR$/src/configs/config-spring/spring-dao.xml</file>
-          <file>file://$MODULE_DIR$/src/configs/config-spring/spring-service.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -160,5 +88,8 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Hibernate" level="project" />
+    <orderEntry type="library" name="Spring" level="project" />
+    <orderEntry type="library" name="Tomcat" level="project" />
   </component>
 </module>

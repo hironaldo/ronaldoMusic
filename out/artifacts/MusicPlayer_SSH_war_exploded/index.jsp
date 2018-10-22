@@ -60,43 +60,34 @@
                         <img src="staticFile/img/close.svg" style="width: 18px">
                     </li>
                 </ul>
-                <%--<div style="width: 100px;height: 100px;background: #0C0C0C">--%>
-                <%--</div>--%>
-                <%--<div class="container">--%>
-                <%--<ul class="list-group">--%>
-                <%--<li class="list-group-item">First item</li>--%>
-                <%--<li class="list-group-item">Second item</li>--%>
-                <%--<li class="list-group-item">Third item</li>--%>
-                <%--</ul>--%>
-                <%--</div>--%>
-                <%--<div style="padding-left: 50px">--%>
-                <%--<ul style="list-style-type: none;background: #FFFFFF;width: 180px">--%>
-                <%--<li>--%>
-                <%--<span>1</span>--%>
-                <%--<span>沙漠骆驼</span>--%>
-                <%--<span style="float: right">167.8万</span>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<span>1</span>--%>
-                <%--<span style="text-align: center">沙漠骆驼</span>--%>
-                <%--<span style="float: right">167.8万</span>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<span>1</span>--%>
-                <%--<span>沙漠骆驼</span>--%>
-                <%--<span style="float: right">167.8万</span>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<span>1</span>--%>
-                <%--<span>沙漠骆驼</span>--%>
-                <%--<span style="float: right">167.8万</span>--%>
-                <%--</li>--%>
-                <%--<li>--%>
-                <%--<span>1</span>--%>
-                <%--<span>沙漠骆驼</span>--%>
-                <%--<span style="float: right">167.8万</span>--%>
-                <%--</li>--%>
-                <%--</ul>--%>
+                <%--<div style="padding-left: 160px;">--%>
+                    <%--<ul style="list-style-type: none;background: #0C0C0C;width: 180px">--%>
+                        <%--<li>--%>
+                            <%--<span>1</span>--%>
+                            <%--<span>沙漠骆驼</span>--%>
+                            <%--<span style="float: right">167.8万</span>--%>
+                        <%--</li>--%>
+                        <%--<li>--%>
+                            <%--<span>1</span>--%>
+                            <%--<span style="text-align: center">沙漠骆驼</span>--%>
+                            <%--<span style="float: right">167.8万</span>--%>
+                        <%--</li>--%>
+                        <%--<li>--%>
+                            <%--<span>1</span>--%>
+                            <%--<span>沙漠骆驼</span>--%>
+                            <%--<span style="float: right">167.8万</span>--%>
+                        <%--</li>--%>
+                        <%--<li>--%>
+                            <%--<span>1</span>--%>
+                            <%--<span>沙漠骆驼</span>--%>
+                            <%--<span style="float: right">167.8万</span>--%>
+                        <%--</li>--%>
+                        <%--<li>--%>
+                            <%--<span>1</span>--%>
+                            <%--<span>沙漠骆驼</span>--%>
+                            <%--<span style="float: right">167.8万</span>--%>
+                        <%--</li>--%>
+                    <%--</ul>--%>
                 <%--</div>--%>
             </div>
         </div>
@@ -104,7 +95,7 @@
 
         <!-- 主体内容 -->
         <div class="riht_body">
-            <iframe src="init.php" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
+            <iframe src="init" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
         </div>
         <!-- 主体内容 -->
 

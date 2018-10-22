@@ -59,8 +59,8 @@
 
 <div class="layui-tab layui-tab-brief">
     <ul class="layui-tab-title">
-        <li class="layui-this">歌手9</li>
-        <li>歌曲8</li>
+        <li class="layui-this">歌曲9</li>
+        <li>歌手8</li>
         <li>歌单7</li>
     </ul>
     <div class="layui-tab-content" style="height: 100%;">
@@ -75,7 +75,7 @@
                     <i class="layui-icon">&#xe601;</i>下载
                 </button>
 
-                <button id="test" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
+                <button id="action" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
 
                 <span style="float: right;padding-right: 10px">
                     <input type="text" autocomplete="off" placeholder="搜索"
@@ -291,6 +291,194 @@
 
         <!-- 关注的歌单 -->
         <div class="layui-tab-item">
+            <table>
+                <tr>
+
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img src="../staticFile/imgDT/songsheet/pl10.jpg"
+                                         class="songlist__pic">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">荒原里的迷幻吟唱</span></div>
+                                <div><span style="font-size: 10px;color: #666">Ronaldo</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-19</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img src="../staticFile/imgDT/songsheet/pl9.jpg"
+                                         class="songlist__pic">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">独立音乐人的理想之声</span></div>
+                                <div><span style="font-size: 10px;color: #666">Heart</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-18</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img src="../staticFile/imgDT/songsheet/pl8.jpg"
+                                         class="songlist__pic">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">恰似温暖入心头</span></div>
+                                <div><span style="font-size: 10px;color: #666">Derr</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-17</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img src="../staticFile/imgDT/songsheet/pl7.jpg"
+                                         class="songlist__pic">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">无法抽离的小确丧</span></div>
+                                <div><span style="font-size: 10px;color: #666">Jammy_J</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-16</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img src="../staticFile/imgDT/songsheet/pl6.jpg"
+                                         class="songlist__pic">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">惬意细软小调</span></div>
+                                <div><span style="font-size: 10px;color: #666">Danny</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-15</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/pl5.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">痛并努力着</span></div>
+                                <div><span style="font-size: 10px;color: #666">Jane</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-14</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/pl4.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">Lo-fi 解压舱</span></div>
+                                <div><span style="font-size: 10px;color: #666">Ronaldo</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-13</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/pl3.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">梦境中的绵言细语</span></div>
+                                <div><span style="font-size: 10px;color: #666">Gelezm</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-12</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/pl2.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">独而不孤之旅</span></div>
+                                <div><span style="font-size: 10px;color: #666">Messi</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-11</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td style="padding-top: 20px">
+                        <div>
+                            <div class="box_img">
+                                <a class="songlist__link mod_cover">
+                                    <img class="songlist__pic"
+                                         src="../staticFile/imgDT/songsheet/pl1.jpg">
+                                    <i class="mod_cover__mask"></i>
+                                    <i class="mod_cover__icon_play"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <div><span style="font-size: 14px">经典配乐大全</span></div>
+                                <div><span style="font-size: 10px;color: #666">Ronaldo</span></div>
+                                <div><span style="font-size: 10px;color: #666">2018-10-10</span></div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
 
         </div>
         <!-- 关注的歌单 -->
@@ -301,7 +489,7 @@
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script>
     $(document).ready(function () {
-        $("#test").click(function () {
+        $("#action").click(function () {
             if ($(this).text() == "批量操作") {
                 $('.layui-form-checkbox').show();
                 $(this).text('退出批量操作');
