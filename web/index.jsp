@@ -169,7 +169,7 @@
                             <ul id="ul1">
                                 <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
+                                <li url="getSinger"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
                                 <li url="Effect/collect-songlist.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>

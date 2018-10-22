@@ -14,6 +14,7 @@
             padding: 0px;
             /*font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;*/
         }
+
         body {
             overflow-x: hidden;
             overflow-y: auto;
@@ -60,11 +61,11 @@
             padding-top: 8px
         }
 
-        #paging ul{
+        #paging ul {
             display: inline;
         }
 
-        #paging ul li{
+        #paging ul li {
             display: inline-block;
         }
 
@@ -99,7 +100,7 @@
             padding-left: 85px
         }
 
-        .hot{
+        .hot {
             display: block;
             position: absolute;
             top: 205px;
@@ -111,17 +112,24 @@
 </head>
 <body>
 
-<c:forEach var="singer" items="${singerList}">
-    ${singer.siName}
-</c:forEach>
+<%--<c:forEach var="singer" items="${singerList}">--%>
+<%--${singer.siName}--%>
+<%--</c:forEach>--%>
 
-${pageCount}
+<%--${pageCount}--%>
 
-${pageNo}
+<%--${pageNo}--%>
 
-${dataCount}
+<%--${dataCount}--%>
 
-${pageData}
+<%--${pageData}--%>
+
+<div id="aaa">
+
+</div>
+
+<button id="bbbb">111</button>
+
 
 <div class="layui-tab layui-tab-brief">
     <div class="layui-tab-content" style="height: 100%;">
@@ -188,48 +196,57 @@ ${pageData}
             <div>
                 <table>
                     <tr>
-                        <c:forEach var="singer" items="${singerList}" begin="0" end="4">
-                            <td>
-                                <div>
-                                    <div>
-                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
-                                    </div>
-                                    <div style="text-align: center">${singer.siName}</div>
-                                </div>
-                            </td>
-                        </c:forEach>
+                        <%--<c:forEach var="singer" items="${singerList}" begin="0" end="4">--%>
+                        <%--<td>--%>
+                        <%--<div>--%>
+                        <%--<div>--%>
+                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
+                        <%--</div>--%>
+                        <%--<div style="text-align: center">${singer.siName}</div>--%>
+                        <%--</div>--%>
+                        <%--</td>--%>
+                        <%--</c:forEach>--%>
                     </tr>
                     <tr>
-                        <c:forEach var="singer" items="${singerList}" begin="5" end="9">
-                            <td>
-                                <div>
-                                    <div>
-                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
-                                    </div>
-                                    <div style="text-align: center">${singer.siName}</div>
-                                </div>
-                            </td>
-                        </c:forEach>
+                        <%--<c:forEach var="singer" items="${singerList}" begin="5" end="9">--%>
+                        <%--<td>--%>
+                        <%--<div>--%>
+                        <%--<div>--%>
+                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
+                        <%--</div>--%>
+                        <%--<div style="text-align: center">${singer.siName}</div>--%>
+                        <%--</div>--%>
+                        <%--</td>--%>
+                        <%--</c:forEach>--%>
                     </tr>
                     <tr>
-                        <c:forEach var="singer" items="${singerList}" begin="10" end="14">
-                            <td>
-                                <div>
-                                    <div>
-                                        <img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">
-                                    </div>
-                                    <div style="text-align: center">${singer.siName}</div>
-                                </div>
-                            </td>
-                        </c:forEach>
+                        <%--<c:forEach var="singer" items="${singerList}" begin="10" end="14">--%>
+                        <%--<td>--%>
+                        <%--<div>--%>
+                        <%--<div>--%>
+                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
+                        <%--</div>--%>
+                        <%--<div style="text-align: center">${singer.siName}</div>--%>
+                        <%--</div>--%>
+                        <%--</td>--%>
+                        <%--</c:forEach>--%>
                     </tr>
                 </table>
             </div>
             <div id="paging" style="text-align: center">
                 <ul style="list-style: none;">
-                    <li style="background: #31b876;padding-left: 10px;padding-right: 10px;padding-top: 1px;padding-bottom: 1px">1</li>
-                    <li style="border: 1px;background: white;padding-left: 10px;padding-right: 10px;padding-top: 1px;padding-bottom: 1px">2</li>
-                    <li style="border: 1px;background: white;padding-left: 10px;padding-right: 10px;padding-top: 1px;padding-bottom: 1px">3</li>
+                    <li style="background: #31b876;padding: 3px 7px;color: white">
+                        ☚
+                    </li>
+                    <li style="background: #31b876;padding: 4px 8px;color: white">
+                        <a href="getSinger?pageNo=1" style="color:black;">1</a>
+                    </li>
+                    <li style="background: #FFFFFF;padding: 4px 8px;border: 2px #f1f1f1 solid">
+                        <a href="getSinger?pageNo=2" style="color:black;">2</a>
+                    </li>
+                    <li style="background: #31b876;padding: 3px 7px;color: white">
+                        ☛
+                    </li>
                 </ul>
             </div>
         </div>
@@ -238,5 +255,33 @@ ${pageData}
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script>
+    $(function () {
+
+        $("#bbbb").click(function () {
+            $.ajax({
+                type: 'post',
+                url: 'getSinger?pageNo=2',
+                async: false,
+                cache: true,
+                dataType: 'text',
+                success: function (result) {
+                    // if (result == "ok") {
+                    //     setTimeout(parent.layer.close(parent.layer.getFrameIndex(window.name)), 3000);
+                    // }
+
+                    // $("#aaa").html(result);
+
+                    console.log(result);
+
+                }
+            });
+        });
+
+
+    });
+</script>
+
+
 </body>
 </html>

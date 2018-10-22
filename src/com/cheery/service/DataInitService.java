@@ -2,7 +2,6 @@ package com.cheery.service;
 
 import com.cheery.dao.dataInit.IDataInitDao;
 import com.cheery.model.*;
-
 import java.util.List;
 
 public class DataInitService {

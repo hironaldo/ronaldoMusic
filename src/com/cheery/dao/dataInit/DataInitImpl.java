@@ -4,8 +4,11 @@ import com.cheery.model.*;
 import org.hibernate.*;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
 import java.sql.SQLException;
 import java.util.List;
+import java.lang.*;
+
 
 public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
 
@@ -35,55 +38,40 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
 
     @Override
     public List<SingerEntity> queryAllSinger(String siType, String region, String style, Integer pageNo, Integer pageSize) throws Exception {
-        String hql = "from SingerEntity s where 1=1";
-        if (siType == null && region == null && style == null) {
-            return this.getHibernateTemplate().find(hql);
-        } else if (siType != null) {
-            hql += " where siType=?";
-            return this.getHibernateTemplate().find(hql, siType);
-        } else if (region != null) {
-            hql += " where region=?";
-            return this.getHibernateTemplate().find(hql, region);
-        } else if (style != null) {
-            hql += " where style=?";
-            return this.getHibernateTemplate().find(hql, style);
-        } else if (siType != null && style != null) {
-            hql += " where siType=? and style=?";
-            return this.getHibernateTemplate().find(hql, siType, style);
-        } else if (siType != null && region != null) {
-            hql += " where siType=? and region=?";
-            return this.getHibernateTemplate().find(hql, siType, region);
-        } else if (style != null && region != null) {
-            hql += " where style=? and region=?";
-            return this.getHibernateTemplate().find(hql, style, region);
-        } else if (style != null && region != null && siType != null) {
-            hql += " where style=? and region=? and siType=?";
-            return this.getHibernateTemplate().find(hql, style, region, siType);
+        String hql = "from SingerEntity s where 1=1 ";
+        if (null != siType && null != region && null != style) {
+            hql += " and s.siType like '%" + siType + "%' and s.region like '%" + region + "%' and s.style like '%" + style + "%'";
+        } else if (null != siType && null != region) {
+            hql += " and s.siType like '%" + siType + "%' and s.region like '%" + region + "%'";
+        } else if (null != siType && null != style) {
+            hql += " and s.siType like '%" + siType + "%' and s.style like '%" + style + "%'";
+        } else if (null != region && null != style) {
+            hql += " and s.region like '%" + region + "%' and s.style like '%" + style + "%'";
+        } else if (null != siType) {
+            hql += " and s.siType like '%" + siType + "%'";
+        } else if (null != region) {
+            hql += " and s.region like '%" + region + "%'";
+        } else if (null != style) {
+            hql += " and s.style like '%" + style + "%'";
         }
-        final String HQL = hql;
+        final java.lang.String HQL = hql;
         final Integer PAGENO = pageNo;
         final Integer PAGESIZE = pageSize;
-        List singerList = this.getHibernateTemplate()
-                .executeFind(new HibernateCallback<Object>() {
-                                 @Override
-                                 public Object doInHibernate(Session session)
-                                         throws HibernateException, SQLException {
-                                     Query qy = session.createQuery(HQL);
-                                     qy.setMaxResults(PAGESIZE);
-                                     qy.setFirstResult((PAGENO - 1) * PAGESIZE);
-                                     return qy.list();
-                                 }
-                             }
-                );
+        List singerList = this.getHibernateTemplate().executeFind(new HibernateCallback<Object>() {
+            @Override
+            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+                Query qy = session.createQuery(HQL);
+                qy.setFirstResult((PAGENO - 1) * PAGESIZE);
+                qy.setMaxResults(PAGESIZE);
+                return qy.list();
+            }
+        });
         return singerList;
-
     }
 
-    //查询条数
     @Override
     public int queryRows() {
         int myResult = 0;
-        System.out.println("aaa");
         String hql = "select count(*) from SingerEntity s where 1=1";
         List result = this.getHibernateTemplate().find(hql);
         if (result != null && result.size() > 0) {

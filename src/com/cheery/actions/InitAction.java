@@ -20,7 +20,7 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
 
     @Getter
     @Setter
-    private int pageNo = 2; //当前页
+    private int pageNo = 1; //当前页
     @Getter
     @Setter
     private int pageSize = 15;  //页面数据条数
@@ -90,17 +90,20 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             pageNo = pageCount;
         }
         List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
-        if (0 < list.size() && null != list) {
+        System.out.println(list);
+        if (null != list) {
             session.put("singerList", list);
             session.put("pageCount", pageCount);
             session.put("pageNo", pageNo);
             session.put("dataCount", dataCount);
             session.put("pageData", list.size());
+
+            out.print(list);
+
             return Action.SUCCESS;
         } else {
             return Action.ERROR;
         }
-
     }
 
     /*登陆*/

@@ -56,21 +56,21 @@
                 $(".form-error-tip").hide();
             }
         });
-        $("#getcode").click(function () {
-            var phone =
-                $.ajax({
-                    type: "post",
-                    url: "http://127.0.0.1:82/phones.php",
-                    data: {"phone": $phone},
-                    success: function (result) {
-                        alert(result);
-                    }
-                });
-        });
+        // $("#getcode").click(function () {
+        //     var phone =
+        //         $.ajax({
+        //             type: "post",
+        //             url: "http://127.0.0.1:82/phones.php",
+        //             data: {"phone": $phone},
+        //             success: function (result) {
+        //                 alert(result);
+        //             }
+        //         });
+        // });
         $("#login_btn").click(function () {
             $.ajax({
                 type: 'post',
-                url: 'login.php',
+                url: 'login',
                 data: $('#login_form').serialize(),
                 async: false,
                 cache: true,

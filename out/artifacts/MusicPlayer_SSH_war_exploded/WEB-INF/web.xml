@@ -73,7 +73,7 @@
         <!-- 配置struts.xml 路径 -->
         <init-param>
             <param-name>config</param-name>
-            <param-value>struts-default.xml,struts-plugin.xml,configs/struts-core.xml</param-value>
+            <param-value>struts-default.xml,struts-plugin.xml,configs/struts.xml</param-value>
         </init-param>
     </filter>
     <filter-mapping>
