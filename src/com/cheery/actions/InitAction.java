@@ -90,16 +90,14 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             pageNo = pageCount;
         }
         List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
-        System.out.println(list);
+        //System.out.println(list);
         if (null != list) {
             session.put("singerList", list);
             session.put("pageCount", pageCount);
             session.put("pageNo", pageNo);
             session.put("dataCount", dataCount);
             session.put("pageData", list.size());
-
             out.print(list);
-
             return Action.SUCCESS;
         } else {
             return Action.ERROR;
@@ -118,7 +116,7 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             return null;
         } else {
             System.out.println(initSer.userLogin(user));
-            request.put("tips", "\uD83D\uDE05 登陆信息错误");
+            session.put("tips", "\uD83D\uDE05 登陆信息错误");
             return Action.INPUT;
         }
     }

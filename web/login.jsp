@@ -8,7 +8,7 @@
 <body>
 
 <form id="login_form">
-    <div id="login" style="width: 300px;margin: 0 auto;padding-top: 40px">
+    <div id="login" style="width: 300px;margin: 0 auto;padding-top: 35px">
         <div class="popout">
             <div style="position: relative;">
                 <h4 class="popout-title zh" data-v-7997c758="">登录</h4>
@@ -19,22 +19,16 @@
                                value="17673461751" autocomplete="off" maxlength="11">
                     </div>
                     <div class="form-row" id="pwd_box">
-                        <input name="password" type="password" placeholder="输入密码" style="width: 100%;"
+                        <input name="password" type="password" placeholder="输入密码" style="width: 100%;" id="pwd"
                                autocomplete="off" maxlength="16">
                     </div>
                     <div class="form-row" id="code_box">
                         <input name="checkcode" type="text" placeholder="验证码" style="width: 100%;" autocomplete="off"
-                               maxlength="6">
+                               maxlength="4">
                         <button id="getcode">获取</button>
                     </div>
                     <div class="form-row">
                         <button id="login_btn" style="width: 100%; height: 34px;">Go</button>
-                    </div>
-                    <div class="form-row">
-                        <label for="remember" style="font-size: 12px; color: rgb(104, 104, 104);">
-                            <input type="checkbox" id="remember"
-                                   style="width: 12px; height: 12px; vertical-align: middle;">记住我
-                        </label>
                     </div>
                 </div>
             </div>
@@ -54,32 +48,27 @@
         $("input").bind({
             focus: function () {
                 $(".form-error-tip").hide();
+            }, blur: function () {
+                $(".form-error-tip").hide();
             }
         });
-        // $("#getcode").click(function () {
-        //     var phone =
-        //         $.ajax({
-        //             type: "post",
-        //             url: "http://127.0.0.1:82/phones.php",
-        //             data: {"phone": $phone},
-        //             success: function (result) {
-        //                 alert(result);
-        //             }
-        //         });
-        // });
-        $("#login_btn").click(function () {
-            $.ajax({
-                type: 'post',
-                url: 'login',
-                data: $('#login_form').serialize(),
-                async: false,
-                cache: true,
-                success: function (result) {
-                    if (result == "ok") {
-                        setTimeout(parent.layer.close(parent.layer.getFrameIndex(window.name)), 3000);
+        $('form').submit(function () {
+            var flag = false;
+            if ($("#phone").val() == "" || $("#pwd").val() == "") {
+                layer.msg('该项不能为空');
+                flag = false;
+                return flag;
+            } else {
+                $.ajax({
+                    type: 'post', url: 'login', data: $('#login_form').serialize(), async: false, cache: true,
+                    success: function (result) {
+                        if (result == "ok") parent.layer.close(parent.layer.getFrameIndex(window.name));
                     }
-                }
-            });
+                });
+                flag = true;
+                return flag;
+            }
+            return flag;
         });
     });
 </script>

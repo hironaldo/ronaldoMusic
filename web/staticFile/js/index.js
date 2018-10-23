@@ -6,7 +6,7 @@ $(function () {
             title: '',
             shadeClose: false,
             shade: 0.8,
-            area: ['350px', '400px'],
+            area: ['330px', '365px'],
             content: 'login.jsp'
         });
     });
@@ -14,9 +14,10 @@ $(function () {
     /*开始程序隐藏 双击后显示*/
     //$("#content").hide();
     $("#music").dblclick(function () {
-        $("#content").show();
+        $("#content").fadeIn();
     });
 
+    /*导航栏*/
     var $ul_li = $(".list ul li");
     var $iframe = $(".riht_body iframe");
     $(".list #ul1 >li").click(function () {

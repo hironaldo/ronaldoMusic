@@ -2661,7 +2661,7 @@ button {
     cursor: pointer;
     transition: all .3s ease-out;
     position: absolute;
-    bottom: 89px;
+    bottom: 55px;
     left: 265px;
     padding: 2px 4px;
 }
@@ -2967,7 +2967,7 @@ button.btn-secondary {
 
 @media (max-width: 631px) {
     .form-row {
-        margin-top: 16px
+        margin-top: 17px
     }
 }
 

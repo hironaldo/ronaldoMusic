@@ -11,6 +11,7 @@
             <result name="input" type="redirect">500.html</result>
         </action>
 
+        <!-- 初始化 ‘全部歌手’ 栏数据 -->
         <action name="getSinger" class="InitAction" method="querySinger">
             <result name="success" type="redirect">Effect/singer.jsp</result>
             <result name="input" type="redirect">500.html</result>

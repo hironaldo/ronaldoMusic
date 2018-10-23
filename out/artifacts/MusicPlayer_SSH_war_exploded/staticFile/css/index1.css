@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-input {
-    height: 23px;
-    width: 180px;
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -22,6 +17,44 @@ body {
     background-size: cover;
 }
 
+input {
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    height: 23px;
+    width: 260px;
+}
+
+#search_tips {
+    color: black;
+    width: 228px;
+    border: 1px #ccc solid;
+    background: white;
+    position: absolute;
+    top: 37px;
+    left: 122px;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+#search_tips ul li {
+    padding-top: 5px;
+}
+
+#search_tips ul li span {
+    font-family: 'Microsoft YaHei'
+}
+
+#search_tips div > span {
+    color: #666;
+}
+
+#search_tips .my_music ul li, .online_music ul li, .online_singer ul li, .online_sheet ul li {
+    padding: 3px 10px;
+}
+
 .foot img {
     background-size: cover;
     width: 100%;
@@ -32,6 +65,6 @@ body {
     box-sizing: border-box;
 }
 
-img:hover{
+img:hover {
     cursor: pointer;
 }
