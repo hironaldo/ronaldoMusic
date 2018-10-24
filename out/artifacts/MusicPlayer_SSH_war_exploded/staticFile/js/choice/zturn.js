@@ -1,4 +1,4 @@
- (function(win,doc,undefined){
+(function(win,doc,undefined){
  	var zturn=function(turn){
  		this.turn=turn
  		this.zturn=$("#"+turn.id)

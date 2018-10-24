@@ -93,14 +93,12 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             pageNo = pageCount;
         }
         List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
-        //System.out.println(list);
         if (null != list && 0 < list.size()) {
             session.put("singerList", list);
             session.put("pageCount", pageCount);
             session.put("pageNo", pageNo);
             session.put("dataCount", dataCount);
             session.put("pageData", list.size());
-            out.print(list);
             return Action.SUCCESS;
         } else {
             return Action.ERROR;
@@ -124,30 +122,10 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             session.put("pageNo", pageNo);
             session.put("dataCount", dataCount);
             session.put("pageData", list.size());
-
-            System.out.println(list.size());
-
             return Action.SUCCESS;
         } else {
             return Action.ERROR;
         }
     }
 
-
-    /*登陆*/
-    public String userLogin() throws Exception {
-        List userList = initSer.userLogin(user);
-//        System.out.println("验证码"+GetMsgCode.getCode(user.getPhone()));
-//        out.print(GetMsgCode.getCode(user.getPhone()));
-
-        if (0 < userList.size() && null != userList) {
-            session.put("userList", userList);
-            out.print("ok");
-            return null;
-        } else {
-            System.out.println(initSer.userLogin(user));
-            session.put("tips", "\uD83D\uDE05 登陆信息错误");
-            return Action.INPUT;
-        }
-    }
 }

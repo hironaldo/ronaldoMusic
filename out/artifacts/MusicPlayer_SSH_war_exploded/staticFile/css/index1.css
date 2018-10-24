@@ -43,8 +43,14 @@ input {
     padding-top: 5px;
 }
 
+#search_tips ul li:hover {
+    cursor: pointer;
+}
+
 #search_tips ul li span {
-    font-family: 'Microsoft YaHei'
+    /*font-family: 'Microsoft YaHei';*/
+    font-size: 12px;
+
 }
 
 #search_tips div > span {

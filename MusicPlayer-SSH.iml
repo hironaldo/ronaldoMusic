@@ -14,7 +14,6 @@
         <configuration>
           <fileset id="s2fileset" name="My Fileset " removed="false">
             <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-Init.xml</file>
-            <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-login.xml</file>
             <file>file://$MODULE_DIR$/src/configs/struts.xml</file>
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/blank/src/main/resources/example.xml</file>
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/apps/mailreader/src/main/java/mailreader-default.xml</file>
@@ -88,6 +87,7 @@
             <file>jar://C:/Code/Resources/struts-2.3.16.3-all.zip!/struts-2.3.16.3/src/core/src/test/resources/org/apache/struts2/views/jsp/WW3090-struts.xml</file>
             <file>jar://$MODULE_DIR$/web/WEB-INF/lib/struts2-core-2.3.16.3.jar!/struts-default.xml</file>
             <file>jar://$MODULE_DIR$/web/WEB-INF/lib/struts2-spring-plugin-2.3.16.3.jar!/struts-plugin.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-user.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>

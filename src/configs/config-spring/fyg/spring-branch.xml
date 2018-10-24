@@ -14,5 +14,13 @@
         <property name="initDao" ref="initDao"/>
     </bean>
 
+    <bean id="userDao" class="com.cheery.dao.user.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="userSer" class="com.cheery.service.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
 </beans>
 

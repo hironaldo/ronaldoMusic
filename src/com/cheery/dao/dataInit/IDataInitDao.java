@@ -34,6 +34,4 @@ public interface IDataInitDao {
 
     //查询歌手总数
     int querySingerRows();
-
-    List<UserEntity> userLogin(UserEntity user) throws Exception;   //登陆
 }

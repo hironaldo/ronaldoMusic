@@ -4,7 +4,7 @@
         "struts-2.3.dtd">
 
 <struts>
-    <package name="master" extends="struts-default">
+    <package name="init" extends="struts-default">
         <!-- 初始化 ‘官方精选’ 栏数据 -->
         <action name="init" class="InitAction" method="initData">
             <result name="success" type="redirect">Effect/choice.jsp</result>
@@ -21,10 +21,6 @@
         <action name="getSongSheet" class="InitAction" method="querySongSheet">
             <result name="success" type="redirect">Effect/songsheet.jsp</result>
             <result name="input" type="redirect">500.html</result>
-        </action>
-
-        <action name="login" class="InitAction" method="userLogin">
-            <result name="input" type="redirect">/login.jsp</result>
         </action>
     </package>
 </struts>

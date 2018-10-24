@@ -44,7 +44,4 @@ public class DataInitService {
         return initDao.queryAllMv();
     }
 
-    public List<UserEntity> userLogin(UserEntity user) throws Exception {
-        return initDao.userLogin(user);
-    }
 }

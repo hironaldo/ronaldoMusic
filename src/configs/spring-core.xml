@@ -80,4 +80,8 @@
         <property name="initSer" ref="initSer"/>
     </bean>
 
+    <bean id="UserAction" class="com.cheery.actions.UserAction" scope="prototype">
+        <property name="userSer" ref="userSer"/>
+    </bean>
+
 </beans>

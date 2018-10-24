@@ -59,7 +59,7 @@
                         <img src="staticFile/img/close.svg" style="width: 18px">
                     </li>
                 </ul>
-                <div id="search_tips" style="display: none;">
+                <div id="search_tips" style="display: none">
                     <div>
                         <div>
                             <span style="font-family: 'Microsoft YaHei';font-size: 12px">我的音乐</span>

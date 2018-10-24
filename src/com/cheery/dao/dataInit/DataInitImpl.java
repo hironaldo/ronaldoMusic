@@ -112,10 +112,4 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
         }
         return myResult;
     }
-
-    @Override
-    public List<UserEntity> userLogin(UserEntity user) throws Exception {
-        String hql = "from UserEntity as u inner join fetch u.playList where u.phone = ? and u.password = ?";
-        return this.getHibernateTemplate().find(hql, new Object[]{user.getPhone(), user.getPassword()});
-    }
 }

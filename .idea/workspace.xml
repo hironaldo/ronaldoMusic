@@ -7,46 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea54e9b-b40f-4064-8a5b-458b9e3aae05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/staticFile/css/singer/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/img/播放.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/ot1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/ot2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/ot3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/ot4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/ot5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/pl23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/pl24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/pl25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/pl26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/imgDT/songsheet/pl27.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13f98fcf-a65e-40f6-b947-8c158b477807.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13f98fcf-a65e-40f6-b947-8c158b477807.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cheery/actions/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/staticFile/css/songsheet/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MusicPlayer-SSH.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MusicPlayer-SSH.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/com/cheery/model/Detail.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/com/cheery/model/Detail.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/com/cheery/model/DetailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/com/cheery/model/DetailEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/configs/spring-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/configs/spring-core.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/choice/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/choice/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/img/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/index1.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/index1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/choice/zturn.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/choice/zturn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cheery/actions/InitAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/actions/InitAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cheery/model/Detail.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/model/Detail.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cheery/model/DetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/model/DetailEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/cheery/service/DataInitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cheery/service/DataInitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Effect/aaa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/aaa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/choice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/singer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/spring-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/spring-core.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/follow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/follow.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/songsheet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/model/Detail.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/model/Detail.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/model/DetailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/model/DetailEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/tags/mainLayout.tag" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/tags/mainLayout.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/configs/spring-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/configs/spring-core.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/css/choice/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/choice/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/img/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/index1.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/index1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/singer/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/singer/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/choice/zturn.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/choice/zturn.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -97,61 +82,62 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
-          <entry key="css" value="63" />
-          <entry key="dtd" value="12" />
+          <entry key="class" value="6" />
+          <entry key="css" value="68" />
+          <entry key="dtd" value="13" />
           <entry key="html" value="2" />
-          <entry key="java" value="362" />
+          <entry key="java" value="372" />
           <entry key="jpg" value="23" />
-          <entry key="js" value="18" />
-          <entry key="jsp" value="192" />
+          <entry key="js" value="22" />
+          <entry key="jsp" value="198" />
           <entry key="png" value="2" />
           <entry key="properties" value="11" />
           <entry key="svg" value="13" />
           <entry key="tag" value="2" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="233" />
+          <entry key="xml" value="238" />
+          <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="CSS" value="63" />
-          <entry key="DTD" value="12" />
+          <entry key="CLASS" value="6" />
+          <entry key="CSS" value="68" />
+          <entry key="DTD" value="13" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="25" />
-          <entry key="JAVA" value="362" />
-          <entry key="JSP" value="194" />
-          <entry key="JavaScript" value="18" />
+          <entry key="JAVA" value="372" />
+          <entry key="JSP" value="200" />
+          <entry key="JavaScript" value="22" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="11" />
           <entry key="SVG" value="13" />
-          <entry key="XML" value="233" />
+          <entry key="XML" value="239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="646" />
-          <entry key="dummy" value="7" />
-          <entry key="java" value="3847" />
-          <entry key="js" value="433" />
-          <entry key="jsp" value="9426" />
+          <entry key="css" value="689" />
+          <entry key="dummy" value="8" />
+          <entry key="java" value="3878" />
+          <entry key="js" value="438" />
+          <entry key="jsp" value="9455" />
           <entry key="properties" value="15" />
           <entry key="tag" value="5" />
-          <entry key="txt" value="37" />
-          <entry key="xml" value="722" />
+          <entry key="txt" value="38" />
+          <entry key="xml" value="765" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="646" />
+          <entry key="CSS" value="689" />
           <entry key="Hibernate QL" value="3" />
-          <entry key="JAVA" value="3844" />
-          <entry key="JSP" value="9431" />
-          <entry key="JavaScript" value="433" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="JAVA" value="3875" />
+          <entry key="JSP" value="9460" />
+          <entry key="JavaScript" value="438" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="15" />
-          <entry key="XML" value="722" />
+          <entry key="XML" value="765" />
         </counts>
       </usages-collector>
     </session>
@@ -162,55 +148,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
+        <entry file="file://$PROJECT_DIR$/web/Effect/follow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="81" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java">
+        <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="19">
+              <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cheery/model/CommentEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
+        <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Comment.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="142" column="41" selection-start-line="142" selection-start-column="41" selection-end-line="142" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/img/播放.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
+            <state relative-caret-position="340">
+              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -223,8 +191,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="struts_2_3" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -271,8 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/cheery/dao/dataInitDao/IDataInitDao.java" />
-        <option value="$PROJECT_DIR$/src/com/cheery/dao/dataInitDao/DataInitImpl.java" />
         <option value="$PROJECT_DIR$/web/Effect/collect-songlist.jsp" />
         <option value="$PROJECT_DIR$/web/Effect/follow-singer.jsp" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/singer/ISingerDao.java" />
@@ -282,7 +248,6 @@
         <option value="$PROJECT_DIR$/src/com/cheery/service/SingerService.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/actions/SingerAction.java" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/struts-singer.xml" />
-        <option value="$PROJECT_DIR$/web/Effect/follow.jsp" />
         <option value="$PROJECT_DIR$/web/Effect/songlist.jsp" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/struts-Init.xml" />
         <option value="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-service.xml" />
@@ -294,34 +259,37 @@
         <option value="$PROJECT_DIR$/src/com/cheery/dao/user/IUserDao.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/user/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/cheery/actions/UserAction.java" />
-        <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml" />
-        <option value="$PROJECT_DIR$/src/configs/spring-core.xml" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-login.xml" />
         <option value="$PROJECT_DIR$/web/staticFile/css/audio.css" />
         <option value="$PROJECT_DIR$/web/staticFile/css/index.css" />
         <option value="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/css/login.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/index1.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/index.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tags/mainLayout.tag" />
         <option value="$PROJECT_DIR$/web/Effect/aaa.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/choice/style.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/singer/style.css" />
         <option value="$PROJECT_DIR$/web/Effect/singer.jsp" />
         <option value="$PROJECT_DIR$/web/Effect/choice.jsp" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/DetailEntity.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/Detail.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml" />
+        <option value="$PROJECT_DIR$/src/configs/spring-core.xml" />
+        <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml" />
+        <option value="$PROJECT_DIR$/src/com/cheery/actions/UserAction.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/service/DataInitService.java" />
-        <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml" />
+        <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml" />
         <option value="$PROJECT_DIR$/src/com/cheery/actions/InitAction.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/index1.css" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/choice/zturn.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/singer/style.css" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/choice/style.css" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/songsheet/style.css" />
         <option value="$PROJECT_DIR$/web/Effect/songsheet.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/follow.jsp" />
       </list>
     </option>
   </component>
@@ -342,8 +310,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="23" />
+    <option name="x" value="53" />
+    <option name="y" value="61" />
     <option name="width" value="1833" />
     <option name="height" value="1032" />
   </component>
@@ -480,14 +448,6 @@
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-              <item name="config-struts" type="462c0819:PsiDirectoryNode" />
-              <item name="fyg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -515,6 +475,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="choice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="singer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -522,20 +490,23 @@
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="songsheet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="imgDT" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="choice" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -548,7 +519,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace/IDEA/zOther_task/MusicPlayer-SSH/src/com/cheery/dao/DataInitDao/DataInitImpl.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540384388548" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540388056266" />
     <property name="last_opened_file_path" value="E:/crawl/spring-boot" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15118577" />
@@ -569,11 +540,11 @@
       <recent name="com.cheery.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css\songsheet" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-struts\fyg" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\img" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-struts\fyg" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-spring\xxy" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-spring\ljw" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -856,7 +827,7 @@
       <workItem from="1540205477707" duration="4986000" />
       <workItem from="1540254113874" duration="19738000" />
       <workItem from="1540368844057" duration="9083000" />
-      <workItem from="1540381645651" duration="2598000" />
+      <workItem from="1540381645651" duration="6007000" />
     </task>
     <task id="LOCAL-00001" summary="update some details By CR7 -10.13">
       <created>1539436482997</created>
@@ -907,11 +878,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540207976175</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update some details By CR7 -10-24-01">
+      <created>1540384564255</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540384564255</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266841000" />
+    <option name="totallyTimeSpent" value="270250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -923,12 +901,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="190" y="36" width="1833" height="1032" extended-state="0" />
-    <editor active="true" />
+    <frame x="53" y="61" width="1833" height="1032" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49367088" visible="true" weight="0.17089678" />
       <window_info id="Structure" order="1" sideWeight="0.50630915" side_tool="true" weight="0.1705121" />
-      <window_info active="true" id="Persistence" order="2" sideWeight="0.5063291" side_tool="true" visible="true" weight="0.17089678" />
+      <window_info id="Persistence" order="2" sideWeight="0.5063291" side_tool="true" weight="0.17089678" />
       <window_info id="Designer" order="3" />
       <window_info id="JRebel" order="4" sideWeight="0.5063291" side_tool="true" weight="0.1705121" />
       <window_info id="Image Layers" order="5" />
@@ -938,7 +915,7 @@
       <window_info id="Web" order="9" sideWeight="0.50630915" side_tool="true" weight="0.1705121" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32844242" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969049" weight="0.2963374" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4969049" visible="true" weight="0.2954292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993135" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -950,9 +927,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32908458" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32915717" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32915717" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.49296567" visible="true" weight="0.2954292" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.49296567" weight="0.2954292" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5070343" side_tool="true" weight="0.2954292" />
-      <window_info anchor="bottom" id="Messages" order="16" weight="0.32519424" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32441473" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.32963374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -980,84 +957,10 @@
     <MESSAGE value="update some details By CR7 -10-19-01" />
     <MESSAGE value="update some details By CR7 -10-22" />
     <MESSAGE value="update some details By CR7 -10-22-01" />
-    <option name="LAST_COMMIT_MESSAGE" value="update some details By CR7 -10-22-01" />
+    <MESSAGE value="update some details By CR7 -10-24-01" />
+    <option name="LAST_COMMIT_MESSAGE" value="update some details By CR7 -10-24-01" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/user/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/test/Test.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/configs/config-struts/fyg/struts-2.3.dtd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/configs/config-struts/fyg/struts-user.xml" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/configs/config-struts/fyg/struts-Init.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/actions/UserAction.class" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/com/cheery/actions/InitAction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-574">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/comment/CommentDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/comment/ICommentDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/playlist/PlaylistDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/playlist/IPlaylistDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/follow/FollowDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml" />
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/song/ISongDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-login.xml" />
     <entry file="file://$PROJECT_DIR$/src/configs/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1066,20 +969,6 @@
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/configs/spring-core.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/audio.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="204" column="17" lean-forward="true" selection-start-line="204" selection-start-column="17" selection-end-line="204" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/css/index.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1112,20 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/index1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/css/play.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1147,20 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cheery/model/DetailEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1175,51 +1036,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/DataInitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/actions/InitAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="127" column="44" selection-start-line="127" selection-start-column="44" selection-end-line="127" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/choice/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="6" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="195" column="30" lean-forward="true" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1238,38 +1058,230 @@
     <entry file="file://$PROJECT_DIR$/web/staticFile/img/m1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/img/播放.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/user/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/user/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-3.2.2.RELEASE.jar!/org/springframework/orm/hibernate3/support/HibernateDaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/spring-core.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-3.2.2.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans-3.1.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="523" column="4" selection-start-line="523" selection-start-column="4" selection-end-line="523" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-2.3.dtd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/actions/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/DataInitService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="133">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-end-line="8" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/img/播放.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/actions/InitAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="454">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/index1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="71" column="76" lean-forward="true" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/audio.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/player.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/zturn.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/audio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/choice/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/songsheet/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="81" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="54" selection-start-line="10" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="142" column="41" selection-start-line="142" selection-start-column="41" selection-end-line="142" selection-end-column="41" />
+        <state relative-caret-position="95">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/follow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/CommentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Comment.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1327,7 +1339,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate|MusicPlayer-SSH</last-edited>
+          <last-edited>Struts 2|Web|MusicPlayer-SSH</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
