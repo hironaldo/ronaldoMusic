@@ -35,6 +35,9 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
     private int listSize; //数组长度
     @Getter
     @Setter
+    private String deType;
+    @Getter
+    @Setter
     private String siType;
     @Getter
     @Setter
@@ -63,7 +66,7 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
     HttpServletResponse response = ServletActionContext.getResponse();
     PrintWriter out = response.getWriter();
 
-    /*初始化首页数据*/
+    /*初始化 官方精选*/
     public String initData() throws Exception {
         List<PlaylistEntity> playlist = initSer.queryTopPlaylist(); //歌单
         List<SongEntity> songlist = initSer.queryAllSong(); //歌曲
@@ -80,9 +83,9 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
         }
     }
 
-    /*初始化首页数据*/
+    /*初始化 全部歌手*/
     public String querySinger() throws Exception {
-        dataCount = initSer.queryRows();
+        dataCount = initSer.querySingerRows();
         pageCount = dataCount % pageSize == 0 ? dataCount / pageSize : dataCount / pageSize + 1;
         if (pageNo <= 0) {
             pageNo = 1;
@@ -91,7 +94,7 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
         }
         List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
         //System.out.println(list);
-        if (null != list) {
+        if (null != list && 0 < list.size()) {
             session.put("singerList", list);
             session.put("pageCount", pageCount);
             session.put("pageNo", pageNo);
@@ -103,6 +106,33 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             return Action.ERROR;
         }
     }
+
+    /*初始化 分类歌单*/
+    public String querySongSheet() throws Exception {
+        dataCount = initSer.querySheetRows();
+        System.out.println(dataCount);
+        pageCount = dataCount % pageSize == 0 ? dataCount / pageSize : dataCount / pageSize + 1;
+        if (pageNo <= 0) {
+            pageNo = 1;
+        } else if (pageNo >= pageCount) {
+            pageNo = pageCount;
+        }
+        List<PlaylistEntity> list = initSer.queryAllPlaylist(deType, pageNo, pageSize);
+        if (null != list && 0 < list.size()) {
+            session.put("playlist", list);
+            session.put("pageCount", pageCount);
+            session.put("pageNo", pageNo);
+            session.put("dataCount", dataCount);
+            session.put("pageData", list.size());
+
+            System.out.println(list.size());
+
+            return Action.SUCCESS;
+        } else {
+            return Action.ERROR;
+        }
+    }
+
 
     /*登陆*/
     public String userLogin() throws Exception {

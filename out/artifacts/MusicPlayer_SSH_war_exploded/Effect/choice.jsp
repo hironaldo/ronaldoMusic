@@ -1,4 +1,3 @@
-<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -13,48 +12,21 @@
 </head>
 <body>
 
-
 <div>
-
     <!-- 轮播 -->
-    <div class="lb_gl" style="padding-top: 10px">
-        <div class="container">
-            <div class="pictureSlider poster-main">
-                <div class="poster-btn poster-prev-btn"></div>
-                <ul id="zturn" class="poster-list">
+    <div class="container" style="padding-top: 10px">
+        <div class="pictureSlider poster-main">
+            <ul id="zturn" class="poster-list">
+                <c:forEach var="songsheet" items="${playlist}" begin="22" end="27">
                     <li class="poster-item  zturn-item">
                         <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common//upload/t_musicmall_focus/353949.jpg?max_age=2592000"
+                            <img src="../staticFile/imgDT/songsheet/${songsheet.detail.otPic}"
                                  width="100%">
                         </div>
-                    </li>
-                    <li class="poster-item  zturn-item">
-                        <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/370388.jpg?max_age=2592000"
-                                 width="100%">
-                        </div>
-                    </li>
 
-                    <li class="poster-item  zturn-item">
-                        <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/414424.jpg?max_age=2592000"
-                                 width="100%">
-                        </div>
                     </li>
-                    <li class="poster-item  zturn-item">
-                        <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/368061.jpg?max_age=2592000"
-                                 width="100%">
-                        </div>
-                    </li>
-                    <li class="poster-item  zturn-item">
-                        <div class="for_btn">
-                            <img src="http://y.gtimg.cn/music/common//upload/t_musicmall_focus/367537.jpg?max_age=2592000"
-                                 width="100%">
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                </c:forEach>
+            </ul>
         </div>
     </div>
     <!-- 轮播 -->
@@ -72,7 +44,7 @@
                         <div>
                             <div class="box_img">
                                 <a class="songlist__link mod_cover">
-                                    <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}.jpg"
+                                    <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}"
                                          class="songlist__pic">
                                     <i class="mod_cover__mask"></i>
                                     <i class="mod_cover__icon_play"></i>
@@ -81,7 +53,6 @@
                             <div>
                                 <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
                                 <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
                             </div>
                         </div>
                     </td>
@@ -94,7 +65,7 @@
                             <div class="box_img">
                                 <a class="songlist__link mod_cover">
                                     <img class="songlist__pic"
-                                         src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}.jpg">
+                                         src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}">
                                     <i class="mod_cover__mask"></i>
                                     <i class="mod_cover__icon_play"></i>
                                 </a>
@@ -125,7 +96,7 @@
                         <div>
                             <div class="box_img">
                                 <img class="songlist__pic"
-                                     src="../staticFile/imgDT/singer/${singer.siPic}.jpg" style="width: 170px">
+                                     src="../staticFile/imgDT/singer/${singer.siPic}" style="width: 170px">
                             </div>
                             <div>
                                 <div><span style="font-size: 14px">${singer.siName}</span></div>
@@ -152,12 +123,14 @@
                         <li class="songlist__item">
                             <div class="songlist__item_box">
                                 <a class="album_name songlist__link mod_cover" style="padding-right: 10px">
-                                    <img src="../staticFile/imgDT/song/${song.soPic}.jpg" width="90">
+                                    <img src="../staticFile/imgDT/song/${song.soPic}" width="90">
                                     <i class="mod_cover__icon_play"></i>
                                 </a>
                                 <div>
                                     <h3 class="songlist__song">${song.soName}</h3>
-                                    <p class="songlist__author">${song.singer.siName}</p>
+                                    <p class="songlist__author" style="font-size: 10px;color: #666;">
+                                            ${song.singer.siName}
+                                    </p>
                                 </div>
                                 <div class="songlist__time" style="font-size: 12px;color: #999;">${song.soTime}</div>
                             </div>
@@ -304,7 +277,7 @@
                             <div class="box_img">
                                 <a class="songlist__link mod_cover">
                                     <img class="songlist__pic"
-                                         src="../staticFile/imgDT/mv/${mv.mvPic}.jpg">
+                                         src="../staticFile/imgDT/mv/${mv.mvPic}">
                                     <i class="mod_cover__mask"></i>
                                     <i class="mod_cover__icon_play"></i>
                                 </a>
@@ -322,7 +295,7 @@
                             <div class="box_img">
                                 <a class="songlist__link mod_cover">
                                     <img class="songlist__pic"
-                                         src="../staticFile/imgDT/mv/${mv_t.mvPic}.jpg">
+                                         src="../staticFile/imgDT/mv/${mv_t.mvPic}">
                                     <i class="mod_cover__mask"></i>
                                     <i class="mod_cover__icon_play"></i>
                                 </a>

@@ -21,6 +21,8 @@ public class DetailEntity implements Serializable {
     private String deName;
     private String time;
     private String dePic;
+    private String otPic;
+    private String deType;
     private String label;
     private String explain;
     /**

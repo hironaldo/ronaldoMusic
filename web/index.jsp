@@ -196,14 +196,10 @@
                         </div>
                         <div class="list">
                             <ul id="ul1">
-                                <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
+                                <li class="act" url="init"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
                                 <li url="getSinger"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
-                                <li url="Effect/collect-songlist.jsp"><i class="layui-icon layui-icon-template"></i>
-                                    <a href="Effect/aaa.jsp">
-                                        分类歌单
-                                    </a>
-                                </li>
+                                <li url="getSongSheet"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>
                     </div>
@@ -273,20 +269,6 @@
 <script type="text/javascript" src="staticFile/js/audio.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/player.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/index.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.pjax.js" charset="utf-8"></script>
-
-<script>
-    $(function () {
-        var pjaxContainer = '#main-wrap',
-            pjaxTimeout = 30000;
-        $(document).pjax('a', pjaxContainer, {
-            fragment: pjaxContainer,
-            timeout: pjaxTimeout
-        });
-    })
-
-
-</script>
 
 </body>
 

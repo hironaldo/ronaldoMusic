@@ -9,9 +9,7 @@
 <html lang="zh-CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>${ title}</title>
-    <link rel="stylesheet" type="text/css" href="${ rootpath}/res/css/cloud.css"/>
-    <script type="text/javascript" src="${ rootpath}/res/js/cloud.js"></script>
+    <title>${title}</title>
 </head>
 
 <body>

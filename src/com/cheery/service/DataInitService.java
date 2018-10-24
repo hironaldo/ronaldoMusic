@@ -2,6 +2,7 @@ package com.cheery.service;
 
 import com.cheery.dao.dataInit.IDataInitDao;
 import com.cheery.model.*;
+
 import java.util.List;
 
 public class DataInitService {
@@ -13,6 +14,14 @@ public class DataInitService {
 
     public List<PlaylistEntity> queryTopPlaylist() throws Exception {
         return initDao.queryTopPlaylist();
+    }
+
+    public List<PlaylistEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception {
+        return initDao.queryAllPlaylist(deType, pageNo, pageSize);
+    }
+
+    public int querySheetRows() {
+        return initDao.querySheetRows();
     }
 
     public List<SongEntity> queryAllSong() throws Exception {
@@ -27,8 +36,8 @@ public class DataInitService {
         return initDao.queryAllSinger(siType, region, style, pageNo, pageSize);
     }
 
-    public int queryRows() {
-        return initDao.queryRows();
+    public int querySingerRows() {
+        return initDao.querySingerRows();
     }
 
     public List<MvEntity> queryAllMv() throws Exception {

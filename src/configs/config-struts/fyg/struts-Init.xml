@@ -17,6 +17,12 @@
             <result name="input" type="redirect">500.html</result>
         </action>
 
+        <!-- 初始化 ‘分类歌单’ 栏数据 -->
+        <action name="getSongSheet" class="InitAction" method="querySongSheet">
+            <result name="success" type="redirect">Effect/songsheet.jsp</result>
+            <result name="input" type="redirect">500.html</result>
+        </action>
+
         <action name="login" class="InitAction" method="userLogin">
             <result name="input" type="redirect">/login.jsp</result>
         </action>

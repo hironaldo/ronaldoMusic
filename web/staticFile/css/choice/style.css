@@ -56,26 +56,25 @@ img:hover {
     padding-top: 10px;
 }
 
-
 .song_sheet table tr td > div img {
     width: 170px;
 }
 
-.box_img{
+.box_img {
     overflow: hidden;
     padding-bottom: 10px;
 }
 
-.box_img img{
+.box_img img {
     transition: all 0.6s;
 }
 
-.box_img img:hover{
+.box_img img:hover {
     transform: scale(1.1);
     opacity: 0.9;
 }
 
-.mv{
+.mv {
     padding-top: 30px;
     padding-left: 25px;
 }
@@ -92,7 +91,6 @@ img:hover {
     padding-left: 23px;
     padding-top: 20px;
 }
-
 
 .special {
     padding-top: 30px;
@@ -111,7 +109,6 @@ img:hover {
     padding-left: 30px;
     padding-top: 20px;
 }
-
 
 .singer {
     padding-top: 20px;

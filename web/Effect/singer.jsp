@@ -5,131 +5,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>歌手音乐歌单页面</title>
+    <title>全部歌手</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <style>
-
-        * {
-            margin: 0px;
-            padding: 0px;
-            /*font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;*/
-        }
-
-        body {
-            overflow-x: hidden;
-            overflow-y: auto;
-            height: 100%;
-            background-color: #F1F1F1;
-        }
-
-        body::-webkit-scrollbar {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #D4D4D4;
-            width: 8px;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        body::-webkit-scrollbar-track {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #f5f5f7;
-        }
-
-        .nav {
-            display: inline;
-            white-space: nowrap;
-        }
-
-        .nav li {
-            display: inline-block;
-            padding-left: 25px
-        }
-
-        .nav span {
-            color: #31C27C;
-        }
-
-        #song div {
-            padding-top: 8px
-        }
-
-        #paging ul {
-            display: inline;
-        }
-
-        #paging ul li {
-            display: inline-block;
-        }
-
-        table {
-            margin: 0 auto;
-        }
-
-        table tr td {
-            padding: 20px;
-        }
-
-        table tr td > div {
-            background: #F0F0F0;
-            padding-left: 25px;
-            padding-right: 25px;
-            padding-bottom: 15px;
-            box-shadow: 4px 9px 15px #88887A;
-        }
-
-        table tr td > div img {
-            width: 100px;
-            border-radius: 50%
-        }
-
-        .downnav {
-            display: inline;
-            white-space: nowrap;
-        }
-
-        .downnav li {
-            display: inline-block;
-            padding-left: 85px
-        }
-
-        .hot {
-            display: block;
-            position: absolute;
-            top: 205px;
-            left: 175px;
-            background-position: -190px 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../staticFile/css/singer/style.css" media="all">
 </head>
 <body>
-
-<%--<c:forEach var="singer" items="${singerList}">--%>
-<%--${singer.siName}--%>
-<%--</c:forEach>--%>
-
-<%--${pageCount}--%>
-
-<%--${pageNo}--%>
-
-<%--${dataCount}--%>
-
-<%--${pageData}--%>
-
-<div id="aaa">
-
-</div>
-
-<button id="bbbb">111</button>
-
 
 <div class="layui-tab layui-tab-brief">
     <div class="layui-tab-content" style="height: 100%;">
@@ -196,40 +76,40 @@
             <div>
                 <table>
                     <tr>
-                        <%--<c:forEach var="singer" items="${singerList}" begin="0" end="4">--%>
-                        <%--<td>--%>
-                        <%--<div>--%>
-                        <%--<div>--%>
-                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
-                        <%--</div>--%>
-                        <%--<div style="text-align: center">${singer.siName}</div>--%>
-                        <%--</div>--%>
-                        <%--</td>--%>
-                        <%--</c:forEach>--%>
+                        <c:forEach var="singer" items="${singerList}" begin="0" end="4">
+                            <td>
+                                <div>
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
+                                </div>
+                            </td>
+                        </c:forEach>
                     </tr>
                     <tr>
-                        <%--<c:forEach var="singer" items="${singerList}" begin="5" end="9">--%>
-                        <%--<td>--%>
-                        <%--<div>--%>
-                        <%--<div>--%>
-                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
-                        <%--</div>--%>
-                        <%--<div style="text-align: center">${singer.siName}</div>--%>
-                        <%--</div>--%>
-                        <%--</td>--%>
-                        <%--</c:forEach>--%>
+                        <c:forEach var="singer" items="${singerList}" begin="5" end="9">
+                            <td>
+                                <div>
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
+                                </div>
+                            </td>
+                        </c:forEach>
                     </tr>
                     <tr>
-                        <%--<c:forEach var="singer" items="${singerList}" begin="10" end="14">--%>
-                        <%--<td>--%>
-                        <%--<div>--%>
-                        <%--<div>--%>
-                        <%--<img src="../staticFile/imgDT/singer/${singer.siPic}.jpg">--%>
-                        <%--</div>--%>
-                        <%--<div style="text-align: center">${singer.siName}</div>--%>
-                        <%--</div>--%>
-                        <%--</td>--%>
-                        <%--</c:forEach>--%>
+                        <c:forEach var="singer" items="${singerList}" begin="10" end="14">
+                            <td>
+                                <div>
+                                    <div>
+                                        <img src="../staticFile/imgDT/singer/${singer.siPic}">
+                                    </div>
+                                    <div style="text-align: center">${singer.siName}</div>
+                                </div>
+                            </td>
+                        </c:forEach>
                     </tr>
                 </table>
             </div>
@@ -257,7 +137,6 @@
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script>
     $(function () {
-
         $("#bbbb").click(function () {
             $.ajax({
                 type: 'post',

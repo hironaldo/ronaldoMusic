@@ -19,6 +19,39 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
     }
 
     @Override
+    public List<PlaylistEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception {
+        String hql = "from PlaylistEntity p inner join fetch p.detail d inner join fetch p.user u where 1=1 ";
+        if (null != deType) {
+            hql += " and d.deType '%" + deType + "'%";
+        }
+        hql += " GROUP BY d.deId ORDER BY d.deId desc";
+        final String HQL = hql;
+        final Integer PAGENO = pageNo;
+        final Integer PAGESIZE = pageSize;
+        List sheetList = this.getHibernateTemplate().executeFind(new HibernateCallback<Object>() {
+            @Override
+            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+                Query qy = session.createQuery(HQL);
+                qy.setFirstResult((PAGENO - 1) * PAGESIZE);
+                qy.setMaxResults(PAGESIZE);
+                return qy.list();
+            }
+        });
+        return sheetList;
+    }
+
+    @Override
+    public int querySheetRows() {
+        int myResult = 0;
+        String hql = "select count(*) from DetailEntity d where 1=1";
+        List result = this.getHibernateTemplate().find(hql);
+        if (result != null && result.size() > 0) {
+            myResult = Integer.parseInt(result.get(0) + "");
+        }
+        return myResult;
+    }
+
+    @Override
     public List<SongEntity> queryAllSong() throws Exception {
         String hql = "from SongEntity so inner join fetch so.singer ORDER BY so.soId";
         return this.getHibernateTemplate().find(hql);
@@ -54,7 +87,7 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
         } else if (null != style) {
             hql += " and s.style like '%" + style + "%'";
         }
-        final java.lang.String HQL = hql;
+        final String HQL = hql;
         final Integer PAGENO = pageNo;
         final Integer PAGESIZE = pageSize;
         List singerList = this.getHibernateTemplate().executeFind(new HibernateCallback<Object>() {
@@ -70,7 +103,7 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
     }
 
     @Override
-    public int queryRows() {
+    public int querySingerRows() {
         int myResult = 0;
         String hql = "select count(*) from SingerEntity s where 1=1";
         List result = this.getHibernateTemplate().find(hql);

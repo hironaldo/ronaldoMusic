@@ -21,6 +21,12 @@
         <property name="dePic" type="java.lang.String">
             <column name="dePic"></column>
         </property>
+        <property name="deType" type="java.lang.String">
+            <column name="detype"></column>
+        </property>
+        <property name="otPic" type="java.lang.String">
+            <column name="otPic"></column>
+        </property>
         <property name="label" type="java.lang.String">
             <column name="label"></column>
         </property>
