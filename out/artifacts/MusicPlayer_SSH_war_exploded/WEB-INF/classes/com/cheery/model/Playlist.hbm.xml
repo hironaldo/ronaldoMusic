@@ -13,7 +13,7 @@
             <generator class="native"></generator>
         </id>
         <!-- 多对一 -->
-        <many-to-one name="user" column="userId" class="UserEntity" unique="true"></many-to-one>
+        <many-to-one name="user" column="userId" class="UserEntity" unique="true" not-found="ignore"></many-to-one>
         <!-- 多对多 -->
         <many-to-one name="song" column="soId" class="SongEntity"></many-to-one>
         <many-to-one name="detail" column="deId" class="DetailEntity"></many-to-one>

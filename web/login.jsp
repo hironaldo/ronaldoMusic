@@ -22,13 +22,28 @@
                         <input name="password" type="password" placeholder="输入密码" style="width: 100%;" id="pwd"
                                autocomplete="off" maxlength="16">
                     </div>
-                    <div class="form-row" id="code_box">
-                        <input name="checkcode" type="text" placeholder="验证码" style="width: 100%;" autocomplete="off"
-                               maxlength="4">
-                        <button id="getcode">获取</button>
+                    <%--<div class="form-row" id="code_box">--%>
+                    <%--<input name="checkcode" type="text" placeholder="验证码" style="width: 100%;" autocomplete="off"--%>
+                    <%--maxlength="4">--%>
+                    <%--<button id="getcode">获取</button>--%>
+                    <%--</div>--%>
+                    <div data-v-7997c758="" class="form-row"><label data-v-7997c758="" for="remember"
+                                                                    style="font-size: 12px; color: rgb(104, 104, 104);"><input
+                            data-v-7997c758="" type="checkbox" id="remember"
+                            style="width: 12px; height: 12px; vertical-align: middle;">
+                        记住我
+                    </label><span data-v-7997c758=""
+                                  style="float: right; font-size: 12px; color: rgb(104, 104, 104); cursor: pointer;">忘记密码</span>
                     </div>
                     <div class="form-row">
                         <button id="login_btn" style="width: 100%; height: 34px;">Go</button>
+                    </div>
+                    <div>
+                        <div style="margin-top: 10px; text-align: center;"><span
+                                style="display: inline-block; width: 40px; height: 1px; background: rgb(224, 224, 224); vertical-align: middle;"></span><span
+                                style="margin: 0px 12px; font-size: 12px; color: rgb(180, 180, 180);">Call Me CR7</span><span
+                                style="display: inline-block; width: 40px; height: 1px; background: rgb(224, 224, 224); vertical-align: middle;"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,7 +77,10 @@
                 $.ajax({
                     type: 'post', url: 'login', data: $('#login_form').serialize(), async: false, cache: true,
                     success: function (result) {
-                        if (result == "ok") parent.layer.close(parent.layer.getFrameIndex(window.name));
+                        if (result == "ok") {
+                            window.parent.location.href = "index.jsp";
+                            parent.layer.close(parent.layer.getFrameIndex(window.name));
+                        }
                     }
                 });
                 flag = true;

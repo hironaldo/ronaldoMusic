@@ -45,6 +45,9 @@
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/struts2-spring-plugin-2.3.16.3.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/junit-4.10.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-test-3.2.2.RELEASE.jar" />
+          <element id="library" level="project" name="Tomcat" />
         </element>
       </element>
     </root>

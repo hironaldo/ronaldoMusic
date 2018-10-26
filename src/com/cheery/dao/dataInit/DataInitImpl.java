@@ -18,6 +18,29 @@ public class DataInitImpl extends HibernateDaoSupport implements IDataInitDao {
         return this.getHibernateTemplate().find(hql);
     }
 
+//    @Override
+//    public List<DetailEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception {
+//        String hql = "from DetailEntity as d where 1=1 ";
+//
+//        if (null != deType) {
+//            hql += " and d.deType like '%" + deType + "%'";
+//        }
+//        hql += " GROUP BY d.deId ORDER BY d.deId desc";
+//        final String HQL = hql;
+//        final Integer PAGENO = pageNo;
+//        final Integer PAGESIZE = pageSize;
+//        List sheetList = this.getHibernateTemplate().executeFind(new HibernateCallback<Object>() {
+//            @Override
+//            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+//                Query qy = session.createQuery(HQL);
+//                qy.setFirstResult((PAGENO - 1) * PAGESIZE);
+//                qy.setMaxResults(PAGESIZE);
+//                return qy.list();
+//            }
+//        });
+//        return sheetList;
+//    }
+
     @Override
     public List<PlaylistEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception {
         String hql = "from PlaylistEntity p inner join fetch p.detail d inner join fetch p.user u where 1=1 ";

@@ -1,5 +1,6 @@
 package com.cheery.actions;
 
+import com.alibaba.fastjson.JSON;
 import com.cheery.model.UserEntity;
 import com.cheery.service.UserService;
 import com.opensymphony.xwork2.*;
@@ -37,11 +38,10 @@ public class UserAction extends ActionSupport implements ModelDriven<UserEntity>
 
     /*登陆*/
     public String userLogin() throws Exception {
-        List userList = userSer.userLogin(user);
-//        System.out.println("验证码"+GetMsgCode.getCode(user.getPhone()));
-//        out.print(GetMsgCode.getCode(user.getPhone()));
-        if (0 < userList.size() && null != userList) {
-            session.put("userList", userList);
+        List list = userSer.userLogin(user);
+        if (0 < list.size() && null != list) {
+            session.put("userList", list);
+            System.out.println(JSON.toJSONString(list));
             out.print("ok");
             return null;
         } else {

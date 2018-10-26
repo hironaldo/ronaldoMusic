@@ -1,6 +1,8 @@
+@media (max-width: 631px) {
 
-.block[data-v-241f359c] {
-    margin: 0 auto
+    .block[data-v-241f359c] {
+        margin: 0 auto
+    }
 }
 
 @media (max-width: 631px) {
@@ -2194,7 +2196,6 @@
     font-size: 18px;
     font-weight: 400;
     color: #333;
-    background-image: url("/public/img/pioneer/bg_title.png");
     background-size: auto 20px
 }
 
@@ -2671,7 +2672,7 @@ button:hover {
 }
 
 /*button:active {*/
-    /*background: #f2c212*/
+/*background: #f2c212*/
 /*}*/
 
 button:disabled {
@@ -2729,8 +2730,6 @@ button.btn-secondary {
 
 @font-face {
     font-family: iconfont;
-    src: url("/public/icon/iconfont.eot?t=1497596102925");
-    src: url("/public/icon/iconfont.eot?t=1497596102925#iefix") format("embedded-opentype"), url("/public/icon/iconfont.woff?t=1497596102925") format("woff"), url("/public/icon/iconfont.ttf?t=1497596102925") format("truetype"), url("/public/icon/iconfont.svg?t=1497596102925#iconfont") format("svg")
 }
 
 .iconfont {
@@ -2967,7 +2966,7 @@ button.btn-secondary {
 
 @media (max-width: 631px) {
     .form-row {
-        margin-top: 17px
+        margin-top: 23px
     }
 }
 
@@ -4108,21 +4107,6 @@ button.btn-secondary {
     color: #686868
 }
 
-.btn-share .icon-shadow[data-v-d5bffaf0] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url("/public/img/header/icon_share_hover_bg.svg");
-    background-repeat: no-repeat;
-    background-size: auto 22px;
-    background-position: 50%;
-    opacity: 0;
-    transition: opacity .3s ease-out
-}
-
 .btn-share:hover .icon-shadow[data-v-d5bffaf0] {
     opacity: 1
 }
@@ -4191,7 +4175,6 @@ button.btn-secondary {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("/public/img/header/icon_lang_hover_bg.svg");
     background-repeat: no-repeat;
     background-size: auto 22px;
     background-position: 50%;
@@ -4240,7 +4223,6 @@ button.btn-secondary {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("/public/img/header/icon_user_hover_bg.svg");
     background-repeat: no-repeat;
     background-size: auto 22px;
     background-position: 50%;
@@ -4462,15 +4444,7 @@ a[data-v-73ed9e96]:hover {
     font-size: 18px;
     font-weight: 700;
     color: #3d3d3d;
-    text-align: center
-}
-
-.popout-title.zh[data-v-7997c758] {
-    letter-spacing: 1px
-}
-
-.popout-title.en[data-v-7997c758] {
-    letter-spacing: .8px
+    text-align: center;
 }
 
 /*# sourceMappingURL=styles.3b558f6de78616c1120a.css.map*/

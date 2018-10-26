@@ -18,6 +18,7 @@ ul li {
     color: #000;
     position: absolute;
     top: 770px;
+    border-radius: 2px;
 }
 
 .audio-container {

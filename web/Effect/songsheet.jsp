@@ -3,7 +3,8 @@
 <html>
 <head>
     <title>分类歌单</title>
-    <link rel="stylesheet" href="../staticFile/css/songsheet/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/songsheet/style.css" media="all">
 </head>
 <body>
 
@@ -84,5 +85,18 @@
         </table>
     </div>
 </div>
+
+<div id="a">
+
+</div>
+
+<button id="btn">111</button>
+
+
+<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+
+
+
 </body>
 </html>

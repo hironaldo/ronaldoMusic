@@ -1,4 +1,4 @@
-@charset "utf-8";
+.left_list .tj .list .act@charset "utf-8";
 
 * {
     margin: 0;
@@ -61,7 +61,7 @@ body {
 }
 
 .p_body .left_list {
-    width: 225px;
+    width: 215px;
     height: 765px;
     border-right: 1px solid #c2c2c4;
     background: #F0F0F0;
@@ -69,9 +69,9 @@ body {
 }
 
 .left_list .list {
-    overflow: auto;
-    width: 100%;
-    height: 86%;
+    /*overflow: auto;*/
+    /*width: 100%;*/
+    /*height: 86%;*/
 }
 
 .left_list .list::-webkit-scrollbar {
@@ -131,8 +131,8 @@ body {
     /*color: #000;*/
 
     background: #31C27C;
-    border-radius: 5px;
-    width: 202px;
+    border-radius: 3px;
+    width: 193px;
     color: white;
 }
 
@@ -150,7 +150,7 @@ body {
     margin: 0 auto;
     padding: 0;
     float: right;
-    width: 1025px;
+    width: 985px;
     height: 650px;
     background: #fafafa;
 }

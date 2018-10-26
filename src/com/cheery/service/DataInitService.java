@@ -20,6 +20,11 @@ public class DataInitService {
         return initDao.queryAllPlaylist(deType, pageNo, pageSize);
     }
 
+//    public List<DetailEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception {
+//        return initDao.queryAllPlaylist(deType, pageNo, pageSize);
+//    }
+
+
     public int querySheetRows() {
         return initDao.querySheetRows();
     }

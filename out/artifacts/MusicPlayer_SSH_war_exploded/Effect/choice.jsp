@@ -33,7 +33,7 @@
 
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
-        <div style="padding-left: 20px;">
+        <div style="padding-left: 0px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
             <span style="padding-left: 791px;color: #666;">换一换</span>
         </div>

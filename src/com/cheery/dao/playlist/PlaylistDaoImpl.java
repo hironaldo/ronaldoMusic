@@ -8,7 +8,6 @@ import java.util.List;
 
 public class PlaylistDaoImpl extends HibernateDaoSupport implements IPlaylistDao {
 
-
     @Override
     public PlaylistEntity queryPlaylistById(Integer plId) throws Exception {
         return null;

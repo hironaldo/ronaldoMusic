@@ -1,6 +1,6 @@
 $(function () {
     /*加载登陆页面*/
-    $(".p_body ul li:eq(2)").click(function () {
+    $("#login_popup").click(function () {
         layer.open({
             type: 2,
             title: '',

@@ -52,12 +52,12 @@ body::-webkit-scrollbar-track {
 
 #classify-nav ul li span {
     font-size: 12px;
-    padding: 6px 43px;
+    padding: 6px 40px;
     background: #FFFFFF;
 }
 
 #content table tr td > div img {
-    width: 167px;
+    width: 156px;
 }
 
 #content {

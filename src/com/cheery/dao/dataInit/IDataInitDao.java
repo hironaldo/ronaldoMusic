@@ -1,6 +1,7 @@
 package com.cheery.dao.dataInit;
 
 import com.cheery.model.*;
+
 import java.util.List;
 
 public interface IDataInitDao {
@@ -16,6 +17,8 @@ public interface IDataInitDao {
 
     //所有歌单 【deType --》歌单类型】
     List<PlaylistEntity> queryAllPlaylist(String deType,Integer pageNo, Integer pageSize) throws Exception;
+
+    //List<DetailEntity> queryAllPlaylist(String deType, Integer pageNo, Integer pageSize) throws Exception;
 
     //查询歌单总数
     int querySheetRows();

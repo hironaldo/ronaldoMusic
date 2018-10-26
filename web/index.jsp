@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -9,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="staticFile/css/index.css" media="all">
+    <link rel="stylesheet" type="text/css" href="staticFile/css/index_core.css" media="all">
+    <link rel="stylesheet" type="text/css" href="staticFile/css/index_diy.css" media="all">
     <link rel="stylesheet" type="text/css" href="staticFile/css/play.css" media="all">
     <link rel="stylesheet" type="text/css" href="staticFile/css/audio.css" media="all">
-    <link rel="stylesheet" type="text/css" href="staticFile/css/index1.css" media="all">
 </head>
 <body>
 
@@ -34,10 +35,10 @@
 <!-- app -->
 
 <div id="content">
-    <div style="width: 1250px;height: 765px;border: 1px #fdffff solid;border-radius: 3px;margin: 0 auto;">
+    <div style="width: 1200px;height: 765px;border: 1px #fdffff solid;border-radius: 3px;margin: 0 auto;">
         <!-- 顶部导航 -->
         <div class="layui-layout-admin">
-            <div class="layui-header" style="width: 1025px;float: right">
+            <div class="layui-header" style="width: 985px;float: right">
                 <ul class="layui-nav">
                     <li class="layui-nav-item">
                         <img src="staticFile/img/left-slip.svg" style="width: 25px">
@@ -128,7 +129,7 @@
         <!-- 主体内容 -->
 
         <!-- 播放控件 -->
-        <div class="audio-box" style="width: 1250px;">
+        <div class="audio-box" style="width: 1200px;">
             <div class="audio-container">
                 <div class="audio-cover"></div>
                 <div class="audio-view">
@@ -181,13 +182,25 @@
                     <div style="padding-top: 10px">
                         <ul style="text-align: center;">
                             <li><img src="staticFile/img/king.svg" style="width: 35px;"></li>
-                            <%--<li><img src="staticFile/img/head.jpg" style="width: 75px;border-radius: 50%"></li>--%>
-                            <li><img src="staticFile/img/default.png" style="width: 75px"></li>
-                            <li style="padding-top: 5px">
-                                <!--Ronaldo-->
-                                <!--<i class="layui-icon layui-icon-face-surprised"></i>-->
-                                请登录 | CR7音乐
-                            </li>
+                            <c:choose>
+                                <c:when test="${not empty userList}">
+                                    <c:forEach var="user" items="${userList}" begin="0" end="0">
+                                        <li><img src="staticFile/imgDT/user/${user.userPic}"
+                                                 style="width: 75px;border-radius: 50%"></li>
+                                        <li style="padding-top: 5px">
+                                                ${user.userName}
+                                            <i class="layui-icon layui-icon-face-surprised"></i>
+                                        </li>
+                                    </c:forEach>
+                                </c:when>
+                                <c:otherwise>
+                                    <li>
+                                        <img src="staticFile/imgDT/user/default.png"
+                                             style="width: 75px;border-radius: 50%">
+                                    </li>
+                                    <li id="login_popup"> 请登录 | CR7音乐</li>
+                                </c:otherwise>
+                            </c:choose>
                         </ul>
                     </div>
                     <div class="tj">
@@ -198,8 +211,8 @@
                             <ul id="ul1">
                                 <li class="act" url="init"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="getSinger"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
-                                <li url="getSongSheet"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
+                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
+                                <li id="test" url="getSongSheet"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>
                     </div>
