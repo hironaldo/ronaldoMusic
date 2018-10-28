@@ -7,8 +7,7 @@
     <class name="PlaylistEntity" table="playlist">
         <!-- 配置主键映射 -->
         <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
-        <id name="plId" type="integer">
-            <column name="plId"></column>
+        <id name="plId" column="plId" type="integer">
             <!-- 设置主键生成方式 -->
             <generator class="native"></generator>
         </id>

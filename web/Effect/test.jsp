@@ -96,16 +96,23 @@
 </div>
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"
+        charset="utf-8"></script>
 <script id="demo" type="text/x-jquery-tmpl">
-    <li>
-       <div style="background: #F0F0F0;box-shadow: 4px 9px 15px #88887A;">
-         <div style="text-align: center;padding-top:10px">
-             <img src="../staticFile/imgDT/singer/{{= siPic}}" style="border-radius: 50%;width: 100px">
-         </div>
-         <div style="text-align: center;padding-top:5px;padding-bottom:10px">{{= siName}}</div>
-       </div>
-    </li>
+    <%--<li>--%>
+       <%--<div style="background: #F0F0F0;box-shadow: 4px 9px 15px #88887A;">--%>
+         <%--<div style="text-align: center;padding-top:5px;padding-bottom:10px">{{= playlists.name}}</div>--%>
+       <%--</div>--%>
+    <%--</li>--%>
+{{each(i,data) playlists}}
+　　　　　　<li class="li">
+　　　　　　　
+                {{ data.name}} - {{ data}}
+　　　　　　</li>
+{{/each}}
+
+
+
 </script>
 
 <script>
@@ -121,7 +128,7 @@
 
 
         $.ajax({
-            url: '/getSinger?pageNo=1',
+            url: 'http://127.0.0.1:3000/top/playlist/highquality',
             dataType: 'JSON',
             success: function (result) {
                 $("#img_box").html('');

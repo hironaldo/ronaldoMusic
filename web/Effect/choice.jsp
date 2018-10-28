@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/public.css"/>
+    <link rel="stylesheet" href="../staticFile/css/public.css"/>
     <link rel="stylesheet" href="../staticFile/css/choice/style.css" media="all">
 </head>
 <body>

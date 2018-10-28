@@ -10,8 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="staticFile/css/index_core.css" media="all">
-    <link rel="stylesheet" type="text/css" href="staticFile/css/index_diy.css" media="all">
+    <link rel="stylesheet" type="text/css" href="staticFile/css/public.css" media="all">
+    <link rel="stylesheet" type="text/css" href="staticFile/css/nav.css" media="all">
+    <link rel="stylesheet" type="text/css" href="staticFile/css/diy.css" media="all">
     <link rel="stylesheet" type="text/css" href="staticFile/css/play.css" media="all">
     <link rel="stylesheet" type="text/css" href="staticFile/css/audio.css" media="all">
 </head>
@@ -183,7 +184,14 @@
                         <ul style="text-align: center;">
                             <li><img src="staticFile/img/king.svg" style="width: 35px;"></li>
                             <c:choose>
-                                <c:when test="${not empty userList}">
+                                <c:when test="${empty userList}">
+                                    <li>
+                                        <img src="staticFile/imgDT/user/default.png"
+                                             style="width: 75px;border-radius: 50%">
+                                    </li>
+                                    <li id="login_popup" style="font-size: 12px">请登录 | CR7音乐</li>
+                                </c:when>
+                                <c:otherwise>
                                     <c:forEach var="user" items="${userList}" begin="0" end="0">
                                         <li><img src="staticFile/imgDT/user/${user.userPic}"
                                                  style="width: 75px;border-radius: 50%"></li>
@@ -192,13 +200,6 @@
                                             <i class="layui-icon layui-icon-face-surprised"></i>
                                         </li>
                                     </c:forEach>
-                                </c:when>
-                                <c:otherwise>
-                                    <li>
-                                        <img src="staticFile/imgDT/user/default.png"
-                                             style="width: 75px;border-radius: 50%">
-                                    </li>
-                                    <li id="login_popup"> 请登录 | CR7音乐</li>
                                 </c:otherwise>
                             </c:choose>
                         </ul>
@@ -247,6 +248,17 @@
                                     <i class="layui-icon layui-icon-tree"></i>经典配乐大全
                                     <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
                                 </li>
+
+                                <%--<c:if test="${not empty userList}">--%>
+                                    <%--<c:forEach var="songsheet" items="${userList}">--%>
+                                        <%--<li url="Effect/songlist.jsp">--%>
+                                            <%--<i class="layui-icon layui-icon-tree"></i>--%>
+                                            <%--<i class="layui-icon layui-icon-delete" style="float: right"></i>--%>
+                                        <%--</li>--%>
+                                    <%--</c:forEach>--%>
+                                <%--</c:if>--%>
+
+
                             </ul>
                         </div>
                     </div>
@@ -258,7 +270,7 @@
                             <ul id="ul4">
                                 <li url="Effect/songlist.jsp">
                                     <i class="layui-icon layui-icon-tree"></i>独立音乐人的理想之声
-                                    <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
+                                    <i class="layui-icon layui-icon-delete" style="float: right"></i>
                                 </li>
                             </ul>
                         </div>

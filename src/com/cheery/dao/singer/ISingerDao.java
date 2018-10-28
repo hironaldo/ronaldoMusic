@@ -2,6 +2,8 @@ package com.cheery.dao.singer;
 
 import com.cheery.model.SingerEntity;
 
+import java.util.List;
+
 public interface ISingerDao {
     /**
      * IUserDao interface 歌手
@@ -11,5 +13,5 @@ public interface ISingerDao {
      */
 
     /*根据歌手id查询歌手信息--> [歌手基本信息和名下所有歌曲]*/
-    SingerEntity querySingerById(Integer siId) throws Exception;
+    List<SingerEntity> querySingerById(Integer siId) throws Exception;
 }

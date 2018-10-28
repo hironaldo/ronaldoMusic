@@ -37,11 +37,11 @@
         </property>
         <!-- 一对多 name表示对应的实体类集合,column外键字段， -->
         <bag name="commentList" inverse="true" cascade="all">
-            <key column="coId"></key>
+            <key column="userId"></key>
             <one-to-many class="CommentEntity"></one-to-many>
         </bag>
         <bag name="followList" inverse="true" cascade="all">
-            <key column="foId"></key>
+            <key column="userId"></key>
             <one-to-many class="FollowEntity"></one-to-many>
         </bag>
         <bag name="playList" inverse="true" cascade="all">

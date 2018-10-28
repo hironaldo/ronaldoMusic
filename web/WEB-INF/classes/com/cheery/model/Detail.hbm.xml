@@ -7,33 +7,19 @@
     <class name="DetailEntity" table="detail">
         <!-- 配置主键映射 -->
         <!--name：实体类的属性名,type：数据类型,column：数据库表的字段名-->
-        <id name="deId" type="integer">
-            <column name="deId"></column>
+        <id name="deId" column="deId" type="integer">
             <!-- 设置主键生成方式 -->
             <generator class="native"></generator>
         </id>
-        <property name="deName" type="java.lang.String">
-            <column name="deName"></column>
-        </property>
-        <property name="time" type="java.lang.String">
-            <column name="time"></column>
-        </property>
-        <property name="dePic" type="java.lang.String">
-            <column name="dePic"></column>
-        </property>
-        <property name="deType" type="java.lang.String">
-            <column name="detype"></column>
-        </property>
-        <property name="otPic" type="java.lang.String">
-            <column name="otPic"></column>
-        </property>
-        <property name="label" type="java.lang.String">
-            <column name="label"></column>
-        </property>
-        <property name="explain" type="java.lang.String">
-            <column name="explain"></column>
-        </property>
+        <property name="deName" column="deName" type="java.lang.String"/>
+        <property name="time" column="time" type="java.lang.String"/>
+        <property name="dePic" column="dePic" type="java.lang.String"/>
+        <property name="deType" column="deType" type="java.lang.String"/>
+        <property name="otPic" column="otPic" type="java.lang.String"/>
+        <property name="label" column="label" type="java.lang.String"/>
+        <property name="explain" column="explain" type="java.lang.String"/>
+
         <!-- 多对一 -->
-        <many-to-one name="user" column="userId" class="UserEntity" unique="true"></many-to-one>
+        <many-to-one name="user" column="userId" class="UserEntity" unique="true"/>
     </class>
 </hibernate-mapping>

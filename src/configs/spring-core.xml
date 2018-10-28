@@ -84,4 +84,8 @@
         <property name="userSer" ref="userSer"/>
     </bean>
 
+    <bean id="playListAction" class="com.cheery.actions.PlayListAction" scope="prototype">
+        <property name="playSer" ref="playSer"/>
+    </bean>
+
 </beans>

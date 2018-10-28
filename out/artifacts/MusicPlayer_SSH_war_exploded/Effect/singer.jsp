@@ -96,7 +96,6 @@
 </div>
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
 <script id="demo" type="text/x-jquery-tmpl">
     <li>

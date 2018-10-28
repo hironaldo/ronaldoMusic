@@ -22,5 +22,13 @@
         <property name="userDao" ref="userDao"/>
     </bean>
 
+    <bean id="playlistDao" class="com.cheery.dao.playlist.PlaylistDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="playSer" class="com.cheery.service.PlayListService">
+        <property name="playlistDao" ref="playlistDao"/>
+    </bean>
+
 </beans>
 

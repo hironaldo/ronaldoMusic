@@ -19,7 +19,7 @@
 
         <!-- 初始化 ‘分类歌单’ 栏数据 -->
         <action name="getSongSheet" class="InitAction" method="querySongSheet">
-            <!--<result name="success" type="redirect">Effect/songsheet.jsp</result>-->
+            <result name="success" type="redirect">Effect/songsheet.jsp</result>
             <result name="input" type="redirect">500.html</result>
         </action>
     </package>

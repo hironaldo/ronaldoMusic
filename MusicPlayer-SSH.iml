@@ -91,6 +91,7 @@
             <file>jar://$MODULE_DIR$/web/WEB-INF/lib/struts2-core-2.3.16.3.jar!/struts-default.xml</file>
             <file>jar://$MODULE_DIR$/web/WEB-INF/lib/struts2-spring-plugin-2.3.16.3.jar!/struts-plugin.xml</file>
             <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-user.xml</file>
+            <file>file://$MODULE_DIR$/src/configs/config-struts/fyg/struts-playlist.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
