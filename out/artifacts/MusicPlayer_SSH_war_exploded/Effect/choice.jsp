@@ -33,51 +33,21 @@
 
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
-        <div style="padding-left: 0px;">
+        <div style="padding-left: 13px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
-            <span style="padding-left: 791px;color: #666;">换一换</span>
+            <span style="padding-left: 781px;color: #666;font-size: 12px;">更多</span>
         </div>
+
+        <ul>
+            <li></li>
+        </ul>
+
+
+
         <table>
-            <tr>
-                <c:forEach var="songsheet" items="${playlist}" begin="0" end="4">
-                    <td>
-                        <div>
-                            <div class="box_img">
-                                <a class="songlist__link mod_cover">
-                                    <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}"
-                                         class="songlist__pic">
-                                    <i class="mod_cover__mask"></i>
-                                    <i class="mod_cover__icon_play"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
+            <tr id="songsheet_top">
             </tr>
-            <tr>
-                <c:forEach var="songsheet" items="${playlist}" begin="5" end="9">
-                    <td style="padding-top: 20px">
-                        <div>
-                            <div class="box_img">
-                                <a class="songlist__link mod_cover">
-                                    <img class="songlist__pic"
-                                         src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}">
-                                    <i class="mod_cover__mask"></i>
-                                    <i class="mod_cover__icon_play"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.detail.time}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
+            <tr id="songsheet_top_t">
             </tr>
         </table>
     </div>
@@ -85,26 +55,12 @@
 
     <!-- 歌手 -->
     <div class="singer">
-        <div style="padding-left: 20px;">
+        <div style="padding-left: 14px;">
             <span style="font-size: 18px;">乐 人</span>
-            <span style="padding-left: 839px;color: #666;">换一换</span>
+            <span style="padding-left: 830px;color: #666;font-size: 12px;">更多</span>
         </div>
         <table>
-            <tr>
-                <c:forEach var="singer" items="${singerlist}" begin="0" end="4">
-                    <td>
-                        <div>
-                            <div class="box_img">
-                                <img class="songlist__pic"
-                                     src="../staticFile/imgDT/singer/${singer.siPic}" style="width: 170px">
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${singer.siName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${singer.otName}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
+            <tr id="singer_top">
             </tr>
         </table>
     </div>
@@ -114,7 +70,6 @@
     <div style="padding-left: 40px;padding-top: 20px">
         <div>
             <span style="font-size: 18px;">音 乐</span>
-            <span style="padding-left: 839px;color: #666;">换一换</span>
         </div>
         <div class="mod_songlist">
             <div class="slide__list js_list">
@@ -143,55 +98,18 @@
     <!-- 音乐 -->
 
     <!-- 排行榜 -->
-    <div class="ranking" style="padding-left: 25px;padding-top:20px">
+    <div class="ranking" style="padding-left: 20px;padding-top:20px">
         <div style="padding-left: 20px;">
             <span style="font-size: 18px;">巅 峰 榜</span>
         </div>
-        <ul style="padding-left: 25px;padding-top:20px">
+        <ul style="padding-left: 21px;padding-top:20px">
             <li class="toplist__item mod_cover">
                 <div class="toplist__box">
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
                     <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">流行指数</a></h3>
-                    <ul class="toplist__songlist">
-                        <li class="toplist__song">
-                            <div class="toplist__number">1</div>
-                            <div class="toplist__songname">
-                                <a>没说什么</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>张杰</a>
-                            </div>
-                        </li>
-                        <li class="toplist__song">
-                            <div class="toplist__number">2</div>
-                            <div class="toplist__songname">
-                                <a>静悄悄</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>大泫</a>
-                            </div>
-                        </li>
-                        <li class="toplist__song">
-                            <div class="toplist__number">3</div>
-                            <div class="toplist__songname">
-                                <a>东西</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>林俊呈</a>
-                            </div>
-                        </li>
-                        <li class="toplist__song">
-                            <div class="toplist__number">4</div>
-                            <div class="toplist__songname">
-                                <a>可不可以</a>
-                            </div>
-                            <div class="toplist__artist">
-                                <a>艾辰</a>
-                            </div>
-                        </li>
-
+                    <ul class="toplist__songlist" id="pop_song">
                     </ul>
                 </div>
             </li>
@@ -201,18 +119,7 @@
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
                     <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">热歌</a></h3>
-                    <ul class="toplist__songlist">
-                        <c:forEach var="song_tw" items="${songlist}" begin="20" end="25" varStatus="sta">
-                            <li class="toplist__song">
-                                <div class="toplist__number">${sta.index-19}</div>
-                                <div class="toplist__songname">
-                                    <a>${song_tw.soName}</a>
-                                </div>
-                                <div class="toplist__artist">
-                                    <a>${song_tw.singer.siName}</a>
-                                </div>
-                            </li>
-                        </c:forEach>
+                    <ul class="toplist__songlist" id="hot_song">
                     </ul>
                 </div>
             </li>
@@ -222,40 +129,17 @@
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
                     <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">新歌</a></h3>
-                    <ul class="toplist__songlist">
-                        <c:forEach var="song_t" items="${songlist}" begin="7" end="10" varStatus="sta">
-                            <li class="toplist__song">
-                                <div class="toplist__number">${sta.index-6}</div>
-                                <div class="toplist__songname">
-                                    <a>${song_t.soName}</a>
-                                </div>
-                                <div class="toplist__artist">
-                                    <a>${song_t.singer.siName}</a>
-                                </div>
-                            </li>
-                        </c:forEach>
+                    <ul class="toplist__songlist" id="new_song">
                     </ul>
                 </div>
             </li>
-
             <li class="toplist__item item4 mod_cover">
                 <div class="toplist__box">
                     <div class="toplist__bg"></div>
                     <i class="mod_cover__icon_play"></i>
                     <i class="toplist__line"></i>
                     <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">欧美</a></h3>
-                    <ul class="toplist__songlist">
-                        <c:forEach var="song" items="${songlist}" begin="0" end="3" varStatus="sta">
-                            <li class="toplist__song">
-                                <div class="toplist__number">${sta.index+1}</div>
-                                <div class="toplist__songname">
-                                    <a>${song.soName}</a>
-                                </div>
-                                <div class="toplist__artist">
-                                    <a>${song.singer.siName}</a>
-                                </div>
-                            </li>
-                        </c:forEach>
+                    <ul class="toplist__songlist" id="eur_song">
                     </ul>
                 </div>
             </li>
@@ -271,42 +155,8 @@
         </div>
         <div>
             <table>
-                <tr>
-                    <c:forEach var="mv" items="${mvlist}" begin="0" end="3">
-                        <td>
-                            <div class="box_img">
-                                <a class="songlist__link mod_cover">
-                                    <img class="songlist__pic"
-                                         src="../staticFile/imgDT/mv/${mv.mvPic}">
-                                    <i class="mod_cover__mask"></i>
-                                    <i class="mod_cover__icon_play"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${mv.mvName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${mv.mvAuthor}</span></div>
-                            </div>
-                        </td>
-                    </c:forEach>
-                </tr>
-                <tr>
-                    <c:forEach var="mv_t" items="${mvlist}" begin="4" end="8">
-                        <td>
-                            <div class="box_img">
-                                <a class="songlist__link mod_cover">
-                                    <img class="songlist__pic"
-                                         src="../staticFile/imgDT/mv/${mv_t.mvPic}">
-                                    <i class="mod_cover__mask"></i>
-                                    <i class="mod_cover__icon_play"></i>
-                                </a>
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${mv_t.mvName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${mv_t.mvAuthor}</span></div>
-                            </div>
-                        </td>
-                    </c:forEach>
-                </tr>
+                <tr id="mv_beg"></tr>
+                <tr id="mv_end"></tr>
             </table>
         </div>
     </div>
@@ -315,7 +165,7 @@
 </div>
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
 <!-- 轮播 -->
 <script type="text/javascript">
@@ -327,6 +177,108 @@
         scale: 0.9
     })
 </script>
+
+<script id="ranking" type="text/x-jquery-tmpl">
+    <li class="toplist__song">
+        <div class="toplist__songname">
+            <a>{{= name}}</a>
+        </div>
+    </li>
+
+</script>
+
+<script id="mv" type="text/x-jquery-tmpl">
+    <td>
+        <div class="box_img">
+            <a class="songlist__link mod_cover">
+                <img class="songlist__pic" src="{{= cover}}">
+                <i class="mod_cover__mask"></i>
+                <i class="mod_cover__icon_play"></i>
+            </a>
+        </div>
+        <div>
+            <div>
+                <p style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:215px;">{{= name}}</p>
+            </div>
+            <div style="font-size: 10px;color: #666">{{= artistName}}</div>
+        </div>
+    </td>
+
+</script>
+
+<script id="singer" type="text/x-jquery-tmpl">
+    <td>
+        <div>
+            <div class="box_img">
+                <img class="songlist__pic" src="{{= img1v1Url}}" style="width: 170px">
+            </div>
+            <div>
+                <div><span style="font-size: 14px">{{= name}}</span></div>
+                <div><span style="font-size: 10px;color: #666">{{= alias}}</span></div>
+            </div>
+        </div>
+    </td>
+
+</script>
+
+<script id="song_sheet" type="text/x-jquery-tmpl">
+    <td>
+        <div>
+            <div class="box_img">
+                 <a class="songlist__link mod_cover"> <img class="songlist__pic" src="{{= coverImgUrl}}" style="width: 170px"> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+            </div>
+            <div>
+                <div>
+                    <p style="font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:165px;">{{= name}}</p>
+                </div>
+                <div><span style="font-size: 10px;color: #666">{{= alias}}</span></div>
+            </div>
+        </div>
+    </td>
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        /*歌单*/
+
+        $.get('http://127.0.0.1:3000/top/playlist?offset=9&limit=5&order=new', function (data) {
+            $("#song_sheet").tmpl(data.playlists).appendTo('#songsheet_top');
+        });
+        $.get('http://127.0.0.1:3000/top/playlist?offset=15&limit=5&order=new', function (data) {
+            $("#song_sheet").tmpl(data.playlists).appendTo('#songsheet_top_t');
+        });
+
+
+        /*乐人*/
+        $.get('http://127.0.0.1:3000/top/artists?offset=2&limit=5', function (data) {
+            $("#singer").tmpl(data.artists).appendTo('#singer_top');
+        });
+        /*音乐排行榜*/
+        $.get('http://localhost:3000/top/list?idx=0', function (data) {
+            $("#ranking").tmpl(data.playlist.tracks).appendTo('#pop_song');
+        });
+        $.get('http://localhost:3000/top/list?idx=1', function (data) {
+            $("#ranking").tmpl(data.playlist.tracks).appendTo('#hot_song');
+        });
+        $.get('http://localhost:3000/top/list?idx=3', function (data) {
+            $("#ranking").tmpl(data.playlist.tracks).appendTo('#new_song');
+        });
+        $.get('http://localhost:3000/top/list?idx=6', function (data) {
+            $("#ranking").tmpl(data.playlist.tracks).appendTo('#eur_song');
+        });
+        /*mv*/
+        $.get('http://localhost:3000/top/mv?offset=7&limit=4', function (data) {
+            $("#mv").tmpl(data.data).appendTo('#mv_beg');
+        });
+        $.get('http://localhost:3000/top/mv?offset=13&limit=4', function (data) {
+            $("#mv").tmpl(data.data).appendTo('#mv_end');
+        });
+    });
+
+
+</script>
+
 
 </body>
 </html>

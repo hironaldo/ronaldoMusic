@@ -653,7 +653,8 @@
 
 .mod_cover:hover .mod_cover__icon_play,
 .mod_cover__icon_play {
-    background-image: url(http://y.gtimg.cn/mediastyle/yqq/img/cover_play.png);
+    /*background-image: url(http://y.gtimg.cn/mediastyle/yqq/img/cover_play.png);*/
+    background-image: url(../images/cover_play.png);
 }
 
 .mod_cover:hover .mod_cover__icon_play {
@@ -1063,7 +1064,7 @@
 
 .toplist__box {
     position: relative;
-    margin-right: 20px;
+    margin-right: 12px;
     height: 500px;
     overflow: hidden
 }

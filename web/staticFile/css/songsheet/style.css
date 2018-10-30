@@ -3,13 +3,13 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #F1F1F1;
-    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;*/
 }
 
 body {
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #F1F1F1;
 }
 
 body::-webkit-scrollbar {
@@ -33,27 +33,45 @@ body::-webkit-scrollbar-track {
     background-color: #D8D8D8;
 }
 
-#classify-nav {
-    padding-left: 35px;
+.classify-nav {
+    padding-left: 23px;
     padding-top: 15px;
 }
 
-#classify-nav ul {
+.classify-nav span {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.classify-nav p {
+    width: 919px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: #737373;
+}
+
+.classify-nav ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
     width: auto;
 }
 
-#classify-nav ul li {
+.classify-nav ul li {
     float: left;
     padding: 0px 10px;
 }
 
-#classify-nav ul li span {
+.classify-nav ul li span {
     font-size: 12px;
-    padding: 6px 40px;
+    padding: 6px 34px;
     background: #FFFFFF;
+}
+
+.classify-nav ul li span:hover {
+    cursor: pointer;
+    background: #EBEBEB;
 }
 
 #content table tr td > div img {

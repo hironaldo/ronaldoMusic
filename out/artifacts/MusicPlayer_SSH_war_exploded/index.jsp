@@ -212,7 +212,7 @@
                             <ul id="ul1">
                                 <li class="act" url="init"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>全部歌手</li>
+                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>热门歌手</li>
                                 <li id="test" url="getSongSheet"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>

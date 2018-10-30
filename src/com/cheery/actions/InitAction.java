@@ -70,14 +70,13 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
     /*初始化 官方精选*/
     public String initData() throws Exception {
         List<PlaylistEntity> playlist = initSer.queryTopPlaylist(); //歌单
-        List<SongEntity> songlist = initSer.queryAllSong(); //歌曲
         List<SingerEntity> singerlist = initSer.queryAllSinger(); //歌手
-        List<MvEntity> mvlist = initSer.queryAllMv(); //mv
-        if (0 < playlist.size() && 0 < songlist.size() && 0 < singerlist.size() && 0 < mvlist.size()) {
+        //List<MvEntity> mvlist = initSer.queryAllMv(); //mv
+        List<SongEntity> songlist = initSer.queryAllSong(); //歌曲
+        if (0 < playlist.size() && 0 < singerlist.size() && 0 < songlist.size()) {
             session.put("playlist", playlist);
             session.put("songlist", songlist);
             session.put("singerlist", singerlist);
-            session.put("mvlist", mvlist);
             return Action.SUCCESS;
         } else {
             return Action.INPUT;
@@ -102,12 +101,10 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
 //            session.put("dataCount", dataCount);
 //            session.put("pageData", list.size());
 //            out.print(JSON.toJSONString(list));
-
             out.print(JSON.toJSONString(list));
             out.flush();
             out.close();
             return null;
-
             //return Action.SUCCESS;
         } else {
             return Action.ERROR;

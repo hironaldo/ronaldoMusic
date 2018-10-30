@@ -4,99 +4,80 @@
 <head>
     <title>分类歌单</title>
     <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="../staticFile/css/songsheet/style.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <style>
+        #ssheet_box {
+            padding-top: 30px;
+        }
+
+        #ssheet_box li {
+            display: inline-block;
+            width: 160px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+    </style>
 </head>
 <body>
 
 <div>
-    <div id="classify-nav">
-        <span style="font-size: 16px;padding-left: 10px">热 门 分 类</span>
-        <div style="padding-top: 10px">
+    <div class="classify-nav">
+        <span style="font-size: 16px;padding-left: 10px">全 部 分 类</span>
+        <div style="padding-top: 15px">
             <ul>
-                <li><span>经典</span></li>
-                <li><span>城市</span></li>
-                <li><span>英语</span></li>
-                <li><span>运动</span></li>
-                <li><span>情歌</span></li>
-                <li><span>官方歌单</span></li>
-                <li><span>KTV热歌</span></li>
+                <li><span>流行</span></li>
+                <li><span>华语</span></li>
+                <li><span>清晨</span></li>
+                <li><span>怀旧</span></li>
+                <li><span>摇滚</span></li>
+                <li><span>电子</span></li>
+                <li><span>下午茶</span></li>
+                <li><span>影视原声</span></li>
             </ul>
         </div>
         <br>
         <div style="padding-top: 20px">
             <ul>
-                <li><span>寂寞</span></li>
-                <li><span>国语</span></li>
-                <li><span>伤感</span></li>
-                <li><span>心情</span></li>
                 <li><span>清新</span></li>
-                <li><span>背景音乐</span></li>
-                <li><span>全部分类</span></li>
+                <li><span>夜晚</span></li>
+                <li><span>欧美</span></li>
+                <li><span>民谣</span></li>
+                <li><span>校园</span></li>
+                <li><span>治愈</span></li>
+                <li><span>轻音乐</span></li>
+                <li><span>网络电影</span></li>
             </ul>
         </div>
+        <br>
     </div>
-    <div id="content">
-        <table>
-            <tr>
-                <c:forEach var="songsheet" items="${playlist}" begin="0" end="4">
-                    <td>
-                        <div>
-                            <div class="box_img">
-                                <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}">
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
-            </tr>
-            <tr>
-                <c:forEach var="songsheet" items="${playlist}" begin="5" end="9">
-                    <td>
-                        <div>
-                            <div class="box_img">
-                                <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}">
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
-            </tr>
-            <tr>
-                <c:forEach var="songsheet" items="${playlist}" begin="10" end="14">
-                    <td>
-                        <div>
-                            <div class="box_img">
-                                <img src="../staticFile/imgDT/songsheet/${songsheet.detail.dePic}">
-                            </div>
-                            <div>
-                                <div><span style="font-size: 14px">${songsheet.detail.deName}</span></div>
-                                <div><span style="font-size: 10px;color: #666">${songsheet.user.userName}</span></div>
-                            </div>
-                        </div>
-                    </td>
-                </c:forEach>
-            </tr>
-        </table>
-    </div>
+    <ul id="ssheet_box"></ul>
+    <div class="pagger-box pagger" id="box"></div>
 </div>
-
-<div id="a">
-
-</div>
-
-<button id="btn">111</button>
-
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-
-
-
+<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"
+        charset="utf-8"></script>
+<script id="data" type="text/x-jquery-tmpl">
+    <li>
+       <div style="height: 215px">
+            <div>
+                <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= name}}</p>
+                 </div>
+                 <div style="height: 5px"></div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= creator.nickname}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+<script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
 </body>
 </html>
