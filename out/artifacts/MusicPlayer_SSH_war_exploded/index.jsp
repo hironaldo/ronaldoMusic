@@ -210,10 +210,10 @@
                         </div>
                         <div class="list">
                             <ul id="ul1">
-                                <li class="act" url="init"><i class="layui-icon layui-icon-fire"></i>官方精选
+                                <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
                                 <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>热门歌手</li>
-                                <li id="test" url="getSongSheet"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
+                                <li id="test" url="Effect/songsheet.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
                             </ul>
                         </div>
                     </div>
@@ -248,17 +248,6 @@
                                     <i class="layui-icon layui-icon-tree"></i>经典配乐大全
                                     <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
                                 </li>
-
-                                <%--<c:if test="${not empty userList}">--%>
-                                    <%--<c:forEach var="songsheet" items="${userList}">--%>
-                                        <%--<li url="Effect/songlist.jsp">--%>
-                                            <%--<i class="layui-icon layui-icon-tree"></i>--%>
-                                            <%--<i class="layui-icon layui-icon-delete" style="float: right"></i>--%>
-                                        <%--</li>--%>
-                                    <%--</c:forEach>--%>
-                                <%--</c:if>--%>
-
-
                             </ul>
                         </div>
                     </div>

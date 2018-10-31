@@ -1,4 +1,4 @@
-;(function($){
+﻿;(function($){
 	
 	var fnName = 'audioPlay';
 	var config = {

@@ -48,6 +48,8 @@
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/junit-4.10.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/spring-test-3.2.2.RELEASE.jar" />
           <element id="library" level="project" name="Tomcat" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/standard-1.1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/urlrewritefilter-4.0.4.jar" />
         </element>
       </element>
     </root>

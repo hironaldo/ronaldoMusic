@@ -19,6 +19,10 @@
             padding-bottom: 20px;
             padding-left: 30px;
         }
+
+        #singer_box li:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -71,19 +75,28 @@
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"
-        charset="utf-8"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
-       <i style="display: none;">{{= id}}</i>
        <div style="background: #F0F0F0;box-shadow: 4px 9px 15px #88887A;padding-bottom:10px">
+         <i style="display: none;">{{= id}}</i>
+         <b style="display: none;">{{= name}}</b>
          <div style="text-align: center;padding-top:10px">
              <img src="{{= picUrl}}" style="border-radius: 50%;width: 110px">
          </div>
-         <div style="text-align: center;padding-top:5px;padding-bottom:10px">{{= name}}</div>
+         <div style="text-align: center;padding-top:5px;padding-bottom:10px">
+            <span>{{= name}}</span>
+         </div>
        </div>
     </li>
 </script>
 <script src="../staticFile/js/singer/singer.js" charset="utf-8"></script>
+<script>
+    window.onload = function () {
+        $("body").on('click', "#singer_box li >div", function () {
+            window.location.href = "singer_info.jsp?siId=" + $(this).find('i').text() + "&siName=" + $(this).find('b').text();
+        });
+    };
+</script>
 </body>
 </html>

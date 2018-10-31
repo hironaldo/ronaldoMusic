@@ -8,19 +8,12 @@
         <!-- 初始化 ‘官方精选’ 栏数据 -->
         <action name="init" class="InitAction" method="initData">
             <result name="success" type="redirect">Effect/choice.jsp</result>
-            <result name="input" type="redirect">500.html</result>
         </action>
 
         <!-- 初始化 ‘全部歌手’ 栏数据 -->
-        <action name="getSinger" class="InitAction" method="querySinger">
-            <!--<result name="success" type="redirect">Effect/singer.jsp</result>-->
-            <result name="input" type="redirect">500.html</result>
-        </action>
+        <action name="getSinger" class="InitAction" method="querySinger"></action>
 
         <!-- 初始化 ‘分类歌单’ 栏数据 -->
-        <action name="getSongSheet" class="InitAction" method="querySongSheet">
-            <result name="success" type="redirect">Effect/songsheet.jsp</result>
-            <result name="input" type="redirect">500.html</result>
-        </action>
+        <action name="getSongSheet" class="InitAction" method="querySongSheet"></action>
     </package>
 </struts>

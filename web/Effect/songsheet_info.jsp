@@ -1,10 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String slistId = request.getParameter("slistId");
+    String picurl = request.getParameter("picurl");
+    String nickname = request.getParameter("nickname");
+    String userId = request.getParameter("userId");
+    String tags = request.getParameter("tags");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>歌单页面</title>
+    <title>歌单详细页</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
     <style>
 
@@ -45,53 +52,14 @@
 </head>
 <body>
 
+<table style="margin:10px 0 0 20px;" id="ssheetinfo_box">
 
-<table style="margin: 15px 0 0 30px ">
-    <tr>
-        <td>
-            <img src="https://p.qpic.cn/music_cover/7XEVurTOuWkv53uNkwvuomrxE7KxgibjV124luMWkNn5pjrbcfIxlUA/300?n=1"
-                 width="150"/>
-        </td>
-        <td style="padding-left: 20px">
-            <ul>
-                <li>
-                    <span style="font-size: 22px;">Shake It Off</span>
-                </li>
-                <li style="padding-top: 10px">
-                    <span style="font-size: 10px;color: #666">
-                        <img src="../staticFile/img/head.jpg " width="30" style="border-radius: 50%">&nbsp;Taylor Swift
-                    </span>
-                </li>
-                <li style="padding-top: 10px">
-                    <span style="font-size: 10px;color: #666">introduce：这是我第一个歌单哈哈哈哈哈</span>
-                </li>
-                <li style="padding-top: 20px">
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#xe652;</i>播放全部
-                    </button>
-                    <button id="download" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#xe601;</i>下载
-                    </button>
-                    <button id="like" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#xe67b;</i>喜欢
-                    </button>
-                    <button id="delete" style="display: none;" class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#x1006;</i>删除
-                    </button>
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#xe642;</i>编辑
-                    </button>
-                    <button id="action" class="layui-btn layui-btn-sm layui-btn-primary">批量操作</button>
-                </li>
-            </ul>
-        </td>
-    <tr>
 </table>
 
 <div class="layui-tab layui-tab-brief" style="background-color: white;">
     <ul class="layui-tab-title">
-        <li class="layui-this">歌曲</li>
-        <li>评论</li>
+        <li class="layui-this">全部歌曲</li>
+        <li>相关评论</li>
     </ul>
     <div class="layui-tab-content">
         <div class="layui-tab-item layui-show">
@@ -100,49 +68,129 @@
                 <tr>
                     <th>
                         <div style="display: none;" class="layui-unselect header layui-form-checkbox"
-                             lay-skin="primary"><i
-                                class="layui-icon">&#xe605;</i>
-                        </div>&nbsp;歌曲
+                             lay-skin="primary">
+                            <i class="layui-icon">&#xe605;</i></div>&nbsp;歌曲
                     </th>
                     <th>歌手</th>
-                    <th>时长</th>
-                    <th>语种</th>
-                    <th>专辑</th>
-                    <th>操作</th>
-                </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>
-                        <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                             data-id="">
-                            <i class="layui-icon">&#xe605;</i>
-                        </div>
-                        Hello
-                    </td>
-                    <th>Roanldo</th>
-                    <td>04:33</td>
-                    <td>英语</td>
-                    <td>Some love</td>
-                    <td>
-                        <img src="../staticFile/images/love.svg" width="16px">
-                        <img src="../staticFile/img/delete.svg" width="16px">
-                    </td>
-                </tr>
-                </tbody>
+                <tbody id="song"></tbody>
             </table>
         </div>
         <div class="layui-tab-item">
             <textarea id="comment" maxlength="5"></textarea>
-            <button class="layui-btn layui-btn-xs" style="float: right">发表评论</button>
+            <button class="layui-btn layui-btn-xs" style="float: right">
+                <i class="layui-icon">&#xe609;</i>评论
+            </button>
         </div>
     </div>
 </div>
 
+<i id="slistId" style="display: none;">
+    <%=slistId%>
+</i>
+<i id="picurl" style="display: none;">
+    <%=userId%>
+</i>
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
+<script id="c-info" type="text/x-jquery-tmpl">
+    <tr>
+        <td>
+            <img src="{{= songListPic}}" width="150"/>
+        </td>
+        <td style="padding-left: 20px">
+            <ul>
+                <li>
+                    <span style="font-size: 24px;">{{= songListName}}</span>
+                </li>
+                <li style="padding-top: 5px">
+                    <span style="font-size: 10px;color: #666">
+                        <img src="<%=picurl%>" width="30" style="border-radius: 50%">&nbsp;<%=nickname%>
+                        <span style="padding-left:20px">#<%=tags%></span>
+                    </span>
+                </li>
+                <li style="padding-top: 5px">
+                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= songListDescription}}</p>
+                </li>
+                <li style="padding-top: 10px">
+                    <button class="layui-btn layui-btn-xs layui-btn-primary">
+                        <i class="layui-icon">&#xe652;</i>播放全部
+                    </button>
+                    <button id="download" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
+                        <i class="layui-icon">&#xe601;</i>下载
+                    </button>
+                    <button id="like" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
+                        <i class="layui-icon">&#xe67b;</i>喜欢
+                    </button>
+                    <button id="delete" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
+                        <i class="layui-icon">&#x1006;</i>删除
+                    </button>
+                    <button class="layui-btn layui-btn-xs layui-btn-primary">
+                        <i class="layui-icon">&#xe642;</i>编辑
+                    </button>
+                    <button id="action" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
+                </li>
+            </ul>
+        </td>
+    <tr>
+
+</script>
+
+<script id="c-song" type="text/x-jquery-tmpl">
+    <tr>
+      <td>
+        <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id="">
+          <i class="layui-icon">&#xe605;</i></div>
+        <img src="../staticFile/images/love.svg" width="16px">
+        {{= name}}
+      </td>
+      <td>{{= singer}}</td>
+    </tr>
+</script>
+
 <script>
     $(function () {
+        let slistId = $('#slistId').text().trim();    //歌手id
+        let url = '';
+        url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+        $.get(url, function (data) {
+            $("#ssheetinfo_box").html('');
+            $("#c-info").tmpl(data.data).appendTo('#ssheetinfo_box');
+        });
+
+        url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+        $.get(url, function (data) {
+            $("#song").html('');
+            $("#c-song").tmpl(data.data.songs).appendTo('#song');
+        });
+
+        $('.layui-tab-title li').click(function () {
+            layer.load();
+            setTimeout(function () {
+                layer.closeAll('loading');
+            }, 1500);
+            let index = $(this).index();
+            switch (index) {
+                case 0:
+                    url = 'http://127.0.0.1:3000/artists?id=' + siId;
+                    $.get(url, function (data) {
+                        $("#singer_info").html('');
+                        $("#info").tmpl(data.artist).appendTo('#singer_info');
+                        $("#c-song").tmpl(data.hotSongs).appendTo('#song');
+                    });
+                    break;
+                case 1:
+                    url = 'http://127.0.0.1:3000/artist/album?id=' + siId + '&limit=20';
+                    $.get(url, function (data) {
+                        $("#song").html('');
+                        $("#c-song").tmpl(data.hotAlbums).appendTo('#song');
+                    });
+                    break;
+            }
+        });
+
+
         $("#action").click(function () {
             if ($(this).text() == "批量操作") {
                 $('.layui-form-checkbox').show();

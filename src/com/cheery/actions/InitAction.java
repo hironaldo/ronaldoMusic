@@ -70,13 +70,10 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
     /*初始化 官方精选*/
     public String initData() throws Exception {
         List<PlaylistEntity> playlist = initSer.queryTopPlaylist(); //歌单
-        List<SingerEntity> singerlist = initSer.queryAllSinger(); //歌手
-        //List<MvEntity> mvlist = initSer.queryAllMv(); //mv
         List<SongEntity> songlist = initSer.queryAllSong(); //歌曲
-        if (0 < playlist.size() && 0 < singerlist.size() && 0 < songlist.size()) {
+        if (0 < playlist.size() && 0 < songlist.size()) {
             session.put("playlist", playlist);
             session.put("songlist", songlist);
-            session.put("singerlist", singerlist);
             return Action.SUCCESS;
         } else {
             return Action.INPUT;
@@ -122,8 +119,6 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
             pageNo = pageCount;
         }
         List<PlaylistEntity> list = initSer.queryAllPlaylist(deType, pageNo, pageSize);
-        System.out.println(JSON.toJSONString(list));
-        System.out.println("页码：" + pageNo);
         if (null != list && 0 < list.size()) {
             session.put("playlist", list);
             session.put("jsonlist", JSON.toJSONString(list));

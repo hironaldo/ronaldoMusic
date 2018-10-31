@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/public.css"/>
     <link rel="stylesheet" href="../staticFile/css/choice/style.css" media="all">
+    <style>
+        #songsheet_top {
+            padding-top: 15px;
+        }
+
+        #songsheet_top li {
+            display: inline-block;
+            width: 178px;
+            padding-left: 8px;
+        }
+    </style>
 </head>
 <body>
 
@@ -35,21 +46,11 @@
     <div class="song_sheet">
         <div style="padding-left: 13px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
-            <span style="padding-left: 781px;color: #666;font-size: 12px;">更多</span>
+            <a href="songsheet.jsp">
+                <span style="padding-left: 792px;color: #666;font-size: 12px;">更多</span>
+            </a>
         </div>
-
-        <ul>
-            <li></li>
-        </ul>
-
-
-
-        <table>
-            <tr id="songsheet_top">
-            </tr>
-            <tr id="songsheet_top_t">
-            </tr>
-        </table>
+        <ul id="songsheet_top"></ul>
     </div>
     <!-- 推荐的歌单 -->
 
@@ -57,7 +58,9 @@
     <div class="singer">
         <div style="padding-left: 14px;">
             <span style="font-size: 18px;">乐 人</span>
-            <span style="padding-left: 830px;color: #666;font-size: 12px;">更多</span>
+            <a href="singer.jsp">
+                <span style="padding-left: 840px;color: #666;font-size: 12px;">更多</span>
+            </a>
         </div>
         <table>
             <tr id="singer_top">
@@ -222,63 +225,21 @@
 </script>
 
 <script id="song_sheet" type="text/x-jquery-tmpl">
-    <td>
-        <div>
-            <div class="box_img">
-                 <a class="songlist__link mod_cover"> <img class="songlist__pic" src="{{= coverImgUrl}}" style="width: 170px"> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
-            </div>
+    <li>
+        <div style="height: 215px">
             <div>
-                <div>
-                    <p style="font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:165px;">{{= name}}</p>
-                </div>
-                <div><span style="font-size: 10px;color: #666">{{= alias}}</span></div>
+                <a class="songlist__link mod_cover"> <img src="{{= picUrl}}" class="songlist__pic" style="height: 172px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
-        </div>
-    </td>
-</script>
-
-
-<script>
-    $(document).ready(function () {
-        /*歌单*/
-
-        $.get('http://127.0.0.1:3000/top/playlist?offset=9&limit=5&order=new', function (data) {
-            $("#song_sheet").tmpl(data.playlists).appendTo('#songsheet_top');
-        });
-        $.get('http://127.0.0.1:3000/top/playlist?offset=15&limit=5&order=new', function (data) {
-            $("#song_sheet").tmpl(data.playlists).appendTo('#songsheet_top_t');
-        });
-
-
-        /*乐人*/
-        $.get('http://127.0.0.1:3000/top/artists?offset=2&limit=5', function (data) {
-            $("#singer").tmpl(data.artists).appendTo('#singer_top');
-        });
-        /*音乐排行榜*/
-        $.get('http://localhost:3000/top/list?idx=0', function (data) {
-            $("#ranking").tmpl(data.playlist.tracks).appendTo('#pop_song');
-        });
-        $.get('http://localhost:3000/top/list?idx=1', function (data) {
-            $("#ranking").tmpl(data.playlist.tracks).appendTo('#hot_song');
-        });
-        $.get('http://localhost:3000/top/list?idx=3', function (data) {
-            $("#ranking").tmpl(data.playlist.tracks).appendTo('#new_song');
-        });
-        $.get('http://localhost:3000/top/list?idx=6', function (data) {
-            $("#ranking").tmpl(data.playlist.tracks).appendTo('#eur_song');
-        });
-        /*mv*/
-        $.get('http://localhost:3000/top/mv?offset=7&limit=4', function (data) {
-            $("#mv").tmpl(data.data).appendTo('#mv_beg');
-        });
-        $.get('http://localhost:3000/top/mv?offset=13&limit=4', function (data) {
-            $("#mv").tmpl(data.data).appendTo('#mv_end');
-        });
-    });
-
+            <div style="height: 5px"></div>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:172px;">{{= name}}</p>
+                 </div>
+            </div>
+       </div>
+    </li>
 
 </script>
-
-
+<script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 </body>
 </html>

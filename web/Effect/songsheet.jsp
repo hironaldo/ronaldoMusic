@@ -63,6 +63,11 @@
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
+            <i style="display: none;">{{= id}}</i>
+            <b style="display: none;">{{= creator.avatarUrl}}</b>
+            <s style="display: none;">{{= creator.nickname}}</s>
+            <d style="display: none;">{{= creator.userId}}</d>
+            <w style="display: none;">{{= tags}}</w>
             <div>
                 <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
@@ -79,5 +84,20 @@
    </li>
 </script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
+
+<script>
+    /*查看歌单详细信息*/
+    window.onload = function () {
+        $("body").on('click', "#ssheet_box li >div", function () {
+            let slistId = $(this).find('i').text().trim();
+            let picurl = $(this).find('b').text().trim();
+            let nickname = $(this).find('s').text().trim();
+            let userId = $(this).find('d').text().trim();
+            let tags = $(this).find('w').text().trim();
+            window.location.href = "songsheet_info.jsp?slistId=" + slistId + "&picurl=" + picurl + "&nickname=" + nickname + "&userId=" + userId + "&tags=" + tags;
+        });
+    };
+</script>
+
 </body>
 </html>

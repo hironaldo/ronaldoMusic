@@ -1,96 +1,164 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+    String siId = request.getParameter("siId");
+    String siName = request.getParameter("siName");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>我喜欢页面</title>
+    <title>歌手详情页</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all"/>
+    <link rel="stylesheet" href="../staticFile/css/singer/singer_info.css" media="all"/>
     <style>
-
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+        #mv_box {
+            padding-top: 10px;
         }
 
-        body {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            height: 100%;
+        #mv_box li {
+            display: inline-block;
+            width: 180px;
+            padding-left: 10px;
         }
 
-        body::-webkit-scrollbar {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #D4D4D4;
-            width: 8px;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        body::-webkit-scrollbar-track {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #D8D8D8;
+        #album_box li {
+            display: inline-block;
+            width: 175px;
+            padding-left: 14px;
         }
     </style>
 </head>
 <body>
-
-<div style="display: inline-block;float: right">
-    <table style="margin: 15px 0 0 30px ">
-        <tr>
-            <td>
-                <img src="http://y.gtimg.cn/music/photo_new/T001R150x150M000000qrPik2w6lDr.jpg?max_age=2592000"
-                     style="width: 200px;border-radius: 50%"/>
-            </td>
-            <td style="padding-left: 20px">
-                <ul>
-                    <li>
-                        <span style="font-size: 20px;">泰勒•斯威夫特</span>
-                    </li>
-                    <li style="padding-top: 10px">
-                        <span style="font-size: 10px;color: #666">
-                             <p>中文名：泰勒•斯威夫特</p>
-                             <p>国籍：美国</p>
-                             <p>  出生地：美国，宾夕法尼亚，怀奥米辛</p>
-                             <p>  生日：1989年12月13日</p>
-                             <p> 职业：歌手、演员、制作人、慈善家</p>
-                             <p>代表作：《Our Song》、《Love Story》、《You Belong With Me》</p>
-                             <p>简介：美国乡村音乐著名创作女歌手。1989年出生于美国宾州,2006年与独立唱片公司Big Machine签约并发行首张个人专辑《Taylor Swift》。</p>
-                        </span>
-                    </li>
-                </ul>
-            </td>
+<div>
+    <i id="siId" style="display: none;"><%=siId%>
+    </i>
+    <table style="margin: 10px 0 0 15px;">
+        <tr id="singer_info">
         <tr>
     </table>
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">热门作品</li>
+            <li>相关专辑</li>
+            <li>最近Mv</li>
+            <li>艺人介绍</li>
+        </ul>
+        <div class="layui-tab-content" id="content">
+            <div class="layui-tab-item layui-show">
+                <table class="layui-table" lay-skin="nob">
+                    <thead>
+                    <tr>
+                        <th>歌曲</th>
+                        <th>歌手</th>
+                        <th>流派</th>
+                        <th>专辑</th>
+                    </tr>
+                    </thead>
+                    <tbody id="song"></tbody>
+                </table>
+            </div>
+            <div class="layui-tab-item">
+                <ul id="album_box"></ul>
+            </div>
+            <div class="layui-tab-item">
+                <ul id="mv_box"></ul>
+            </div>
+            <div class="layui-tab-item">
+                <div id="introduce_box"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script>
-
-    $(function () {
-        $("#bt").click(function () {
-            layer.tips('泰勒•斯威夫特（Taylor Swift），美国乡村音乐著名创作女歌手。1989年出生于美国宾州。2006年与独立唱片公司Big Machine签约并发行首张个人专辑《Taylor Swift》。', '#bt', {
-                tips: [1, '#3595CC'],
-                time: 4000
-            });
-
-        });
-    });
-
-
+<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
+<script id="c-info" type="text/x-jquery-tmpl">
+    <td>
+        <img src="{{= img1v1Url}}" style="width: 150px;border-radius: 50%"/>
+    </td>
+    <td style="padding-left: 20px">
+        <ul>
+            <li style="padding-top: 10px">
+                <p>
+                    <span style="font-size:24px">{{= name}}</span>
+                    <span style="font-size: 12px;color: #666">{{= alias}}</span>
+                    <span style="padding-left:10px">
+                        <button class="layui-btn layui-btn-primary layui-btn layui-btn-xs">
+                          <i class="layui-icon">&#xe609;</i>关注
+                        </button>
+                    </span>
+                </p>
+                <p style="font-size: 10px;color: #666">{{= briefDesc}}</p>
+            </li>
+        </ul>
+    </td>
 </script>
 
+<script id="c-song" type="text/x-jquery-tmpl">
+    <tr>
+        <td>
+            <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary"
+                 data-id="">
+                <i class="layui-icon">&#xe605;</i>
+            </div>
+            <img src="../staticFile/images/love.svg" width="16px">
+            {{= name}}
+        </td>
+        <td><%=siName%></td>
+        <td>{{= eq}}</td>
+        <td>{{= al.name}}</td>
+    </tr>
+</script>
 
+<script id="c-mv" type="text/x-jquery-tmpl">
+   <li>
+       <div style="height: 180px">
+            <div>
+                <a class="songlist__link mod_cover"> <img src="{{= imgurl16v9}}" class="songlist__pic" style="height: 103px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:180px;">{{= name}}</p>
+                 </div>
+                 <div>
+                    <p style="font-size: 12px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= artist.name}}</p>
+                 </div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= publishTime}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+
+<script id="c-album" type="text/x-jquery-tmpl">
+   <li>
+       <div style="height: 215px">
+            <div>
+                <a class="songlist__link mod_cover"> <img src="{{= blurPicUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= name}}</p>
+                 </div>
+                 <div style="height: 3px"></div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= artist.name}}</span>
+                 </div>
+            </div>
+       </div>
+    </li>
+</script>
+
+<script id="c-introduce" type="text/x-jquery-tmpl">
+    <blockquote class="layui-elem-quote">{{= ti}}</blockquote>
+    <p style="padding: 3px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</p>
+</script>
+
+<script src="../staticFile/js/singer/singer-info.js" charset="utf-8"></script>
 </body>
 </html>

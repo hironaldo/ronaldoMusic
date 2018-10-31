@@ -1,4 +1,4 @@
-(function($, window, document) {
+﻿(function($, window, document) {
     function Paging(el, options) {
         this.el = el;
         this.options = {
