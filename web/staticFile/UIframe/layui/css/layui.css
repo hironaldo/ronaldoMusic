@@ -1,4 +1,4 @@
-/** layui-v2.4.3 MIT License By https://www.layui.com */
+.layui-elem-quote/** layui-v2.4.3 MIT License By https://www.layui.com */
 .layui-inline, img {
     display: inline-block;
     vertical-align: middle
@@ -1515,7 +1515,7 @@ a cite {
 
     margin-bottom: 10px;
     padding-left: 15px;
-    line-height: 35px;
+    line-height: 30px;
     border-left: 5px solid #31c27c;
     border-radius: 0 2px 2px 0;
     background-color: #f2f2f2

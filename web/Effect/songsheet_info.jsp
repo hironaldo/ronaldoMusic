@@ -23,11 +23,16 @@
 
         body {
             overflow-x: hidden;
-            overflow-y: auto;
-            height: 100%;
+            overflow-y: hidden;
         }
 
-        body::-webkit-scrollbar {
+        #content {
+            height: 410px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        #content::-webkit-scrollbar {
             -webkit-border-radius: 2em;
             -moz-border-radius: 2em;
             border-radius: 2em;
@@ -35,17 +40,17 @@
             width: 8px;
         }
 
-        body::-webkit-scrollbar-thumb {
+        #content::-webkit-scrollbar-thumb {
             border-radius: 5px;
             -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
             background: rgba(0, 0, 0, 0.2);
         }
 
-        body::-webkit-scrollbar-track {
+        #content::-webkit-scrollbar-track {
             -webkit-border-radius: 2em;
             -moz-border-radius: 2em;
             border-radius: 2em;
-            background-color: #f5f5f7;
+            background-color: #D8D8D8;
         }
 
     </style>
@@ -61,8 +66,8 @@
         <li class="layui-this">全部歌曲</li>
         <li>相关评论</li>
     </ul>
-    <div class="layui-tab-content">
-        <div class="layui-tab-item layui-show">
+    <div class="layui-tab-content" id="content">
+        <div class="layui-tab-item  layui-show">
             <table class="layui-table" lay-skin="nob">
                 <thead>
                 <tr>
@@ -72,15 +77,24 @@
                             <i class="layui-icon">&#xe605;</i></div>&nbsp;歌曲
                     </th>
                     <th>歌手</th>
+                </tr>
                 </thead>
                 <tbody id="song"></tbody>
             </table>
         </div>
         <div class="layui-tab-item">
-            <textarea id="comment" maxlength="5"></textarea>
-            <button class="layui-btn layui-btn-xs" style="float: right">
-                <i class="layui-icon">&#xe609;</i>评论
-            </button>
+            <textarea id="comment"></textarea>
+            <div style="padding-top: 5px">
+                <button class="layui-btn layui-btn-xs" style="float: right;">
+                    <i class="layui-icon">&#xe609;</i>评论
+                </button>
+            </div>
+            <div style="padding-top: 30px">
+                <blockquote class="layui-elem-quote">精彩评论</blockquote>
+                <ul id="content_top"></ul>
+                <blockquote class="layui-elem-quote">最新评论</blockquote>
+                <ul id="content_new"></ul>
+            </div>
         </div>
     </div>
 </div>
@@ -134,7 +148,6 @@
             </ul>
         </td>
     <tr>
-
 </script>
 
 <script id="c-song" type="text/x-jquery-tmpl">
@@ -147,6 +160,38 @@
       </td>
       <td>{{= singer}}</td>
     </tr>
+</script>
+
+<script id="t-comment" type="text/x-jquery-tmpl">
+     <li>
+         <div style="float: left">
+             <img src="{{= user.avatarUrl}}" width="40" style="border-radius: 50%">
+         </div>
+         <div style="padding-left: 50px">
+             <p>{{= user.nickname}}</p>
+             <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
+             <p style="font-size: 12px;padding-top: 3px;color: #666">
+                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+             </p>
+         </div>
+     </li>
+     <hr>
+</script>
+
+<script id="n-comment" type="text/x-jquery-tmpl">
+     <li>
+         <div style="float: left">
+             <img src="{{= user.avatarUrl}}" width="40" style="border-radius: 50%">
+         </div>
+         <div style="padding-left: 50px">
+             <p>{{= user.nickname}}</p>
+             <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
+             <p style="font-size: 12px;padding-top: 3px;color: #666">
+                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+             </p>
+         </div>
+     </li>
+     <hr>
 </script>
 
 <script>
@@ -173,18 +218,25 @@
             let index = $(this).index();
             switch (index) {
                 case 0:
-                    url = 'http://127.0.0.1:3000/artists?id=' + siId;
+                    url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
                     $.get(url, function (data) {
-                        $("#singer_info").html('');
-                        $("#info").tmpl(data.artist).appendTo('#singer_info');
-                        $("#c-song").tmpl(data.hotSongs).appendTo('#song');
+                        $("#ssheetinfo_box").html('');
+                        $("#c-info").tmpl(data.data).appendTo('#ssheetinfo_box');
+                    });
+
+                    url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+                    $.get(url, function (data) {
+                        $("#song").html('');
+                        $("#c-song").tmpl(data.data.songs).appendTo('#song');
                     });
                     break;
                 case 1:
-                    url = 'http://127.0.0.1:3000/artist/album?id=' + siId + '&limit=20';
-                    $.get(url, function (data) {
-                        $("#song").html('');
-                        $("#c-song").tmpl(data.hotAlbums).appendTo('#song');
+                    let urlq = 'http://localhost:3000/comment/playlist?id=' + slistId;
+                    $.get(urlq, function (data) {
+                        $("#content_top").html('');
+                        $("#content_new").html('');
+                        $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+                        $("#n-comment").tmpl(data.comments).appendTo('#content_new');
                     });
                     break;
             }
@@ -275,5 +327,6 @@
         });
     });
 </script>
+
 </body>
 </html>
