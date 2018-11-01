@@ -16,8 +16,8 @@
 ### Acknowledgement 😘
            感谢大佬提供的数据接口
            
-           https://github.com/Binaryify/NeteaseCloudMusicApi.git
+           [](https://github.com/Binaryify/NeteaseCloudMusicApi.git)
            
-           https://www.bzqll.com/
+           [](https://www.bzqll.com/)
 
         
