@@ -1,5 +1,4 @@
 ﻿;(function($){
-	
 	var fnName = 'audioPlay';
 	var config = {
 		view : ".audio-view",

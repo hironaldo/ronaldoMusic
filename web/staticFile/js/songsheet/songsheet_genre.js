@@ -4,8 +4,7 @@
     $('#box').paging({
         initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
         callback: function (page) {
-            console.log(page);
-            let url = "http://localhost:3000/top/playlist?offset=" + page * 33 + "&cat=" + keyCat + "&limit=20";
+            let url = "http://localhost:3000/top/playlist?offset=" + page * 34 + "&cat=" + keyCat + "&limit=20";
             $.get(url, function (data) {
                 $("#ssheet_box").html('');
                 $("#data").tmpl(data.playlists).appendTo('#ssheet_box');

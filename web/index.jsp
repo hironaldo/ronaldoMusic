@@ -40,7 +40,7 @@
         <!-- 顶部导航 -->
         <div class="layui-layout-admin">
             <div class="layui-header" style="width: 985px;float: right">
-                <ul class="layui-nav">
+                <ul class="layui-nav" id="ul_left">
                     <li class="layui-nav-item">
                         <img src="staticFile/img/left-slip.svg" style="width: 25px">
                         <img src="staticFile/img/right-slip.svg" style="width: 25px">
@@ -54,10 +54,9 @@
                         </span>
                     </li>
                 </ul>
-                <ul class="layui-nav layui-layout-right">
+                <ul class="layui-nav layui-layout-right" id="ul_right">
                     <li class="layui-nav-item">
                         <img src="staticFile/img/minimum.svg" style="width: 25px">
-                        <img src="staticFile/img/maximum.svg" style="width: 16px">
                         <img src="staticFile/img/close.svg" style="width: 18px">
                     </li>
                 </ul>
@@ -164,7 +163,7 @@
                         </div>
                         <div class="audio-list">
                             <div class="audio-list-head">
-                                <p><i class="layui-icon layui-icon-face-smile-fine"></i>播放列表</p>
+                                <p>播放列表</p>
                                 <span class="menu-close">关闭</span>
                             </div>
                             <ul class="audio-inline">
@@ -181,27 +180,12 @@
             <div class="left_list">
                 <div class="list">
                     <div style="padding-top: 10px">
-                        <ul style="text-align: center;">
+                        <ul style="text-align: center;" id="userinfo">
                             <li><img src="staticFile/img/king.svg" style="width: 35px;"></li>
-                            <c:choose>
-                                <c:when test="${empty userList}">
-                                    <li>
-                                        <img src="staticFile/imgDT/user/default.png"
-                                             style="width: 75px;border-radius: 50%">
-                                    </li>
-                                    <li id="login_popup" style="font-size: 12px">请登录 | CR7音乐</li>
-                                </c:when>
-                                <c:otherwise>
-                                    <c:forEach var="user" items="${userList}" begin="0" end="0">
-                                        <li><img src="staticFile/imgDT/user/${user.userPic}"
-                                                 style="width: 75px;border-radius: 50%"></li>
-                                        <li style="padding-top: 5px">
-                                                ${user.userName}
-                                            <i class="layui-icon layui-icon-face-surprised"></i>
-                                        </li>
-                                    </c:forEach>
-                                </c:otherwise>
-                            </c:choose>
+                            <li>
+                                <img src="staticFile/imgDT/user/default.png" style="width: 75px;border-radius: 50%">
+                            </li>
+                            <li id="login_popup" style="font-size: 12px">请登录 | CR7音乐</li>
                         </ul>
                     </div>
                     <div class="tj">
@@ -212,18 +196,20 @@
                             <ul id="ul1">
                                 <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-headset"></i>热门歌手</li>
-                                <li id="test" url="Effect/songsheet.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单</li>
+                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-username"></i>热门歌手</li>
+                                <li id="test" url="Effect/songsheet.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="tj">
                         <div class="head">
-                            <h4>我的音乐</h4>
+                            <h4>个人中心</h4>
                         </div>
                         <div class="list">
                             <ul id="ul2">
                                 <li url="Effect/follow.jsp"><i class="layui-icon layui-icon-rate"></i>我喜欢</li>
+                                <li url=""><i class="layui-icon layui-icon-chat"></i>我的资料</li>
                                 <li url="Effect/download.jsp"><i class="layui-icon layui-icon-download-circle"></i>下载管理
                                 </li>
                             </ul>
@@ -240,27 +226,9 @@
                         </div>
                         <div class="list">
                             <ul id="ul3">
-                                <li url="Effect/songlist.jsp">
-                                    <i class="layui-icon layui-icon-tree"></i>荒原里的迷幻吟唱
-                                    <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
-                                </li>
-                                <li url="Effect/songlist.jsp">
-                                    <i class="layui-icon layui-icon-tree"></i>经典配乐大全
-                                    <span style="float: right"><i class="layui-icon layui-icon-delete"></i></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tj">
-                        <div class="head">
-                            <h4>收藏的歌单</h4>
-                        </div>
-                        <div class="list">
-                            <ul id="ul4">
-                                <li url="Effect/songlist.jsp">
-                                    <i class="layui-icon layui-icon-tree"></i>独立音乐人的理想之声
-                                    <i class="layui-icon layui-icon-delete" style="float: right"></i>
-                                </li>
+                                <span class="tip" style="padding-left: 60px;font-size: 12px">
+                                    还没登录呢 <i class="layui-icon layui-icon-face-cry"></i>
+                                </span>
                             </ul>
                         </div>
                     </div>
@@ -268,7 +236,6 @@
             </div>
         </div>
         <!-- 左边导航 -->
-
     </div>
 </div>
 
@@ -277,12 +244,25 @@
     <img src="staticFile/img/footer.png">
 </div>
 
-<script src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.pjax.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/UIframe/jquery.pjax.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/audio.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/player.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/index.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/js/index-navload.js" charset="utf-8"></script>
+<script id="m-songlist" type="text/x-jquery-tmpl">
+     <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:200px;">
+         <i class="layui-icon layui-icon-tree"></i>{{= name}}
+         <h1 style="display: none;">{{= id}}</h1>
+         <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+         <h3 style="display: none;">{{= creator.nickname}}</h3>
+         <h4 style="display: none;">{{= creator.userId}}</h4>
+         <h5 style="display: none;">{{= tags}}</h5>
+     </li>
+</script>
 
 </body>
 

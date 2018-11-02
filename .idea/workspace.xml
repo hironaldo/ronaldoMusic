@@ -6,14 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web/Effect/songsheet.jsp" description="&lt;script id=&quot;data&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;&#10;    &lt;..." line="62" />
+    <bookmark url="file://$PROJECT_DIR$/web/Effect/songsheet.jsp" description="&lt;script id=&quot;data&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;&#10;    &lt;..." line="61" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dea54e9b-b40f-4064-8a5b-458b9e3aae05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/staticFile/img/headset.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/staticFile/js/index-navload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/play.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/play.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/js/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/aa.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/choice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/singer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/singer_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/singer_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/songlist_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songlist_user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/songsheet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery-jtemplates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/play.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/play.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/web/WEB-INF/classes/" />
@@ -47,7 +73,7 @@
     <session id="98731737">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="48" />
+          <entry key="project.closed" value="49" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -57,7 +83,7 @@
           <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="3" />
-          <entry key="project.open.time.20" value="6" />
+          <entry key="project.open.time.20" value="7" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="4" />
           <entry key="project.open.time.23" value="1" />
@@ -67,22 +93,22 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="51" />
+          <entry key="project.opened" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
-          <entry key="css" value="101" />
+          <entry key="css" value="104" />
           <entry key="dtd" value="14" />
           <entry key="html" value="2" />
-          <entry key="java" value="478" />
+          <entry key="java" value="479" />
           <entry key="jpg" value="23" />
-          <entry key="js" value="57" />
-          <entry key="jsp" value="308" />
+          <entry key="js" value="81" />
+          <entry key="jsp" value="344" />
           <entry key="png" value="2" />
           <entry key="properties" value="11" />
-          <entry key="svg" value="13" />
+          <entry key="svg" value="15" />
           <entry key="tag" value="4" />
           <entry key="txt" value="1" />
           <entry key="vue" value="4" />
@@ -93,40 +119,40 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="CSS" value="101" />
+          <entry key="CSS" value="104" />
           <entry key="DTD" value="14" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="25" />
-          <entry key="JAVA" value="478" />
-          <entry key="JSP" value="312" />
-          <entry key="JavaScript" value="57" />
+          <entry key="JAVA" value="479" />
+          <entry key="JSP" value="348" />
+          <entry key="JavaScript" value="81" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="11" />
-          <entry key="SVG" value="13" />
+          <entry key="SVG" value="15" />
           <entry key="XML" value="295" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="911" />
+          <entry key="css" value="913" />
           <entry key="dummy" value="8" />
           <entry key="java" value="4974" />
-          <entry key="js" value="1314" />
-          <entry key="jsp" value="23437" />
+          <entry key="js" value="1928" />
+          <entry key="jsp" value="24985" />
           <entry key="properties" value="15" />
           <entry key="tag" value="5" />
-          <entry key="txt" value="49" />
+          <entry key="txt" value="50" />
           <entry key="xml" value="1026" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="911" />
+          <entry key="CSS" value="913" />
           <entry key="Hibernate QL" value="3" />
           <entry key="JAVA" value="4971" />
-          <entry key="JSP" value="23442" />
-          <entry key="JavaScript" value="1314" />
-          <entry key="PLAIN_TEXT" value="57" />
+          <entry key="JSP" value="24990" />
+          <entry key="JavaScript" value="1928" />
+          <entry key="PLAIN_TEXT" value="58" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="1026" />
         </counts>
@@ -146,89 +172,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1805">
-              <caret line="95" column="20" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="20" />
+            <state relative-caret-position="212">
+              <caret line="90" selection-start-line="90" selection-end-line="94" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="262" column="12" selection-start-line="262" selection-start-column="10" selection-end-line="262" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/staticFile/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-73">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/staticFile/js/index-navload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="155" column="107" selection-start-line="155" selection-start-column="107" selection-end-line="155" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28766">
-              <caret line="1514" selection-start-line="1514" selection-end-line="1514" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Effect/singer_info.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Effect/songlist_user.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="63" column="21" selection-start-line="59" selection-start-column="16" selection-end-line="63" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="49" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="49" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="15" selection-start-line="39" selection-start-column="12" selection-end-line="45" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1862">
-              <caret line="98" column="6" selection-start-line="94" selection-start-column="3" selection-end-line="98" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="4579">
+              <caret line="241" column="85" lean-forward="true" selection-start-line="241" selection-start-column="85" selection-end-line="241" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -251,12 +235,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input</find>
-      <find>.layui-nav *</find>
-      <find>.left_list .list</find>
-      <find>audio</find>
       <find>.audio-box</find>
-      <find>.left_list .tj .list .act</find>
       <find>toplist__item</find>
       <find>.riht_body</find>
       <find>#classify-nav ul li span</find>
@@ -281,6 +260,11 @@
       <find>.song_sheet table tr td</find>
       <find>layui-tab layui-tab-brief</find>
       <find>.layui-elem-quote</find>
+      <find>audio-list menu-show</find>
+      <find>audio-menu</find>
+      <find>password</find>
+      <find>userinfo</find>
+      <find>.left_list .tj .list .act</find>
     </findStrings>
     <dirStrings>
       <dir>E:\workspace\IDEA\zOther_task\MusicPlayer-SSH</dir>
@@ -292,22 +276,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/com/cheery/dao/singer/ISingerDao.java" />
-        <option value="$PROJECT_DIR$/src/com/cheery/dao/singer/SingerDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/configs/config-spring/fyg/spring-branch.xml" />
         <option value="$PROJECT_DIR$/src/configs/spring-core.xml" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-playlist.xml" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/index.js" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/playlist/IPlaylistDao.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/dao/playlist/PlaylistDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/service/PlayListService.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/actions/PlayListAction.java" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/Detail.hbm.xml" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/play.css" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/Comment.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/Mv.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/cheery/model/Singer.hbm.xml" />
@@ -327,22 +303,30 @@
         <option value="$PROJECT_DIR$/web/staticFile/css/public.css" />
         <option value="$PROJECT_DIR$/web/staticFile/css/choice/style.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/choice/choice.js" />
-        <option value="$PROJECT_DIR$/web/Effect/choice.jsp" />
         <option value="$PROJECT_DIR$/src/com/cheery/actions/InitAction.java" />
         <option value="$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml" />
         <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer.js" />
-        <option value="$PROJECT_DIR$/web/Effect/singer.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/js/singer/sing-info.js" />
         <option value="$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css" />
-        <option value="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/UIframe/jquery.tmpl.min.js" />
+        <option value="$PROJECT_DIR$/web/Effect/singer.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/songlist_user.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" />
         <option value="$PROJECT_DIR$/web/Effect/singer_info.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" />
-        <option value="$PROJECT_DIR$/web/Effect/songsheet.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/choice.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/audio.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/player.js" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/play.css" />
+        <option value="$PROJECT_DIR$/web/Effect/songsheet.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/index.js" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/index-navload.js" />
       </list>
     </option>
   </component>
@@ -369,10 +353,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="157" />
-    <option name="y" value="32" />
+    <option name="x" value="201" />
+    <option name="y" value="168" />
     <option name="width" value="1836" />
-    <option name="height" value="1031" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -399,13 +383,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cheery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="cheery" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
@@ -429,30 +438,7 @@
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="singer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="choice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
@@ -467,14 +453,20 @@
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="songsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="UIframe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,7 +475,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace/IDEA/zOther_task/MusicPlayer-SSH/src/com/cheery/dao/DataInitDao/DataInitImpl.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540986844553" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541149684135" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -500,24 +492,24 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\Effect" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\images" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\js\paging" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-struts\fyg" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\WEB-INF\lib" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cheery.actions" />
-      <recent name="com.cheery.service" />
-      <recent name="com.cheery.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\imgDT\user" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\imgDT" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\src\configs\config-spring\lx" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cheery.actions" />
+      <recent name="com.cheery.service" />
+      <recent name="com.cheery.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\img" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\Effect" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\images" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\js\paging" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -868,7 +860,8 @@
       <workItem from="1540964210925" duration="717000" />
       <workItem from="1540965028197" duration="19292000" />
       <workItem from="1540987346764" duration="1360000" />
-      <workItem from="1541037121931" duration="298000" />
+      <workItem from="1541037121931" duration="2410000" />
+      <workItem from="1541118132603" duration="28283000" />
     </task>
     <task id="LOCAL-00001" summary="update some details By CR7 -10.13">
       <created>1539436482997</created>
@@ -968,7 +961,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540974343195</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="😍😋🤣😂 By CR7">
+      <created>1541037627233</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541037627233</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1004,7 +1004,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450386000" />
+    <option name="totallyTimeSpent" value="480781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,12 +1016,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="30" width="1836" height="1031" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49131122" visible="true" weight="0.16722973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.490099" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" sideWeight="0.50630915" side_tool="true" weight="0.1705121" />
-      <window_info id="Persistence" order="2" sideWeight="0.5086342" side_tool="true" weight="0.17746478" />
+      <window_info id="Persistence" order="2" sideWeight="0.509901" side_tool="true" weight="0.16891892" />
       <window_info id="Designer" order="3" />
       <window_info id="JRebel" order="4" sideWeight="0.5063291" side_tool="true" weight="0.1705121" />
       <window_info id="Image Layers" order="5" />
@@ -1031,7 +1030,7 @@
       <window_info id="Web" order="9" sideWeight="0.5086888" side_tool="true" weight="0.18704225" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32700893" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49577466" weight="0.3236607" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49577466" visible="true" weight="0.311493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3975771" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1042,9 +1041,9 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5168919" side_tool="true" weight="0.29147983" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32887402" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32915717" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32885906" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.4802928" weight="0.29017857" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5197072" side_tool="true" weight="0.29017857" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.328125" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.47972974" weight="0.29017857" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5202703" side_tool="true" weight="0.29017857" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32190266" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.32963374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1081,100 +1080,10 @@
     <MESSAGE value="update some details By CR7 -10-27" />
     <MESSAGE value="update some details By CR7 -10-30" />
     <MESSAGE value=" By CR7 -10-31-01" />
-    <option name="LAST_COMMIT_MESSAGE" value=" By CR7 -10-31-01" />
+    <MESSAGE value=" By CR7" />
+    <option name="LAST_COMMIT_MESSAGE" value=" By CR7" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/CommentEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/IDataInitDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/dataInit/DataInitImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/play.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Detail.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Mv.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/FollowEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/SongEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Song.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/model/Singer.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/PlayListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/service/DataInitService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/user/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cheery/dao/user/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1252,24 +1161,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/UIframe/paging/paging.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/aa.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1301,75 +1196,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-2.3.dtd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-playlist.xml" />
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-user.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cheery/actions/InitAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/configs/config-struts/fyg/struts-Init.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="249" column="37" selection-start-line="249" selection-start-column="37" selection-end-line="249" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_genre.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
-          <caret line="95" column="20" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1380,13 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/singer_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -1394,45 +1230,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/img/headset.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/UIframe/jquery.tmpl.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="338" column="10" selection-start-line="338" selection-start-column="10" selection-end-line="338" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/aa.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="125" column="39" selection-start-line="125" selection-start-column="39" selection-end-line="125" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/download.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/follow.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/play-mv.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/Effect/songlist_user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="21" selection-start-line="59" selection-start-column="16" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="-3754">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_genre.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="326">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/singer_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="161" column="47" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/audio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/UIframe/jquery-2.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/UIframe/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/play.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cheery/actions/InitAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="82" column="16" lean-forward="true" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="15" selection-start-line="39" selection-start-column="12" selection-end-line="45" selection-end-column="15" />
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
-          <caret line="98" column="6" selection-start-line="94" selection-start-column="3" selection-end-line="98" selection-end-column="6" />
+        <state relative-caret-position="331">
+          <caret line="83" column="40" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="95" selection-start-line="95" selection-end-line="99" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="90" selection-start-line="90" selection-end-line="94" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="262" column="12" selection-start-line="262" selection-start-column="10" selection-end-line="262" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_info.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="155" column="107" selection-start-line="155" selection-start-column="107" selection-end-line="155" selection-end-column="107" />
+        <state relative-caret-position="4579">
+          <caret line="241" column="85" lean-forward="true" selection-start-line="241" selection-start-column="85" selection-end-line="241" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index-navload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
 ﻿$(function () {
-    var song = [
+    let song = [
         {
             'cover': 'http://y.gtimg.cn/music/photo_new/T002R300x300M000000GDz8k03UOaI.jpg?max_age=2592000',
             'src': 'http://music.163.com/song/media/outer/url?id=33471524.mp3',
@@ -16,7 +16,7 @@
             'title': '魔鬼中的天使 - 田馥甄'
         }
     ];
-    var audioFn = audioPlay({
+    let audioFn = audioPlay({
         song: song,
         autoPlay: true  //是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
     });
@@ -38,7 +38,7 @@
     //audioFn.selectMenu(3,true);
 
     /* 查看歌单中的曲目 */
-    //console.log(audioFn.song);
+    console.log(audioFn.song);
 
     /* 当前播放曲目的对象 */
     //console.log(audioFn.audio);

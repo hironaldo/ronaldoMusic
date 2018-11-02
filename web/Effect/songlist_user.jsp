@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>歌单页面</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
     <style>
 
         * {
@@ -139,7 +139,7 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script>
     $(function () {

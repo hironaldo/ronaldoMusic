@@ -21,7 +21,8 @@
                 url = 'http://127.0.0.1:3000/artists?id=' + siId;
                 $.get(url, function (data) {
                     $("#singer_info").html('');
-                    $("#info").tmpl(data.artist).appendTo('#singer_info');
+                    $("#song").html('');
+                    $("#c-info").tmpl(data.artist).appendTo('#singer_info');
                     $("#c-song").tmpl(data.hotSongs).appendTo('#song');
                 });
                 break;

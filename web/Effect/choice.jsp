@@ -6,9 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css"/>
-    <link rel="stylesheet" href="../staticFile/css/choice/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/choice/style.css" media="all">
     <style>
         #songsheet_top {
             padding-top: 15px;
@@ -44,10 +44,10 @@
 
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
-        <div style="padding-left: 13px;">
+        <div style="padding-left: 7px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
             <a href="songsheet.jsp">
-                <span style="padding-left: 792px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 803px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="songsheet_top"></ul>
@@ -167,9 +167,9 @@
 
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
 <!-- 轮播 -->
 <script type="text/javascript">
     var aa = new zturn({
@@ -187,7 +187,6 @@
             <a>{{= name}}</a>
         </div>
     </li>
-
 </script>
 
 <script id="mv" type="text/x-jquery-tmpl">
@@ -206,7 +205,6 @@
             <div style="font-size: 10px;color: #666">{{= artistName}}</div>
         </div>
     </td>
-
 </script>
 
 <script id="singer" type="text/x-jquery-tmpl">
@@ -221,25 +219,23 @@
             </div>
         </div>
     </td>
-
 </script>
 
 <script id="song_sheet" type="text/x-jquery-tmpl">
     <li>
         <div style="height: 215px">
             <div>
-                <a class="songlist__link mod_cover"> <img src="{{= picUrl}}" class="songlist__pic" style="height: 172px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                <a class="songlist__link mod_cover">
+                    <img src="{{= picUrl}}" class="songlist__pic" style="height: 172px;"/> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
             <div style="height: 5px"></div>
-            <div>
-                 <div>
-                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:172px;">{{= name}}</p>
-                 </div>
+            <div style="padding-top:5px">
+                <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:172px;">{{= name}}</p>
             </div>
        </div>
     </li>
-
 </script>
-<script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
     String slistId = request.getParameter("slistId");
     String picurl = request.getParameter("picurl");
@@ -12,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <title>歌单详细页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
     <style>
 
         * {
@@ -90,10 +91,10 @@
                 </button>
             </div>
             <div style="padding-top: 30px">
-                <blockquote class="layui-elem-quote">精彩评论</blockquote>
-                <ul id="content_top"></ul>
-                <blockquote class="layui-elem-quote">最新评论</blockquote>
-                <ul id="content_new"></ul>
+                <span class="layui-badge-dot"></span>&nbsp;&nbsp;精彩评论
+                <ul id="content_top" style="padding-top: 10px;"></ul>
+                <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;最新评论
+                <ul id="content_new" style="padding-top: 10px;"></ul>
             </div>
         </div>
     </div>
@@ -105,9 +106,11 @@
 <i id="picurl" style="display: none;">
     <%=userId%>
 </i>
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <tr>
         <td>

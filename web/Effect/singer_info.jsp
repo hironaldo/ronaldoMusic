@@ -10,9 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <title>歌手详情页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all"/>
-    <link rel="stylesheet" href="../staticFile/css/singer/singer_info.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/singer/singer_info.css" media="all"/>
     <style>
         #mv_box {
             padding-top: 10px;
@@ -155,7 +155,7 @@
 </script>
 
 <script id="c-introduce" type="text/x-jquery-tmpl">
-    <blockquote class="layui-elem-quote">{{= ti}}</blockquote>
+    <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;{{= ti}}
     <p style="padding: 3px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</p>
 </script>
 

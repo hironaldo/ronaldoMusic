@@ -4,9 +4,9 @@
 <head>
     <title>分类歌单</title>
     <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="../staticFile/css/songsheet/style.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/paging/paging.css" media="all">
     <style>
         #ssheet_box {
             padding-top: 30px;
@@ -56,10 +56,9 @@
     <div class="pagger-box pagger" id="box"></div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"
-        charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
@@ -82,9 +81,9 @@
             </div>
        </div>
    </li>
+
 </script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
-
 <script>
     /*查看歌单详细信息*/
     window.onload = function () {
