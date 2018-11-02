@@ -10,15 +10,14 @@
      
             数据库：MySQL
             后端：Spring + Struts + Hibernate + Junit
-            前端：Jquery + Bootstrap + Layui + jQuery-tmpl + Ajax + Pjax
+            前端：Jquery + Bootstrap + Layui + jQuery-tmpl + jquery.cookie + Ajax + Pjax
             IDEA插件：Lombok + JRebel + Kaptcha + Java Coding Guidelines
             
 ##### Acknowledgement 😘
 
-           感谢大佬提供的数据接口
+           感谢大佬提供的数据接口 
            
-           1-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi.git)
-           
+           1-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi.git)           
            2-[Mrdong916](https://www.bzqll.com/)
 
         
