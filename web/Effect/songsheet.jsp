@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>分类歌单</title>
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/songsheet/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/songsheet/songsheet.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
     <style>
         #ssheet_box {
             padding-top: 30px;
@@ -84,6 +84,7 @@
 
 </script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
+
 <script>
     /*查看歌单详细信息*/
     window.onload = function () {

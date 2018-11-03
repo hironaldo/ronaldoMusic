@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String plId = request.getParameter("plId");
+    String siId = request.getParameter("siId");
+%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,119 +10,143 @@
     <meta charset="UTF-8">
     <title>Mv播放页</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/mv/mv.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/DPlayer/DPlayer.min.css">
+    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
+
     <style>
-
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-        }
-        body {
-            overflow-x: hidden;
-            overflow-y: auto;
-            height: 100%;
+        #mv_box {
+            padding-top: 10px;
         }
 
-        body::-webkit-scrollbar {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #D4D4D4;
-            width: 8px;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        body::-webkit-scrollbar-track {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #f5f5f7;
-        }
-
-        .nav {
-            display: inline;
-            white-space: nowrap;
-        }
-
-        .nav li {
+        #mv_box li {
             display: inline-block;
-            padding-left: 25px
+            width: 180px;
+            padding-left: 10px;
         }
-
-        .nav span {
-            color: #31C27C;
-        }
-
-        /*#song div {*/
-            /*padding-top: 8px*/
-        /*}*/
-
-        /*table {*/
-            /*margin: 0 auto;*/
-        /*}*/
-
-        /*table tr td {*/
-            /*padding: 20px;*/
-        /*}*/
-
-        /*table tr td > div {*/
-            /*background: #F0F0F0;*/
-            /*padding-left: 25px;*/
-            /*padding-right: 25px;*/
-            /*padding-bottom: 15px;*/
-            /*box-shadow: 4px 9px 15px #88887A;*/
-        /*}*/
-
-        /*table tr td > div img {*/
-            /*width: 100px;*/
-            /*border-radius: 50%*/
-        /*}*/
-
-        /*.downnav {*/
-            /*display: inline;*/
-            /*white-space: nowrap;*/
-        /*}*/
-
-        /*.downnav li {*/
-            /*display: inline-block;*/
-            /*padding-left: 85px*/
-        /*}*/
-
-        /*.hot{*/
-            /*display: block;*/
-            /*position: absolute;*/
-            /*top: 205px;*/
-            /*left: 175px;*/
-            /*background-position: -190px 0;*/
-        /*}*/
-
     </style>
 </head>
 <body>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.22.2/DPlayer.min.css" rel="stylesheet">
+<i id="plId" style="display: none"><%=plId%>
+</i>
+<i id="siId" style="display: none"><%=siId%>
+</i>
 <div id="dplayer"></div>
-<div style="padding-top: 30px">Sleep Away<br></div>
-<div>演唱：Lexie刘柏辛 2.36万观看 发布时间：2018-10-10</div>
+<div style="padding-top: 10px;padding-left: 10px">
+    <div id="mv_info"></div>
+    <div style="padding-top: 10px">
+        <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;相关Mv
+        <ul id="mv_box"></ul>
+    </div>
+    <div style="padding-top: 10px">
+        <textarea id="comment"></textarea>
+        <div style="padding-top: 5px">
+            <button class="layui-btn layui-btn-xs" style="float: right;">
+                <i class="layui-icon">&#xe609;</i>评论
+            </button>
+        </div>
+        <div style="padding-top: 30px">
+            <span class="layui-badge-dot"></span>&nbsp;&nbsp;精彩评论
+            <ul id="content_top" style="padding-top: 10px;"></ul>
+            <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;最新评论
+            <ul id="content_new" style="padding-top: 10px;"></ul>
+        </div>
+        <div class="pagger-box pagger" id="box"></div>
+    </div>
+</div>
+
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.22.2/DPlayer.min.js"></script>
+<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/DPlayer/DPlayer.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/js/mv/mv.js" charset="utf-8"></script>
+<script id="mv" type="text/x-jquery-tmpl">
+    <h1 id="mvurl" style="display:none">{{= url}}</h1>
+    <h2>{{= name}}</h2>
+    <p style="font-size: 10px;color: #666"><span>演唱：{{= singer}}&nbsp;发布时间：{{= publishTime}}</span></p>
+    <p style="font-size: 10px;color: #666;"><span">简介：{{= desc}}</span></p>
+</script>
+
+<script id="c-mv" type="text/x-jquery-tmpl">
+   <li>
+       <div style="height: 180px">
+            <div>
+                <a class="songlist__link mod_cover"> <img src="{{= imgurl16v9}}" class="songlist__pic" style="height: 103px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:180px;">{{= name}}</p>
+                 </div>
+                 <div>
+                    <p style="font-size: 12px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= artist.name}}</p>
+                 </div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= publishTime}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+
+<script id="t-comment" type="text/x-jquery-tmpl">
+     <li>
+         <div style="float: left">
+             <img src="{{= user.avatarUrl}}" width="40" style="border-radius: 50%">
+         </div>
+         <div style="padding-left: 50px">
+             <p>{{= user.nickname}}</p>
+             <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
+             <p style="font-size: 12px;padding-top: 3px;color: #666">
+                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+             </p>
+         </div>
+     </li>
+     <hr>
+</script>
+
+<script id="n-comment" type="text/x-jquery-tmpl">
+     <li>
+         <div style="float: left">
+             <img src="{{= user.avatarUrl}}" width="40" style="border-radius: 50%">
+         </div>
+         <div style="padding-left: 50px">
+             <p>{{= user.nickname}}</p>
+             <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
+             <p style="font-size: 12px;padding-top: 3px;color: #666">
+                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+             </p>
+         </div>
+     </li>
+     <hr>
+</script>
+
 <script>
-    var dp = new DPlayer({
-        container: document.getElementById('dplayer'),
-        screenshot: true,
-        autoplay: false,
-        video: {
-            url: 'http://110.52.197.15/vcloud1049.tc.qq.com/1049_M0120000003UFKpQ05u4wl1001577808.f40.mp4?vkey=90E82EDD6B1010548146795122D573EBB5C8A4E5A08D8F90ED383C8F53EA3BCDE6F2D3DF2C334AFC9EEEBDC273013E050FE64B53CE46B6951CA437884DDB5CBF8A6B950D154B9352A701E8BEC021FB61F473A3B88CF8982B'
-        }
+    layui.use('layedit', function () {
+        var layedit = layui.layedit;
+        layedit.build('comment', {
+            height: 100,
+            tool: [
+                'face'
+            ]
+        });
     });
 </script>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script>
+    window.onload = function () {
+        setTimeout(function () {
+            const mvUrl = $('#mvurl').text();
+            let dp = new DPlayer({
+                container: document.getElementById('dplayer'),
+                screenshot: true,
+                autoplay: false,
+                video: {url: mvUrl}
+            });
+        }, 500);
+    }
+</script>
 </body>
 </html>

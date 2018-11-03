@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/singer/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/singer/singer.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
     <style>
         #singer_box {
             padding-top: 14px;

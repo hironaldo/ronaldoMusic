@@ -64,7 +64,7 @@ img:hover {
 
 .box_img {
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
 
 .box_img img {
@@ -77,7 +77,7 @@ img:hover {
 }
 
 .mv {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-left: 25px;
 }
 
@@ -113,7 +113,7 @@ img:hover {
 }
 
 .singer {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 25px
 }
 

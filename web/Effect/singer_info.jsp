@@ -10,9 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <title>歌手详情页</title>
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/singer/singer_info.css" media="all"/>
+    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/singer/singer_info.css" media="all">
     <style>
         #mv_box {
             padding-top: 10px;
@@ -75,7 +75,7 @@
 
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <td>
         <img src="{{= img1v1Url}}" style="width: 150px;border-radius: 50%"/>

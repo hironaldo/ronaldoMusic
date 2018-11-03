@@ -6,12 +6,12 @@
 <head>
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
-    <link rel="stylesheet" type="text/css" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/public.css"/>
-    <link rel="stylesheet" type="text/css" href="../staticFile/css/choice/style.css" media="all">
+    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/choice/choice.css" media="all">
     <style>
         #songsheet_top {
-            padding-top: 15px;
+            padding-top: 10px;
         }
 
         #songsheet_top li {
@@ -70,7 +70,7 @@
     <!-- 歌手 -->
 
     <!-- 音乐 -->
-    <div style="padding-left: 40px;padding-top: 20px">
+    <div style="padding-left: 40px;padding-top: 15px">
         <div>
             <span style="font-size: 18px;">音 乐</span>
         </div>
@@ -101,7 +101,7 @@
     <!-- 音乐 -->
 
     <!-- 排行榜 -->
-    <div class="ranking" style="padding-left: 20px;padding-top:20px">
+    <div class="ranking" style="padding-left: 20px;padding-top:15px">
         <div style="padding-left: 20px;">
             <span style="font-size: 18px;">巅 峰 榜</span>
         </div>
@@ -157,7 +157,8 @@
             <span style="font-size: 18px;">M V</span>
         </div>
         <div>
-            <table>
+            <div id="aaa"></div>
+            <table id="mv_top">
                 <tr id="mv_beg"></tr>
                 <tr id="mv_end"></tr>
             </table>
@@ -191,18 +192,26 @@
 
 <script id="mv" type="text/x-jquery-tmpl">
     <td>
-        <div class="box_img">
-            <a class="songlist__link mod_cover">
-                <img class="songlist__pic" src="{{= cover}}">
-                <i class="mod_cover__mask"></i>
-                <i class="mod_cover__icon_play"></i>
-            </a>
-        </div>
         <div>
-            <div>
-                <p style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:215px;">{{= name}}</p>
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">
+                {{each artists}}
+                    <span>{{= id}}</span>
+                {{/each}}
+            </h2>
+            <div class="box_img">
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" src="{{= cover}}">
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
-            <div style="font-size: 10px;color: #666">{{= artistName}}</div>
+            <div>
+                <div>
+                    <p style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:215px;">{{= name}}</p>
+                </div>
+                <div style="font-size: 10px;color: #666">{{= artistName}}</div>
+            </div>
         </div>
     </td>
 </script>
@@ -210,6 +219,8 @@
 <script id="singer" type="text/x-jquery-tmpl">
     <td>
         <div>
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= name}}</h2>
             <div class="box_img">
                 <img class="songlist__pic" src="{{= img1v1Url}}" style="width: 170px">
             </div>
@@ -224,6 +235,7 @@
 <script id="song_sheet" type="text/x-jquery-tmpl">
     <li>
         <div style="height: 215px">
+            <h1 style="display: none;">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover">
                     <img src="{{= picUrl}}" class="songlist__pic" style="height: 172px;"/> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i>
@@ -236,6 +248,7 @@
        </div>
     </li>
 </script>
-<script type="text/javascript" src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
+<script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
+<script src="../staticFile/js/choice/choice-reload.js" charset="utf-8"></script>
 </body>
 </html>

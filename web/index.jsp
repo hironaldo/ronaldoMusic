@@ -24,9 +24,9 @@
         <li><img src="staticFile/img/computer.svg" style="width: 50px"></li>
         <li style="text-align: center;color: #FFFFff">此电脑</li>
     </ul>
-    <ul style="display: inline-block;padding-left: 15px">
-        <li><img src="staticFile/img/file.svg" style="width: 45px;padding-bottom: 5px"></li>
-        <li style="text-align: center;color: #FFFFff">文件夹</li>
+    <ul style="display: inline-block;padding-left: 15px" id="ppt">
+        <li><img src="staticFile/img/ppt.svg" style="width: 40px;padding-bottom: 5px"></li>
+        <li style="text-align: center;color: #FFFFff">PPT</li>
     </ul>
     <ul style="display: inline-block;padding-left: 15px" id="music">
         <li><img src="staticFile/img/music.svg" style="width: 47px"></li>
@@ -210,8 +210,6 @@
                             <ul id="ul2">
                                 <li url="Effect/follow.jsp"><i class="layui-icon layui-icon-rate"></i>我喜欢</li>
                                 <li url=""><i class="layui-icon layui-icon-chat"></i>我的资料</li>
-                                <li url="Effect/download.jsp"><i class="layui-icon layui-icon-download-circle"></i>下载管理
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -248,11 +246,11 @@
 <script type="text/javascript" src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/UIframe/jquery.pjax.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/audio.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/player.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/js/index.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/js/index-navload.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/js/index/index.js" charset="utf-8"></script>
+<script type="text/javascript" src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
 <script id="m-songlist" type="text/x-jquery-tmpl">
      <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:200px;">
          <i class="layui-icon layui-icon-tree"></i>{{= name}}

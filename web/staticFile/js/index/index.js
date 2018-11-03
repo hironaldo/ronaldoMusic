@@ -31,15 +31,20 @@
         $("#content").fadeIn();
     });
 
+    $("#ppt").dblclick(function () {
+        window.open("index.html");
+    });
+
+
     /*顶部导航栏*/
     $('#ul_left li img').click(function () {
         let index = $(this).index();
         switch (index) {
             case 0:
-                history.back(-1);
+                history.go(-1);
                 break;
             case 1:
-                history.back(1);
+                history.go(1);
                 break;
             case 2:
                 window.location.reload();

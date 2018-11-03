@@ -24,10 +24,10 @@
     });
 
     /*mv*/
-    $.get('http://localhost:3000/top/mv?offset=7&limit=4', function (data) {
+    $.get('http://localhost:3000/top/mv?limit=4', function (data) {
         $("#mv").tmpl(data.data).appendTo('#mv_beg');
     });
-    $.get('http://localhost:3000/top/mv?offset=13&limit=4', function (data) {
+    $.get('http://localhost:3000/top/mv?offset=5&limit=4', function (data) {
         $("#mv").tmpl(data.data).appendTo('#mv_end');
     });
 });

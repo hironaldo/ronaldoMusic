@@ -1,6 +1,6 @@
 ﻿$(function () {
     let siId = $('#siId').text().trim();    //歌手id
-    let url = '';
+    let url;
     /*加载首页基本数据*/
     url = 'http://127.0.0.1:3000/artists?id=' + siId;
     $.get(url, function (data) {
