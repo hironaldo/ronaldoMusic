@@ -27,7 +27,7 @@
                 });
                 break;
             case 1:
-                url = 'http://127.0.0.1:3000/artist/album?id=' + siId + '&limit=20';
+                url = 'http://127.0.0.1:3000/artist/album?id=' + siId + '&limit=15';
                 $.get(url, function (data) {
                     $("#album_box").html('');
                     $("#c-album").tmpl(data.hotAlbums).appendTo('#album_box');

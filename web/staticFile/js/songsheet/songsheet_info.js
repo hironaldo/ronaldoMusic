@@ -1,18 +1,19 @@
 ﻿$(function () {
-    let slistId = $('#slistId').text().trim();    //歌手id
+    let slistId = $('#slistId').text().trim();    //歌单id
     let url;
-    url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+    /*获取歌单信息和歌曲*/
+    url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
     $.get(url, function (data) {
         $("#ssheetinfo_box").html('');
         $("#c-info").tmpl(data.data).appendTo('#ssheetinfo_box');
     });
-
-    url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+    url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
     $.get(url, function (data) {
         $("#song").html('');
         $("#c-song").tmpl(data.data.songs).appendTo('#song');
     });
 
+    /*获取评论*/
     $('.layui-tab-title li').click(function () {
         layer.load();
         setTimeout(function () {
@@ -21,28 +22,41 @@
         let index = $(this).index();
         switch (index) {
             case 0:
-                url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
-                $.get(url, function (data) {
-                    $("#ssheetinfo_box").html('');
-                    $("#c-info").tmpl(data.data).appendTo('#ssheetinfo_box');
-                });
-
-                url = 'http://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
-                $.get(url, function (data) {
-                    $("#song").html('');
-                    $("#c-song").tmpl(data.data.songs).appendTo('#song');
-                });
                 break;
             case 1:
-                let urlq = 'http://localhost:3000/comment/playlist?id=' + slistId;
-                $.get(urlq, function (data) {
+                let url = 'http://localhost:3000/comment/playlist?id=' + slistId;
+                $.get(url, function (data) {
                     $("#content_top").html('');
-                    $("#content_new").html('');
                     $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
-                    $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                });
+                $('#box').paging({
+                    initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
+                    callback: function (page) {
+                        url = 'http://localhost:3000/comment/playlist?id=' + slistId + "&offset=" + page + "&limit=10";
+                        $.get(url, function (data) {
+                            $("#content_new").html('');
+                            $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                        });
+                    }
                 });
                 break;
         }
+    });
+
+    /*发送评论*/
+    layui.use('layedit', function () {
+        let index = layui.layedit.build('comment', {height: 80, tool: ['|']});
+        $('#send').click(function () {
+            let content = layui.layedit.getText(index);
+            url = 'http://localhost:3000/comment?t=1' + '&type=2' + '&id=' + slistId + '&content=' + content;
+            alert(url);
+            $.get(url, function (data) {
+                alert(data.msg);
+                if(data.code === 302){
+                    alert('123');
+                }
+            });
+        });
     });
 
 
@@ -62,15 +76,6 @@
         }
     });
 
-    layui.use('layedit', function () {
-        var layedit = layui.layedit;
-        layedit.build('comment', {
-            height: 100,
-            tool: [
-                'face'
-            ]
-        });
-    });
 
     layui.use(['form', 'element'],
         function () {

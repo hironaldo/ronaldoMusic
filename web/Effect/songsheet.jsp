@@ -56,9 +56,10 @@
     <div class="pagger-box pagger" id="box"></div>
 </div>
 
-<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
@@ -81,23 +82,7 @@
             </div>
        </div>
    </li>
-
 </script>
-<script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
-
-<script>
-    /*查看歌单详细信息*/
-    window.onload = function () {
-        $("body").on('click', "#ssheet_box li >div", function () {
-            let slistId = $(this).find('i').text().trim();
-            let picurl = $(this).find('b').text().trim();
-            let nickname = $(this).find('s').text().trim();
-            let userId = $(this).find('d').text().trim();
-            let tags = $(this).find('w').text().trim();
-            window.location.href = "songsheet_info.jsp?slistId=" + slistId + "&picurl=" + picurl + "&nickname=" + nickname + "&userId=" + userId + "&tags=" + tags;
-        });
-    };
-</script>
-
+<script src="../staticFile/js/songsheet/songsheet-reload.js" charset="utf-8"></script>
 </body>
 </html>

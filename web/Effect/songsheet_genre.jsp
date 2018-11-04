@@ -33,13 +33,12 @@
     <ul id="ssheet_box"></ul>
     <div class="pagger-box pagger" id="box"></div>
 </div>
-
 <i id="key" style="display: none;"><%=keyStr%>
 </i>
-
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/songsheet/songsheet_genre.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
@@ -58,6 +57,5 @@
        </div>
     </li>
 </script>
-<script src="../staticFile/js/songsheet/songsheet_genre.js" charset="utf-8"></script>
 </body>
 </html>

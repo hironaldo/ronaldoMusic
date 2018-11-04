@@ -30,4 +30,21 @@
     $.get('http://localhost:3000/top/mv?offset=5&limit=4', function (data) {
         $("#mv").tmpl(data.data).appendTo('#mv_end');
     });
+
+    /*轮播*/
+    new zturn({
+        id: "zturn",
+        opacity: 0.9,
+        width: 382,
+        Awidth: 1024,
+        scale: 0.9
+    });
+    $('#zturn li').click(function () {
+        let tips = $(this).css("opacity");
+        if (tips == 1 && $(this).attr("data_n") == 1) {
+            window.location.href = 'album_info.jsp?abId=' + 73876805 + "&siId=" +189873;
+        }
+    });
+
+
 });

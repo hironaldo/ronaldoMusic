@@ -185,7 +185,7 @@
                             <li>
                                 <img src="staticFile/imgDT/user/default.png" style="width: 75px;border-radius: 50%">
                             </li>
-                            <li id="login_popup" style="font-size: 12px">请登录 | CR7音乐</li>
+                            <li id="login_popup" style="font-size: 12px;cursor: pointer">请登录 | CR7音乐</li>
                         </ul>
                     </div>
                     <div class="tj">

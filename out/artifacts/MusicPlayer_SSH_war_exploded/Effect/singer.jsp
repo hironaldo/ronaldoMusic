@@ -73,9 +73,10 @@
     </div>
 </div>
 
-<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/singer/singer.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="background: #F0F0F0;box-shadow: 4px 9px 15px #88887A;padding-bottom:10px">
@@ -89,15 +90,7 @@
          </div>
        </div>
     </li>
-
 </script>
-<script src="../staticFile/js/singer/singer.js" charset="utf-8"></script>
-<script>
-    window.onload = function () {
-        $("body").on('click', "#singer_box li >div", function () {
-            window.location.href = "singer_info.jsp?siId=" + $(this).find('i').text() + "&siName=" + $(this).find('b').text();
-        });
-    };
-</script>
+<script src="../staticFile/js/singer/singer-reload.js" charset="utf-8"></script>
 </body>
 </html>

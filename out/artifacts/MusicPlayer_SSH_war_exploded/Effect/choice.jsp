@@ -34,7 +34,6 @@
                             <img src="../staticFile/imgDT/songsheet/${songsheet.detail.otPic}"
                                  width="100%">
                         </div>
-
                     </li>
                 </c:forEach>
             </ul>
@@ -168,20 +167,10 @@
 
 </div>
 
-<script type="text/javascript" src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
-<!-- 轮播 -->
-<script type="text/javascript">
-    var aa = new zturn({
-        id: "zturn",
-        opacity: 0.9,
-        width: 382,
-        Awidth: 1024,
-        scale: 0.9
-    })
-</script>
-
+<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
+<script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 <script id="ranking" type="text/x-jquery-tmpl">
     <li class="toplist__song">
         <div class="toplist__songname">
@@ -248,7 +237,6 @@
        </div>
     </li>
 </script>
-<script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/choice-reload.js" charset="utf-8"></script>
 </body>
 </html>

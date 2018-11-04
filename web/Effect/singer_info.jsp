@@ -29,6 +29,8 @@
             width: 175px;
             padding-left: 14px;
         }
+
+
     </style>
 </head>
 <body>
@@ -76,6 +78,7 @@
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/singer/singer-info.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <td>
         <img src="{{= img1v1Url}}" style="width: 150px;border-radius: 50%"/>
@@ -117,6 +120,7 @@
 <script id="c-mv" type="text/x-jquery-tmpl">
    <li>
        <div style="height: 180px">
+            <h1 style="display:none">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover"> <img src="{{= imgurl16v9}}" class="songlist__pic" style="height: 103px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
@@ -138,6 +142,7 @@
 <script id="c-album" type="text/x-jquery-tmpl">
    <li>
        <div style="height: 215px">
+            <h1 style="display:none">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover"> <img src="{{= blurPicUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
@@ -159,6 +164,6 @@
     <p style="padding: 3px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</p>
 </script>
 
-<script src="../staticFile/js/singer/singer-info.js" charset="utf-8"></script>
+<script src="../staticFile/js/singer/singer-info-reload.js" charset="utf-8"></script>
 </body>
 </html>

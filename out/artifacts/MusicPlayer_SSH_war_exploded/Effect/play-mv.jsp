@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
     <link rel="stylesheet" href="../staticFile/UIframe/DPlayer/DPlayer.min.css">
     <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-
     <style>
         #mv_box {
             padding-top: 10px;
@@ -66,13 +65,14 @@
 <script id="mv" type="text/x-jquery-tmpl">
     <h1 id="mvurl" style="display:none">{{= url}}</h1>
     <h2>{{= name}}</h2>
-    <p style="font-size: 10px;color: #666"><span>演唱：{{= singer}}&nbsp;发布时间：{{= publishTime}}</span></p>
+    <p style="font-size: 10px;color: #666"><span>演唱：<span id="siName" style="color: #000000">{{= singer}}</span>&nbsp;发布时间：{{= publishTime}}</span></p>
     <p style="font-size: 10px;color: #666;"><span">简介：{{= desc}}</span></p>
 </script>
 
 <script id="c-mv" type="text/x-jquery-tmpl">
    <li>
        <div style="height: 180px">
+            <h1 style="display:none">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover"> <img src="{{= imgurl16v9}}" class="songlist__pic" style="height: 103px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
@@ -122,31 +122,6 @@
      </li>
      <hr>
 </script>
-
-<script>
-    layui.use('layedit', function () {
-        var layedit = layui.layedit;
-        layedit.build('comment', {
-            height: 100,
-            tool: [
-                'face'
-            ]
-        });
-    });
-</script>
-
-<script>
-    window.onload = function () {
-        setTimeout(function () {
-            const mvUrl = $('#mvurl').text();
-            let dp = new DPlayer({
-                container: document.getElementById('dplayer'),
-                screenshot: true,
-                autoplay: false,
-                video: {url: mvUrl}
-            });
-        }, 500);
-    }
-</script>
+<script src="../staticFile/js/mv/mv-reload.js" charset="utf-8"></script>
 </body>
 </html>

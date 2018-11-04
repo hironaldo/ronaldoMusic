@@ -1,34 +1,37 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
-    String slistId = request.getParameter("slistId");
-    String picurl = request.getParameter("picurl");
-    String nickname = request.getParameter("nickname");
-    String userId = request.getParameter("userId");
-    String tags = request.getParameter("tags");
+    String abId = request.getParameter("abId");
+    String siId = request.getParameter("siId");
 %>
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>歌单详细页</title>
+    <title>歌单详情</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/songsheet/songsheet_info.css" media="all">
     <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/album/album.css" media="all">
+    <style>
+        #album_box li {
+            display: inline-block;
+            width: 175px;
+            padding-left: 14px;
+        }
+    </style>
 </head>
 <body>
 
-<table style="margin:10px 0 0 20px;" id="ssheetinfo_box">
-</table>
-
-<div class="layui-tab layui-tab-brief" style="background-color: white;">
-    <ul class="layui-tab-title">
-        <li class="layui-this">全部歌曲</li>
-        <li>相关评论</li>
-    </ul>
-    <div class="layui-tab-content" id="content">
-        <div class="layui-tab-item  layui-show">
+<i id="abId" style="display: none"><%=abId%>
+</i>
+<i id="siId" style="display: none"><%=siId%>
+</i>
+<div style="margin:10px 0 0 20px;">
+    <table id="albuminfo_box">
+    </table>
+    <div>
+        <div>
+            <p style="padding-top: 10px">
+                <span class="layui-badge-dot layui-bg-blue"></span>&nbsp;&nbsp;专辑所包含的单曲
+            </p>
             <table class="layui-table" lay-skin="nob">
                 <thead>
                 <tr>
@@ -43,7 +46,11 @@
                 <tbody id="song"></tbody>
             </table>
         </div>
-        <div class="layui-tab-item">
+        <p style="padding-top: 10px">
+            <span class="layui-badge-dot layui-bg-orange"></span>&nbsp;&nbsp;该歌手的相关专辑
+        </p>
+        <ul id="album_box" style="padding-top: 10px"></ul>
+        <div>
             <textarea id="comment"></textarea>
             <div style="padding-top: 5px">
                 <button id="send" class="layui-btn layui-btn-xs" style="float: right;">
@@ -60,53 +67,39 @@
         </div>
     </div>
 </div>
-
-<i id="slistId" style="display: none;">
-    <%=slistId%>
-</i>
-<i id="picurl" style="display: none;">
-    <%=userId%>
-</i>
-
 <script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/js/songsheet/songsheet_info.js" charset="utf-8"></script>
+<script src="../staticFile/js/album/album.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <tr>
         <td>
-            <img src="{{= songListPic}}" width="150"/>
+            <img src="{{= picUrl}}" width="150"/><img src="../staticFile/img/album_cover.png" width="170" style="position: absolute;left: 20px;"/>
         </td>
-        <td style="padding-left: 20px">
+        <td style="padding-left: 30px">
             <ul>
                 <li>
-                    <span style="font-size: 24px;">{{= songListName}}</span>
+                    <span style="font-size: 24px;">{{= name}}</span>
+                </li>
+                <li>
+                    <span id="siName" style="font-size: 10px;color: #666;cursor: pointer;">{{= artist.name}}</span>
+                </li>
+                <li>
+                    <span style="font-size: 10px;color: #666;">{{= company}} {{= subType}}</span>
                 </li>
                 <li style="padding-top: 5px">
-                    <span style="font-size: 10px;color: #666">
-                        <img src="<%=picurl%>" width="30" style="border-radius: 50%">&nbsp;<%=nickname%>
-                        <span style="padding-left:20px">#<%=tags%></span>
-                    </span>
-                </li>
-                <li style="padding-top: 5px">
-                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= songListDescription}}</p>
+                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= description}}</p>
                 </li>
                 <li style="padding-top: 10px">
                     <button class="layui-btn layui-btn-xs layui-btn-primary">
                         <i class="layui-icon">&#xe652;</i>播放全部
-                    </button>
-                    <button id="download" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe601;</i>下载
                     </button>
                     <button id="like" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
                         <i class="layui-icon">&#xe67b;</i>喜欢
                     </button>
                     <button id="delete" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
                         <i class="layui-icon">&#x1006;</i>删除
-                    </button>
-                    <button class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe642;</i>编辑
                     </button>
                     <button id="action" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
                 </li>
@@ -123,8 +116,30 @@
         <img src="../staticFile/images/love.svg" width="16px">
         {{= name}}
       </td>
-      <td>{{= singer}}</td>
+      <td>
+        {{= singer}}
+      </td>
     </tr>
+</script>
+
+<script id="c-album" type="text/x-jquery-tmpl">
+   <li>
+       <div style="height: 215px">
+            <h1 style="display:none">{{= id}}</h1>
+            <div>
+                <a class="songlist__link mod_cover"> <img src="{{= blurPicUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i></a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= name}}</p>
+                 </div>
+                 <div style="height: 3px"></div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= artist.name}}</span>
+                 </div>
+            </div>
+       </div>
+    </li>
 </script>
 
 <script id="t-comment" type="text/x-jquery-tmpl">
@@ -158,5 +173,6 @@
      </li>
      <hr>
 </script>
+<script src="../staticFile/js/album/album-reload.js" charset="utf-8"></script>
 </body>
 </html>
