@@ -1,4 +1,4 @@
-﻿##### Project-name：CR7 Music Player 😍
+##### Project-name：CR7 Music Player 😍
      Why do it call this name? -- Because I am a super fan of Cristiano Ronaldo.  
 ##### Description 🙄
      •开发环境 / 工具
@@ -15,7 +15,7 @@
             
 ##### Acknowledgement 😘
 
-           非常感谢大佬的数据接口 
+           感谢大佬提供的数据接口 
            
            1-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi.git)           
            2-[Mrdong916](https://www.bzqll.com/ -- https://www.bzqll.com/about/)
