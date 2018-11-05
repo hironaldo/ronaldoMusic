@@ -1,4 +1,16 @@
 ﻿window.onload = function () {
+    /*搜索框*/
+    $("body").on('click', "#hot_search >li", function () {
+        alert('1');
+    });
+
+
+
+
+
+
+
+    /*左侧导航栏*/
     let $ul_li = $(".list ul li");
     let $iframe = $(".riht_body iframe");
     $("body").on('click', ".list #ul1 >li", function () {
@@ -7,14 +19,10 @@
         $(this).addClass("act");
     });
     $("body").on('click', ".list #ul2 >li", function () {
-        let index = $(this).index("li");
-        if (index === 27 && undefined === $.cookie('nickname')) {
+        if(undefined === $.cookie('nickname')){
             layer.msg('请先登陆 🙃', function () {
             });
-        } else if (index === 28 && undefined === $.cookie('nickname')) {
-            layer.msg('请先登陆 🙃', function () {
-            });
-        } else {
+        }else {
             $($iframe).attr("src", $(this).attr("url"));
             $($ul_li).removeClass("act");
             $(this).addClass("act");

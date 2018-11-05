@@ -63,60 +63,72 @@
                 <div id="search_tips" style="display: none">
                     <div>
                         <div>
-                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">我的音乐</span>
+                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">热门搜索</span>
                             <hr>
                         </div>
                         <div class="my_music">
-                            <ul>
-                                <li style="background: #eeeeee;">
-                                    <span>十年</span>
-                                    <span style="float: right">我创建的歌单</span>
-                                </li>
-                                <li>
-                                    <span>十年 - 陈奕迅</span>
-                                    <span style="float: right">我收藏的歌单</span>
-                                </li>
-                                <li><span>十年 - 赵丽颖</span></li>
+                            <ul id="hot_search">
                             </ul>
                         </div>
                     </div>
-                    <div style="padding-top: 20px">
-                        <div>
-                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">在线音乐</span>
-                            <hr>
-                        </div>
-                        <div class="online_music">
-                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">单曲</span>
-                            <ul style="padding-left: 25px">
-                                <li style="background: #eeeeee;"><span>十年</span></li>
-                                <li><span>十年 - 陈奕迅</span></li>
-                                <li><span>十年 - 赵丽颖</span></li>
-                            </ul>
-                        </div>
-                        <div class="online_singer">
-                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">歌手</span>
-                            <ul style="padding-left: 25px">
-                                <li style="background: #eeeeee;padding: 3px 10px;">
-                                    <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                    <span>&nbsp;陈奕迅</span>
-                                </li>
-                                <li>
-                                    <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                    <span>&nbsp;陈奕迅</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="online_sheet">
-                            <span style="font-family: 'Microsoft YaHei';font-size: 12px">歌单</span>
-                            <ul style="padding-left: 25px">
-                                <li style="background: #eeeeee;padding: 3px 10px;">
-                                    <img src="https://p.qpic.cn/music_cover/lricrZ3ca62ybvZbWYjtYa2snY5V4BZP7E5vbHtdUnfyTpCeN766rLg/300?n=1"
-                                         width="30">
-                                    <span>&nbsp;港台风 - 陈奕迅</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
+
+                    <%--<div>--%>
+                        <%--<div>--%>
+                            <%--<span style="font-family: 'Microsoft YaHei';font-size: 12px">我的音乐</span>--%>
+                            <%--<hr>--%>
+                        <%--</div>--%>
+                        <%--<div class="my_music">--%>
+                            <%--<ul>--%>
+                                <%--<li style="background: #eeeeee;">--%>
+                                    <%--<span>十年</span>--%>
+                                    <%--<span style="float: right">我创建的歌单</span>--%>
+                                <%--</li>--%>
+                                <%--<li>--%>
+                                    <%--<span>十年 - 陈奕迅</span>--%>
+                                    <%--<span style="float: right">我收藏的歌单</span>--%>
+                                <%--</li>--%>
+                                <%--<li><span>十年 - 赵丽颖</span></li>--%>
+                            <%--</ul>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<div style="padding-top: 20px">--%>
+                        <%--<div>--%>
+                            <%--<span style="font-family: 'Microsoft YaHei';font-size: 12px">在线音乐</span>--%>
+                            <%--<hr>--%>
+                        <%--</div>--%>
+                        <%--<div class="online_music">--%>
+                            <%--<span style="font-family: 'Microsoft YaHei';font-size: 12px">单曲</span>--%>
+                            <%--<ul style="padding-left: 25px">--%>
+                                <%--<li style="background: #eeeeee;"><span>十年</span></li>--%>
+                                <%--<li><span>十年 - 陈奕迅</span></li>--%>
+                                <%--<li><span>十年 - 赵丽颖</span></li>--%>
+                            <%--</ul>--%>
+                        <%--</div>--%>
+                        <%--<div class="online_singer">--%>
+                            <%--<span style="font-family: 'Microsoft YaHei';font-size: 12px">歌手</span>--%>
+                            <%--<ul style="padding-left: 25px">--%>
+                                <%--<li style="background: #eeeeee;padding: 3px 10px;">--%>
+                                    <%--<img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">--%>
+                                    <%--<span>&nbsp;陈奕迅</span>--%>
+                                <%--</li>--%>
+                                <%--<li>--%>
+                                    <%--<img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">--%>
+                                    <%--<span>&nbsp;陈奕迅</span>--%>
+                                <%--</li>--%>
+                            <%--</ul>--%>
+                        <%--</div>--%>
+                        <%--<div class="online_sheet">--%>
+                            <%--<span style="font-family: 'Microsoft YaHei';font-size: 12px">歌单</span>--%>
+                            <%--<ul style="padding-left: 25px">--%>
+                                <%--<li style="background: #eeeeee;padding: 3px 10px;">--%>
+                                    <%--<img src="https://p.qpic.cn/music_cover/lricrZ3ca62ybvZbWYjtYa2snY5V4BZP7E5vbHtdUnfyTpCeN766rLg/300?n=1"--%>
+                                         <%--width="30">--%>
+                                    <%--<span>&nbsp;港台风 - 陈奕迅</span>--%>
+                                <%--</li>--%>
+                            <%--</ul>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
                 </div>
             </div>
         </div>
@@ -250,7 +262,6 @@
 <script type="text/javascript" src="staticFile/js/audio.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/player.js" charset="utf-8"></script>
 <script type="text/javascript" src="staticFile/js/index/index.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
 <script id="m-songlist" type="text/x-jquery-tmpl">
      <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:200px;">
          <i class="layui-icon layui-icon-tree"></i>{{= name}}
@@ -261,6 +272,16 @@
          <h5 style="display: none;">{{= tags}}</h5>
      </li>
 </script>
+
+<script id="h-search" type="text/x-jquery-tmpl">
+    {{each hots}}
+        <li onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+            <span>{{= first}}</span>
+        </li>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
 
 </body>
 

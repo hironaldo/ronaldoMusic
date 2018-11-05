@@ -42,6 +42,11 @@
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+            <h3 style="display: none;">{{= creator.nickname}}</h3>
+            <h4 style="display: none;">{{= creator.userId}}</h4>
+            <h5 style="display: none;">{{= tags}}</h5>
             <div>
                 <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
             </div>
@@ -57,5 +62,6 @@
        </div>
     </li>
 </script>
+<script src="../staticFile/js/songsheet/songsheet_genre-reload.js" charset="utf-8"></script>
 </body>
 </html>

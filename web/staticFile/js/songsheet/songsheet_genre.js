@@ -1,13 +1,16 @@
 ﻿$(function () {
-    let keyCat = $("#key").text().trim();   //歌单关键字
+    let keyCat = $('#key').text().trim();   //歌单关键字
     /*初始化*/
     $('#box').paging({
         initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
         callback: function (page) {
-            let url = "http://localhost:3000/top/playlist?offset=" + page * 34 + "&cat=" + keyCat + "&limit=20";
-            $.get(url, function (data) {
-                $("#ssheet_box").html('');
-                $("#data").tmpl(data.playlists).appendTo('#ssheet_box');
+            $.ajax({
+                url: 'http://localhost:3000/top/playlist?offset=' + page * 34 + '&cat=' + keyCat + '&limit=20',
+                xhrFields: {withCredentials: true},
+                success: function (data) {
+                    $("#ssheet_box").html('');
+                    $("#data").tmpl(data.playlists).appendTo('#ssheet_box');
+                }
             });
         }
     });
@@ -17,6 +20,9 @@
             break;
         case '欧美':
             $('.classify-nav p').html('潮流英文歌曲的风向标，不用找了! 关于欧美的都在这。');
+            break;
+        case '华语':
+            $('.classify-nav p').html('国语流行好歌不容错过!');
             break;
     }
 });

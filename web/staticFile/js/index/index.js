@@ -1,11 +1,28 @@
 ﻿$(document).ready(function () {
-    /*加载歌单*/
-    let url = 'http://localhost:3000/user/playlist?uid=' + $.cookie('userId');
-    $.get(url, function (data) {
-        $("#ul3").html('');
-        $("#m-songlist").tmpl(data.playlist).appendTo('#ul3');
+    /*搜索框*/
+    $('#search').on({
+        focus: function () {
+            $('#search_tips').show();
+            let url = 'http://localhost:3000/search/hot';
+            $.get(url, function (data) {
+                $("#hot_search").html('');
+                $("#h-search").tmpl(data.result).appendTo('#hot_search');
+            });
+        }, blur: function () {
+            $('#search_tips').hide();
+        }
     });
 
+
+    /*加载用户歌单*/
+
+    if ($.cookie('userId') != undefined) {
+        let url = 'http://localhost:3000/user/playlist?uid=' + $.cookie('userId');
+        $.get(url, function (data) {
+            $('#ul3').html('');
+            $('#m-songlist').tmpl(data.playlist).appendTo('#ul3');
+        });
+    }
     /*获得登陆信息*/
     if (null != $.cookie('nickname')) {
         $('#userinfo li:eq(1) img').attr('src', $.cookie('userpic'));
@@ -30,11 +47,9 @@
     $("#music").dblclick(function () {
         $("#content").fadeIn();
     });
-
     $("#ppt").dblclick(function () {
         window.open("index.html");
     });
-
 
     /*顶部导航栏*/
     $('#ul_left li img').click(function () {

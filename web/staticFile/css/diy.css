@@ -33,7 +33,7 @@ input {
     border: 1px #ccc solid;
     background: white;
     position: absolute;
-    top: 37px;
+    top: 36px;
     left: 122px;
     border-radius: 3px;
     padding: 15px;
@@ -48,9 +48,7 @@ input {
 }
 
 #search_tips ul li span {
-    /*font-family: 'Microsoft YaHei';*/
     font-size: 12px;
-
 }
 
 #search_tips div > span {
@@ -60,6 +58,11 @@ input {
 #search_tips .my_music ul li, .online_music ul li, .online_singer ul li, .online_sheet ul li {
     padding: 3px 10px;
 }
+
+hot_search ul li:hover{
+    background: #eeeeee;
+}
+
 
 .foot img {
     background-size: cover;

@@ -1,14 +1,10 @@
 ﻿$(function () {
     let slistId = $('#slistId').text().trim();    //歌单id
-    let url;
     /*获取歌单信息和歌曲*/
-    url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
+    let url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
     $.get(url, function (data) {
         $("#ssheetinfo_box").html('');
         $("#c-info").tmpl(data.data).appendTo('#ssheetinfo_box');
-    });
-    url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + slistId;
-    $.get(url, function (data) {
         $("#song").html('');
         $("#c-song").tmpl(data.data.songs).appendTo('#song');
     });
@@ -24,18 +20,24 @@
             case 0:
                 break;
             case 1:
-                let url = 'http://localhost:3000/comment/playlist?id=' + slistId;
-                $.get(url, function (data) {
-                    $("#content_top").html('');
-                    $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+                $.ajax({
+                    url: 'http://localhost:3000/comment/playlist?id=' + slistId,
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        $("#content_top").html('');
+                        $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+                    }
                 });
                 $('#box').paging({
                     initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
                     callback: function (page) {
-                        url = 'http://localhost:3000/comment/playlist?id=' + slistId + "&offset=" + page + "&limit=10";
-                        $.get(url, function (data) {
-                            $("#content_new").html('');
-                            $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                        $.ajax({
+                            url: 'http://localhost:3000/comment/playlist?id=' + slistId + "&offset=" + page + "&limit=10",
+                            xhrFields: {withCredentials: true},
+                            success: function (data) {
+                                $("#content_new").html('');
+                                $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                            }
                         });
                     }
                 });

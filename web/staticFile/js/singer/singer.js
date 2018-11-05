@@ -1,9 +1,13 @@
 ﻿$(function () {
     /*根据url请求数据*/
     function request(url) {
-        $.get(url, function (data) {
-            $("#singer_box").html('');
-            $("#data").tmpl(data.artists).appendTo('#singer_box');
+        $.ajax({
+            url: url,
+            xhrFields: {withCredentials: true},
+            success: function (data) {
+                $("#singer_box").html('');
+                $("#data").tmpl(data.artists).appendTo('#singer_box');
+            }
         });
     }
 

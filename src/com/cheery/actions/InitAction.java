@@ -92,17 +92,10 @@ public class InitAction extends ActionSupport implements ModelDriven<UserEntity>
         List<SingerEntity> list = initSer.queryAllSinger(siType, region, style, pageNo, pageSize);
         System.out.println(JSON.toJSONString(list));
         if (null != list && 0 < list.size()) {
-            //session.put("singerList", list);
-//            session.put("pageCount", pageCount);
-//            session.put("pageNo", pageNo);
-//            session.put("dataCount", dataCount);
-//            session.put("pageData", list.size());
-//            out.print(JSON.toJSONString(list));
             out.print(JSON.toJSONString(list));
             out.flush();
             out.close();
             return null;
-            //return Action.SUCCESS;
         } else {
             return Action.ERROR;
         }

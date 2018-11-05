@@ -46,55 +46,9 @@
     </div>
 </div>
 
-
-<script type="text/javascript" src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script type="text/javascript" src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script>
-    $(function () {
-        if ("" != $(".form-error-tip").html()) {
-            $(".form-error-tip").show();
-        } else {
-            $(".form-error-tip").hide();
-        }
-        $("input").bind({
-            focus: function () {
-                $(".form-error-tip").hide();
-            }, blur: function () {
-                $(".form-error-tip").hide();
-            }
-        });
-        let pwd = '';
-        $('input[type=password]').blur(function () {
-            pwd = $(this).val().trim();
-        });
-        let phone = $('input[type=text]').val().trim();
-        $('body').on('click', '#login_btn', function () {
-            if (phone === "" || pwd === "" || phone == null || pwd == null) {
-                layer.msg('所有项都不能为空');
-            } else {
-                let loginUrl = 'http://127.0.0.1:3000/login/cellphone?phone=' + phone + '&password=' + pwd;
-                $.get(loginUrl, function (data) {
-                    if (data.code === 200) {
-                        let account = data.account;
-                        let bindings = data.bindings;
-                        let profile = data.profile;
-                        $.cookie('nickname', profile.nickname, {expires: 1});
-                        $.cookie('userpic', profile.avatarUrl, {expires: 1});
-                        $.cookie('userId', account.id, {expires: 1});
-                        parent.location.reload();
-                        parent.layer.close(parent.layer.getFrameIndex(window.name));
-                    } else {
-                        $('.form-error-tip').text('😫 账户信息错误');
-                    }
-                });
-            }
-            console.log(phone + "--" + pwd);
-        });
-    });
-
-
-</script>
-
+<script src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
+<script src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="staticFile/js/login.js" charset="utf-8"></script>
 </body>
 </html>
