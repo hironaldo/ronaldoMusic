@@ -4,14 +4,15 @@
      •开发环境 / 工具
      
             Windows10 + Tomcat9 +JDK1.8
-            IDEA2018 + Webstorm2018 + Navicat + Chorme + Notepad++  
+            IDEA2018 + Webstorm2018 + Navicat + Chorme + 幕布 + Notepad++  
      
      •技术栈
      
-            数据库：MySQL
+            版本控制：Git + Gogs
+            服务器：NginX + Tomcat
             后端：Spring + Struts + Hibernate
             前端：Jquery + Bootstrap + Layui + Jquery-tmpl + Jquery.cookie + Layout + Ajax + Pjax
-            IDEA插件：Lombok + JRebel + Kaptcha + Java Coding Guidelines
+            IDEA插件：Lombok + JRebel + Java Coding Guidelines
             
 ##### Acknowledgement 😘
 
