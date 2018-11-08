@@ -3,8 +3,8 @@
 ##### Description 🙄
      •开发环境 / 工具
      
-            Windows10 + Tomcat9 +JDK1.8
-            IDEA2018 + Webstorm2018 + Navicat + Chorme + 幕布 + Notepad++  
+            Windows10 +JDK1.8
+            IDEA + Webstorm + Navicat + Chorme + 幕布 + Notepad++  
      
      •技术栈
      
