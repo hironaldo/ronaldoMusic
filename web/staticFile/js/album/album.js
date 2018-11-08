@@ -1,9 +1,10 @@
-$(function () {
+﻿$(function () {
+    let timestamp = Date.parse(new Date()); //时间戳
     let abId = $('#abId').text().trim();
     let siId = $('#siId').text().trim();
     /*获取专辑基本信息*/
     $.ajax({
-        url: 'http://localhost:3000/album?id=' + abId,
+        url: 'http://localhost:3000/album?id=' + abId + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#albuminfo_box").html('');
@@ -20,7 +21,7 @@ $(function () {
 
     /*获取相关专辑*/
     $.ajax({
-        url: 'http://localhost:3000/artist/album?id=' + siId + "&limit=10",
+        url: 'http://localhost:3000/artist/album?id=' + siId + "&limit=10" + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#album_box").html('');
@@ -30,7 +31,7 @@ $(function () {
 
     /*获取评论*/
     $.ajax({
-        url: 'http://localhost:3000/comment/album?id=' + abId,
+        url: 'http://localhost:3000/comment/album?id=' + abId + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#content_top").html('');
@@ -42,7 +43,7 @@ $(function () {
         initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
         callback: function (page) {
             $.ajax({
-                url: 'http://localhost:3000/comment/album?id=' + abId + "&offset=" + page + "&limit=10",
+                url: 'http://localhost:3000/comment/album?id=' + abId + "&offset=" + page + "&limit=10" + '&timestamp=' + timestamp,
                 xhrFields: {withCredentials: true},
                 success: function (data) {
                     $("#content_new").html('');
@@ -52,21 +53,40 @@ $(function () {
         }
     });
 
+    /*字数统计*/
+    $('#comment').keydown(function () {
+        let content = $('#comment').val().trim().length;
+        for (let i = 0; i < content.length; i++) {
+            let a = content.charAt(i);
+            if (a.match(/[^\x00-\xff]/ig) != null) content += 2;
+            else content += 1;
+        }
+        $('#num').text(content + '/140')
+    });
     /*发送评论*/
-    layui.use('layedit', function () {
-        let index = layui.layedit.build('comment', {height: 80, tool: ['|']});
-        $('#send').click(function () {
-            let content = layui.layedit.getText(index);
-            $.ajax({
-                url: 'http://localhost:3000/comment?t=1' + '&type=2' + '&id=' + slistId + '&content=' + content,
-                xhrFields: {withCredentials: true},
-                success: function (data) {
-                    alert(data.msg);
-                    if (data.code === 302) {
-                        alert('123');
-                    }
-                }
+    $('#send').click(function () {
+        let content = $('#comment').val().trim();
+        if (content.length == 0) {
+            layer.msg('评论不能为空噢', function () {
             });
-        });
+        } else {
+            let url = 'http://localhost:3000/comment?t=1' + '&type=3' + '&id=' + abId + '&content=' + content;
+            if (undefined != $.cookie('nickname')) {
+                $.ajax({
+                    url: url,
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        console.log(data);
+                        if (data.comment != null || data.comment != '') {
+                            layer.msg('评论成功');
+                            $('#comment').val('');
+                        }
+                    }
+                });
+            } else {
+                layer.msg('请先登陆 🙃', function () {
+                });
+            }
+        }
     });
 });

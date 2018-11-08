@@ -1,0 +1,191 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String userId = request.getParameter("userId");
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户主页</title>
+    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/mypage/style.css" media="all">
+    <style>
+        #ssheet_box li {
+            display: inline-block;
+            width: 160px;
+            padding-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        #ssheet_box li img {
+            width: 160px;
+            height: 160px;
+            background: url(../staticFile/images/loading.gif) 50% no-repeat;
+        }
+
+        #follow_box li {
+            display: inline-block;
+            padding-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        #follow_box li:hover {
+            cursor: pointer;
+        }
+
+        #followed_box li {
+            display: inline-block;
+            padding-bottom: 20px;
+            padding-left: 28px;
+        }
+
+        #followed_box li:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<i id="userId" style="display: none"><%=userId%>
+</i>
+
+<div>
+    <table style="margin: 10px 0 0 15px;">
+        <tr id="user_info">
+        <tr>
+    </table>
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">他的歌单</li>
+            <li>他的关注</li>
+            <li>他的粉丝</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <ul id="ssheet_box"></ul>
+            </div>
+            <div class="layui-tab-item">
+                <ul id="follow_box"></ul>
+            </div>
+            <div class="layui-tab-item">
+                <ul id="followed_box"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/js/friendpage/friendpage.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
+<script id="u-info" type="text/x-jquery-tmpl">
+    <td>
+        <img src="{{= avatarUrl}}" style="width: 115px;border-radius: 50%"/>
+    </td>
+    <td style="padding-left: 20px">
+        <ul>
+            <li style="padding-top: 10px">
+                <p style="font-size: 24px;">{{= nickname}}</p>
+                <p style="color: #666;font-size: 12px;padding-top: 5px">Motto：
+                    {{if signature== ""}}
+                         还没签名哦
+                    {{else}}
+                        {{= signature}}
+                    {{else}}
+
+                    {{/if}}
+                </p>
+                <p style="font-family: 'Microsoft YaHei';color: #666;font-size: 12px;padding-top: 5px">
+                    关注：{{= follows}}&nbsp;&nbsp;&nbsp;
+                    粉丝：{{= followeds}}&nbsp;&nbsp;&nbsp;
+                    自创歌单：{{= playlistCount}}
+                </p>
+            </li>
+        </ul>
+    </td>
+</script>
+
+<script id="u-songlist" type="text/x-jquery-tmpl">
+    <li>
+       <div style="height: 210px">
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+            <h3 style="display: none;">{{= creator.nickname}}</h3>
+            <h4 style="display: none;">{{= creator.userId}}</h4>
+            <h5 style="display: none;">{{= tags}}</h5>
+            <div>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= name}}</p>
+                 </div>
+                 <div style="height: 5px"></div>
+                 <div>
+                    <span style="font-size: 10px;color: #666">{{= creator.nickname}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+
+
+<script id="u-follow" type="text/x-jquery-tmpl">
+    <li>
+       <div>
+            <h1 style="display:none">{{= userId}}</h1>
+            <div>
+                <img width="130" height="130" data-original="{{= avatarUrl}}" style="border-radius: 50%;"/>
+            </div>
+            <div>
+                 <div style="text-align: center;padding-top:5px">
+                    <span style="font-size: 10px;color: #666;">{{= nickname}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+
+<script id="u-followed" type="text/x-jquery-tmpl">
+    <li>
+       <div>
+            <h1 style="display:none">{{= userId}}</h1>
+            <div>
+                <img width="130" height="130" data-original="{{= avatarUrl}}" style="border-radius: 50%;"/>
+            </div>
+            <div>
+                 <div style="text-align: center;padding-top:5px">
+                    <span style="font-size: 10px;color: #666;">{{= nickname}}</span>
+                 </div>
+            </div>
+       </div>
+   </li>
+</script>
+
+<script src="../staticFile/js/friendpage/friendpage-raload.js" charset="utf-8"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

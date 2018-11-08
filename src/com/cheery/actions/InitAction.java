@@ -3,7 +3,6 @@ package com.cheery.actions;
 import com.alibaba.fastjson.JSON;
 import com.cheery.model.*;
 import com.cheery.service.DataInitService;
-import com.cheery.tools.GetMsgCode;
 import com.opensymphony.xwork2.*;
 import lombok.*;
 import org.apache.struts2.ServletActionContext;

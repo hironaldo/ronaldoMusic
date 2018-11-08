@@ -19,6 +19,16 @@
             width: 178px;
             padding-left: 8px;
         }
+
+        #singer_top {
+            padding-top: 10px;
+        }
+
+        #singer_top li {
+            display: inline-block;
+            width: 178px;
+            padding-left: 8px;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +56,7 @@
         <div style="padding-left: 7px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
             <a href="songsheet.jsp">
-                <span style="padding-left: 803px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 788px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="songsheet_top"></ul>
@@ -55,16 +65,13 @@
 
     <!-- 歌手 -->
     <div class="singer">
-        <div style="padding-left: 14px;">
+        <div style="padding-left: 6px;">
             <span style="font-size: 18px;">乐 人</span>
             <a href="singer.jsp">
-                <span style="padding-left: 840px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 835px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
-        <table>
-            <tr id="singer_top">
-            </tr>
-        </table>
+        <ul id="singer_top"></ul>
     </div>
     <!-- 歌手 -->
 
@@ -104,7 +111,7 @@
         <div style="padding-left: 20px;">
             <span style="font-size: 18px;">巅 峰 榜</span>
         </div>
-        <ul style="padding-left: 21px;padding-top:20px">
+        <ul style="padding-left: 20px;padding-top:20px">
             <li class="toplist__item mod_cover">
                 <div class="toplist__box">
                     <div class="toplist__bg"></div>
@@ -206,19 +213,19 @@
 </script>
 
 <script id="singer" type="text/x-jquery-tmpl">
-    <td>
+    <li>
         <div>
             <h1 style="display: none;">{{= id}}</h1>
             <h2 style="display: none;">{{= name}}</h2>
             <div class="box_img">
-                <img class="songlist__pic" src="{{= img1v1Url}}" style="width: 170px">
+                <img class="songlist__pic" src="{{= img1v1Url}}" style="width: 160px;height: 160px;">
             </div>
             <div>
                 <div><span style="font-size: 14px">{{= name}}</span></div>
                 <div><span style="font-size: 10px;color: #666">{{= alias}}</span></div>
             </div>
         </div>
-    </td>
+    </li>
 </script>
 
 <script id="song_sheet" type="text/x-jquery-tmpl">
@@ -227,7 +234,9 @@
             <h1 style="display: none;">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover">
-                    <img src="{{= picUrl}}" class="songlist__pic" style="height: 172px;"/> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i>
+                    <img src="{{= picUrl}}" class="songlist__pic" style="width: 160px;height: 160px;"/>
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
                 </a>
             </div>
             <div style="height: 5px"></div>

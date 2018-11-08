@@ -96,3 +96,17 @@
     display: none;
 }
 
+#comment {
+    resize: none;
+    height: 80px;
+    display: block;
+    width: 943px;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    font-size: 13px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

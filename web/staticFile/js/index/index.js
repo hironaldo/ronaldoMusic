@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+    setTimeout(function () {
+        $('img').lazyload();
+    }, 1000);
+
     /*搜索框*/
     $('#search').on({
         focus: function () {
@@ -8,14 +12,10 @@
                 $("#hot_search").html('');
                 $("#h-search").tmpl(data.result).appendTo('#hot_search');
             });
-        }, blur: function () {
-            $('#search_tips').hide();
         }
     });
 
-
     /*加载用户歌单*/
-
     if ($.cookie('userId') != undefined) {
         let url = 'http://localhost:3000/user/playlist?uid=' + $.cookie('userId');
         $.get(url, function (data) {
@@ -28,7 +28,6 @@
         $('#userinfo li:eq(1) img').attr('src', $.cookie('userpic'));
         $('#userinfo li:eq(2)').attr('id', '');
         $('#userinfo li:eq(2)').text($.cookie('nickname'));
-        $('#userinfo li:eq(2)').append($('<i style="padding-left: 5px" class="layui-icon layui-icon-face-surprised"></i>'));
     }
     /*加载登陆页面*/
     $("#login_popup").click(function () {
@@ -39,6 +38,19 @@
             shade: 0.8,
             area: ['330px', '365px'],
             content: 'login.jsp'
+        });
+    });
+
+    /*新建歌单*/
+    $('.right').click(function () {
+        alert('11');
+        layer.open({
+            type: 2,
+            title: '',
+            shadeClose: false,
+            shade: 0.8,
+            area: ['330px', '365px'],
+            content: 'Effect/newsonglist.jsp'
         });
     });
 
@@ -54,18 +66,15 @@
     /*顶部导航栏*/
     $('#ul_left li img').click(function () {
         let index = $(this).index();
-        switch (index) {
-            case 0:
-                history.go(-1);
-                break;
-            case 1:
-                history.go(1);
-                break;
-            case 2:
-                window.location.reload();
-                break;
+        if (index == 0) {
+            history.go(-1);
+        } else if (index == 1) {
+            history.go(1);
+        } else {
+            window.location.reload();
         }
     });
+    /*关闭程序*/
     $('#ul_right li img').click(function () {
         $("#content").fadeOut();
     });

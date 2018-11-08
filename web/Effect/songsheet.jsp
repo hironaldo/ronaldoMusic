@@ -18,6 +18,12 @@
             padding-bottom: 20px;
             padding-left: 30px;
         }
+
+        #ssheet_box li img {
+            width: 160px;
+            height: 160px;
+            background: url(../staticFile/images/loading.gif) 50% no-repeat;
+        }
     </style>
 </head>
 <body>
@@ -60,6 +66,8 @@
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
+
 <script id="data" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 215px">
@@ -69,7 +77,11 @@
             <d style="display: none;">{{= creator.userId}}</d>
             <w style="display: none;">{{= tags}}</w>
             <div>
-                <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
             <div>
                  <div>

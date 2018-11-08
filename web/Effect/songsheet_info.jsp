@@ -12,10 +12,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>歌单详细页</title>
+    <title>歌单详情页</title>
     <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/songsheet/songsheet_info.css" media="all">
     <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
+    <style>
+        #ssheetinfo_box{
+            cursor: pointer;
+        }
+
+        #song:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -44,13 +53,15 @@
             </table>
         </div>
         <div class="layui-tab-item">
-            <textarea id="comment"></textarea>
-            <div style="padding-top: 5px">
-                <button id="send" class="layui-btn layui-btn-xs" style="float: right;">
+            <textarea id="comment" maxlength="140"></textarea>
+            <div style="padding-top: 5px;float: right;">
+                <span id="num" style="font-size: 12px;color: #666;">0/140</span>
+                <button id="send" class="layui-btn layui-btn-xs" style="">
                     <i class="layui-icon">&#xe609;</i>评论
                 </button>
             </div>
             <div style="padding-top: 30px">
+                <p style="padding-bottom: 5px;" id="total"></p>
                 <span class="layui-badge-dot"></span>&nbsp;&nbsp;精彩评论
                 <ul id="content_top" style="padding-top: 10px;"></ul>
                 <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;最新评论
@@ -64,7 +75,7 @@
 <i id="slistId" style="display: none;">
     <%=slistId%>
 </i>
-<i id="picurl" style="display: none;">
+<i id="userId" style="display: none;">
     <%=userId%>
 </i>
 
@@ -72,7 +83,9 @@
 <script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/js/songsheet/songsheet_info.js" charset="utf-8"></script>
+
 <script id="c-info" type="text/x-jquery-tmpl">
     <tr>
         <td>
@@ -83,7 +96,7 @@
                 <li>
                     <span style="font-size: 24px;">{{= songListName}}</span>
                 </li>
-                <li style="padding-top: 5px">
+                <li id="uinfo" style="padding-top: 5px">
                     <span style="font-size: 10px;color: #666">
                         <img src="<%=picurl%>" width="30" style="border-radius: 50%">&nbsp;<%=nickname%>
                         <span style="padding-left:20px">#<%=tags%></span>
@@ -93,22 +106,9 @@
                     <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= songListDescription}}</p>
                 </li>
                 <li style="padding-top: 10px">
-                    <button class="layui-btn layui-btn-xs layui-btn-primary">
+                    <button class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe652;</i>播放全部
                     </button>
-                    <button id="download" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe601;</i>下载
-                    </button>
-                    <button id="like" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe67b;</i>喜欢
-                    </button>
-                    <button id="delete" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#x1006;</i>删除
-                    </button>
-                    <button class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe642;</i>编辑
-                    </button>
-                    <button id="action" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
                 </li>
             </ul>
         </td>
@@ -119,12 +119,16 @@
     <tr>
       <td>
         <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id="">
-          <i class="layui-icon">&#xe605;</i></div>
-        <img src="../staticFile/images/love.svg" width="16px">
+          <i class="layui-icon">&#xe605;</i>
+        </div>
         {{= name}}
       </td>
       <td>{{= singer}}</td>
     </tr>
+</script>
+
+<script id="c-total" type="text/x-jquery-tmpl">
+    <span class="layui-badge-rim">共{{= total}}条评论</span>
 </script>
 
 <script id="t-comment" type="text/x-jquery-tmpl">
@@ -149,14 +153,18 @@
              <img src="{{= user.avatarUrl}}" width="40" style="border-radius: 50%">
          </div>
          <div style="padding-left: 50px">
-             <p>{{= user.nickname}}</p>
+             <p class="nikename">{{= user.nickname}}</p>
              <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
              <p style="font-size: 12px;padding-top: 3px;color: #666">
-                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+                 <span style="float: right">
+                    <i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}
+                 </span>
              </p>
          </div>
      </li>
      <hr>
 </script>
+
+<script src="../staticFile/js/songsheet/songsheet_info-reload.js" charset="utf-8"></script>
 </body>
 </html>

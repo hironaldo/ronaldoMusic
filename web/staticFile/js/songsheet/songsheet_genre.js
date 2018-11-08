@@ -10,6 +10,11 @@
                 success: function (data) {
                     $("#ssheet_box").html('');
                     $("#data").tmpl(data.playlists).appendTo('#ssheet_box');
+                    setTimeout(function () {
+                        $('img').lazyload({
+                            threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                        });
+                    }, 1000);
                 }
             });
         }

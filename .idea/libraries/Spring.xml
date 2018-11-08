@@ -1,9 +1,7 @@
 <component name="libraryTable">
   <library name="Spring">
     <CLASSES />
-    <JAVADOC>
-      <root url="jar://C:/Code/Resources/spring-framework-3.2.2.RELEASE.zip!/spring-framework-3.2.2.RELEASE/docs/javadoc-api" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES />
   </library>
 </component>

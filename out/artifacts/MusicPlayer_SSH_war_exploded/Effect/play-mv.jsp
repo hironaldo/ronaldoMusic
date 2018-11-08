@@ -40,9 +40,10 @@
         <ul id="mv_box"></ul>
     </div>
     <div style="padding-top: 10px">
-        <textarea id="comment"></textarea>
-        <div style="padding-top: 5px">
-            <button class="layui-btn layui-btn-xs" style="float: right;">
+        <textarea id="comment" maxlength="140"></textarea>
+        <div style="padding-top: 5px;padding-right: 14px;float: right;">
+            <span id="num" style="font-size: 12px;color: #666;">0/140</span>
+            <button id="send" class="layui-btn layui-btn-xs" style="">
                 <i class="layui-icon">&#xe609;</i>评论
             </button>
         </div>
@@ -60,6 +61,7 @@
 <script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/DPlayer/DPlayer.min.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/js/mv/mv.js" charset="utf-8"></script>
 <script id="mv" type="text/x-jquery-tmpl">

@@ -29,7 +29,7 @@ input {
 
 #search_tips {
     color: black;
-    width: 228px;
+    width: 227px;
     border: 1px #ccc solid;
     background: white;
     position: absolute;
@@ -74,6 +74,6 @@ hot_search ul li:hover{
     box-sizing: border-box;
 }
 
-img:hover {
+.right,img:hover {
     cursor: pointer;
 }

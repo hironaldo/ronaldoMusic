@@ -32,7 +32,7 @@
         initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
         callback: function (page) {
             $.ajax({
-                url: 'http://localhost:3000/comment/mv?id=' + plId + "&offset=" + page + "&limit=10",
+                url: 'http://localhost:3000/comment/mv?id=' + plId + '&offset=' + (page - 1),
                 xhrFields: {withCredentials: true},
                 success: function (data) {
                     $("#content_new").html('');
@@ -42,14 +42,41 @@
         }
     });
 
+    /*字数统计*/
+    $('#comment').keydown(function () {
+        let content = $('#comment').val().trim().length;
+        for (let i = 0; i < content.length; i++) {
+            let a = content.charAt(i);
+            if (a.match(/[^\x00-\xff]/ig) != null) content += 2;
+            else content += 1;
+        }
+        $('#num').text(content + '/140')
+    });
     /*发送评论*/
-    layui.use('layedit', function () {
-        var layedit = layui.layedit;
-        layedit.build('comment', {
-            height: 100,
-            tool: [
-                'face'
-            ]
-        });
+    $('#send').click(function () {
+        let content = $('#comment').val().trim();
+        if (content.length == 0) {
+            layer.msg('评论不能为空噢', function () {
+            });
+        } else {
+            let url = 'http://localhost:3000/comment?t=1' + '&type=1' + '&id=' + plId + '&content=' + content;
+            if (undefined != $.cookie('nickname')) {
+                $.ajax({
+                    url: url,
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        if (data.comment != null || data.comment != '') {
+                            layer.msg('评论成功');
+                            $('#comment').val('');
+                            window.location.reload();
+                            alert('11');
+                        }
+                    }
+                });
+            } else {
+                layer.msg('请先登陆 🙃', function () {
+                });
+            }
+        }
     });
 });

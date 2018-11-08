@@ -15,7 +15,7 @@
     $('#box').paging({
         initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
         callback: function (page) {
-            let url = "http://127.0.0.1:3000/top/artists?offset=" + page * 5 + "&limit=15";
+            let url = "http://127.0.0.1:3000/top/artists?offset=" + (page -1) * 15 + "&limit=15";
             request(url);
         }
     });

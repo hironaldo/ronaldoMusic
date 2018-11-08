@@ -30,7 +30,6 @@
             padding-left: 14px;
         }
 
-
     </style>
 </head>
 <body>
@@ -89,9 +88,16 @@
                 <p>
                     <span style="font-size:24px">{{= name}}</span>
                     <span style="font-size: 12px;color: #666">{{= alias}}</span>
-                    <span style="padding-left:10px">
+                    <span class="def" style="padding-left:10px">
+                        <strong style="display:none">{{= id}}</strong>
                         <button class="layui-btn layui-btn-primary layui-btn layui-btn-xs">
-                          <i class="layui-icon">&#xe609;</i>关注
+                            {{if followed==false}}
+                                <i class="layui-icon">&#xe609;</i>关注
+                            {{else}}
+                               <i class="layui-icon">&#xe605;</i>已关注
+                            {{else}}
+
+                            {{/if}}
                         </button>
                     </span>
                 </p>
