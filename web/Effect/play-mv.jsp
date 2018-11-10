@@ -9,28 +9,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Mv播放页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/DPlayer/DPlayer.min.css">
+    <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/mv/mv.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/DPlayer/DPlayer.min.css">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-    <style>
-        #mv_box {
-            padding-top: 10px;
-        }
-
-        #mv_box li {
-            display: inline-block;
-            width: 180px;
-            padding-left: 10px;
-        }
-    </style>
 </head>
 <body>
 
-<i id="plId" style="display: none"><%=plId%>
+<i id="plId" style="display: none">
+    <%=plId%>
 </i>
-<i id="siId" style="display: none"><%=siId%>
+<i id="siId" style="display: none">
+    <%=siId%>
 </i>
 <div id="dplayer"></div>
 <div style="padding-top: 10px;padding-left: 10px">
@@ -57,12 +49,12 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/DPlayer/DPlayer.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/DPlayer/DPlayer.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/paging/paging.js" charset="utf-8"></script>
 <script src="../staticFile/js/mv/mv.js" charset="utf-8"></script>
 <script id="mv" type="text/x-jquery-tmpl">
     <h1 id="mvurl" style="display:none">{{= url}}</h1>
@@ -124,6 +116,5 @@
      </li>
      <hr>
 </script>
-<script src="../staticFile/js/mv/mv-reload.js" charset="utf-8"></script>
 </body>
 </html>

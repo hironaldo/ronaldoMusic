@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     let timestamp = Date.parse(new Date()); //时间戳
     let userId = $('#userId').text().trim();
     /*加载首页基本数据*/
@@ -10,7 +10,7 @@
             $("#u-info").tmpl(data.profile).appendTo('#user_info');
             setTimeout(function () {
                 $('img').lazyload({
-                    threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                    threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
                 });
             }, 1000);
         }
@@ -25,7 +25,6 @@
             $("#u-songlist").tmpl(data.playlist).appendTo('#ssheet_box');
         }
     });
-
 
     $('.layui-tab-title li').click(function () {
         layer.load();
@@ -44,7 +43,7 @@
                         $("#u-songlist").tmpl(data.playlist).appendTo('#ssheet_box');
                         setTimeout(function () {
                             $('img').lazyload({
-                                threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                                threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
                             });
                         }, 1000);
                     }
@@ -60,7 +59,7 @@
                         $("#u-follow").tmpl(data.follow).appendTo('#follow_box');
                         setTimeout(function () {
                             $('img').lazyload({
-                                threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                                threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
                             });
                         }, 1000);
                     }
@@ -76,7 +75,7 @@
                         $("#u-followed").tmpl(data.followeds).appendTo('#followed_box');
                         setTimeout(function () {
                             $('img').lazyload({
-                                threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                                threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
                             });
                         }, 1000);
                     }
@@ -85,4 +84,23 @@
         }
     });
 
-});
+    /*歌单详情*/
+    $(document).on('click', "#ssheet_box li >div", function () {
+        let slistId = $(this).find('h1').text().trim();
+        let picurl = $(this).find('h2').text().trim();
+        let nickname = $(this).find('h3').text().trim();
+        let userId = $(this).find('h4').text().trim();
+        let tags = $(this).find('h5').text().trim();
+        window.location.href = "songsheet_info.jsp?slistId=" + slistId + "&picurl=" + picurl + "&nickname=" + nickname + "&userId=" + userId + "&tags=" + tags;
+    });
+
+    /*关注的信息*/
+    $(document).on('click', "#follow_box li >div", function () {
+        window.location.href = 'friendpage.jsp?userId=' + $(this).find('h1').text();
+    });
+
+    /*粉丝的信息*/
+    $(document).on('click', "#followed_box li >div", function () {
+        window.location.href = 'friendpage.jsp?userId=' + $(this).find('h1').text();
+    });
+})(jQuery, window, document);

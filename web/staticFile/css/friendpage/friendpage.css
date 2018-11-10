@@ -1,19 +1,15 @@
-#nav span:hover {
-    cursor: pointer;
-}
-
-#mssheet_box li {
-    display: inline-block;
-    width: 160px;
-    padding-bottom: 20px;
-    padding-left: 28px;
-}
-
+﻿@charset "UTF-8";
 #ssheet_box li {
     display: inline-block;
     width: 160px;
     padding-bottom: 20px;
     padding-left: 28px;
+}
+
+#ssheet_box li img {
+    width: 160px;
+    height: 160px;
+    background: url(../../images/loading.gif) 50% no-repeat;
 }
 
 #follow_box li {
@@ -33,15 +29,5 @@
 }
 
 #followed_box li:hover {
-    cursor: pointer;
-}
-
-#singer_box li {
-    display: inline-block;
-    padding-bottom: 20px;
-    padding-left: 28px;
-}
-
-#singer_box li:hover {
     cursor: pointer;
 }

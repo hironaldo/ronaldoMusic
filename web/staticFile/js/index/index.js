@@ -1,17 +1,43 @@
-﻿$(document).ready(function () {
-    setTimeout(function () {
-        $('img').lazyload();
-    }, 1000);
-
+﻿(function ($, window, document) {
+    let url;
     /*搜索框*/
-    $('#search').on({
+    $('.layui-nav input').on({
         focus: function () {
-            $('#search_tips').show();
-            let url = 'http://localhost:3000/search/hot';
-            $.get(url, function (data) {
-                $("#hot_search").html('');
-                $("#h-search").tmpl(data.result).appendTo('#hot_search');
-            });
+            if ($(this).val().trim() == null || $(this).val().trim() == '') {
+                $('#search-img').css({'width': '20px', 'position': 'relative', 'right': '30px'});
+                $('.h-search').show();
+                let url = 'http://localhost:3000/search/hot';
+                $.get(url, function (data) {
+                    $("#hot_search").empty();
+                    $("#h-search").tmpl(data.result).appendTo('#hot_search');
+                });
+            }
+        }, blur: function () {
+            $('#search-img').css({'width': '20px', 'position': 'relative', 'right': '250px'});
+            setTimeout(function () {
+                $('.h-search').hide();
+            }, 100)
+        }, keyup: function () {
+            let keyStr = $(this).val().trim();
+            console.log(keyStr);
+            if (keyStr.length === 0) {
+                $('.h-search').show();
+                $('.t-search').hide();
+            } else if (keyStr != null) {
+                $('.t-search').show();
+                /*单曲*/
+                url = 'http://localhost:3000/search?keywords= ' + keyStr + '&type=1&limit=4';
+                $.get(url, function (data) {
+                    $(".online_music").empty();
+                    $("#h-song").tmpl(data.result).appendTo('.online_music');
+                });
+                /*歌手*/
+                url = 'http://localhost:3000/search?keywords= ' + keyStr + '&type=100&limit=2';
+                $.get(url, function (data) {
+                    $(".online_singer").empty();
+                    $("#h-singer").tmpl(data.result).appendTo('.online_singer');
+                });
+            }
         }
     });
 
@@ -64,7 +90,7 @@
     });
 
     /*顶部导航栏*/
-    $('#ul_left li img').click(function () {
+    $('#ul_left .layui-nav-item >img').click(function () {
         let index = $(this).index();
         if (index == 0) {
             history.go(-1);
@@ -78,4 +104,5 @@
     $('#ul_right li img').click(function () {
         $("#content").fadeOut();
     });
-});
+
+})(jQuery, window, document);

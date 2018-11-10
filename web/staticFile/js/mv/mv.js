@@ -1,12 +1,11 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     let plId = $('#plId').text().trim();    //歌单id
     let siId = $('#siId').text().trim();    //歌手id
-
     /*当前MV*/
     let url = 'https://api.bzqll.com/music/netease/mv?key=579621905&id=' + plId;
     $.get(url, function (data) {
-        $("#mv_info").html('');
-        $("#mv").tmpl(data.data).appendTo('#mv_info');
+        $('#mv_info').empty();
+        $('#mv').tmpl(data.data).appendTo('#mv_info');
     });
 
     /*相关MV*/
@@ -14,8 +13,8 @@
         url: 'http://localhost:3000/artist/mv?id=' + siId,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#mv_box").html('');
-            $("#c-mv").tmpl(data.mvs).appendTo('#mv_box');
+            $('#mv_box').empty();
+            $('#c-mv').tmpl(data.mvs).appendTo('#mv_box');
         }
     });
 
@@ -24,8 +23,8 @@
         url: 'http://localhost:3000/comment/mv?id=' + plId,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#content_top").html('');
-            $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+            $('#content_top').empty();
+            $('#t-comment').tmpl(data.hotComments).appendTo('#content_top');
         }
     });
     $('#box').paging({
@@ -35,8 +34,8 @@
                 url: 'http://localhost:3000/comment/mv?id=' + plId + '&offset=' + (page - 1),
                 xhrFields: {withCredentials: true},
                 success: function (data) {
-                    $("#content_new").html('');
-                    $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                    $('#content_new').empty();
+                    $('#n-comment').tmpl(data.comments).appendTo('#content_new');
                 }
             });
         }
@@ -79,4 +78,22 @@
             }
         }
     });
-});
+    /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*获取播放地址*/
+    setTimeout(function () {
+        const mvUrl = $('#mvurl').text();
+        let dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: true,
+            video: {url: mvUrl}
+        });
+    }, 500);
+    /*切换播放*/
+    $(document).on('click', '#mv_box li >div', function () {
+        window.location.href = "play-mv.jsp?plId=" + $(this).find('h1').text() + '&siId=' + $('#siId').text().trim();
+    });
+    /*查看歌手信息*/
+    $(document).on('click', '#siName', function () {
+        window.location.href = 'singer_info.jsp?siId=' + $('#siId').text().trim() + '&siName=' + $(this).text();
+    });
+})(jQuery, window, document);

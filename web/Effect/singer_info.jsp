@@ -10,27 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <title>歌手详情页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/singer/singer_info.css" media="all">
-    <style>
-        #mv_box {
-            padding-top: 10px;
-        }
-
-        #mv_box li {
-            display: inline-block;
-            width: 180px;
-            padding-left: 10px;
-        }
-
-        #album_box li {
-            display: inline-block;
-            width: 175px;
-            padding-left: 14px;
-        }
-
-    </style>
 </head>
 <body>
 <div>
@@ -74,9 +56,10 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/singer/singer-info.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <td>
@@ -109,14 +92,7 @@
 
 <script id="c-song" type="text/x-jquery-tmpl">
     <tr>
-        <td>
-            <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary"
-                 data-id="">
-                <i class="layui-icon">&#xe605;</i>
-            </div>
-            <img src="../staticFile/images/love.svg" width="16px">
-            {{= name}}
-        </td>
+        <td>{{= name}}</td>
         <td><%=siName%></td>
         <td>{{= eq}}</td>
         <td>{{= al.name}}</td>
@@ -128,7 +104,11 @@
        <div style="height: 180px">
             <h1 style="display:none">{{= id}}</h1>
             <div>
-                <a class="songlist__link mod_cover"> <img src="{{= imgurl16v9}}" class="songlist__pic" style="height: 103px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="180" height="105" data-original="{{= imgurl16v9}}" />
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
             <div>
                  <div>
@@ -150,7 +130,11 @@
        <div style="height: 215px">
             <h1 style="display:none">{{= id}}</h1>
             <div>
-                <a class="songlist__link mod_cover"> <img src="{{= blurPicUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= blurPicUrl}}" />
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
             <div>
                  <div>
@@ -169,7 +153,5 @@
     <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;{{= ti}}
     <p style="padding: 3px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</p>
 </script>
-
-<script src="../staticFile/js/singer/singer-info-reload.js" charset="utf-8"></script>
 </body>
 </html>

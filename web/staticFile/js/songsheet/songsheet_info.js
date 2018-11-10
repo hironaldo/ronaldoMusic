@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     let timestamp = Date.parse(new Date()); //时间戳
     let slistId = $('#slistId').text().trim();    //歌单id
     /*获取歌单信息和歌曲*/
@@ -35,7 +35,7 @@
                         url: 'http://localhost:3000/comment/playlist?id=' + slistId + '&offset=' + (page - 1) + '&timestamp=' + timestamp,
                         xhrFields: {withCredentials: true},
                         success: function (data) {
-                            $("#content_new").html('');
+                            $("#content_new").empty();
                             $("#n-comment").tmpl(data.comments).appendTo('#content_new');
                         }
                     });
@@ -79,4 +79,9 @@
             }
         }
     });
-});
+
+    /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    $(document).on('click', '#uinfo', function () {
+        window.location.href = 'friendpage.jsp?userId=' + $('#userId').text();
+    });
+})(jQuery, window, document);

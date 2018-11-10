@@ -6,17 +6,11 @@
 <html>
 <head>
     <title>专辑详情</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/album/album.css" media="all">
-    <style>
-        #album_box li {
-            display: inline-block;
-            width: 175px;
-            padding-left: 14px;
-        }
-    </style>
 </head>
 <body>
 
@@ -68,11 +62,12 @@
         </div>
     </div>
 </div>
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/album/album.js" charset="utf-8"></script>
 <script id="c-info" type="text/x-jquery-tmpl">
     <tr>
@@ -85,7 +80,7 @@
                     <span style="font-size: 24px;">{{= name}}</span>
                 </li>
                 <li>
-                    <span id="siName" style="font-size: 10px;color: #666;cursor: pointer;">{{= artist.name}}</span>
+                    <span id="siName" style="font-size: 10px;cursor: pointer;">{{= artist.name}}</span>
                 </li>
                 <li>
                     <span style="font-size: 10px;color: #666;">{{= company}} {{= subType}}</span>
@@ -94,16 +89,9 @@
                     <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= description}}</p>
                 </li>
                 <li style="padding-top: 10px">
-                    <button class="layui-btn layui-btn-xs layui-btn-primary">
+                    <button class="layui-btn layui-btn-sm layui-btn-primary">
                         <i class="layui-icon">&#xe652;</i>播放全部
                     </button>
-                    <button id="like" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#xe67b;</i>喜欢
-                    </button>
-                    <button id="delete" style="display: none;" class="layui-btn layui-btn-xs layui-btn-primary">
-                        <i class="layui-icon">&#x1006;</i>删除
-                    </button>
-                    <button id="action" class="layui-btn layui-btn-xs layui-btn-primary">批量操作</button>
                 </li>
             </ul>
         </td>
@@ -129,7 +117,11 @@
        <div style="height: 215px">
             <h1 style="display:none">{{= id}}</h1>
             <div>
-                <a class="songlist__link mod_cover"> <img src="{{= blurPicUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i></a>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= blurPicUrl}}"/>
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
             </div>
             <div>
                  <div>
@@ -175,6 +167,5 @@
      </li>
      <hr>
 </script>
-<script src="../staticFile/js/album/album-reload.js" charset="utf-8"></script>
 </body>
 </html>

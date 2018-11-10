@@ -5,58 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <title>我的主页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/mypage/style.css" media="all">
-    <style>
-        #nav span:hover {
-            cursor: pointer;
-        }
-
-        #mssheet_box li {
-            display: inline-block;
-            width: 160px;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #ssheet_box li {
-            display: inline-block;
-            width: 160px;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #follow_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #follow_box li:hover {
-            cursor: pointer;
-        }
-
-        #followed_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #followed_box li:hover {
-            cursor: pointer;
-        }
-
-        #singer_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #singer_box li:hover {
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
@@ -111,10 +63,10 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/js/mypage/mypage.js" charset="utf-8"></script>
 
 <script id="u-info" type="text/x-jquery-tmpl">
@@ -262,8 +214,6 @@
        </div>
    </li>
 </script>
-
-<script src="../staticFile/js/mypage/mypage-reload.js" charset="utf-8"></script>
 </body>
 </html>
 

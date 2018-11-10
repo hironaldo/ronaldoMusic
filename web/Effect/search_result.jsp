@@ -5,89 +5,21 @@
 <html>
 <head>
     <title>搜索结果页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body {
-            overflow-x: hidden;
-            overflow-y: auto;
-            background-color: #FAFAFA;
-            height: 100%;
-        }
-
-        body::-webkit-scrollbar {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #f5f5f7;
-            width: 8px;
-        }
-
-        body::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        body::-webkit-scrollbar-track {
-            -webkit-border-radius: 2em;
-            -moz-border-radius: 2em;
-            border-radius: 2em;
-            background-color: #D8D8D8;
-        }
-
-        #songlist_box li {
-            display: inline-block;
-            width: 160px;
-            padding-left: 24px;
-            padding-top: 5px;
-        }
-
-        #songlist_box li img {
-            width: 160px;
-            height: 160px;
-            background: url(../staticFile/images/loading.gif) 50% no-repeat;
-        }
-
-        #singer_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 50px;
-        }
-
-        #singer_box li:hover {
-            cursor: pointer;
-        }
-
-        #user_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 50px;
-        }
-
-        #user_box li:hover {
-            cursor: pointer;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/search/search.css" media="all">
 </head>
 <body>
-<i id="keyStr" style="display: none;"><%=keyStr%>
+<i id="keyStr" style="display: none;">
+    <%=keyStr%>
 </i>
-
 <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
     <ul class="layui-tab-title">
         <li class="layui-this">单曲</li>
         <li>专辑</li>
         <li>歌单</li>
         <li>Mv</li>
-        <li>歌词</li>
         <li>歌手</li>
         <li>用户</li>
     </ul>
@@ -101,9 +33,7 @@
                     <th>专辑</th>
                 </tr>
                 </thead>
-                <tbody id="song">
-
-                </tbody>
+                <tbody id="song"></tbody>
             </table>
         </div>
         <div class="layui-tab-item">
@@ -113,10 +43,7 @@
             <ul id="songlist_box"></ul>
         </div>
         <div class="layui-tab-item">
-            MV
-        </div>
-        <div class="layui-tab-item">
-            歌词
+            <ul id="mv_box"></ul>
         </div>
         <div class="layui-tab-item">
             <ul id="singer_box"></ul>
@@ -127,10 +54,11 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
+<script src="../staticFile/js/search/search.js" charset="utf-8"></script>
 <script id="p-song" type="text/x-jquery-tmpl">
 {{each songs}}
     <tr>
@@ -156,21 +84,23 @@
 <script id="p-album" type="text/x-jquery-tmpl">
 {{each albums}}
      <li>
+         <h1 style="display: none;">{{= id}}</h1>
+         <h2 style="display: none;">{{= artist.id}}</h2>
          <div style="float: left">
              <img width="40" data-original="{{= picUrl}}" />
          </div>
          <div style="padding-left: 15px;display: inline-block;">
-             <p>{{= name}}</p>
-             <p style="font-size: 12px;color: #666;">{{= artist.name}}</p>
+             <p>
+                <span>{{= name}}<span>
+                <span style="font-family: 'Microsoft YaHei';font-size: 12px;=">{{= alias}}</span>
+             </p>
+             <p style="font-family: 'Microsoft YaHei';font-size: 12px;color: #666;">{{= artist.name}}</p>
          </div>
          <div style="padding-right: 10px;display: inline-block;float: right">
-             <p>{{= size}}首</p>
+             <p style="font-family: 'Microsoft YaHei';color: #666;font-size: 12px;=">{{= size}}首</p>
          </div>
          <div style="padding-right: 30px;display: inline-block;float: right">
-             <p>{{= company}}</p>
-         </div>
-         <div style="padding-right: 30px;display: inline-block;float: right">
-             <p>{{= name}}</p>
+             <p style="font-size: 12px;">{{= company}}</p>
          </div>
      </li>
      <hr>
@@ -180,12 +110,12 @@
 <script id="p-songlist" type="text/x-jquery-tmpl">
 {{each playlists}}
     <li>
-       <div style="height: 160px">
-            <%--<i style="display: none;">{{= id}}</i>--%>
-            <%--<b style="display: none;">{{= creator.avatarUrl}}</b>--%>
-            <%--<s style="display: none;">{{= creator.nickname}}</s>--%>
-            <%--<d style="display: none;">{{= creator.userId}}</d>--%>
-            <%--<w style="display: none;">{{= tags}}</w>--%>
+       <div style="height: 215px">
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+            <h3 style="display: none;">{{= creator.nickname}}</h3>
+            <h4 style="display: none;">{{= creator.userId}}</h4>
+            <h5 style="display: none;">{{= tags}}</h5>
             <div>
                 <a class="songlist__link mod_cover">
                     <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
@@ -212,6 +142,8 @@
 {{each artists}}
     <li>
        <div>
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= name}}</h2>
             <div>
                 <img width="130" height="130" style="border-radius: 50%;" data-original="{{= img1v1Url}}" />
             </div>
@@ -231,6 +163,7 @@
 {{each userprofiles}}
     <li>
        <div>
+            <h1 style="display: none;">{{= userId}}</h1>
             <div>
                  <img width="130" height="130" style="border-radius: 50%;" data-original="{{= avatarUrl}}" />
             </div>
@@ -246,64 +179,32 @@
 {{/each}}
 </script>
 
-<script>
-    $(document).ready(function () {
-        /*单曲*/
-        $.ajax({
-            url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1',
-            xhrFields: {withCredentials: true},
-            success: function (data) {
-                $('#song').html('');
-                $('#p-song').tmpl(data.result).appendTo('#song');
-            }
-        });
-        /*专辑*/
-        $.ajax({
-            url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=10',
-            xhrFields: {withCredentials: true},
-            success: function (data) {
-                $('#album_box').html('');
-                $('#p-album').tmpl(data.result).appendTo('#album_box');
-            }
-        });
-
-        /*歌单*/
-        $.ajax({
-            url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1000',
-            xhrFields: {withCredentials: true},
-            success: function (data) {
-                $('#songlist_box').html('');
-                $('#p-songlist').tmpl(data.result).appendTo('#songlist_box');
-            }
-        });
-
-        /*歌手*/
-        $.ajax({
-            url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=100',
-            xhrFields: {withCredentials: true},
-            success: function (data) {
-                $('#singer_box').html('');
-                $('#p-singer').tmpl(data.result).appendTo('#singer_box');
-            }
-        });
-
-        /*用户*/
-        $.ajax({
-            url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1002',
-            xhrFields: {withCredentials: true},
-            success: function (data) {
-                $('#user_box').html('');
-                $('#p-user').tmpl(data.result).appendTo('#user_box');
-            }
-        });
-    });
-
-    window.onload = function () {
-        /*懒加载*/
-        setTimeout(function () {
-            $('img').lazyload();
-        }, 1000);
-    }
+<script id="p-mv" type="text/x-jquery-tmpl">
+{{each mvs}}
+    <li>
+       <div style="height: 165px">
+            <h1 style="display:none">{{= id}}</h1>
+            {{each artists}}
+                <h2 style="display:none"><span>{{= id}}</span></h2>
+            {{/each}}
+            <div>
+                <a class="songlist__link mod_cover">
+                    <img class="songlist__pic" width="180" height="105" data-original="{{= cover}}" />
+                    <i class="mod_cover__mask"></i>
+                    <i class="mod_cover__icon_play"></i>
+                </a>
+            </div>
+            <div>
+                 <div>
+                    <p style="font-size: 14px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:180px;">{{= name}}</p>
+                 </div>
+                 <div>
+                    <p style="font-size: 12px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= artistName}}</p>
+                 </div>
+            </div>
+       </div>
+   </li>
+{{/each}}
 </script>
 </body>
 </html>

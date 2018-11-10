@@ -1,30 +1,12 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>分类歌单</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/songsheet/songsheet.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-    <style>
-        #ssheet_box {
-            padding-top: 30px;
-        }
-
-        #ssheet_box li {
-            display: inline-block;
-            width: 160px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-        }
-
-        #ssheet_box li img {
-            width: 160px;
-            height: 160px;
-            background: url(../staticFile/images/loading.gif) 50% no-repeat;
-        }
-    </style>
 </head>
 <body>
 
@@ -62,20 +44,19 @@
     <div class="pagger-box pagger" id="box"></div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
-
 <script id="data" type="text/x-jquery-tmpl">
     <li>
-       <div style="height: 215px">
-            <i style="display: none;">{{= id}}</i>
-            <b style="display: none;">{{= creator.avatarUrl}}</b>
-            <s style="display: none;">{{= creator.nickname}}</s>
-            <d style="display: none;">{{= creator.userId}}</d>
-            <w style="display: none;">{{= tags}}</w>
+       <div style="height: 200px">
+            <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+            <h3 style="display: none;">{{= creator.nickname}}</h3>
+            <h4 style="display: none;">{{= creator.userId}}</h4>
+            <h5 style="display: none;">{{= tags}}</h5>
             <div>
                 <a class="songlist__link mod_cover">
                     <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
@@ -89,12 +70,11 @@
                  </div>
                  <div style="height: 5px"></div>
                  <div>
-                    <span style="font-size: 10px;color: #666">{{= creator.nickname}}</span>
+                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= creator.nickname}}</p>
                  </div>
             </div>
        </div>
    </li>
 </script>
-<script src="../staticFile/js/songsheet/songsheet-reload.js" charset="utf-8"></script>
 </body>
 </html>

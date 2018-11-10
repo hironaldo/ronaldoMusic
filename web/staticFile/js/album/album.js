@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     let timestamp = Date.parse(new Date()); //时间戳
     let abId = $('#abId').text().trim();
     let siId = $('#siId').text().trim();
@@ -26,6 +26,9 @@
         success: function (data) {
             $("#album_box").html('');
             $("#c-album").tmpl(data.hotAlbums).appendTo('#album_box');
+            setTimeout(function () {
+                $('img').lazyload();
+            }, 500);
         }
     });
 
@@ -89,4 +92,13 @@
             }
         }
     });
-});
+    /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*切换专辑信息*/
+    $(document).on('click', "#album_box li >div", function () {
+        window.location.href = 'album_info.jsp?abId=' + $(this).find('h1').text().trim() + "&siId=" + $('#siId').text().trim();
+    });
+    /*查看歌手资料*/
+    $(document).on('click', "#siName", function () {
+        window.location.href = "singer_info.jsp?siId=" + $('#siId').text().trim() + "&siName=" + $(this).text();
+    });
+})(jQuery, window, document);

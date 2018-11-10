@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -9,12 +8,12 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="staticFile/img/logo.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/public.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/nav.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/diy.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/play.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/audio.css" media="all">
+    <link rel="stylesheet" href="staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/yqq.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/nav.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/play.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/audio.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/index.css" media="all">
 </head>
 <body>
 
@@ -46,13 +45,13 @@
                         <img src="staticFile/img/right-slip.svg" style="width: 25px">
                         <img src="staticFile/img/refresh.svg" style="width: 19px">
                         <span style="padding-left: 20px">
-                            <input type="text" placeholder="搜索音乐、歌手、歌单" id="search"
+                            <input type="text" placeholder="搜索音乐、Mv、歌手、歌单、用户"
                                    autocomplete="off"
                                    maxlength="15"
                                    onkeyup="this.value=this.value.replace(/\s/g,'');">
-                            <img src="staticFile/img/search.svg" style="width: 20px">
+                            <img id="search-img" src="staticFile/img/search.svg"
+                                 style="width: 20px;position: relative;right: 250px;">
                         </span>
-
                     </li>
                 </ul>
                 <ul class="layui-nav layui-layout-right" id="ul_right">
@@ -61,15 +60,61 @@
                         <img src="staticFile/img/close.svg" style="width: 18px">
                     </li>
                 </ul>
-                <div id="search_tips" style="display: none">
-                    <div>
+                <div id="search_tips" style="display: none;">
+                    <div class="h-search">
                         <div>
                             <span style="font-family: 'Microsoft YaHei';font-size: 12px">热门搜索</span>
                             <hr>
                         </div>
-                        <div class="my_music">
+                        <div>
                             <ul id="hot_search">
                             </ul>
+                        </div>
+                    </div>
+                    <div class="t-search">
+                        <div style="padding-top: 20px">
+                            <div>
+                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">在线搜索</span>
+                                <hr>
+                            </div>
+                            <div class="online_music"></div>
+                            <div class="online_singer"></div>
+                            <div class="online_singer">
+                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">专辑</span>
+                                <ul style="padding-left: 25px">
+                                    <li style="background: #eeeeee;padding: 3px 10px;">
+                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
+                                        <span>&nbsp;陈奕迅</span>
+                                    </li>
+                                    <li>
+                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
+                                        <span>&nbsp;陈奕迅</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="online_singer">
+                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">Mv</span>
+                                <ul style="padding-left: 25px">
+                                    <li style="background: #eeeeee;padding: 3px 10px;">
+                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
+                                        <span>&nbsp;陈奕迅</span>
+                                    </li>
+                                    <li>
+                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
+                                        <span>&nbsp;陈奕迅</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="online_sheet">
+                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">歌单</span>
+                                <ul style="padding-left: 25px">
+                                    <li style="background: #eeeeee;padding: 3px 10px;">
+                                        <img src="https://p.qpic.cn/music_cover/lricrZ3ca62ybvZbWYjtYa2snY5V4BZP7E5vbHtdUnfyTpCeN766rLg/300?n=1"
+                                             width="30">
+                                        <span>&nbsp;港台风 - 陈奕迅</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,9 +238,9 @@
 
 <!-- 新建歌单 -->
 <%--<div style="width: 400px;height: 200px;background-color: red;z-index: 9999;position: absolute;left: 50%;top: 20%">--%>
-    <%--<div>--%>
-        <%--<span>QQ音乐</span>--%>
-    <%--</div>--%>
+<%--<div>--%>
+<%--<span>QQ音乐</span>--%>
+<%--</div>--%>
 <%--</div>--%>
 
 
@@ -204,12 +249,11 @@
     <img src="staticFile/img/footer.png">
 </div>
 
-<script src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.pjax.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="staticFile/js/audio.js" charset="utf-8"></script>
 <script src="staticFile/js/player.js" charset="utf-8"></script>
 <script src="staticFile/js/index/index.js" charset="utf-8"></script>
@@ -226,13 +270,43 @@
 </script>
 
 <script id="h-search" type="text/x-jquery-tmpl">
-    {{each hots}}
-        <li onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
-            <span>{{= first}}</span>
+{{each hots}}
+    <li onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+        <span style="padding-left: 10px;">{{= first}}</span>
+    </li>
+{{/each}}
+</script>
+
+<script id="h-song" type="text/x-jquery-tmpl">
+<span style="font-family: 'Microsoft YaHei';font-size: 12px">单曲</span>
+<ul id="song" style="padding-left: 25px">
+    {{each songs}}
+        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:190px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+            <span style="padding-left: 10px;">
+                {{= name}} -
+                {{each artists}}
+                    {{= name}}
+                {{/each}}
+            </span>
         </li>
     {{/each}}
+</ul>
 </script>
-<script type="text/javascript" src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
+
+<script id="h-singer" type="text/x-jquery-tmpl">
+<span style="font-family: 'Microsoft YaHei';font-size: 12px">歌手</span>
+<ul style="padding-left: 25px">
+    {{each artists}}
+        <li style="background: #eeeeee;padding: 3px 10px;">
+            <img src="{{= img1v1Url}}" width="30" style="border-radius: 50%">
+            <span>&nbsp;{{= name}}</span>
+        </li>
+    {{/each}}
+</ul>
+</script>
+
+<script src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
+
 </body>
 
 </html>

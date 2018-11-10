@@ -1,20 +1,20 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     let keyCat = $('#key').text().trim();   //歌单关键字
     /*初始化*/
     $('#box').paging({
         initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
         callback: function (page) {
             $.ajax({
-                url: 'http://localhost:3000/top/playlist?offset=' + page * 34 + '&cat=' + keyCat + '&limit=20',
+                url: 'http://localhost:3000/top/playlist?offset=' + page * 34 + '&cat=' + keyCat,
                 xhrFields: {withCredentials: true},
                 success: function (data) {
-                    $("#ssheet_box").html('');
-                    $("#data").tmpl(data.playlists).appendTo('#ssheet_box');
+                    $('#ssheet_box').empty();
+                    $('#data').tmpl(data.playlists).appendTo('#ssheet_box');
                     setTimeout(function () {
                         $('img').lazyload({
-                            threshold : 200,effect : "fadeIn",failure_limit : 20,skip_invisible : false
+                            threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
                         });
-                    }, 1000);
+                    }, 500);
                 }
             });
         }
@@ -30,4 +30,13 @@
             $('.classify-nav p').html('国语流行好歌不容错过!');
             break;
     }
-});
+    /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    $(document).on('click', '#ssheet_box li >div', function () {
+        let slistId = $(this).find('h1').text().trim();
+        let picurl = $(this).find('h2').text().trim();
+        let nickname = $(this).find('h3').text().trim();
+        let userId = $(this).find('h4').text().trim();
+        let tags = $(this).find('h5').text().trim();
+        window.location.href = 'songsheet_info.jsp?slistId=' + slistId + '&picurl=' + picurl + '&nickname=' + nickname + '&userId=' + userId + '&tags=' + tags;
+    });
+})(jQuery, window, document);

@@ -8,47 +8,15 @@
 <head>
     <meta charset="UTF-8">
     <title>用户主页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/mypage/style.css" media="all">
-    <style>
-        #ssheet_box li {
-            display: inline-block;
-            width: 160px;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #ssheet_box li img {
-            width: 160px;
-            height: 160px;
-            background: url(../staticFile/images/loading.gif) 50% no-repeat;
-        }
-
-        #follow_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #follow_box li:hover {
-            cursor: pointer;
-        }
-
-        #followed_box li {
-            display: inline-block;
-            padding-bottom: 20px;
-            padding-left: 28px;
-        }
-
-        #followed_box li:hover {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/friendpage/friendpage.css" media="all">
 </head>
 <body>
 
-<i id="userId" style="display: none"><%=userId%>
+<i id="userId" style="display: none">
+    <%=userId%>
 </i>
 
 <div>
@@ -76,12 +44,12 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/friendpage/friendpage.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.lazyload.js" charset="utf-8"></script>
 <script id="u-info" type="text/x-jquery-tmpl">
     <td>
         <img src="{{= avatarUrl}}" style="width: 115px;border-radius: 50%"/>
@@ -169,9 +137,6 @@
        </div>
    </li>
 </script>
-
-<script src="../staticFile/js/friendpage/friendpage-raload.js" charset="utf-8"></script>
-
 </body>
 </html>
 

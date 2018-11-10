@@ -31,17 +31,14 @@
 
     /*搜索框*/
     $(document).on('click', "#hot_search >li", function () {
-        let url = 'Effect/search_result.jsp?keyStr=' + $(this).text().trim();
+        layer.load();
+        setTimeout(function () {
+            layer.closeAll('loading');
+        }, 2000);
+        let keyStr = $(this).text().trim();
+        let url = 'Effect/search_result.jsp?keyStr=' + keyStr;
+        $('#search').val(keyStr);
         $($iframe).attr("src", url);
-        $('#search_tips').hide();
+        //$('#search_tips').hide();
     });
-
-    $('#search').on({
-        blur: function () {
-            setTimeout(function () {
-                $('#search_tips').hide();
-            }, 100)
-        }
-    });
-
 };

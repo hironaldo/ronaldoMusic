@@ -13,18 +13,10 @@
 <head>
     <meta charset="UTF-8">
     <title>歌单详情页</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/songsheet/songsheet_info.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-    <style>
-        #ssheetinfo_box{
-            cursor: pointer;
-        }
-
-        #song:hover{
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
@@ -79,11 +71,11 @@
     <%=userId%>
 </i>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/js/songsheet/songsheet_info.js" charset="utf-8"></script>
 
 <script id="c-info" type="text/x-jquery-tmpl">
@@ -164,7 +156,5 @@
      </li>
      <hr>
 </script>
-
-<script src="../staticFile/js/songsheet/songsheet_info-reload.js" charset="utf-8"></script>
 </body>
 </html>

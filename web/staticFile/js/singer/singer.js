@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿(function ($, window, document) {
     /*根据url请求数据*/
     function request(url) {
         $.ajax({
@@ -10,12 +10,11 @@
             }
         });
     }
-
     /*初始化 + 分页*/
     $('#box').paging({
-        initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+        initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
         callback: function (page) {
-            let url = "http://127.0.0.1:3000/top/artists?offset=" + (page -1) * 15 + "&limit=15";
+            let url = "http://127.0.0.1:3000/top/artists?offset=" + (page - 1) * 15 + "&limit=15";
             request(url);
         }
     });
@@ -28,7 +27,7 @@
         $(this).addClass("act");
         if (keyStr === '入驻歌手') {
             $('#box').paging({
-                initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+                initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
                 callback: function (page) {
                     let url = "http://localhost:3000/artist/list?cat=5001&offset=" + page * 5 + "&limit=15";
                     request(url);
@@ -42,7 +41,7 @@
         $(this).addClass("act");
         if (keyStr === '男单') {
             $('#box').paging({
-                initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+                initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
                 callback: function (page) {
                     let url = "http://localhost:3000/artist/list?cat=1001&offset=" + page * 5 + "&limit=15";
                     request(url);
@@ -50,7 +49,7 @@
             });
         } else if (keyStr === '女单') {
             $('#box').paging({
-                initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+                initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
                 callback: function (page) {
                     let url = "http://localhost:3000/artist/list?cat=1002&offset=" + page * 5 + "&limit=15";
                     request(url);
@@ -58,7 +57,7 @@
             });
         } else if (keyStr === '组合') {
             $('#box').paging({
-                initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+                initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
                 callback: function (page) {
                     let url = "http://localhost:3000/artist/list?cat=1003&offset=" + page * 5 + "&limit=15";
                     request(url);
@@ -72,7 +71,7 @@
         $(this).addClass("act");
         if (keyStr === '欧美') {
             $('#box').paging({
-                initPageNo: 1, totalPages: 15, slideSpeed: 600, jump: true,
+                initPageNo: 1, totalPages: 8, slideSpeed: 600, jump: true,
                 callback: function (page) {
                     let url = "http://localhost:3000/artist/list?cat=2002&offset=" + page * 5 + "&limit=15";
                     request(url);
@@ -80,4 +79,8 @@
             });
         }
     });
-});
+    /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    $(document).on('click', "#singer_box li >div", function () {
+        window.location.href = "singer_info.jsp?siId=" + $(this).find('i').text() + "&siName=" + $(this).find('b').text();
+    });
+})(jQuery, window, document);

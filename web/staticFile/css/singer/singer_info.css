@@ -2,12 +2,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
 body {
     overflow-x: hidden;
     overflow-y: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
 #content {
@@ -35,4 +35,32 @@ body {
     -moz-border-radius: 2em;
     border-radius: 2em;
     background-color: #D8D8D8;
+}
+
+#mv_box {
+    padding-top: 10px;
+}
+
+#mv_box li {
+    display: inline-block;
+    width: 180px;
+    padding-left: 10px;
+}
+
+#album_box li {
+    display: inline-block;
+    width: 160px;
+    padding-left: 26px;
+}
+
+#album_box li {
+    display: inline-block;
+    width: 175px;
+    padding-left: 14px;
+}
+
+#album_box li img {
+    width: 160px;
+    height: 160px;
+    background: url(../../images/loading.gif) 50% no-repeat;
 }

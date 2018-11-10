@@ -6,30 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/public.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/choice/choice.css" media="all">
-    <style>
-        #songsheet_top {
-            padding-top: 10px;
-        }
-
-        #songsheet_top li {
-            display: inline-block;
-            width: 178px;
-            padding-left: 8px;
-        }
-
-        #singer_top {
-            padding-top: 10px;
-        }
-
-        #singer_top li {
-            display: inline-block;
-            width: 178px;
-            padding-left: 8px;
-        }
-    </style>
 </head>
 <body>
 
@@ -56,7 +36,7 @@
         <div style="padding-left: 7px;">
             <span style="font-size: 18px;">歌 单 推 荐</span>
             <a href="songsheet.jsp">
-                <span style="padding-left: 788px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 800px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="songsheet_top"></ul>
@@ -66,9 +46,9 @@
     <!-- 歌手 -->
     <div class="singer">
         <div style="padding-left: 6px;">
-            <span style="font-size: 18px;">乐 人</span>
+            <span style="font-size: 18px;">歌 手</span>
             <a href="singer.jsp">
-                <span style="padding-left: 835px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 845px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="singer_top"></ul>
@@ -76,7 +56,7 @@
     <!-- 歌手 -->
 
     <!-- 音乐 -->
-    <div style="padding-left: 40px;padding-top: 15px">
+    <div style="padding-left: 31px;padding-top: 10px">
         <div>
             <span style="font-size: 18px;">音 乐</span>
         </div>
@@ -107,7 +87,7 @@
     <!-- 音乐 -->
 
     <!-- 排行榜 -->
-    <div class="ranking" style="padding-left: 20px;padding-top:15px">
+    <div class="ranking" style="padding-left: 10px;padding-top:10px">
         <div style="padding-left: 20px;">
             <span style="font-size: 18px;">巅 峰 榜</span>
         </div>
@@ -152,30 +132,25 @@
                     </ul>
                 </div>
             </li>
-
         </ul>
     </div>
     <!-- 排行榜 -->
 
     <!-- Mv -->
     <div class="mv">
-        <div style="padding-left: 20px;">
+        <div style="padding-left: 5px;">
             <span style="font-size: 18px;">M V</span>
         </div>
         <div>
-            <div id="aaa"></div>
-            <table id="mv_top">
-                <tr id="mv_beg"></tr>
-                <tr id="mv_end"></tr>
-            </table>
+            <ul id="mv_top"></ul>
         </div>
     </div>
     <!-- Mv -->
-
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 <script id="ranking" type="text/x-jquery-tmpl">
@@ -187,8 +162,8 @@
 </script>
 
 <script id="mv" type="text/x-jquery-tmpl">
-    <td>
-        <div>
+    <li>
+        <div style="height: 180px">
             <h1 style="display: none;">{{= id}}</h1>
             <h2 style="display: none;">
                 {{each artists}}
@@ -197,7 +172,7 @@
             </h2>
             <div class="box_img">
                 <a class="songlist__link mod_cover">
-                    <img class="songlist__pic" src="{{= cover}}">
+                    <img class="songlist__pic" width="215" height="120" data-original="{{= cover}}" />
                     <i class="mod_cover__mask"></i>
                     <i class="mod_cover__icon_play"></i>
                 </a>
@@ -209,16 +184,16 @@
                 <div style="font-size: 10px;color: #666">{{= artistName}}</div>
             </div>
         </div>
-    </td>
+    </li>
 </script>
 
 <script id="singer" type="text/x-jquery-tmpl">
     <li>
-        <div>
+        <div style="height: 195px">
             <h1 style="display: none;">{{= id}}</h1>
             <h2 style="display: none;">{{= name}}</h2>
             <div class="box_img">
-                <img class="songlist__pic" src="{{= img1v1Url}}" style="width: 160px;height: 160px;">
+                <img width="160" height="160" data-original="{{= img1v1Url}}" />
             </div>
             <div>
                 <div><span style="font-size: 14px">{{= name}}</span></div>
@@ -230,22 +205,21 @@
 
 <script id="song_sheet" type="text/x-jquery-tmpl">
     <li>
-        <div style="height: 215px">
+        <div style="height: 200px">
             <h1 style="display: none;">{{= id}}</h1>
             <div>
                 <a class="songlist__link mod_cover">
-                    <img src="{{= picUrl}}" class="songlist__pic" style="width: 160px;height: 160px;"/>
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= picUrl}}" />
                     <i class="mod_cover__mask"></i>
                     <i class="mod_cover__icon_play"></i>
                 </a>
             </div>
             <div style="height: 5px"></div>
             <div style="padding-top:5px">
-                <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:172px;">{{= name}}</p>
+                <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:168px;">{{= name}}</p>
             </div>
        </div>
     </li>
 </script>
-<script src="../staticFile/js/choice/choice-reload.js" charset="utf-8"></script>
 </body>
 </html>

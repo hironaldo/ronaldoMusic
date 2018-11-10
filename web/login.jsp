@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="staticFile/UIframe/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="staticFile/css/login.css" media="all">
+    <link rel="stylesheet" href="staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="staticFile/css/common/login.css" media="all">
 </head>
 <body>
 
@@ -46,9 +46,9 @@
     </div>
 </div>
 
-<script src="staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/jquery.cookie.js" charset="utf-8"></script>
-<script src="staticFile/UIframe/layui/layui.all.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="staticFile/js/login.js" charset="utf-8"></script>
 </body>
 </html>

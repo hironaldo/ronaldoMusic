@@ -5,25 +5,10 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="../staticFile/UIframe/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/singer/singer.css" media="all">
-    <link rel="stylesheet" href="../staticFile/UIframe/paging/paging.css" media="all">
-    <style>
-        #singer_box {
-            padding-top: 14px;
-        }
-
-        #singer_box li {
-            display: inline-block;
-            width: 155px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-        }
-
-        #singer_box li:hover {
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
@@ -73,9 +58,9 @@
     </div>
 </div>
 
-<script src="../staticFile/UIframe/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/paging/paging.js" charset="utf-8"></script>
-<script src="../staticFile/UIframe/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/paging/paging.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/js/singer/singer.js" charset="utf-8"></script>
 <script id="data" type="text/x-jquery-tmpl">
     <li>
@@ -91,6 +76,5 @@
        </div>
     </li>
 </script>
-<script src="../staticFile/js/singer/singer-reload.js" charset="utf-8"></script>
 </body>
 </html>
