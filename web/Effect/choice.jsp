@@ -205,21 +205,30 @@
 
 <script id="song_sheet" type="text/x-jquery-tmpl">
     <li>
-        <div style="height: 200px">
+       <div style="height: 210px">
             <h1 style="display: none;">{{= id}}</h1>
+            <h2 style="display: none;">{{= creator.avatarUrl}}</h2>
+            <h3 style="display: none;">{{= creator.nickname}}</h3>
+            <h4 style="display: none;">{{= creator.userId}}</h4>
+            <h5 style="display: none;">{{= tags}}</h5>
             <div>
                 <a class="songlist__link mod_cover">
-                    <img class="songlist__pic" width="160" height="160" data-original="{{= picUrl}}" />
+                    <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
                     <i class="mod_cover__mask"></i>
                     <i class="mod_cover__icon_play"></i>
                 </a>
             </div>
-            <div style="height: 5px"></div>
-            <div style="padding-top:5px">
-                <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:168px;">{{= name}}</p>
+            <div>
+                 <div>
+                    <p style="font-size: 13px;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= name}}</p>
+                 </div>
+                 <div style="height: 5px"></div>
+                 <div>
+                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= creator.nickname}}</p>
+                 </div>
             </div>
        </div>
-    </li>
+   </li>
 </script>
 </body>
 </html>

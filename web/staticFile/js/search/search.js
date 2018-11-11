@@ -8,7 +8,7 @@
 
     /*单曲*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1',
+        url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1',
         xhrFields: {withCredentials: true},
         success: function (data) {
             $('#song').html('');
@@ -28,7 +28,7 @@
             case 1:
                 /*专辑*/
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=10',
+                    url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=10',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#album_box').html('');
@@ -40,7 +40,7 @@
             case 2:
                 /*歌单*/
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1000',
+                    url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1000',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#songlist_box').html('');
@@ -52,7 +52,7 @@
             case 3:
                 /*mv*/
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1004',
+                    url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1004',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#mv_box').html('');
@@ -64,7 +64,7 @@
             case 4:
                 /*歌手*/
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=100',
+                    url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=100',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#singer_box').html('');
@@ -76,7 +76,7 @@
             case 5:
                 /*用户*/
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1002',
+                    url: 'http://localhost:3000/search?keywords= ' + $('#keyStr').text().trim() + '&type=1002',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#user_box').html('');

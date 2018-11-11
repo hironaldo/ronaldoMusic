@@ -29,16 +29,35 @@
         $($iframe).attr("src", url);
     });
 
-    /*搜索框*/
-    $(document).on('click', "#hot_search >li", function () {
+    /*搜索跳转*/
+    function searchJump(keyStr) {
         layer.load();
         setTimeout(function () {
             layer.closeAll('loading');
-        }, 2000);
-        let keyStr = $(this).text().trim();
+        }, 1500);
         let url = 'Effect/search_result.jsp?keyStr=' + keyStr;
-        $('#search').val(keyStr);
+        $('.layui-nav input').val(keyStr);
         $($iframe).attr("src", url);
-        //$('#search_tips').hide();
+    }
+
+    //热搜
+    $(document).on('click', "#hot_search >li", function () {
+        searchJump($(this).text().trim());
+    });
+    //推荐搜索--> 歌曲
+    $(document).on('click', ".online_music ul >li", function () {
+        searchJump($(this).text().trim());
+    });
+    //推荐搜索--> 歌手
+    $(document).on('click', ".online_singer ul >li", function () {
+        searchJump($(this).text().trim());
+    });
+    //推荐搜索--> 专辑
+    $(document).on('click', ".online_album ul >li", function () {
+        searchJump($(this).text().trim());
+    });
+    //推荐搜索--> 歌单
+    $(document).on('click', ".online_sheet ul >li", function () {
+        searchJump($(this).text().trim());
     });
 };

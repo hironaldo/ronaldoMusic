@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/mypage/style.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/personal/my.css" media="all">
 </head>
 <body>
 
@@ -67,8 +67,7 @@
 <script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
-<script src="../staticFile/js/mypage/mypage.js" charset="utf-8"></script>
-
+<script src="../staticFile/js/personal/my.js" charset="utf-8"></script>
 <script id="u-info" type="text/x-jquery-tmpl">
     <td>
         <img src="{{= avatarUrl}}" style="width: 115px;border-radius: 50%"/>

@@ -1,4 +1,5 @@
 ﻿(function ($, window, document) {
+    let timestamp = Date.parse(new Date()); //时间戳
     let siId = $('#siId').text().trim();    //歌手id
     function lazyLoad() { //懒加载
         setTimeout(function () {
@@ -10,7 +11,7 @@
 
     /*加载首页基本数据*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/artists?id=' + siId,
+        url: 'http://localhost:3000/artists?id=' + siId,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $('#singer_info').empty();
@@ -20,6 +21,7 @@
         }
     });
 
+    /*tab 选项卡*/
     $('.layui-tab-title li').click(function () {
         layer.load();
         setTimeout(function () {
@@ -29,7 +31,7 @@
         switch (index) {
             case 0:
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/artists?id=' + siId,
+                    url: 'http://localhost:3000/artists?id=' + siId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $("#singer_info").html('');
@@ -41,7 +43,7 @@
                 break;
             case 1:
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/artist/album?id=' + siId + '&limit=20',
+                    url: 'http://localhost:3000/artist/album?id=' + siId + '&limit=20',
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#album_box').empty();
@@ -52,7 +54,7 @@
                 break;
             case 2:
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/artist/mv?id=' + siId,
+                    url: 'http://localhost:3000/artist/mv?id=' + siId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $('#mv_box').empty();
@@ -63,7 +65,7 @@
                 break;
             case 3:
                 $.ajax({
-                    url: 'http://127.0.0.1:3000/artist/desc?id=' + siId,
+                    url: 'http://localhost:3000/artist/desc?id=' + siId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         $("#introduce_box").empty();
@@ -86,28 +88,49 @@
 
     /*关注 取关歌手*/
     $(document).on('click', '#singer_info ul li .def', function () {
-        let siId = $(this).find('strong').text().trim();
-        if (undefined === $.cookie('nickname')) {
+        let siId = $(this).find('a').text().trim();
+        let followed = $(this).find('b').text().trim();
+        if (undefined == $.cookie('nickname')) {
             layer.msg('请先登陆 🙃', function () {
             });
         } else {
-            if ($(this).find('button').text().trim() == '关注') {
+            if (followed == 'false') {
                 $.ajax({
-                    url: 'http://localhost:3000/artist/sub?id=' + siId + '&t=1',
+                    url: 'http://localhost:3000/artist/sub?id=' + siId + '&t=1&timestamp=' + timestamp,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         if (data.code === 200) {
+                            $.ajax({
+                                url: 'http://localhost:3000/artists?id=' + siId + '&timestamp=' + timestamp,
+                                xhrFields: {withCredentials: true},
+                                success: function (data) {
+                                    $('#singer_info').empty();
+                                    $('#c-info').tmpl(data.artist).appendTo('#singer_info');
+                                }
+                            });
                             layer.msg('关注成功');
+                        } else {
+                            layer.msg('出现缓存异常请稍后');
                         }
                     }
                 });
-            } else {
+            } else if (followed == 'true') {
                 $.ajax({
-                    url: 'http://localhost:3000/artist/sub?id=' + siId + '&t=0',
+                    url: 'http://localhost:3000/artist/sub?id=' + siId + '&t=0&timestamp=' + timestamp,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         if (data.code === 200) {
+                            $.ajax({
+                                url: 'http://localhost:3000/artists?id=' + siId + '&timestamp=' + timestamp,
+                                xhrFields: {withCredentials: true},
+                                success: function (data) {
+                                    $('#singer_info').empty();
+                                    $('#c-info').tmpl(data.artist).appendTo('#singer_info');
+                                }
+                            });
                             layer.msg('取关成功');
+                        } else {
+                            layer.msg('出现缓存异常请稍后');
                         }
                     }
                 });

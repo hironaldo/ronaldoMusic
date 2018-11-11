@@ -7,7 +7,7 @@
 
     <session-factory>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  <!-- hibernate 所使用的数据库方言 -->
-        <property name="show_sql">true</property>    <!-- 执行操作时是否在控制台打印 SQL -->
+        <property name="show_sql">false</property>    <!-- 执行操作时是否在控制台打印 SQL -->
         <property name="format_sql">true</property>  <!-- 是否对 SQL 进行格式化 -->
         <property name="hibernate.current_session_context_class">thread</property>
     </session-factory>

@@ -129,7 +129,7 @@
                  </div>
                  <div style="height: 5px"></div>
                  <div>
-                    <span style="font-size: 10px;color: #666">{{= creator.nickname}}</span>
+                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:160px;">{{= creator.nickname}}</p>
                  </div>
                  <div style="height: 5px"></div>
             </div>

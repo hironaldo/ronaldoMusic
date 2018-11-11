@@ -18,6 +18,7 @@
         <span><%=keyStr%></span>
         <p></p>
     </div>
+    <p style="display: none" id="total"></p>
     <ul id="ssheet_box"></ul>
     <div class="pagger-box pagger" id="box"></div>
 </div>
@@ -56,5 +57,8 @@
        </div>
     </li>
 </script>
+
+<script id="c-total" type="text/x-jquery-tmpl">{{= total}}</script>
+
 </body>
 </html>

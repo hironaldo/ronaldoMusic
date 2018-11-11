@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
-    <link rel="stylesheet" href="../staticFile/css/friendpage/friendpage.css" media="all">
+    <link rel="stylesheet" href="../staticFile/css/personal/friend.css" media="all">
 </head>
 <body>
 
 <i id="userId" style="display: none">
     <%=userId%>
 </i>
-
 <div>
     <table style="margin: 10px 0 0 15px;">
         <tr id="user_info">
@@ -49,7 +48,7 @@
 <script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
-<script src="../staticFile/js/friendpage/friendpage.js" charset="utf-8"></script>
+<script src="../staticFile/js/personal/friend.js" charset="utf-8"></script>
 <script id="u-info" type="text/x-jquery-tmpl">
     <td>
         <img src="{{= avatarUrl}}" style="width: 115px;border-radius: 50%"/>
@@ -104,7 +103,6 @@
        </div>
    </li>
 </script>
-
 
 <script id="u-follow" type="text/x-jquery-tmpl">
     <li>

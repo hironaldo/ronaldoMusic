@@ -40,6 +40,7 @@
             </button>
         </div>
         <div style="padding-top: 30px">
+            <p style="display: none" id="total"></p>
             <span class="layui-badge-dot"></span>&nbsp;&nbsp;精彩评论
             <ul id="content_top" style="padding-top: 10px;"></ul>
             <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;最新评论
@@ -116,5 +117,8 @@
      </li>
      <hr>
 </script>
+
+<script id="c-total" type="text/x-jquery-tmpl">{{= total}}</script>
+
 </body>
 </html>

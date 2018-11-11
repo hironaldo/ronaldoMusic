@@ -58,6 +58,7 @@
 
 <script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/singer/singer-info.js" charset="utf-8"></script>
@@ -72,7 +73,8 @@
                     <span style="font-size:24px">{{= name}}</span>
                     <span style="font-size: 12px;color: #666">{{= alias}}</span>
                     <span class="def" style="padding-left:10px">
-                        <strong style="display:none">{{= id}}</strong>
+                        <a style="display:none">{{= id}}</a>
+                        <b style="display:none">{{= followed}}</b>
                         <button class="layui-btn layui-btn-primary layui-btn layui-btn-xs">
                             {{if followed==false}}
                                 <i class="layui-icon">&#xe609;</i>关注
@@ -95,7 +97,10 @@
         <td>{{= name}}</td>
         <td><%=siName%></td>
         <td>{{= eq}}</td>
-        <td>{{= al.name}}</td>
+        <td class="alId">
+            <h1 style="display:none">{{= al.id}}</h1>
+            {{= al.name}}
+        </td>
     </tr>
 </script>
 

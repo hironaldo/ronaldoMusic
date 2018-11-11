@@ -14,9 +14,11 @@
 </head>
 <body>
 
-<i id="abId" style="display: none"><%=abId%>
+<i id="abId" style="display: none">
+    <%=abId%>
 </i>
-<i id="siId" style="display: none"><%=siId%>
+<i id="siId" style="display: none">
+    <%=siId%>
 </i>
 <div style="margin:10px 0 0 20px;">
     <table id="albuminfo_box">
@@ -45,6 +47,7 @@
         </p>
         <ul id="album_box" style="padding-top: 10px"></ul>
         <div>
+            <p style="display: none" id="total"></p>
             <textarea id="comment" maxlength="140"></textarea>
             <div style="padding-top: 5px;padding-right: 14px;float: right;">
                 <span id="num" style="font-size: 12px;color: #666;">0/140</span>
@@ -167,5 +170,8 @@
      </li>
      <hr>
 </script>
+
+<script id="c-total" type="text/x-jquery-tmpl">{{= total}}</script>
+
 </body>
 </html>

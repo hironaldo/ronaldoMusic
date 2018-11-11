@@ -45,7 +45,7 @@
             </table>
         </div>
         <div class="layui-tab-item">
-            <textarea id="comment" maxlength="140"></textarea>
+            <textarea id="comment" maxlength="140" onkeyup="this.value=this.value.replace(/\s/g,'');"></textarea>
             <div style="padding-top: 5px;float: right;">
                 <span id="num" style="font-size: 12px;color: #666;">0/140</span>
                 <button id="send" class="layui-btn layui-btn-xs" style="">
@@ -120,7 +120,7 @@
 </script>
 
 <script id="c-total" type="text/x-jquery-tmpl">
-    <span class="layui-badge-rim">共{{= total}}条评论</span>
+    <span class="layui-badge-rim">共<b>{{= total}}</b>条评论</span>
 </script>
 
 <script id="t-comment" type="text/x-jquery-tmpl">
@@ -132,7 +132,9 @@
              <p>{{= user.nickname}}</p>
              <span style="font-size: 12px;color: #666;padding-left:15px">{{= content}}</span>
              <p style="font-size: 12px;padding-top: 3px;color: #666">
-                 <span style="float: right"><i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}</span>
+                 <span style="float: right">
+                    <i class="layui-icon">&#xe6c6;</i>&nbsp;{{= likedCount}}
+                 </span>
              </p>
          </div>
      </li>

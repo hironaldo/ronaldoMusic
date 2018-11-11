@@ -40,6 +40,7 @@
         </div>
         <br>
     </div>
+    <p style="display: none" id="total"></p>
     <ul id="ssheet_box"></ul>
     <div class="pagger-box pagger" id="box"></div>
 </div>
@@ -49,7 +50,7 @@
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/songsheet/songsheet.js" charset="utf-8"></script>
-<script id="data" type="text/x-jquery-tmpl">
+<script id="c-songlist" type="text/x-jquery-tmpl">
     <li>
        <div style="height: 200px">
             <h1 style="display: none;">{{= id}}</h1>
@@ -76,5 +77,8 @@
        </div>
    </li>
 </script>
+
+<script id="c-total" type="text/x-jquery-tmpl">{{= total}}</script>
+
 </body>
 </html>

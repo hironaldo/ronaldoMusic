@@ -45,7 +45,7 @@
                         <img src="staticFile/img/right-slip.svg" style="width: 25px">
                         <img src="staticFile/img/refresh.svg" style="width: 19px">
                         <span style="padding-left: 20px">
-                            <input type="text" placeholder="搜索音乐、Mv、歌手、歌单、用户"
+                            <input type="text" placeholder="搜索音乐、专辑、歌手、歌单"
                                    autocomplete="off"
                                    maxlength="15"
                                    onkeyup="this.value=this.value.replace(/\s/g,'');">
@@ -60,18 +60,17 @@
                         <img src="staticFile/img/close.svg" style="width: 18px">
                     </li>
                 </ul>
-                <div id="search_tips" style="display: none;">
-                    <div class="h-search">
+                <div id="search_tips" style="display: none">
+                    <div class="h-search" style="display: none">
                         <div>
                             <span style="font-family: 'Microsoft YaHei';font-size: 12px">热门搜索</span>
                             <hr>
                         </div>
                         <div>
-                            <ul id="hot_search">
-                            </ul>
+                            <ul id="hot_search"></ul>
                         </div>
                     </div>
-                    <div class="t-search">
+                    <div class="t-search" style="display: none">
                         <div style="padding-top: 20px">
                             <div>
                                 <span style="font-family: 'Microsoft YaHei';font-size: 12px">在线搜索</span>
@@ -79,42 +78,8 @@
                             </div>
                             <div class="online_music"></div>
                             <div class="online_singer"></div>
-                            <div class="online_singer">
-                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">专辑</span>
-                                <ul style="padding-left: 25px">
-                                    <li style="background: #eeeeee;padding: 3px 10px;">
-                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                        <span>&nbsp;陈奕迅</span>
-                                    </li>
-                                    <li>
-                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                        <span>&nbsp;陈奕迅</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="online_singer">
-                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">Mv</span>
-                                <ul style="padding-left: 25px">
-                                    <li style="background: #eeeeee;padding: 3px 10px;">
-                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                        <span>&nbsp;陈奕迅</span>
-                                    </li>
-                                    <li>
-                                        <img src="staticFile/imgDT/singer/m3.jpg" width="30" style="border-radius: 50%">
-                                        <span>&nbsp;陈奕迅</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="online_sheet">
-                                <span style="font-family: 'Microsoft YaHei';font-size: 12px">歌单</span>
-                                <ul style="padding-left: 25px">
-                                    <li style="background: #eeeeee;padding: 3px 10px;">
-                                        <img src="https://p.qpic.cn/music_cover/lricrZ3ca62ybvZbWYjtYa2snY5V4BZP7E5vbHtdUnfyTpCeN766rLg/300?n=1"
-                                             width="30">
-                                        <span>&nbsp;港台风 - 陈奕迅</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="online_album"></div>
+                            <div class="online_sheet"></div>
                         </div>
                     </div>
                 </div>
@@ -181,11 +146,15 @@
                 <div class="list">
                     <div style="padding-top: 10px">
                         <ul style="text-align: center;" id="userinfo">
-                            <li><img src="staticFile/img/king.svg" style="width: 35px;"></li>
+                            <li>
+                                <img src="staticFile/img/king.svg" style="width: 35px;">
+                            </li>
                             <li>
                                 <img src="staticFile/imgDT/user/default.png" style="width: 75px;border-radius: 50%">
                             </li>
-                            <li id="login_popup" style="font-size: 12px;cursor: pointer">请登录 | CR7音乐</li>
+                            <li id="login_popup" style="font-size: 12px;cursor: pointer">
+                                请登录 | CR7音乐
+                            </li>
                         </ul>
                     </div>
                     <div class="tj">
@@ -194,10 +163,14 @@
                         </div>
                         <div class="list">
                             <ul id="ul1">
-                                <li class="act" url="Effect/choice.jsp"><i class="layui-icon layui-icon-fire"></i>官方精选
+                                <li class="act" url="Effect/choice.jsp">
+                                    <i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
-                                <li url="Effect/singer.jsp"><i class="layui-icon layui-icon-username"></i>热门歌手</li>
-                                <li id="test" url="Effect/songsheet.jsp"><i class="layui-icon layui-icon-template"></i>分类歌单
+                                <li url="Effect/singer.jsp">
+                                    <i class="layui-icon layui-icon-username"></i>热门歌手
+                                </li>
+                                <li id="test" url="Effect/songsheet.jsp">
+                                    <i class="layui-icon layui-icon-template"></i>分类歌单
                                 </li>
                             </ul>
                         </div>
@@ -208,16 +181,18 @@
                         </div>
                         <div class="list">
                             <ul id="ul2">
-                                <li url="Effect/mypage.jsp"><i class="layui-icon layui-icon-chat"></i>我的主页</li>
+                                <li url="Effect/mypage.jsp">
+                                    <i class="layui-icon layui-icon-chat"></i>我的主页
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="tj">
                         <div class="head">
                             <h4>我的歌单
-                                <span class="right">
-                                    <i class="layui-icon layui-icon-add-1"></i>
-                                </span>
+                                <%--<span class="right">--%>
+                                    <%--<i class="layui-icon layui-icon-add-1"></i>--%>
+                                <%--</span>--%>
                             </h4>
                         </div>
                         <div class="list">
@@ -232,6 +207,7 @@
             </div>
         </div>
         <!-- 左边导航 -->
+
     </div>
 </div>
 
@@ -281,12 +257,9 @@
 <span style="font-family: 'Microsoft YaHei';font-size: 12px">单曲</span>
 <ul id="song" style="padding-left: 25px">
     {{each songs}}
-        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:190px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:150px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
             <span style="padding-left: 10px;">
-                {{= name}} -
-                {{each artists}}
-                    {{= name}}
-                {{/each}}
+                {{= name}} - {{each artists}} {{= name}} {{/each}}
             </span>
         </li>
     {{/each}}
@@ -297,7 +270,7 @@
 <span style="font-family: 'Microsoft YaHei';font-size: 12px">歌手</span>
 <ul style="padding-left: 25px">
     {{each artists}}
-        <li style="background: #eeeeee;padding: 3px 10px;">
+        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:150px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
             <img src="{{= img1v1Url}}" width="30" style="border-radius: 50%">
             <span>&nbsp;{{= name}}</span>
         </li>
@@ -305,8 +278,31 @@
 </ul>
 </script>
 
-<script src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
+<script id="h-album" type="text/x-jquery-tmpl">
+<span style="font-family: 'Microsoft YaHei';font-size: 12px">专辑</span>
+<ul style="padding-left: 25px">
+    {{each albums}}
+        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:150px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+            <img src="{{= picUrl}}" width="30">
+            <span>&nbsp;{{= name}}</span>
+        </li>
+    {{/each}}
+</ul>
+</script>
 
+<script id="h-sheet" type="text/x-jquery-tmpl">
+<span style="font-family: 'Microsoft YaHei';font-size: 12px">歌单</span>
+<ul style="padding-left: 25px">
+    {{each playlists}}
+        <li style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:150px;" onmouseover="this.style.cssText='background: #eeeeee;'" onmouseout="this.style.cssText='background: #FFFFFF;'">
+            <img src="{{= coverImgUrl}}" width="30">
+            <span>&nbsp;{{= name}}</span>
+        </li>
+    {{/each}}
+</ul>
+</script>
+
+<script src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
 </body>
 
 </html>

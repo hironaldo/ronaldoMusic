@@ -27,9 +27,6 @@
                                style="width: 12px; height: 12px; vertical-align: middle;">
                         记住我
                     </label>
-                    <span style="float: right; font-size: 12px; color: rgb(104, 104, 104); cursor: pointer;">
-                            忘记密码
-                    </span>
                 </div>
                 <div class="form-row">
                     <button id="login_btn" style="width: 100%; height: 34px;">Go</button>
@@ -37,7 +34,7 @@
                 <div>
                     <div style="margin-top: 10px; text-align: center;">
                         <span style="display: inline-block; width: 40px; height: 1px; background: rgb(224, 224, 224); vertical-align: middle;"></span>
-                        <span style="margin: 0px 12px; font-size: 12px; color: rgb(180, 180, 180);">Call Me CR7</span>
+                        <span style="margin: 0px 12px; font-size: 12px; color: rgb(180, 180, 180);">Powered by FANYANGEN.</span>
                         <span style="display: inline-block; width: 40px; height: 1px; background: rgb(224, 224, 224); vertical-align: middle;"></span>
                     </div>
                 </div>

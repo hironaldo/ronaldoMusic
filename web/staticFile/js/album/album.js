@@ -2,6 +2,7 @@
     let timestamp = Date.parse(new Date()); //时间戳
     let abId = $('#abId').text().trim();
     let siId = $('#siId').text().trim();
+
     /*获取专辑基本信息*/
     $.ajax({
         url: 'http://localhost:3000/album?id=' + abId + '&timestamp=' + timestamp,
@@ -32,29 +33,37 @@
         }
     });
 
-    /*获取评论*/
+    /*获取评论总数*/
     $.ajax({
         url: 'http://localhost:3000/comment/album?id=' + abId + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#content_top").html('');
-            $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+            $('#total').empty();
+            $('#c-total').tmpl(data).appendTo('#total');
         }
     });
 
-    $('#box').paging({
-        initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
-        callback: function (page) {
-            $.ajax({
-                url: 'http://localhost:3000/comment/album?id=' + abId + "&offset=" + page + "&limit=10" + '&timestamp=' + timestamp,
-                xhrFields: {withCredentials: true},
-                success: function (data) {
-                    $("#content_new").html('');
-                    $("#n-comment").tmpl(data.comments).appendTo('#content_new');
-                }
-            });
-        }
-    });
+    /*获取评论*/
+    setTimeout(function () {
+        $('#box').paging({
+            initPageNo: 1,
+            totalPages: Math.ceil($('#total').text().trim() / 20),
+            slideSpeed: 600,
+            jump: true,
+            callback: function (page) {
+                $.ajax({
+                    url: 'http://localhost:3000/comment/album?id=' + abId + "&offset=" + (page - 1) + '&timestamp=' + timestamp,
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        $("#content_new").empty();
+                        $("#content_top").empty();
+                        $("#n-comment").tmpl(data.comments).appendTo('#content_new');
+                        $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+                    }
+                });
+            }
+        });
+    }, 500);
 
     /*字数统计*/
     $('#comment').keydown(function () {
@@ -69,12 +78,12 @@
     /*发送评论*/
     $('#send').click(function () {
         let content = $('#comment').val().trim();
-        if (content.length == 0) {
-            layer.msg('评论不能为空噢', function () {
+        if (undefined == $.cookie('nickname')) {
+            layer.msg('请先登陆 🙃', function () {
             });
         } else {
             let url = 'http://localhost:3000/comment?t=1' + '&type=3' + '&id=' + abId + '&content=' + content;
-            if (undefined != $.cookie('nickname')) {
+            if (content.length > 0) {
                 $.ajax({
                     url: url,
                     xhrFields: {withCredentials: true},
@@ -87,7 +96,7 @@
                     }
                 });
             } else {
-                layer.msg('请先登陆 🙃', function () {
+                layer.msg('评论不能为空噢', function () {
                 });
             }
         }

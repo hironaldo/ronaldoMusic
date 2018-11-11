@@ -6,303 +6,47 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web/Effect/songsheet.jsp" description="&lt;script id=&quot;data&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;&#10;    &lt;..." line="51" />
+    <bookmark url="file://$PROJECT_DIR$/web/Effect/songsheet.jsp" description="&lt;script id=&quot;data&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;&#10;    &lt;..." line="52" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dea54e9b-b40f-4064-8a5b-458b9e3aae05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/staticFile/css/common/scroll-bar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/css/friendpage/friendpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/css/search/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/staticFile/js/search/search.js" afterDir="false" />
+    <list default="true" id="dea54e9b-b40f-4064-8a5b-458b9e3aae05" name="Default Changelist" comment="optimization some js and css by cr7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/choice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/play-mv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/play-mv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/Effect/singer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/configs/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/WEB-INF/classes/configs/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/jquery-2.1.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/jquery.pjax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/UIframe/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/audio.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/css/play.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/img/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MusicPlayer_SSH_war_exploded/staticFile/img/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/album_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/album_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/choice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/choice.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/friendpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/friendpage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/mypage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/mypage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Effect/newsonglist.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/play-mv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/play-mv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/search_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/search_result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Effect/singer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/singer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/singer_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/singer_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/songsheet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/configs/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/configs/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/DPlayer/DPlayer.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/DPlayer/DPlayer.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/DPlayer/DPlayer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/DPlayer/DPlayer.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery-2.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/jquery-2.1.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/jquery.cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.lazyload.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/jquery.lazyload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.pjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/jquery.pjax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/jquery.tmpl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/jquery.tmpl.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/layui.mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/code.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/font/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/font/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/font/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/10.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/11.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/12.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/13.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/14.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/15.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/16.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/17.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/18.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/19.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/20.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/21.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/22.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/23.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/24.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/25.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/26.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/27.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/28.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/29.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/30.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/31.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/32.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/33.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/34.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/35.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/36.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/37.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/38.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/39.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/4.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/40.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/41.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/42.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/43.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/44.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/45.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/46.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/47.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/48.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/49.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/5.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/50.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/51.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/52.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/53.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/54.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/55.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/56.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/57.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/58.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/59.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/6.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/60.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/61.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/62.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/63.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/64.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/65.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/66.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/67.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/68.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/69.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/7.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/70.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/71.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/8.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/images/face/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/images/face/9.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/flow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/laydate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/laypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/lay/modules/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/layui.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/paging/paging.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/paging/paging.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/paging/paging.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/paging/paging.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/UIframe/vue.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/album/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/album/album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/audio.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/audio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/choice/choice.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/choice/choice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/diy.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/mv/mv.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/mv/mv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/mypage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/mypage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/play.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/play.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/yqq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/singer/singer.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/singer/singer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/common/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/common/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/friendpage/friendpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/personal/friend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/css/mypage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/personal/my.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet_info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/img/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/img/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/imgPPT/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/imgDT/PPT/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/imgPPT/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/imgDT/PPT/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/imgPPT/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/imgDT/PPT/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/imgPPT/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/imgDT/PPT/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/album/album-reload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/frame/paging/paging.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/frame/paging/paging.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/album/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/album/album.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/choice/choice-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/choice/choice.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/choice/choice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage-raload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/personal/friend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/index/index-reload.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/index/index-reload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/mv/mv-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/mv/mv.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/mv/mv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/mypage/mypage-reload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/mypage/mypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/mypage/mypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/singer/singer-info-reload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/mypage/mypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/personal/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/staticFile/js/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/search/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/singer/singer-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/singer/singer.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/singer/singer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info-reload.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -334,17 +78,18 @@
     <session id="98731737">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="67" />
+          <entry key="project.closed" value="68" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="7" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="6" />
           <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="5" />
-          <entry key="project.open.time.19" value="7" />
+          <entry key="project.open.time.19" value="8" />
           <entry key="project.open.time.20" value="9" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="4" />
@@ -358,77 +103,77 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="69" />
+          <entry key="project.opened" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
-          <entry key="css" value="166" />
+          <entry key="css" value="173" />
           <entry key="dtd" value="14" />
           <entry key="gif" value="1" />
-          <entry key="html" value="7" />
+          <entry key="html" value="8" />
           <entry key="java" value="481" />
           <entry key="jpg" value="26" />
-          <entry key="js" value="451" />
-          <entry key="jsp" value="721" />
+          <entry key="js" value="509" />
+          <entry key="jsp" value="790" />
           <entry key="md" value="7" />
           <entry key="png" value="5" />
           <entry key="properties" value="11" />
           <entry key="svg" value="18" />
           <entry key="tag" value="5" />
-          <entry key="ts" value="1" />
+          <entry key="ts" value="2" />
           <entry key="txt" value="1" />
           <entry key="vue" value="4" />
-          <entry key="xml" value="296" />
+          <entry key="xml" value="298" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="CSS" value="166" />
+          <entry key="CSS" value="173" />
           <entry key="DTD" value="14" />
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="8" />
           <entry key="Image" value="32" />
           <entry key="JAVA" value="481" />
-          <entry key="JSP" value="726" />
-          <entry key="JavaScript" value="451" />
+          <entry key="JSP" value="795" />
+          <entry key="JavaScript" value="509" />
           <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="11" />
           <entry key="SVG" value="18" />
-          <entry key="TypeScript" value="1" />
-          <entry key="XML" value="297" />
+          <entry key="TypeScript" value="2" />
+          <entry key="XML" value="299" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1177" />
+          <entry key="css" value="1194" />
           <entry key="dummy" value="8" />
-          <entry key="html" value="387" />
+          <entry key="html" value="390" />
           <entry key="java" value="4974" />
-          <entry key="js" value="8701" />
-          <entry key="jsp" value="32072" />
+          <entry key="js" value="10636" />
+          <entry key="jsp" value="32378" />
           <entry key="md" value="19" />
           <entry key="properties" value="15" />
           <entry key="tag" value="5" />
-          <entry key="txt" value="63" />
-          <entry key="xml" value="1026" />
+          <entry key="txt" value="91" />
+          <entry key="xml" value="1031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1177" />
-          <entry key="HTML" value="387" />
+          <entry key="CSS" value="1194" />
+          <entry key="HTML" value="390" />
           <entry key="Hibernate QL" value="3" />
           <entry key="JAVA" value="4971" />
-          <entry key="JSP" value="32077" />
-          <entry key="JavaScript" value="8701" />
+          <entry key="JSP" value="32383" />
+          <entry key="JavaScript" value="10636" />
           <entry key="Markdown" value="19" />
-          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="PLAIN_TEXT" value="99" />
           <entry key="Properties" value="15" />
-          <entry key="XML" value="1026" />
+          <entry key="XML" value="1031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -445,16 +190,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="62" column="61" lean-forward="true" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#ul#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -478,21 +217,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.layui-tab-title li</find>
-      <find>.layui-tab-title .layui-this:after</find>
-      <find>singer_box</find>
-      <find>.audio-box</find>
-      <find>layui-icon layui-icon-add-1</find>
-      <find>user_info</find>
-      <find>content_top</find>
-      <find>user_box</find>
-      <find>215</find>
-      <find>songlist_box</find>
-      <find>Echo.init</find>
-      <find>padding-top: 10px;</find>
-      <find>.mv table tr td</find>
-      <find>img</find>
-      <find>mv_beg</find>
       <find>mv_top</find>
       <find>#mv_top li</find>
       <find>#ssheet_box li</find>
@@ -507,7 +231,22 @@
       <find>h-song</find>
       <find>.classify-nav ul li span</find>
       <find>content</find>
+      <find>online_singer</find>
+      <find>127.0.</find>
+      <find>127</find>
       <find>search_tips</find>
+      <find>hot_search</find>
+      <find>strong</find>
+      <find>def</find>
+      <find>alert</find>
+      <find>content_top</find>
+      <find>b</find>
+      <find>mvurl</find>
+      <find>user</find>
+      <find>pagger</find>
+      <find>box</find>
+      <find>data</find>
+      <find>total</find>
     </findStrings>
     <dirStrings>
       <dir>E:\workspace\IDEA\zOther_task\MusicPlayer-SSH</dir>
@@ -519,57 +258,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/staticFile/js/search/search-reload.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/common/scroll-bar.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/search/search.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/common/scroll-bar.css" />
         <option value="$PROJECT_DIR$/web/staticFile/css/diy.css" />
-        <option value="$PROJECT_DIR$/web/Effect/search_result.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/css/choice/choice.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/choice/choice-reload.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/choice/choice.js" />
         <option value="$PROJECT_DIR$/web/staticFile/css/album/album.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/album/album-reload.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/album/album.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet-reload.js" />
-        <option value="$PROJECT_DIR$/web/Effect/songsheet.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre-reload.js" />
-        <option value="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info-reload.js" />
-        <option value="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js" />
         <option value="$PROJECT_DIR$/web/staticFile/css/singer/singer.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer-reload.js" />
         <option value="$PROJECT_DIR$/web/Effect/singer.jsp" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer-info-reload.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" />
-        <option value="$PROJECT_DIR$/web/Effect/singer_info.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/css/mv/mv.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/mv/mv-reload.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/search/search.js" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/mv/mv.js" />
-        <option value="$PROJECT_DIR$/web/Effect/choice.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/js/mypage/mypage-reload.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/mypage/mypage.js" />
         <option value="$PROJECT_DIR$/web/staticFile/css/mypage/style.css" />
-        <option value="$PROJECT_DIR$/web/Effect/mypage.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/css/friendpage/friendpage.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage-raload.js" />
         <option value="$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage.js" />
-        <option value="$PROJECT_DIR$/web/Effect/album_info.jsp" />
-        <option value="$PROJECT_DIR$/web/Effect/play-mv.jsp" />
-        <option value="$PROJECT_DIR$/web/Effect/friendpage.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css" />
         <option value="$PROJECT_DIR$/web/staticFile/js/login.js" />
         <option value="$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet_info.css" />
-        <option value="$PROJECT_DIR$/web/staticFile/js/index/index.js" />
+        <option value="$PROJECT_DIR$/src/configs/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/search/search.js" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/Effect/mypage.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/friendpage.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/common/index.css" />
+        <option value="$PROJECT_DIR$/web/Effect/search_result.jsp" />
         <option value="$PROJECT_DIR$/web/staticFile/js/index/index-reload.js" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css" />
+        <option value="$PROJECT_DIR$/web/Effect/singer_info.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/index/index.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js" />
+        <option value="$PROJECT_DIR$/web/Effect/songsheet_info.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/choice/choice.js" />
+        <option value="$PROJECT_DIR$/web/Effect/choice.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/frame/paging/paging.css" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js" />
+        <option value="$PROJECT_DIR$/web/Effect/songsheet.jsp" />
+        <option value="$PROJECT_DIR$/web/Effect/songsheet_genre.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js" />
+        <option value="$PROJECT_DIR$/web/Effect/album_info.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/singer/singer.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/album/album.js" />
+        <option value="$PROJECT_DIR$/web/Effect/play-mv.jsp" />
+        <option value="$PROJECT_DIR$/web/staticFile/js/mv/mv.js" />
       </list>
     </option>
   </component>
@@ -596,10 +335,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
-    <option name="y" value="39" />
+    <option name="x" value="255" />
+    <option name="y" value="30" />
     <option name="width" value="1658" />
-    <option name="height" value="1028" />
+    <option name="height" value="1037" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -626,7 +365,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -657,13 +395,6 @@
               <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MusicPlayer-SSH" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MusicPlayer-SSH" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="staticFile" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -672,12 +403,13 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="staticFile" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="album" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,7 +418,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace/IDEA/zOther_task/MusicPlayer-SSH/src/com/cheery/dao/DataInitDao/DataInitImpl.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541771570448" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541931018262" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Employment_Sys-1.0" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -704,23 +436,23 @@
     <property name="ts.external.directory.path" value="C:\Code\App\IntelliJ IDEA\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\js\personal" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css\personal" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\img" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe\paging" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\images" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\imgDT\PPT" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css\common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cheery.actions" />
       <recent name="com.cheery.service" />
       <recent name="com.cheery.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\imgDT\PPT" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css\common" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\css" />
-      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\imgPPT" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\img" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe\paging" />
+      <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\images" />
       <recent name="E:\workspace\IDEA\zOther_task\MusicPlayer-SSH\web\staticFile\UIframe" />
     </key>
   </component>
@@ -1082,6 +814,8 @@
       <workItem from="1541654570083" duration="26944000" />
       <workItem from="1541722617325" duration="27291000" />
       <workItem from="1541761163336" duration="10384000" />
+      <workItem from="1541809381943" duration="23222000" />
+      <workItem from="1541912582529" duration="17707000" />
     </task>
     <task id="LOCAL-00001" summary="update some details By CR7 -10.13">
       <created>1539436482997</created>
@@ -1230,7 +964,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541687260975</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="optimization some js and css by cr7">
+      <created>1541809540088</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1541809540088</updated>
+    </task>
+    <task id="LOCAL-00023" summary="optimization some js and css by cr7">
+      <created>1541809735141</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1541809735141</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1266,7 +1014,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="699706000" />
+    <option name="totallyTimeSpent" value="740635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1278,9 +1026,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="143" y="78" width="1658" height="1028" extended-state="0" />
+    <frame x="271" y="62" width="1658" height="1037" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48825502" visible="true" weight="0.20650813" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48825502" visible="true" weight="0.2115144" />
       <window_info id="Structure" order="1" sideWeight="0.51007754" side_tool="true" weight="0.1706081" />
       <window_info id="Persistence" order="2" sideWeight="0.511745" side_tool="true" weight="0.218398" />
       <window_info id="Designer" order="3" />
@@ -1292,7 +1040,7 @@
       <window_info id="Web" order="9" sideWeight="0.5086888" side_tool="true" weight="0.18704225" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32550335" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49577466" weight="0.30907056" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49577466" visible="true" weight="0.3059867" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993742" weight="0.39664805" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1304,8 +1052,8 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32887402" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32915717" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32662192" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.47121403" weight="0.28779396" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.528786" side_tool="true" weight="0.28715083" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.47014925" weight="0.29699665" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5298507" side_tool="true" weight="0.27712137" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32190266" />
       <window_info anchor="bottom" id="Problems" order="17" weight="0.32963374" />
       <window_info anchor="bottom" id="TypeScript" order="18" />
@@ -1349,294 +1097,41 @@
     <MESSAGE value=" By CR7" />
     <MESSAGE value="" />
     <MESSAGE value="" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="optimization some js and css by cr7" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimization some js and css by cr7" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/common/scroll-bar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/search/search.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/choice/choice.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/album/album.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/album/album.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/singer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/mv/mv.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mv/mv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/common/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/css/common/login.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/mypage/style.css">
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/personal/my.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/friendpage/friendpage.css">
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/personal/friend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mypage/mypage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="152" selection-start-line="152" selection-end-line="152" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/album/album-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/album_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3038">
-          <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/newsonglist.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/play-mv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/search_result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2411">
-          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-991">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_genre.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage-raload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mv/mv-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mypage/mypage-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-reload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre-reload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info-reload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/friendpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/mypage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/album/album-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/friendpage/friendpage-raload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mv/mv-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mypage/mypage-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre-reload.js" />
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info-reload.js" />
     <entry file="file://$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/singer_info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1647,51 +1142,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js">
+    <entry file="file://$PROJECT_DIR$/src/configs/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+        <state relative-caret-position="266">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_info.jsp">
+    <entry file="file://$PROJECT_DIR$/src/configs/spring-core.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+        <state relative-caret-position="228">
+          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet_info.css">
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/personal/friend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="-61">
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index/index.js">
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/personal/my.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="439">
+          <caret line="152" selection-start-line="152" selection-end-line="152" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="42" column="109" selection-start-line="42" selection-start-column="105" selection-end-line="42" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/mypage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/friendpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/frame/paging/paging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/common/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/search_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="131" column="157" selection-start-line="131" selection-start-column="157" selection-end-line="131" selection-end-column="157" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/staticFile/js/index/index-reload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+        <state relative-caret-position="57">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/singer/singer_info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="413" lean-forward="true" selection-start-line="413" selection-end-line="413" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="128" selection-start-line="36" selection-start-column="128" selection-end-line="36" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/newsonglist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/choice/choice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/css/songsheet/songsheet_info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/frame/paging/paging.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_genre.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_genre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" selection-start-line="12" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/singer_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer-info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="62" column="61" lean-forward="true" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#ul#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="188" column="26" lean-forward="true" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/singer/singer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/choice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="212" column="54" lean-forward="true" selection-start-line="212" selection-start-column="54" selection-end-line="212" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/songsheet_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/songsheet/songsheet_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="37" column="114" selection-start-line="37" selection-start-column="103" selection-end-line="37" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/play-mv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/album/album.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" selection-start-line="48" selection-end-line="51" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/album_info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="173" column="30" selection-start-line="173" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staticFile/js/mv/mv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1205">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Effect/singer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
         </state>
       </provider>
     </entry>

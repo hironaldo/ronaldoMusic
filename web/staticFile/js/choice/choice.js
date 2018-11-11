@@ -10,18 +10,18 @@
 
     /*歌单*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/personalized?limit=10' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/playlist?limit=10' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $('#songsheet_top').empty();
-            $("#song_sheet").tmpl(data.result).appendTo('#songsheet_top');
+            $("#song_sheet").tmpl(data.playlists).appendTo('#songsheet_top');
             lazyLoad();
         }
     });
 
     /*乐人*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/artists?offset=2&limit=5' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/artists?offset=2&limit=5' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $('#singer_top').empty();
@@ -32,28 +32,28 @@
 
     /*音乐排行榜*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/list?idx=0' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/list?idx=0' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#pop_song');
         }
     });
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/list?idx=1' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/list?idx=1' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#hot_song');
         }
     });
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/list?idx=3' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/list?idx=3' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#new_song');
         }
     });
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/list?idx=6' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/list?idx=6' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#eur_song');
@@ -62,7 +62,7 @@
 
     /*mv*/
     $.ajax({
-        url: 'http://127.0.0.1:3000/top/mv?limit=8' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/mv?limit=8' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $("#mv").tmpl(data.data).appendTo('#mv_top');
@@ -85,7 +85,12 @@
     });
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
     $(document).on('click', '#songsheet_top li >div', function () {
-        window.location.href = 'songsheet_info.jsp?slistId=' + $(this).find('h1').text().trim();
+        let slistId = $(this).find('h1').text().trim();
+        let picurl = $(this).find('h2').text().trim();
+        let nickname = $(this).find('h3').text().trim();
+        let userId = $(this).find('h4').text().trim();
+        let tags = $(this).find('h5').text().trim();
+        window.location.href = 'songsheet_info.jsp?slistId=' + slistId + '&picurl=' + picurl + '&nickname=' + nickname + '&userId=' + userId + '&tags=' + tags;
     });
     $(document).on('click', "#singer_top li >div", function () {
         window.location.href = 'singer_info.jsp?siId=' + $(this).find('h1').text() + '&siName=' + $(this).find('h2').text();

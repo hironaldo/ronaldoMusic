@@ -18,28 +18,36 @@
         }
     });
 
-    /*评论*/
+    /*获取评论总数*/
     $.ajax({
         url: 'http://localhost:3000/comment/mv?id=' + plId,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $('#content_top').empty();
-            $('#t-comment').tmpl(data.hotComments).appendTo('#content_top');
+            $('#total').empty();
+            $('#c-total').tmpl(data).appendTo('#total');
         }
     });
-    $('#box').paging({
-        initPageNo: 1, totalPages: 6, slideSpeed: 600, jump: true,
-        callback: function (page) {
-            $.ajax({
-                url: 'http://localhost:3000/comment/mv?id=' + plId + '&offset=' + (page - 1),
-                xhrFields: {withCredentials: true},
-                success: function (data) {
-                    $('#content_new').empty();
-                    $('#n-comment').tmpl(data.comments).appendTo('#content_new');
-                }
-            });
-        }
-    });
+    /*获取评论*/
+    setTimeout(function () {
+        $('#box').paging({
+            initPageNo: 1,
+            totalPages: Math.ceil($('#total').text().trim() / 20),
+            slideSpeed: 600,
+            jump: true,
+            callback: function (page) {
+                $.ajax({
+                    url: 'http://localhost:3000/comment/mv?id=' + plId + '&offset=' + (page - 1),
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        $('#content_new').empty();
+                        $('#content_top').empty();
+                        $('#n-comment').tmpl(data.comments).appendTo('#content_new');
+                        $('#t-comment').tmpl(data.hotComments).appendTo('#content_top');
+                    }
+                });
+            }
+        });
+    }, 500);
 
     /*字数统计*/
     $('#comment').keydown(function () {
@@ -54,12 +62,12 @@
     /*发送评论*/
     $('#send').click(function () {
         let content = $('#comment').val().trim();
-        if (content.length == 0) {
-            layer.msg('评论不能为空噢', function () {
+        if (undefined == $.cookie('nickname')) {
+            layer.msg('请先登陆 🙃', function () {
             });
         } else {
             let url = 'http://localhost:3000/comment?t=1' + '&type=1' + '&id=' + plId + '&content=' + content;
-            if (undefined != $.cookie('nickname')) {
+            if (content.length > 0) {
                 $.ajax({
                     url: url,
                     xhrFields: {withCredentials: true},
@@ -73,7 +81,7 @@
                     }
                 });
             } else {
-                layer.msg('请先登陆 🙃', function () {
+                layer.msg('评论不能为空噢', function () {
                 });
             }
         }
@@ -81,8 +89,8 @@
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
     /*获取播放地址*/
     setTimeout(function () {
-        const mvUrl = $('#mvurl').text();
-        let dp = new DPlayer({
+        const mvUrl = $('#mvurl').text().trim();
+        new DPlayer({
             container: document.getElementById('dplayer'),
             autoplay: true,
             video: {url: mvUrl}

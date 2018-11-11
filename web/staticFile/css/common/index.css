@@ -51,13 +51,6 @@ input {
     color: #666;
 }
 
-#search_tips .my_music ul li, .online_music ul li, .online_singer ul li, .online_sheet ul li {
-    padding: 3px 10px;
-}
-
-hot_search ul li:hover{
-    background: #eeeeee;
-}
 
 .foot img {
     background-size: cover;
