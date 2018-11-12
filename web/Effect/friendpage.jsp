@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>用户主页</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
@@ -56,9 +57,23 @@
     <td style="padding-left: 20px">
         <ul>
             <li style="padding-top: 10px">
-                <p style="font-size: 24px;">{{= nickname}}</p>
+                <p style="font-size: 24px;">
+                    <span>{{= nickname}}</span>
+                    <span id="follow">
+                        <b style="display:none">{{= followed}}</b>
+                        <button class="layui-btn layui-btn-xs layui-btn-primary ">
+                                {{if followed==false}}
+                                    <i class="layui-icon">&#xe609;</i>关注
+                                {{else}}
+                                   <i class="layui-icon">&#xe605;</i>已关注
+                                {{else}}
+
+                                {{/if}}
+                        </button>
+                    </span>
+                </p>
                 <p style="color: #666;font-size: 12px;padding-top: 5px">Motto：
-                    {{if signature== ""}}
+                    {{if signature == ""}}
                          还没签名哦
                     {{else}}
                         {{= signature}}

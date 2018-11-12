@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>官方推荐页面</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
@@ -34,9 +35,9 @@
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
         <div style="padding-left: 7px;">
-            <span style="font-size: 18px;">歌 单 推 荐</span>
+            <span style="font-size: 16px;">歌 单 推 荐</span>
             <a href="songsheet.jsp">
-                <span style="padding-left: 800px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 807px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="songsheet_top"></ul>
@@ -46,52 +47,21 @@
     <!-- 歌手 -->
     <div class="singer">
         <div style="padding-left: 6px;">
-            <span style="font-size: 18px;">歌 手</span>
+            <span style="font-size: 16px;">歌 手 推 荐</span>
             <a href="singer.jsp">
-                <span style="padding-left: 845px;color: #666;font-size: 12px;">更多</span>
+                <span style="padding-left: 807px;color: #666;font-size: 12px;">更多</span>
             </a>
         </div>
         <ul id="singer_top"></ul>
     </div>
     <!-- 歌手 -->
 
-    <!-- 音乐 -->
-    <div style="padding-left: 31px;padding-top: 10px">
-        <div>
-            <span style="font-size: 18px;">音 乐</span>
-        </div>
-        <div class="mod_songlist">
-            <div class="slide__list js_list">
-                <ul class="songlist__list">
-                    <c:forEach var="song" items="${songlist}" begin="6" end="14" varStatus="sta">
-                        <li class="songlist__item">
-                            <div class="songlist__item_box">
-                                <a class="album_name songlist__link mod_cover" style="padding-right: 10px">
-                                    <img src="../staticFile/imgDT/song/${song.soPic}" width="90">
-                                    <i class="mod_cover__icon_play"></i>
-                                </a>
-                                <div>
-                                    <h3 class="songlist__song">${song.soName}</h3>
-                                    <p class="songlist__author" style="font-size: 10px;color: #666;">
-                                            ${song.singer.siName}
-                                    </p>
-                                </div>
-                                <div class="songlist__time" style="font-size: 12px;color: #999;">${song.soTime}</div>
-                            </div>
-                        </li>
-                    </c:forEach>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- 音乐 -->
-
     <!-- 排行榜 -->
-    <div class="ranking" style="padding-left: 10px;padding-top:10px">
+    <div class="ranking" style="padding-left: 10px;padding-top:15px">
         <div style="padding-left: 20px;">
-            <span style="font-size: 18px;">巅 峰 榜</span>
+            <span style="font-size: 16px;">音 乐 巅 峰 榜</span>
         </div>
-        <ul style="padding-left: 20px;padding-top:20px">
+        <ul style="padding-left: 20px;padding-top:10px">
             <li class="toplist__item mod_cover">
                 <div class="toplist__box">
                     <div class="toplist__bg"></div>
@@ -139,7 +109,7 @@
     <!-- Mv -->
     <div class="mv">
         <div style="padding-left: 5px;">
-            <span style="font-size: 18px;">M V</span>
+            <span style="font-size: 16px;">最 新 M V</span>
         </div>
         <div>
             <ul id="mv_top"></ul>

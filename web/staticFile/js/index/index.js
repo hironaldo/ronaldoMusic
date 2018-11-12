@@ -1,4 +1,5 @@
 ﻿(function ($, window, document) {
+    let userId = $.cookie('userId');
     let url;
 
     /*在线搜索*/
@@ -72,16 +73,30 @@
         }
     });
 
-    /*加载用户歌单*/
-    if ($.cookie('userId') != undefined) {
-        let url = 'http://localhost:3000/user/playlist?uid=' + $.cookie('userId');
-        $.get(url, function (data) {
-            $('#ul3').html('');
-            $('#m-songlist').tmpl(data.playlist).appendTo('#ul3');
-        });
+    function getUserSongsheet() {
+        if (undefined != userId) {
+            url = 'http://localhost:3000/user/playlist?uid=' + userId;
+            $.get(url, function (data) {
+                $('#ul3').empty();
+                $('#m-songlist').tmpl(data.playlist).appendTo('#ul3');
+            });
+        }
     }
+
+    /*加载用户歌单*/
+    getUserSongsheet();
+
+    /*刷新用户歌单*/
+    $('h4 .right').click(function () {
+        layer.load(2);
+        setTimeout(function () {
+            layer.closeAll('loading');
+        }, 400);
+        getUserSongsheet();
+    });
+
     /*获得登陆信息*/
-    if (null != $.cookie('nickname')) {
+    if (undefined != userId) {
         $('#userinfo li:eq(1) img').attr('src', $.cookie('userpic'));
         $('#userinfo li:eq(2)').attr('id', '');
         $('#userinfo li:eq(2)').text($.cookie('nickname'));
@@ -96,17 +111,6 @@
             area: ['330px', '365px'],
             content: 'login.jsp'
         });
-    });
-
-    /*新建歌单*/
-    $('.right').click(function () {
-
-        let url = 'http://localhost:3000/playlist/create?name=' + '太美丽';
-        $.get(url, function (data) {
-            alert(url + "--" + data);
-            console.log(data);
-        });
-
     });
 
     /*开始程序隐藏 双击后显示*/

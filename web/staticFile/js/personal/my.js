@@ -5,16 +5,16 @@
         url: 'http://localhost:3000/user/detail?uid=' + userId,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#user_info").html('');
+            $("#user_info").empty();
             $("#u-info").tmpl(data.profile).appendTo('#user_info');
         }
     });
 
     /*加载喜欢的歌曲*/
-    let url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + 2490125966;
+    let url = 'http://localhost:3000/playlist/detail?id=' + 2490125966;
     $.get(url, function (data) {
-        $("#song").html('');
-        $("#u-likemusic").tmpl(data.data.songs).appendTo('#song');
+        $("#song").empty();
+        $("#u-likemusic").tmpl(data.playlist).appendTo('#song');
     });
 
     /*选项卡*/
@@ -35,7 +35,7 @@
                     url: 'http://localhost:3000/user/playlist?uid=' + userId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
-                        $("#mssheet_box").html('');
+                        $("#mssheet_box").empty();
                         $("#u-songlist").tmpl(data.playlist).appendTo('#mssheet_box');
                     }
                 });
@@ -47,7 +47,7 @@
                     url: 'http://localhost:3000/user/follows?uid=' + userId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
-                        $("#follow_box").html('');
+                        $("#follow_box").empty();
                         $("#u-follow").tmpl(data.follow).appendTo('#follow_box');
                     }
                 });
@@ -59,7 +59,7 @@
                     url: 'http://localhost:3000/user/followeds?uid=' + userId,
                     xhrFields: {withCredentials: true},
                     success: function (data) {
-                        $("#followed_box").html('');
+                        $("#followed_box").empty();
                         $("#u-followed").tmpl(data.followeds).appendTo('#followed_box');
                     }
                 });
@@ -71,10 +71,10 @@
     $('#nav span').click(function () {
         let index = $(this).index();
         if (index == 0) {
-            let url = 'https://api.bzqll.com/music/netease/songList?key=579621905&id=' + 2490125966;
+            let url = 'http://localhost:3000/playlist/detail?id=' + 2490125966;
             $.get(url, function (data) {
-                $("#song").html('');
-                $("#u-likemusic").tmpl(data.data.songs).appendTo('#song');
+                $("#song").empty();
+                $("#u-likemusic").tmpl(data.playlist).appendTo('#song');
             });
             $('#o-ele').show();
             $('#ssheet_box').hide();

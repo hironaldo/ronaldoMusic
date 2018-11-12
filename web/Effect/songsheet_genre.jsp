@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>歌单<%=keyStr%>分类</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/frame/paging/paging.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">

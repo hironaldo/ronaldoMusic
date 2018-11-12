@@ -20,7 +20,7 @@
         layer.load();
         setTimeout(function () {
             layer.closeAll('loading');
-        }, 1500);
+        }, 1000);
         let index = $(this).index();
         switch (index) {
             case 0:
@@ -100,6 +100,12 @@
         let userId = $(this).find('h4').text().trim();
         let tags = $(this).find('h5').text().trim();
         window.location.href = 'songsheet_info.jsp?slistId=' + slistId + '&picurl=' + picurl + '&nickname=' + nickname + '&userId=' + userId + '&tags=' + tags;
+    });
+    /*查看专辑详情*/
+    $(document).on('click', '#song tr .album', function () {
+        let abId = $(this).find('h1').text().trim();
+        let siId = $(this).find('h2 span:eq(0)').text().trim();
+        window.location.href = 'album_info.jsp?abId=' + abId + '&siId=' + siId;
     });
     /*mv*/
     $(document).on('click', '#mv_box li >div', function () {

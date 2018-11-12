@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="staticFile/css/common/login.css" media="all">
 </head>

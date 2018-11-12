@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>歌手详情页</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/singer/singer_info.css" media="all">
@@ -36,7 +37,6 @@
                     <tr>
                         <th>歌曲</th>
                         <th>歌手</th>
-                        <th>流派</th>
                         <th>专辑</th>
                     </tr>
                     </thead>
@@ -75,7 +75,7 @@
                     <span class="def" style="padding-left:10px">
                         <a style="display:none">{{= id}}</a>
                         <b style="display:none">{{= followed}}</b>
-                        <button class="layui-btn layui-btn-primary layui-btn layui-btn-xs">
+                        <button class="layui-btn layui-btn-xs layui-btn-primary ">
                             {{if followed==false}}
                                 <i class="layui-icon">&#xe609;</i>关注
                             {{else}}
@@ -96,7 +96,6 @@
     <tr>
         <td>{{= name}}</td>
         <td><%=siName%></td>
-        <td>{{= eq}}</td>
         <td class="alId">
             <h1 style="display:none">{{= al.id}}</h1>
             {{= al.name}}

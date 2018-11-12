@@ -5,6 +5,7 @@
 <html>
 <head>
     <title>搜索结果页</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
@@ -74,8 +75,14 @@
                 {{= name}}
             {{/each}}
         </td>
-        <td>
-           {{= album.name}}
+        <td class="album">
+            <h1 style="display:none">{{= album.id}}</h1>
+            <h2 style="display:none">
+                {{each artists}}
+                   <span>{{= id}}</span>
+                {{/each}}
+            </h2>
+            {{= album.name}}
         </td>
     </tr>
 {{/each}}

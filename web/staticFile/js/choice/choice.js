@@ -10,7 +10,7 @@
 
     /*歌单*/
     $.ajax({
-        url: 'http://localhost:3000/top/playlist?limit=10' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/top/playlist?offset=50&limit=10' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
             $('#songsheet_top').empty();
@@ -35,6 +35,7 @@
         url: 'http://localhost:3000/top/list?idx=0' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
+            $('#pop_song').empty();
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#pop_song');
         }
     });
@@ -42,6 +43,7 @@
         url: 'http://localhost:3000/top/list?idx=1' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
+            $('#hot_song').empty();
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#hot_song');
         }
     });
@@ -49,6 +51,7 @@
         url: 'http://localhost:3000/top/list?idx=3' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
+            $('#new_song').empty();
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#new_song');
         }
     });
@@ -56,15 +59,17 @@
         url: 'http://localhost:3000/top/list?idx=6' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
+            $('#eur_song').empty();
             $("#ranking").tmpl(data.playlist.tracks).appendTo('#eur_song');
         }
     });
 
     /*mv*/
     $.ajax({
-        url: 'http://localhost:3000/top/mv?limit=8' + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/mv/first?limit=8' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
+            $('#mv_top').empty();
             $("#mv").tmpl(data.data).appendTo('#mv_top');
             lazyLoad();
         }

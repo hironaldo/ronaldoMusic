@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>我的主页</title>
+    <link href="../staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="../staticFile/frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/scroll-bar.css" media="all">
     <link rel="stylesheet" href="../staticFile/css/common/yqq.css" media="all">
@@ -34,13 +35,9 @@
                 <table id="o-ele" class="layui-table" lay-skin="nob">
                     <thead>
                     <tr>
-                        <th>
-                            <div class="layui-unselect header layui-form-checkbox" style="display: none;"
-                                 lay-skin="primary">
-                                <i class="layui-icon">&#xe605;</i>
-                            </div>&nbsp;歌曲
-                        </th>
+                        <th>歌曲</th>
                         <th>歌手</th>
+                        <th>专辑</th>
                     </tr>
                     </thead>
                     <tbody id="song">
@@ -96,19 +93,24 @@
 </script>
 
 <script id="u-likemusic" type="text/x-jquery-tmpl">
+{{each tracks}}
     <tr>
         <td>
-            <div class="layui-unselect header layui-form-checkbox" style="display: none;"
-                 lay-skin="primary">
-                <i class="layui-icon">&#xe605;</i>
-            </div>
             <span>
                 <img src="../staticFile/images/fulllove.svg" width="18px" style="padding-bottom: 5px">
             </span>
             {{= name}}
         </td>
-        <th>{{= singer}}</th>
+        <td>
+            {{each ar}}
+               {{= name}}
+            {{/each}}
+        </td>
+        <td>
+            <span style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:250px;">{{= al.name}} </span>
+        </td>
     </tr>
+{{/each}}
 </script>
 
 <script id="u-songlist" type="text/x-jquery-tmpl">

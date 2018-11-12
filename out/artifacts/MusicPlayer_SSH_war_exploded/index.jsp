@@ -45,7 +45,7 @@
                         <img src="staticFile/img/right-slip.svg" style="width: 25px">
                         <img src="staticFile/img/refresh.svg" style="width: 19px">
                         <span style="padding-left: 20px">
-                            <input type="text" placeholder="搜索音乐、专辑、歌手、歌单"
+                            <input type="text" placeholder="搜索音乐、专辑、歌手、歌单、Mv"
                                    autocomplete="off"
                                    maxlength="15"
                                    onkeyup="this.value=this.value.replace(/\s/g,'');">
@@ -190,9 +190,9 @@
                     <div class="tj">
                         <div class="head">
                             <h4>我的歌单
-                                <%--<span class="right">--%>
-                                    <%--<i class="layui-icon layui-icon-add-1"></i>--%>
-                                <%--</span>--%>
+                                <span class="right">
+                                    <i class="layui-icon layui-icon-refresh-1"></i>
+                                </span>
                             </h4>
                         </div>
                         <div class="list">
@@ -210,15 +210,6 @@
 
     </div>
 </div>
-
-
-<!-- 新建歌单 -->
-<%--<div style="width: 400px;height: 200px;background-color: red;z-index: 9999;position: absolute;left: 50%;top: 20%">--%>
-<%--<div>--%>
-<%--<span>QQ音乐</span>--%>
-<%--</div>--%>
-<%--</div>--%>
-
 
 <!-- 底部 -->
 <div class="foot">
