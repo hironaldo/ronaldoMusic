@@ -1,5 +1,13 @@
 ﻿(function ($, window, document) {
-    let userId = $.cookie('userId');
+    let userId = $.cookie('userId'), likeId = $.cookie('likeId');
+    function lazyLoad() { //懒加载
+        setTimeout(function () {
+            $('img').lazyload({
+                threshold: 200, effect: "fadeIn", failure_limit: 20, skip_invisible: false
+            });
+        }, 500);
+    }
+
     /*加载首页基本数据*/
     $.ajax({
         url: 'http://localhost:3000/user/detail?uid=' + userId,
@@ -11,18 +19,22 @@
     });
 
     /*加载喜欢的歌曲*/
-    let url = 'http://localhost:3000/playlist/detail?id=' + 2490125966;
-    $.get(url, function (data) {
-        $("#song").empty();
-        $("#u-likemusic").tmpl(data.playlist).appendTo('#song');
-    });
+    function getLikeSong() {
+        let url = 'http://localhost:3000/playlist/detail?id=' + likeId;
+        $.get(url, function (data) {
+            $("#song").empty();
+            $("#u-likemusic").tmpl(data.playlist).appendTo('#song');
+        });
+    }
+
+    getLikeSong();
 
     /*选项卡*/
     $('.layui-tab-title li').click(function () {
         layer.load();
         setTimeout(function () {
             layer.closeAll('loading');
-        }, 1500);
+        }, 1000);
         let index = $(this).index();
         switch (index) {
             case 0:
@@ -37,6 +49,7 @@
                     success: function (data) {
                         $("#mssheet_box").empty();
                         $("#u-songlist").tmpl(data.playlist).appendTo('#mssheet_box');
+                        lazyLoad();
                     }
                 });
                 break;
@@ -49,6 +62,7 @@
                     success: function (data) {
                         $("#follow_box").empty();
                         $("#u-follow").tmpl(data.follow).appendTo('#follow_box');
+                        lazyLoad();
                     }
                 });
                 break;
@@ -61,6 +75,7 @@
                     success: function (data) {
                         $("#followed_box").empty();
                         $("#u-followed").tmpl(data.followeds).appendTo('#followed_box');
+                        lazyLoad();
                     }
                 });
                 break;
@@ -87,8 +102,9 @@
                 url: 'http://localhost:3000/artist/sublist',
                 xhrFields: {withCredentials: true},
                 success: function (data) {
-                    $("#singer_box").html('');
+                    $("#singer_box").empty();
                     $("#s-follow").tmpl(data.data).appendTo('#singer_box');
+                    lazyLoad();
                 }
             });
             $('#o-ele').hide();
@@ -102,8 +118,9 @@
                 url: 'http://localhost:3000/user/playlist?uid=' + userId,
                 xhrFields: {withCredentials: true},
                 success: function (data) {
-                    $("#ssheet_box").html('');
+                    $("#ssheet_box").empty();
                     $("#s-songlist").tmpl(data.playlist).appendTo('#ssheet_box');
+                    lazyLoad();
                 }
             });
             $('#o-ele').hide();
@@ -115,6 +132,20 @@
         }
     });
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*删除喜欢歌曲*/
+    $(document).on('click', "#song tr >td .delsong", function () {
+        $.ajax({
+            url: 'http://localhost:3000/playlist/tracks?op=del&pid=' + likeId + '&tracks=' + $(this).find('h1').text().trim(),
+            xhrFields: {withCredentials: true},
+            success: function (data) {
+                if (data.code === 200) {
+                    getLikeSong();
+                    layer.msg('操作成功');
+                }
+            }
+        });
+    });
+
     /*歌手信息*/
     $(document).on('click', "#singer_box li >div", function () {
         window.location.href = "singer_info.jsp?siId=" + $(this).find('h1').text() + "&siName=" + $(this).find('h2').text();

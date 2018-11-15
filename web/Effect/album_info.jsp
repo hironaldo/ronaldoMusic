@@ -21,6 +21,7 @@
 <i id="siId" style="display: none">
     <%=siId%>
 </i>
+
 <div style="margin:10px 0 0 20px;">
     <table id="albuminfo_box">
     </table>
@@ -87,20 +88,13 @@
             <ul>
                 <li>
                     <span style="font-size: 24px;">{{= name}}</span>
-                </li>
-                <li>
-                    <span id="siName" style="font-size: 10px;cursor: pointer;">{{= artist.name}}</span>
+                    <span id="siName" style="font-size: 10px;color: #666;cursor: pointer;">{{= artist.name}}</span>
                 </li>
                 <li>
                     <span style="font-size: 10px;color: #666;">{{= company}} {{= subType}}</span>
                 </li>
                 <li style="padding-top: 5px">
-                    <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= description}}</p>
-                </li>
-                <li style="padding-top: 10px">
-                    <button class="layui-btn layui-btn-sm layui-btn-primary">
-                        <i class="layui-icon">&#xe652;</i>播放全部
-                    </button>
+                    <div class="brief" style="font-size: 10px;color: #666;overflow: auto;height: 70px;width: 770px;">{{= description}}</div>
                 </li>
             </ul>
         </td>
@@ -110,14 +104,10 @@
 <script id="c-song" type="text/x-jquery-tmpl">
     <tr>
       <td>
-        <div style="display: none;" class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id="">
-          <i class="layui-icon">&#xe605;</i></div>
-        <img src="../staticFile/images/love.svg" width="16px">
-        {{= name}}
+          <h1 style="display:none">{{= id}}</h1>
+          {{= name}}
       </td>
-      <td>
-        {{= singer}}
-      </td>
+      <td>{{= singer}}</td>
     </tr>
 </script>
 

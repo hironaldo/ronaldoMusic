@@ -31,3 +31,15 @@
 #followed_box li:hover {
     cursor: pointer;
 }
+
+#follow_box li img {
+    width: 130px;
+    height: 130px;
+    background: url(../../images/loading.gif) 50% no-repeat;
+}
+
+#followed_box li img {
+    width: 130px;
+    height: 130px;
+    background: url(../../images/loading.gif) 50% no-repeat;
+}

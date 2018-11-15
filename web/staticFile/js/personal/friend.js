@@ -35,7 +35,7 @@
         layer.load();
         setTimeout(function () {
             layer.closeAll('loading');
-        }, 1500);
+        }, 1000);
         let index = $(this).index();
         switch (index) {
             case 0:

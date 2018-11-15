@@ -25,3 +25,34 @@
     height: 160px;
     background: url(../../images/loading.gif) 50% no-repeat;
 }
+
+.brief::-webkit-scrollbar {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    background-color: #f5f5f7;
+    width: 5px;
+}
+
+.brief::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.brief::-webkit-scrollbar-track {
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    background-color: #D8D8D8;
+}
+
+
+
+
+
+
+
+
+
+

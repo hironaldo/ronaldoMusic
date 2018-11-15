@@ -63,14 +63,15 @@
 <script id="p-song" type="text/x-jquery-tmpl">
 {{each songs}}
     <tr>
-        <td>
-            <div class="layui-unselect header layui-form-checkbox" style="display: none;"
-                 lay-skin="primary">
-                <i class="layui-icon">&#xe605;</i>
-            </div>
-           {{= name}}
+        <td class="song">
+            <h1 style="display:none">{{= id}}</h1>
+            {{= name}}
         </td>
-        <td>
+        <td class="singer">
+            {{each artists}}
+                <h1 style="display:none"><span>{{= id}}</span></h1>
+                <h2 style="display:none"><span>{{= name}}</span></h2>
+            {{/each}}
             {{each artists}}
                 {{= name}}
             {{/each}}

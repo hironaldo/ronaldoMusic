@@ -29,13 +29,13 @@
         <div class="layui-tab-item  layui-show">
             <table class="layui-table" lay-skin="nob">
                 <thead>
-                <tr>
-                    <th>
-                        <input name="song" type="checkbox" style="position: relative;top: 2px;"/>&nbsp;歌曲
-                    </th>
-                    <th>歌手</th>
-                    <th>专辑</th>
-                </tr>
+                    <tr>
+                        <th>
+                            <input name="song" type="checkbox" style="position: relative;top: 2px;"/>&nbsp;歌曲
+                        </th>
+                        <th>歌手</th>
+                        <th>专辑</th>
+                    </tr>
                 </thead>
                 <tbody id="song"></tbody>
             </table>
@@ -90,7 +90,7 @@
                     <span style="font-size: 24px;">{{= name}}</span>
                 </li>
                 <li id="uinfo" style="padding-top: 5px">
-                    <span style="font-size: 10px;color: #666">
+                    <span style="font-size: 10px;color: #666;cursor: pointer;">
                         <img src="{{= creator.avatarUrl}}" width="30" style="border-radius: 50%">&nbsp;{{= creator.nickname}}
                         <span style="padding-left:20px">#<%=tags%></span>
                     </span>
@@ -99,29 +99,26 @@
                     <p style="font-size: 10px;color: #666;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;width:780px;">{{= description}}</p>
                 </li>
                 <li style="padding-top: 10px">
-                    <span id="playall">
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe652;</i>播放全部
-                        </button>
-                    </span>
-                    <span id="playall">
-                        <button class="layui-btn layui-btn-sm layui-btn-primary">
-                            <i class="layui-icon">&#xe654;</i>添至喜欢
-                        </button>
-                    </span>
-                    <span id="collection">
-                        <h1 style="display:none">{{= id}}</h1>
-                        <h2 style="display:none">{{= subscribed}}</h2>
-                        <button class="layui-btn layui-btn-sm layui-btn-primary ">
-                            {{if subscribed == false}}
-                                <i class="layui-icon">&#xe600;</i>收藏
-                            {{else}}
-                                <i i class="layui-icon">&#xe605;</i>已收藏
-                            {{else}}
+                    {{if id != 2490125966 }}
+                        <span id="addsong">
+                            <button class="layui-btn layui-btn-sm layui-btn-primary">
+                                <i class="layui-icon">&#xe654;</i>添至喜欢
+                            </button>
+                        </span>
+                        <span id="collection">
+                            <h1 style="display:none">{{= id}}</h1>
+                            <h2 style="display:none">{{= subscribed}}</h2>
+                            <button class="layui-btn layui-btn-sm layui-btn-primary ">
+                                {{if subscribed == false}}
+                                    <i class="layui-icon">&#xe600;</i>收藏
+                                {{else}}
+                                    <i i class="layui-icon">&#xe605;</i>已收藏
+                                {{else}}
 
-                            {{/if}}
-                        </button>
-                    </span>
+                                {{/if}}
+                            </button>
+                        </span>
+                    {{/if}}
                 </li>
             </ul>
         </td>
@@ -131,9 +128,17 @@
 <script id="c-song" type="text/x-jquery-tmpl">
 {{each tracks}}
     <tr>
-        <td>
-        <input name="song" type="checkbox" style="position: relative;top: 2px;"/>
-        {{= name}}
+        <td style="cursor: pointer;">
+            <input name="song" type="checkbox" data-id={{= id}} style="position: relative;top: 2px;"/>
+            <span>
+                <h1 style="display:none">{{= id}}</h1>
+                <h2 style="display:none">{{= name}}</h2>
+                {{each ar}}
+                      <h3 style="display:none">{{= name}}</h3>
+                {{/each}}
+                <h4 style="display:none">{{= al.picUrl}}</h4>
+                {{= name}}
+            </span>
         </td>
         <td>
             {{each ar}}

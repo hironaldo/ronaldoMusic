@@ -72,7 +72,7 @@
                 <p>
                     <span style="font-size:24px">{{= name}}</span>
                     <span style="font-size: 12px;color: #666">{{= alias}}</span>
-                    <span class="def" style="padding-left:10px">
+                    <span class="def" style="padding-left:5px">
                         <a style="display:none">{{= id}}</a>
                         <b style="display:none">{{= followed}}</b>
                         <button class="layui-btn layui-btn-xs layui-btn-primary ">
@@ -85,6 +85,9 @@
                             {{/if}}
                         </button>
                     </span>
+                    <span id="addsong" style="padding-left:5px">
+                        <button class="layui-btn layui-btn-xs layui-btn-primary">收藏热门50</button>
+                    </span>
                 </p>
                 <p style="font-size: 10px;color: #666">{{= briefDesc}}</p>
             </li>
@@ -94,9 +97,12 @@
 
 <script id="c-song" type="text/x-jquery-tmpl">
     <tr>
-        <td>{{= name}}</td>
+        <td class="song" data-id={{= id}}>
+            <h1 style="display:none">{{= id}}</h1>
+            {{= name}}
+        </td>
         <td><%=siName%></td>
-        <td class="alId">
+        <td class="album">
             <h1 style="display:none">{{= al.id}}</h1>
             {{= al.name}}
         </td>
@@ -155,7 +161,7 @@
 
 <script id="c-introduce" type="text/x-jquery-tmpl">
     <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;{{= ti}}
-    <p style="padding: 3px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</p>
+    <div style="padding: 4px 0px 10px 40px;font-size: 10px;color: #666;white-space:pre;">{{= txt}}</div>
 </script>
 </body>
 </html>

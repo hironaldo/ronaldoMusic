@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
     $("input").bind({
         focus: function () {
             $(".form-error-tip").hide();
@@ -11,7 +11,6 @@ $(function () {
         pwd = $(this).val().trim();
     });
     let phone = $('input[type=text]').val().trim();
-
     /*登陆*/
     $('#login_btn').click(function () {
         $.ajax({
@@ -41,9 +40,9 @@ $(function () {
                         $.cookie('userId', account.id, {expires: 1});
                         parent.location.reload();
                         parent.layer.close(parent.layer.getFrameIndex(window.name));
-                    }else{
-                        $('.form-error-tip').show();
                     }
+                }, error: function () {
+                    $('.form-error-tip').show();
                 }
             });
         }

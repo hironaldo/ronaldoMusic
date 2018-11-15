@@ -82,6 +82,7 @@
                     success: function (data) {
                         if (data.comment != null || data.comment != '') {
                             $('#comment').val('');
+                            $('#num').text('0/140');
                             layer.msg('评论成功');
                             getComment(0, 0);
                         }

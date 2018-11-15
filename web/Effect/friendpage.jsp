@@ -74,7 +74,7 @@
                 </p>
                 <p style="color: #666;font-size: 12px;padding-top: 5px">Motto：
                     {{if signature == ""}}
-                         还没签名哦
+                         该用户懒得还没签名哦
                     {{else}}
                         {{= signature}}
                     {{else}}

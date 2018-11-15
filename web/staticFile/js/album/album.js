@@ -9,25 +9,25 @@
         url: 'http://localhost:3000/album?id=' + abId + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#albuminfo_box").html('');
-            $("#c-info").tmpl(data.album).appendTo('#albuminfo_box');
+            $('#albuminfo_box').empty();
+            $('#c-info').tmpl(data.album).appendTo('#albuminfo_box');
         }
     });
 
     /*获取专辑歌曲*/
     let url = 'https://api.bzqll.com/music/netease/album?key=579621905&id=' + abId;
     $.get(url, function (data) {
-        $("#song").html('');
-        $("#c-song").tmpl(data.data).appendTo('#song');
+        $('#song').empty();
+        $('#c-song').tmpl(data.data).appendTo('#song');
     });
 
     /*获取相关专辑*/
     $.ajax({
-        url: 'http://localhost:3000/artist/album?id=' + siId + "&limit=10" + '&timestamp=' + timestamp,
+        url: 'http://localhost:3000/artist/album?id=' + siId + '&limit=10' + '&timestamp=' + timestamp,
         xhrFields: {withCredentials: true},
         success: function (data) {
-            $("#album_box").html('');
-            $("#c-album").tmpl(data.hotAlbums).appendTo('#album_box');
+            $('#album_box').empty();
+            $('#c-album').tmpl(data.hotAlbums).appendTo('#album_box');
             setTimeout(function () {
                 $('img').lazyload();
             }, 500);
@@ -47,11 +47,11 @@
             xhrFields: {withCredentials: true},
             success: function (data) {
                 $('#total').empty();
-                $("#content_new").empty();
-                $("#content_top").empty();
+                $('#content_new').empty();
+                $('#content_top').empty();
                 $('#c-total').tmpl(data).appendTo('#total');
-                $("#n-comment").tmpl(data.comments).appendTo('#content_new');
-                $("#t-comment").tmpl(data.hotComments).appendTo('#content_top');
+                $('#n-comment').tmpl(data.comments).appendTo('#content_new');
+                $('#t-comment').tmpl(data.hotComments).appendTo('#content_top');
             }
         });
     }
@@ -97,6 +97,7 @@
                         getComment(0, 0);
                         if (data.comment != null || data.comment != '') {
                             $('#comment').val('');
+                            $('#num').text('0/140');
                             layer.msg('评论成功');
                             getComment(0, 0);
                         }
@@ -119,6 +120,28 @@
     });
 
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*播放音乐*/
+    $(document).on('click', '#song tr >td', function () {
+        $.ajax({
+            url: 'https://api.bzqll.com/music/netease/song?key=579621905&id=' + $(this).find('h1').text().trim(),
+            success: function (data) {
+                layer.msg('已添置播放列表');
+                let url = data.data.url;
+                let lrc = data.data.lrc;
+                let name = data.data.name;
+                let artist = data.data.singer;
+                let cover = data.data.pic;
+                window.parent.ap.list.add([{
+                    name: name,
+                    artist: artist,
+                    url: url,
+                    cover: cover,
+                    lrc: lrc
+                }]);
+            }
+        });
+    });
+
     /*切换专辑信息*/
     $(document).on('click', "#album_box li >div", function () {
         window.location.href = 'album_info.jsp?abId=' + $(this).find('h1').text().trim() + "&siId=" + $('#siId').text().trim();

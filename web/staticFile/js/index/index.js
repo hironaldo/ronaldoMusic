@@ -79,6 +79,12 @@
             $.get(url, function (data) {
                 $('#ul3').empty();
                 $('#m-songlist').tmpl(data.playlist).appendTo('#ul3');
+                $.each(data.playlist, function (i, time) {
+                    if (i != 0) {
+                        return false;
+                    }
+                    $.cookie('likeId', time.id, {expires: 1});
+                });
             });
         }
     }

@@ -50,11 +50,3 @@ body {
     border-radius: 2em;
     background-color: #D8D8D8;
 }
-
-#ssheetinfo_box {
-    cursor: pointer;
-}
-
-#song:hover {
-    cursor: pointer;
-}

@@ -40,9 +40,7 @@
                         <th>专辑</th>
                     </tr>
                     </thead>
-                    <tbody id="song">
-
-                    </tbody>
+                    <tbody id="song"></tbody>
                 </table>
                 <ul id="singer_box" style="padding-top: 15px"></ul>
                 <ul id="ssheet_box" style="padding-top: 15px"></ul>
@@ -64,6 +62,7 @@
 <script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/personal/my.js" charset="utf-8"></script>
 <script id="u-info" type="text/x-jquery-tmpl">
     <td>
@@ -74,7 +73,7 @@
             <li style="padding-top: 10px">
                 <p style="font-size: 24px;">{{= nickname}}</p>
                 <p style="color: #666;font-size: 12px;padding-top: 5px">Motto：
-                    {{if signature== ""}}
+                    {{if signature == ""}}
                          还没签名哦
                     {{else}}
                         {{= signature}}
@@ -96,7 +95,8 @@
 {{each tracks}}
     <tr>
         <td>
-            <span>
+            <span class="delsong">
+                <h1 style="display:none">{{= id}}</h1>
                 <img src="../staticFile/images/fulllove.svg" width="18px" style="padding-bottom: 5px">
             </span>
             {{= name}}
@@ -123,7 +123,11 @@
                 <h4 style="display: none;">{{= creator.userId}}</h4>
                 <h5 style="display: none;">{{= tags}}</h5>
                 <div>
-                    <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                    <a class="songlist__link mod_cover">
+                        <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
+                        <i class="mod_cover__mask"></i>
+                        <i class="mod_cover__icon_play"></i>
+                    </a>
                 </div>
                 <div>
                      <div>
@@ -149,7 +153,11 @@
                 <h4 style="display: none;">{{= creator.userId}}</h4>
                 <h5 style="display: none;">{{= tags}}</h5>
                 <div>
-                    <a class="songlist__link mod_cover"> <img src="{{= coverImgUrl}}" class="songlist__pic" style="height: 160px;" /> <i class="mod_cover__mask"></i> <i class="mod_cover__icon_play"></i> </a>
+                    <a class="songlist__link mod_cover">
+                        <img class="songlist__pic" width="160" height="160" data-original="{{= coverImgUrl}}" />
+                        <i class="mod_cover__mask"></i>
+                        <i class="mod_cover__icon_play"></i>
+                    </a>
                 </div>
                 <div>
                      <div>
@@ -170,7 +178,7 @@
        <div>
             <h1 style="display:none">{{= userId}}</h1>
             <div>
-                <img src="{{= avatarUrl}}" style="width: 130px;border-radius: 50%;" />
+                <img width="130" height="130" data-original="{{= avatarUrl}}" style="border-radius: 50%;"/>
             </div>
             <div>
                  <div style="text-align: center;padding-top:5px">
@@ -203,7 +211,7 @@
             <div>
                 <h1 style="display:none">{{= id}}</h1>
                 <h2 style="display:none">{{= name}}</h2>
-                <img src="{{= picUrl}}" style="width: 130px;border-radius: 50%;" />
+                <img width="130" height="130" data-original="{{= avatarUrl}}" style="border-radius: 50%;"/>
             </div>
             <div>
                  <div style="text-align: center;padding-top:5px">

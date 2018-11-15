@@ -88,6 +88,43 @@
         }
     });
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*单曲下的*/
+    /*点击播放音乐*/
+    $(document).on('click', '#song tr .song', function () {
+        $.ajax({
+            url: 'https://api.bzqll.com/music/netease/song?key=579621905&id=' + $(this).find('h1').text().trim(),
+            success: function (data) {
+                layer.msg('已添置播放列表');
+                let url = data.data.url;
+                let lrc = data.data.lrc;
+                let name = data.data.name;
+                let artist = data.data.singer;
+                let cover = data.data.pic;
+                window.parent.ap.list.add([{
+                    name: name,
+                    artist: artist,
+                    url: url,
+                    cover: cover,
+                    lrc: lrc
+                }]);
+            }
+        });
+    });
+
+    /*查看歌手信息*/
+    $(document).on('click', '#song tr .singer', function () {
+        let siId = $(this).find('h1 span:eq(0)').text().trim();
+        let siName = $(this).find('h2 span:eq(0)').text().trim();
+        window.location.href = "singer_info.jsp?siId=" + siId + "&siName=" + siName;
+    });
+
+    /*查看专辑详情*/
+    $(document).on('click', '#song tr .album', function () {
+        let abId = $(this).find('h1').text().trim();
+        let siId = $(this).find('h2 span:eq(0)').text().trim();
+        window.location.href = 'album_info.jsp?abId=' + abId + '&siId=' + siId;
+    });
+
     /*专辑*/
     $(document).on('click', '#album_box li', function () {
         window.location.href = 'album_info.jsp?abId=' + $(this).find('h1').text().trim() + "&siId=" + $(this).find('h2').text().trim();
@@ -100,12 +137,6 @@
         let userId = $(this).find('h4').text().trim();
         let tags = $(this).find('h5').text().trim();
         window.location.href = 'songsheet_info.jsp?slistId=' + slistId + '&picurl=' + picurl + '&nickname=' + nickname + '&userId=' + userId + '&tags=' + tags;
-    });
-    /*查看专辑详情*/
-    $(document).on('click', '#song tr .album', function () {
-        let abId = $(this).find('h1').text().trim();
-        let siId = $(this).find('h2 span:eq(0)').text().trim();
-        window.location.href = 'album_info.jsp?abId=' + abId + '&siId=' + siId;
     });
     /*mv*/
     $(document).on('click', '#mv_box li >div', function () {

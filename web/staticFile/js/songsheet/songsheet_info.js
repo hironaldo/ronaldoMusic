@@ -2,6 +2,7 @@
     let timestamp = (new Date()).getTime(); //时间戳
     let userId = $.cookie('nickname');  //当前用户id
     let slistId = $('#slistId').text().trim();    //歌单id
+    let likeId = $.cookie('likeId');
 
     /*获取歌单信息和歌曲*/
     function getSonglistInfo() {
@@ -9,8 +10,8 @@
             url: 'http://localhost:3000/playlist/detail?id=' + slistId + '&timestamp=' + timestamp,
             xhrFields: {withCredentials: true},
             success: function (data) {
-                $("#ssheetinfo_box").empty();
                 $("#song").empty();
+                $("#ssheetinfo_box").empty();
                 $("#c-song").tmpl(data.playlist).appendTo('#song');
                 $("#c-info").tmpl(data.playlist).appendTo('#ssheetinfo_box');
             }
@@ -91,6 +92,7 @@
                         getComment(0, 0);
                         if (data.comment != null || data.comment != '') {
                             $('#comment').val('');
+                            $('#num').text('0/140');
                             layer.msg('评论成功');
                             getComment(0, 0);
                         }
@@ -113,6 +115,70 @@
     });
 
     /*---------------------------- DOM加载完后的点击事件 ----------------------------*/
+    /*播放音乐*/
+    $(document).on('click', '#song tr >td span', function () {
+        let name = $(this).find('h2').text().trim();
+        let artist = $(this).find('h3').text().trim();
+        let cover = $(this).find('h4').text().trim();
+        $.ajax({
+            url: 'https://api.bzqll.com/music/netease/song?key=579621905&id=' + $(this).find('h1').text().trim(),
+            success: function (data) {
+                layer.msg('已添置播放列表');
+                let url = data.data.url;
+                let lrc = data.data.lrc;
+                window.parent.ap.list.add([{
+                    name: name,
+                    artist: artist,
+                    url: url,
+                    cover: cover,
+                    lrc: lrc
+                }]);
+            }
+        });
+    });
+
+    /*添加音乐到我的歌单*/
+    $(document).on('click', '.layui-table thead tr th >input', function () {
+        if ($('.layui-table thead tr th >input').is(':checked') == false) {
+            $(this).removeAttr('checked');
+            $('.layui-table tbody tr td >input').removeAttr('checked');
+        } else {
+            $(this).attr('checked', 'checked');
+            $('.layui-table tbody tr td >input').attr('checked', 'checked');
+        }
+    });
+    $(document).on('click', '#addsong', function () {
+        if (undefined == userId) {
+            layer.msg('请先登陆 🙃', function () {
+            });
+        } else {
+            if ($('.layui-table thead tr th >input').is(':checked') == false && $('.layui-table tbody tr td >input').is(':checked') == false) {
+                layer.msg('你还未选中呢', function () {
+                });
+            } else {
+                let array = new Array();
+                $('.layui-table tbody tr td >input:checkbox:checked').each(function () {
+                    let value = $(this).attr("data-id");
+                    array.push(value);
+                });
+                $.ajax({
+                    url: 'http://localhost:3000/playlist/tracks?op=add&pid=' + likeId + '&tracks=' + array,
+                    xhrFields: {withCredentials: true},
+                    success: function (data) {
+                        if (data.code === 200) {
+                            $('.layui-table thead tr td >input').removeAttr('checked');
+                            $('.layui-table tbody tr td >input').removeAttr('checked');
+                            layer.msg('添加成功');
+                        }
+                    }, error: function () {
+                        layer.msg('歌曲重复啦', function () {
+                        });
+                    }
+                });
+            }
+        }
+    });
+
     /*收藏 取消收藏歌单*/
     $(document).on('click', '#collection', function () {
         let ssId = $(this).find('h1').text().trim();
@@ -129,8 +195,6 @@
                         if (data.code === 200) {
                             getSonglistInfo();
                             layer.msg('收藏成功');
-                        } else {
-                            layer.msg('出现缓存异常请稍后');
                         }
                     }
                 });
@@ -142,8 +206,6 @@
                         if (data.code === 200) {
                             getSonglistInfo();
                             layer.msg('取消成功');
-                        } else {
-                            layer.msg('出现缓存异常请稍后');
                         }
                     }
                 });

@@ -35,7 +35,7 @@
     <!-- 推荐的歌单 -->
     <div class="song_sheet">
         <div style="padding-left: 7px;">
-            <span style="font-size: 16px;">歌 单 推 荐</span>
+            <span style="font-size: 16px;">歌 单 速 递</span>
             <a href="songsheet.jsp">
                 <span style="padding-left: 807px;color: #666;font-size: 12px;">更多</span>
             </a>
@@ -47,7 +47,7 @@
     <!-- 歌手 -->
     <div class="singer">
         <div style="padding-left: 6px;">
-            <span style="font-size: 16px;">歌 手 推 荐</span>
+            <span style="font-size: 16px;">热 门 歌 手</span>
             <a href="singer.jsp">
                 <span style="padding-left: 807px;color: #666;font-size: 12px;">更多</span>
             </a>
@@ -65,7 +65,7 @@
             <li class="toplist__item mod_cover">
                 <div class="toplist__box">
                     <div class="toplist__bg"></div>
-                    <i class="mod_cover__icon_play"></i>
+                    <i class="mod_cover__icon_play" id="icon_play"></i>
                     <i class="toplist__line"></i>
                     <h3 class="toplist__hd"><a class="toplist__tit" style="color: #fff">流行指数</a></h3>
                     <ul class="toplist__songlist" id="pop_song">
@@ -119,12 +119,14 @@
 </div>
 
 <script src="../staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="../staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="../staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/zturn.js" charset="utf-8"></script>
 <script src="../staticFile/js/choice/choice.js" charset="utf-8"></script>
 <script id="ranking" type="text/x-jquery-tmpl">
     <li class="toplist__song">
+        <h1 style="display:none">{{= id}}</h1>
         <div class="toplist__songname">
             <a>{{= name}}</a>
         </div>

@@ -64,7 +64,3 @@ body {
     height: 160px;
     background: url(../../images/loading.gif) 50% no-repeat;
 }
-
-#song td:hover{
-    cursor: pointer;
-}

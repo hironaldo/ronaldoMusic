@@ -4,16 +4,46 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Music For CR7</title>
+    <title>Player for CR7 lalala~</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="staticFile/img/logo.ico" rel="shortcut icon">
     <link rel="stylesheet" href="staticFile/frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="staticFile/frame/APlayer/APlayer.min.css">
     <link rel="stylesheet" href="staticFile/css/common/yqq.css" media="all">
     <link rel="stylesheet" href="staticFile/css/common/nav.css" media="all">
     <link rel="stylesheet" href="staticFile/css/common/play.css" media="all">
     <link rel="stylesheet" href="staticFile/css/common/audio.css" media="all">
     <link rel="stylesheet" href="staticFile/css/common/index.css" media="all">
+    <script src="staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <script src="staticFile/frame/APlayer/APlayer.min.js"></script>
+    <script>
+        $(function () {
+            window.ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                mini: false,
+                autoplay: false,
+                listFolded: true,
+                mutex: true,
+                theme: '#31C27C',
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.5,
+                listMaxHeight: 90,
+                lrcType: 3,
+                audio: [
+                    {
+                        name: '飘洋过海来看你',
+                        artist: '刘明湘',
+                        url: 'http://music.163.com/song/media/outer/url?id=436016654.mp3',
+                        cover: 'http://p1.music.126.net/J2HiKv21CrWmFCRsDvKDCw==/3440371896385963.jpg?param=300x300',
+                        lrc: 'staticFile/frame/APlayer/飘洋过海来看你-刘明湘.lrc'
+                    }
+                ]
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -89,56 +119,9 @@
 
         <!-- 主体内容 -->
         <div id="main-wrap" class="riht_body">
-            <iframe src="init" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
+            <iframe id="myFrame" name="myFrame" src="init" width='100%' height='100%' frameborder="0" scrolling="yes"></iframe>
         </div>
         <!-- 主体内容 -->
-
-        <!-- 播放控件 -->
-        <div class="audio-box" style="width: 1200px;">
-            <div class="audio-container">
-                <div class="audio-cover"></div>
-                <div class="audio-view">
-                    <h3 class="audio-title">未知歌曲</h3>
-                    <div class="audio-body">
-                        <div class="audio-backs">
-                            <div class="audio-this-time">00:00</div>
-                            <div class="audio-count-time">00:00</div>
-                            <div class="audio-setbacks">
-                                <i class="audio-this-setbacks">
-                                    <span class="audio-backs-btn"></span>
-                                </i>
-                                <span class="audio-cache-setbacks">
-							</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="audio-btn">
-                        <div class="audio-select">
-                            <div class="audio-prev"></div>
-                            <div class="audio-play"></div>
-                            <div class="audio-next"></div>
-                            <div class="audio-menu"></div>
-                            <div class="audio-collection"></div>
-                            <div class="audio-volume"></div>
-                        </div>
-                        <div class="audio-set-volume">
-                            <div class="volume-box">
-                                <i><span></span></i>
-                            </div>
-                        </div>
-                        <div class="audio-list">
-                            <div class="audio-list-head">
-                                <p>播放列表</p>
-                                <span class="menu-close">关闭</span>
-                            </div>
-                            <ul class="audio-inline">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 播放控件 -->
 
         <!-- 左边导航 -->
         <div class="p_body">
@@ -167,7 +150,7 @@
                                     <i class="layui-icon layui-icon-fire"></i>官方精选
                                 </li>
                                 <li url="Effect/singer.jsp">
-                                    <i class="layui-icon layui-icon-username"></i>热门歌手
+                                    <i class="layui-icon layui-icon-username"></i>全部.歌手
                                 </li>
                                 <li id="test" url="Effect/songsheet.jsp">
                                     <i class="layui-icon layui-icon-template"></i>分类歌单
@@ -208,21 +191,21 @@
         </div>
         <!-- 左边导航 -->
 
+        <!-- 播放控件 -->
+        <div id="aplayer"></div>
+        <!-- 播放控件 -->
+
     </div>
 </div>
-
 <!-- 底部 -->
 <div class="foot">
     <img src="staticFile/img/footer.png">
 </div>
 
-<script src="staticFile/frame/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="staticFile/frame/layui/layui.all.js" charset="utf-8"></script>
 <script src="staticFile/frame/jquery.cookie.js" charset="utf-8"></script>
 <script src="staticFile/frame/jquery.tmpl.min.js" charset="utf-8"></script>
 <script src="staticFile/frame/jquery.lazyload.js" charset="utf-8"></script>
-<script src="staticFile/js/audio.js" charset="utf-8"></script>
-<script src="staticFile/js/player.js" charset="utf-8"></script>
 <script src="staticFile/js/index/index.js" charset="utf-8"></script>
 
 <script id="m-songlist" type="text/x-jquery-tmpl">
@@ -234,6 +217,7 @@
          <h4 style="display: none;">{{= creator.userId}}</h4>
          <h5 style="display: none;">{{= tags}}</h5>
      </li>
+
 </script>
 
 <script id="h-search" type="text/x-jquery-tmpl">
@@ -242,6 +226,7 @@
         <span style="padding-left: 10px;">{{= first}}</span>
     </li>
 {{/each}}
+
 </script>
 
 <script id="h-song" type="text/x-jquery-tmpl">
@@ -255,6 +240,7 @@
         </li>
     {{/each}}
 </ul>
+
 </script>
 
 <script id="h-singer" type="text/x-jquery-tmpl">
@@ -267,6 +253,7 @@
         </li>
     {{/each}}
 </ul>
+
 </script>
 
 <script id="h-album" type="text/x-jquery-tmpl">
@@ -279,6 +266,7 @@
         </li>
     {{/each}}
 </ul>
+
 </script>
 
 <script id="h-sheet" type="text/x-jquery-tmpl">
@@ -291,8 +279,8 @@
         </li>
     {{/each}}
 </ul>
-</script>
 
+</script>
 <script src="staticFile/js/index/index-reload.js" charset="utf-8"></script>
 </body>
 

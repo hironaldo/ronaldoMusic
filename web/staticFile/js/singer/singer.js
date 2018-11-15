@@ -10,7 +10,7 @@
             url: url,
             xhrFields: {withCredentials: true},
             success: function (data) {
-                $("#singer_box").html('');
+                $("#singer_box").empty();
                 $("#data").tmpl(data.artists).appendTo('#singer_box');
             }
         });
