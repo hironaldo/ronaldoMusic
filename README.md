@@ -1,5 +1,6 @@
 ##### Project-name：CR7 Music Player 😍
      Why do it call this name? -- Because I am a super fan of Cristiano Ronaldo.  
+     
 ##### Description 🙄
      •开发环境 / 工具
      
@@ -22,15 +23,17 @@
 ##### Appearance 😕
 
 ![文档](https://i.loli.net/2018/11/15/5bed4d1fb06f3.png)
-
 ![文档](https://i.loli.net/2018/11/15/5bed4d22d25b7.png)
-
 ![文档](https://i.loli.net/2018/11/15/5bed4d252c698.png)
-
 ![文档](https://i.loli.net/2018/11/15/5bed4d2a79cb4.png)
-
 ![文档](https://i.loli.net/2018/11/15/5bed4d2f97477.png)
-
 ![文档](https://i.loli.net/2018/11/15/5bed4d3106af1.png)
+![文档](https://i.loli.net/2018/11/15/5bed4ddf3b9fb.png)
+![文档](https://i.loli.net/2018/11/15/5bed4de269540.png)
+![文档](https://i.loli.net/2018/11/15/5bed4de30a10e.png)
+![文档](https://i.loli.net/2018/11/15/5bed4de5d7734.png)
+![文档](https://i.loli.net/2018/11/15/5bed4de6c140d.png)
+
+
 
         
