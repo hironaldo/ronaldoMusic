@@ -20,6 +20,6 @@
            1-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi.git)           
            2-[Mrdong916](https://www.bzqll.com/ -- https://www.bzqll.com/about/)
            
-![文档](https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png)
+![文档](https://i.loli.net/2018/11/15/5bed4b5045e41.png)
 
         
