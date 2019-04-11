@@ -2,11 +2,6 @@
      Why do it call this name? -- Because I am a super fan of Cristiano Ronaldo.  
      
 ##### Description 🙄
-     •开发环境 / 工具
-     
-            Windows10
-            IDEA2018 + Webstorm2018 + Chorme Dev + PostMan + 幕布 + Notepad++  
-     
      •技术栈
      
             版本控制：Git + Gogs
